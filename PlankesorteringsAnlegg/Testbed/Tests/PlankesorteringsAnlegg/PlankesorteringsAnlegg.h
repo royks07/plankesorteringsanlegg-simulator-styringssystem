@@ -24,7 +24,9 @@ class PlankesorteringsAnlegg : public Test
 {
 public:
 
-
+	/**
+	 * \breif Oppretter et PlankesorteringsAnlegg
+	 */
 	PlankesorteringsAnlegg():m_communicator("/dev/ttyACM0"){
 
 		//load world from JSON file
