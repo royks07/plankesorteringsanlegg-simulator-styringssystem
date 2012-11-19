@@ -1,0 +1,5 @@
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Box2D/CMakeFiles/Box2D.dir
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/HelloWorld/CMakeFiles/HelloWorld.dir
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Testbed/CMakeFiles/Testbed.dir
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/freeglut/CMakeFiles/freeglut_static.dir
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/glui/CMakeFiles/glui.dir

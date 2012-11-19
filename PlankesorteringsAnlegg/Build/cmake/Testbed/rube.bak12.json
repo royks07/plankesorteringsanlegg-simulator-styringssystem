@@ -1,0 +1,2084 @@
+
+{
+   "allowSleep" : true,
+   "autoClearForces" : true,
+   "body" : 
+   [
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "41466730",
+            "y" : "41300B49"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "42653D66",
+            "y" : "417DDC2E"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "40055550", "C0055550", "C015E3DF", "3FE98D88" ],
+                     "y" : [ "3EA9745D", "3EA9745D", "BEA9745F", "BEA9745A" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "4084E0F3",
+         "massData-center" : 
+         {
+            "x" : "BE047471",
+            "y" : "B1301F29"
+         },
+         "massData-mass" : "403083DA",
+         "position" : 
+         {
+            "x" : "428B24F6",
+            "y" : "41A7146C"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "40055550", "C0055550", "C015E3DF", "3FE98D88" ],
+                     "y" : [ "3EA9745D", "3EA9745D", "BEA9745F", "BEA9745A" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "4084E0F3",
+         "massData-center" : 
+         {
+            "x" : "BE047471",
+            "y" : "B1301F29"
+         },
+         "massData-mass" : "403083DA",
+         "position" : 
+         {
+            "x" : "42839728",
+            "y" : "41BDD859"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "40055550", "C0055550", "C015E3DF", "3FE98D88" ],
+                     "y" : [ "3EA9745D", "3EA9745D", "BEA9745F", "BEA9745A" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "4084E0F3",
+         "massData-center" : 
+         {
+            "x" : "BE047471",
+            "y" : "B1301F29"
+         },
+         "massData-mass" : "403083DA",
+         "position" : 
+         {
+            "x" : "4270D458",
+            "y" : "41B738F3"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "406D9A1A", "406D9A13", "C041EEAD", "C041EEAA" ],
+                     "y" : [ "BEA490B5", "3E9452F8", "3E9452F8", "BEA490BA" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4144A2C4",
+            "y" : "4112F174"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FE0C2EC", "3FE0C2EA", "3F16DB2D", "3F16DB2E" ],
+                     "y" : [ "BF7968B4", "3F210864", "3F210864", "BF7968BC" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "404F6572",
+         "massData-center" : 
+         {
+            "x" : "3F961841",
+            "y" : "BE30C0A9"
+         },
+         "massData-mass" : "3FEF6CA4",
+         "position" : 
+         {
+            "x" : "417EF390",
+            "y" : "40711571"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-groupIndex" : -4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FE7CD66", "3FE7CD56", "C0F3362C", "C0F33626" ],
+                     "y" : [ "4033B23E", "4052A336", "4052A336", "4033B23D" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FE99C4C", "3FE99C4A", "3F288DED", "3F288DEE" ],
+                     "y" : [ "BF21CA8E", "403460FE", "403460FE", "BF21CA9C" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "430193F9",
+         "massData-center" : 
+         {
+            "x" : "BF73F606",
+            "y" : "4008651C"
+         },
+         "massData-mass" : "41093515",
+         "position" : 
+         {
+            "x" : "417E07E4",
+            "y" : "40C98DF6"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "407A128A", "407A126A", "C080B7DF", "C080B7DF" ],
+                     "y" : [ "BF6D7089", "3FCF18D4", "3FCF18D4", "BF6D7089" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "42EE4982",
+         "massData-center" : 
+         {
+            "x" : "BD6BA881",
+            "y" : "3EB0C118"
+         },
+         "massData-mass" : "41A17AB6",
+         "position" : 
+         {
+            "x" : "408823CF",
+            "y" : "414A0B09"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : "3AC49400",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E9C619E", "3E9C619E", "BD81C648", "BD81C648" ],
+                     "y" : [ "3EF5FD82", "40EB6B97", "40EB6B97", "3EF5FD44" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E9C619E", "3E9C619E", "BD81C648", "BD81C648" ],
+                     "y" : [ "3EF5FD82", "40EB6B97", "40EB6B97", "3EF5FD44" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-groupIndex" : -4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E9C619E", "3E9C619E", "BD81C648", "BD81C648" ],
+                     "y" : [ "3EF5FD82", "40EB6B97", "40EB6B97", "3EF5FD44" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4119FBE9", "4119FBE5", "C10513F5", "C10513F4" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "441F5B36",
+         "massData-center" : 
+         {
+            "x" : "3EFD5800",
+            "y" : "3F955CC1"
+         },
+         "massData-mass" : "41CC653C",
+         "position" : 
+         {
+            "x" : "41065244",
+            "y" : "400D5DCC"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : "3AC49400",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 4,
+               "filter-maskBits" : 4,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4074000A", "40740003", "C0740003", "C0740001" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "421650DD",
+         "massData-center" : 
+         {
+            "x" : "34D4AC10",
+            "y" : "30AD770A"
+         },
+         "massData-mass" : "40F40003",
+         "position" : 
+         {
+            "x" : "4089EAF0",
+            "y" : "40BE5C66"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FD750A9", "3F802A85", "BFF012DA", "BF98ECB6" ],
+                     "y" : [ "404441CF", "404441CF", "C05A5A02", "C05A59FB" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4290FCCA",
+            "y" : "41AE3589"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FD750A9", "3F802A85", "BFF012DA", "BF98ECB6" ],
+                     "y" : [ "404441CF", "404441CF", "C05A5A02", "C05A59FB" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4286BEEC",
+            "y" : "41AE3589"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FD750A9", "3F802A85", "BFF012DA", "BF98ECB6" ],
+                     "y" : [ "404441CF", "404441CF", "C05A5A02", "C05A59FB" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4278C734",
+            "y" : "41AE3589"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FD750A9", "3F802A85", "BFF012DA", "BF98ECB6" ],
+                     "y" : [ "404441CF", "404441CF", "C05A5A02", "C05A59FB" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4264108E",
+            "y" : "41AE3589"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "4188AE82",
+            "y" : "411EC663"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "41D42BB7",
+            "y" : "4141C1F9"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-categoryBits" : 3,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 3,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "42466017",
+            "y" : "41C62509"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "425D2901",
+            "y" : "41C62509"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "41D51762",
+            "y" : "41388D3E"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "4204C862",
+            "y" : "40A69262"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "4225EC9D",
+            "y" : "413E1348"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "429503DC",
+            "y" : "413E1347"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "42948E06",
+            "y" : "41DF0036"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "425BC77F",
+            "y" : "41DF0037"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "4245AF57",
+            "y" : "41C20082"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-categoryBits" : 3,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 3,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "41EF5413",
+            "y" : "41C18AAB"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : 1
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FC90FDB",
+         "massData-mass" : "40490FDB",
+         "position" : 
+         {
+            "x" : "41BB508A",
+            "y" : "418E72CF"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : 8,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 0,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 0,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3EE47495",
+         "massData-center" : 
+         {
+            "x" : "32AF53F8",
+            "y" : "B20397DB"
+         },
+         "massData-mass" : "3FCF032F",
+         "position" : 
+         {
+            "x" : "427D9C7D",
+            "y" : "41D04571"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : 8,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 0,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 0,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3EE47495",
+         "massData-center" : 
+         {
+            "x" : "32AF53F8",
+            "y" : "B20397DB"
+         },
+         "massData-mass" : "3FCF032F",
+         "position" : 
+         {
+            "x" : "42890C1C",
+            "y" : "41D04571"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : 8,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 0,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 0,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E6B2876", "3E6B2870", "BE6B2870", "BE6B286E" ],
+                     "y" : [ "BF615C21", "3F615C25", "3F615C25", "BF615C28" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3EE47495",
+         "massData-center" : 
+         {
+            "x" : "32AF53F8",
+            "y" : "B20397DB"
+         },
+         "massData-mass" : "3FCF032F",
+         "position" : 
+         {
+            "x" : "4293676E",
+            "y" : "41D04571"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : "3F4E5F1D",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4088AFF2", "C0885726", "C088AFF0", "4088572A" ],
+                     "y" : [ "3F82DB98", "3F92D734", "BFA0510C", "BFB04CA8" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "42187262",
+            "y" : "4106A68C"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3FD67DD8", "3FD67DD5", "BD84713E", "BD847130" ],
+                     "y" : [ "3F9E5496", "3FC32DCB", "3FC32DCB", "3F9E5495" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3E323BD3", "3E323BD0", "BD719740", "BD71973D" ],
+                     "y" : [ "BDFD2352", "3FC09357", "3FC09357", "BDFD2386" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3FD6CA68",
+         "massData-center" : 
+         {
+            "x" : "3EF7646F",
+            "y" : "3F8AAB66"
+         },
+         "massData-mass" : "3F6163D0",
+         "position" : 
+         {
+            "x" : "425F7630",
+            "y" : "41E9209F"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 8,
+               "filter-maskBits" : 15,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F5C71D1", "3F5C71CB", "BF5C71CB", "BF5C71C9" ],
+                     "y" : [ "BE924921", "3E924923", "3E924923", "BE924925" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E8A40ED",
+         "massData-center" : 
+         {
+            "x" : "33C6E90F",
+            "y" : "B18C9565"
+         },
+         "massData-mass" : "3F7BEFC2",
+         "position" : 
+         {
+            "x" : "422AFCD1",
+            "y" : "41CDF842"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : "BF4B5B33",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4088AFF2", "C0885726", "C088AFF0", "4088572A" ],
+                     "y" : [ "3F82DB98", "3F92D734", "BFA0510C", "BFB04CA8" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4193D99D",
+            "y" : "41A781EB"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : "3AC49400",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4074000A", "40740003", "C0740003", "C0740001" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "421650DD",
+         "massData-center" : 
+         {
+            "x" : "34D4AC10",
+            "y" : "30AD770A"
+         },
+         "massData-mass" : "40F40003",
+         "position" : 
+         {
+            "x" : "40DAEE2D",
+            "y" : "41AF17D6"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : "3AC49400",
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "408C4EE2", "408C4EE2", "408081AF", "408081AF" ],
+                     "y" : [ "C062BAC1", "405B5D65", "405B5D65", "C062BAC9" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4093EFA5", "4093EFA1", "C07BAEF4", "C07BAEF0" ],
+                     "y" : [ "C0975DC0", "C0638850", "C0638850", "C0975DC0" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "4391FF5E",
+         "massData-center" : 
+         {
+            "x" : "3F90AC25",
+            "y" : "C053E41D"
+         },
+         "massData-mass" : "4149F95E",
+         "position" : 
+         {
+            "x" : "40DACB88",
+            "y" : "41C5A5D4"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "41241D36", "41241D30", "C113849A", "C1138499" ],
+                     "y" : [ "BF6E34A9", "3F44FE7A", "3F44FE7A", "BF6E34B0" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "421CA0F1",
+            "y" : "41C2783F"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "40867E48", "403EC134", "C062D830", "C0149CD6" ],
+                     "y" : [ "403216C0", "4080C99B", "C01E16B7", "C06D9337" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "41D2FC11",
+            "y" : "41A6D175"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4184F27D", "4184F278", "C182B5B2", "C182B5B1" ],
+                     "y" : [ "BF8948E4", "3F20A15A", "3F20A15A", "BF8948E8" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "42673FF8",
+            "y" : "41417C21"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "40838995", "C0214B34", "C06F1D4C", "4039411D" ],
+                     "y" : [ "C0268D44", "407232C8", "40224F36", "C07670D7" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "41ED7FF2",
+            "y" : "410726CC"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "41241D36", "41241D30", "C113849A", "C1138499" ],
+                     "y" : [ "BF6E34A9", "3F44FE7A", "3F44FE7A", "BF6E34B0" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4280383A",
+            "y" : "41E003E2"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "417FDA54",
+            "y" : "41130C03"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 0,
+                  "radius" : "3ED10091"
+               },
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3DB2A674",
+         "massData-mass" : "3F8603B4",
+         "position" : 
+         {
+            "x" : "411384FC",
+            "y" : "41124A11"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4047EA4D", "4047EA47", "C0245DC8", "C0245DC6" ],
+                     "y" : [ "BE9C71D5", "3E9C71D8", "3E9C71D8", "BE9C71DA" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "4250B242",
+            "y" : "41C60C20"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-groupIndex" : -1,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "4096AF5E", "40918057", "C09E0101", "C098D1FD" ],
+                     "y" : [ "3F4C94D4", "3FBDFB95", "BF3BDA27", "BFB59E43" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "position" : 
+         {
+            "x" : "41AF58BC",
+            "y" : "412FBE6C"
+         },
+         "type" : 0 //static
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "41CE67D1",
+            "y" : "41C2CFE4"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "421E0BE7",
+            "y" : "41E4C0CB"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "424E797A",
+            "y" : "41D7180A"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "426DEE9A",
+            "y" : "41FED46A"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-categoryBits" : 2,
+               "filter-maskBits" : 2,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "41AF5CA4",
+            "y" : "4157C7A8"
+         },
+         "type" : 2 //dynamic
+      },
+      
+      {
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filter-maskBits" : 1,
+               "friction" : "3E4CCCCD",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ "3F000003", "3EFFFFFF", "BEFFFFFF", "BEFFFFFD" ],
+                     "y" : [ "BEFFFFFA", "3EFFFFFF", "3EFFFFFF", "BF000001" ]
+                  }
+               },
+               "restitution" : "3E4CCCCD"
+            }
+         ],
+         "gravityScale" : 0,
+         "linearVelocity" : 0,
+         "massData-I" : "3E2AAAAA",
+         "massData-center" : 
+         {
+            "x" : "335AAAAA",
+            "y" : "31FFFFFB"
+         },
+         "massData-mass" : "3F7FFFFF",
+         "position" : 
+         {
+            "x" : "41FBEFA7",
+            "y" : "4131B322"
+         },
+         "type" : 2 //dynamic
+      }
+   ],
+   "continuousPhysics" : true,
+   "gravity" : 
+   {
+      "x" : 0,
+      "y" : "C1200000"
+   },
+   "subStepping" : false,
+   "warmStarting" : true
+}
