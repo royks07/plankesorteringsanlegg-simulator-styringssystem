@@ -27,7 +27,7 @@ public:
 	/**
 	 * \breif Oppretter et PlankesorteringsAnlegg
 	 */
-	PlankesorteringsAnlegg():m_communicator("/dev/ttyACM0"){
+	PlankesorteringsAnlegg():m_communicator("/dev/pts/8"){
 
 		//load world from JSON file
 		b2dJson json;

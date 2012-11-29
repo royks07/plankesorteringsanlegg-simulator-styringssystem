@@ -215,13 +215,13 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/../Framework/b2dJson.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/AddPair.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/ApplyForce.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/BaneTest.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/BodyTypes.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Breakable.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Bridge.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/BulletTest.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Cantilever.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Car.h
- /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Chain.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/CharacterCollision.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/CollisionFiltering.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/CollisionProcessing.h
@@ -239,13 +239,19 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Pinball.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/../../Framework/b2dJson.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/../../Framework/json/json.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Actuators.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/AktuatorFlate.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/BaneSynkronisator.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Conveyor.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/ConveyorSynchronizer.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Kjede.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Kommunikator.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Pakke.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/PlankesorteringsAnlegg.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/SensorFlate.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Sensors.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Storages.h
+ /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Text.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PolyCollision.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PolyShapes.h
  /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/Prismatic.h
@@ -645,6 +651,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/config/abi_suffix.hpp
  /usr/local/include/boost/config/auto_link.hpp
  /usr/local/include/boost/config/no_tr1/cmath.hpp
+ /usr/local/include/boost/config/no_tr1/complex.hpp
  /usr/local/include/boost/config/no_tr1/functional.hpp
  /usr/local/include/boost/config/no_tr1/memory.hpp
  /usr/local/include/boost/config/no_tr1/utility.hpp
@@ -655,6 +662,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/config/select_stdlib_config.hpp
  /usr/local/include/boost/config/suffix.hpp
  /usr/local/include/boost/container/allocator_traits.hpp
+ /usr/local/include/boost/container/container_fwd.hpp
  /usr/local/include/boost/container/detail/config_begin.hpp
  /usr/local/include/boost/container/detail/config_end.hpp
  /usr/local/include/boost/container/detail/memory_util.hpp
@@ -723,10 +731,12 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/detail/container_fwd.hpp
  /usr/local/include/boost/detail/dynamic_bitset.hpp
  /usr/local/include/boost/detail/endian.hpp
+ /usr/local/include/boost/detail/fenv.hpp
  /usr/local/include/boost/detail/indirect_traits.hpp
  /usr/local/include/boost/detail/interlocked.hpp
  /usr/local/include/boost/detail/is_function_ref_tester.hpp
  /usr/local/include/boost/detail/iterator.hpp
+ /usr/local/include/boost/detail/lcast_precision.hpp
  /usr/local/include/boost/detail/limits.hpp
  /usr/local/include/boost/detail/no_exceptions_support.hpp
  /usr/local/include/boost/detail/ob_call_traits.hpp
@@ -815,8 +825,19 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/iterator/iterator_facade.hpp
  /usr/local/include/boost/iterator/iterator_traits.hpp
  /usr/local/include/boost/iterator/reverse_iterator.hpp
+ /usr/local/include/boost/lexical_cast.hpp
  /usr/local/include/boost/limits.hpp
  /usr/local/include/boost/math/common_factor_rt.hpp
+ /usr/local/include/boost/math/policies/policy.hpp
+ /usr/local/include/boost/math/special_functions/detail/fp_traits.hpp
+ /usr/local/include/boost/math/special_functions/detail/round_fwd.hpp
+ /usr/local/include/boost/math/special_functions/fpclassify.hpp
+ /usr/local/include/boost/math/special_functions/math_fwd.hpp
+ /usr/local/include/boost/math/special_functions/sign.hpp
+ /usr/local/include/boost/math/tools/config.hpp
+ /usr/local/include/boost/math/tools/promotion.hpp
+ /usr/local/include/boost/math/tools/real_cast.hpp
+ /usr/local/include/boost/math/tools/user.hpp
  /usr/local/include/boost/math_fwd.hpp
  /usr/local/include/boost/mem_fn.hpp
  /usr/local/include/boost/memory_order.hpp
@@ -930,6 +951,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/aux_/push_front_impl.hpp
  /usr/local/include/boost/mpl/aux_/reverse_fold_impl.hpp
  /usr/local/include/boost/mpl/aux_/reverse_fold_impl_body.hpp
+ /usr/local/include/boost/mpl/aux_/sequence_wrapper.hpp
  /usr/local/include/boost/mpl/aux_/size_impl.hpp
  /usr/local/include/boost/mpl/aux_/static_cast.hpp
  /usr/local/include/boost/mpl/aux_/template_arity.hpp
@@ -948,6 +970,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/bool_fwd.hpp
  /usr/local/include/boost/mpl/clear.hpp
  /usr/local/include/boost/mpl/clear_fwd.hpp
+ /usr/local/include/boost/mpl/comparison.hpp
  /usr/local/include/boost/mpl/contains.hpp
  /usr/local/include/boost/mpl/contains_fwd.hpp
  /usr/local/include/boost/mpl/copy.hpp
@@ -955,12 +978,15 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/distance.hpp
  /usr/local/include/boost/mpl/distance_fwd.hpp
  /usr/local/include/boost/mpl/empty_fwd.hpp
+ /usr/local/include/boost/mpl/equal_to.hpp
  /usr/local/include/boost/mpl/eval_if.hpp
  /usr/local/include/boost/mpl/find.hpp
  /usr/local/include/boost/mpl/find_if.hpp
  /usr/local/include/boost/mpl/fold.hpp
  /usr/local/include/boost/mpl/front_fwd.hpp
  /usr/local/include/boost/mpl/front_inserter.hpp
+ /usr/local/include/boost/mpl/greater.hpp
+ /usr/local/include/boost/mpl/greater_equal.hpp
  /usr/local/include/boost/mpl/has_xxx.hpp
  /usr/local/include/boost/mpl/identity.hpp
  /usr/local/include/boost/mpl/if.hpp
@@ -978,16 +1004,22 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/lambda.hpp
  /usr/local/include/boost/mpl/lambda_fwd.hpp
  /usr/local/include/boost/mpl/less.hpp
+ /usr/local/include/boost/mpl/less_equal.hpp
  /usr/local/include/boost/mpl/limits/arity.hpp
+ /usr/local/include/boost/mpl/limits/list.hpp
  /usr/local/include/boost/mpl/limits/unrolling.hpp
+ /usr/local/include/boost/mpl/limits/vector.hpp
+ /usr/local/include/boost/mpl/list.hpp
  /usr/local/include/boost/mpl/logical.hpp
  /usr/local/include/boost/mpl/long.hpp
  /usr/local/include/boost/mpl/long_fwd.hpp
  /usr/local/include/boost/mpl/minus.hpp
+ /usr/local/include/boost/mpl/multiplies.hpp
  /usr/local/include/boost/mpl/negate.hpp
  /usr/local/include/boost/mpl/next.hpp
  /usr/local/include/boost/mpl/next_prior.hpp
  /usr/local/include/boost/mpl/not.hpp
+ /usr/local/include/boost/mpl/not_equal_to.hpp
  /usr/local/include/boost/mpl/numeric_cast.hpp
  /usr/local/include/boost/mpl/or.hpp
  /usr/local/include/boost/mpl/pair.hpp
@@ -1002,6 +1034,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/push_front.hpp
  /usr/local/include/boost/mpl/push_front_fwd.hpp
  /usr/local/include/boost/mpl/quote.hpp
+ /usr/local/include/boost/mpl/remove_if.hpp
  /usr/local/include/boost/mpl/reverse_fold.hpp
  /usr/local/include/boost/mpl/same_as.hpp
  /usr/local/include/boost/mpl/sequence_tag.hpp
@@ -1011,6 +1044,8 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/mpl/size_t.hpp
  /usr/local/include/boost/mpl/size_t_fwd.hpp
  /usr/local/include/boost/mpl/tag.hpp
+ /usr/local/include/boost/mpl/times.hpp
+ /usr/local/include/boost/mpl/vector.hpp
  /usr/local/include/boost/mpl/vector/aux_/O1_size.hpp
  /usr/local/include/boost/mpl/vector/aux_/at.hpp
  /usr/local/include/boost/mpl/vector/aux_/back.hpp
@@ -1037,6 +1072,27 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/noncopyable.hpp
  /usr/local/include/boost/none.hpp
  /usr/local/include/boost/none_t.hpp
+ /usr/local/include/boost/numeric/conversion/bounds.hpp
+ /usr/local/include/boost/numeric/conversion/cast.hpp
+ /usr/local/include/boost/numeric/conversion/conversion_traits.hpp
+ /usr/local/include/boost/numeric/conversion/converter.hpp
+ /usr/local/include/boost/numeric/conversion/converter_policies.hpp
+ /usr/local/include/boost/numeric/conversion/detail/bounds.hpp
+ /usr/local/include/boost/numeric/conversion/detail/conversion_traits.hpp
+ /usr/local/include/boost/numeric/conversion/detail/converter.hpp
+ /usr/local/include/boost/numeric/conversion/detail/int_float_mixture.hpp
+ /usr/local/include/boost/numeric/conversion/detail/is_subranged.hpp
+ /usr/local/include/boost/numeric/conversion/detail/meta.hpp
+ /usr/local/include/boost/numeric/conversion/detail/numeric_cast_traits.hpp
+ /usr/local/include/boost/numeric/conversion/detail/old_numeric_cast.hpp
+ /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_common.hpp
+ /usr/local/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp
+ /usr/local/include/boost/numeric/conversion/detail/sign_mixture.hpp
+ /usr/local/include/boost/numeric/conversion/detail/udt_builtin_mixture.hpp
+ /usr/local/include/boost/numeric/conversion/int_float_mixture_enum.hpp
+ /usr/local/include/boost/numeric/conversion/numeric_cast_traits.hpp
+ /usr/local/include/boost/numeric/conversion/sign_mixture_enum.hpp
+ /usr/local/include/boost/numeric/conversion/udt_builtin_mixture_enum.hpp
  /usr/local/include/boost/operators.hpp
  /usr/local/include/boost/optional.hpp
  /usr/local/include/boost/optional/optional.hpp
@@ -1072,6 +1128,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/preprocessor/empty.hpp
  /usr/local/include/boost/preprocessor/enum.hpp
  /usr/local/include/boost/preprocessor/enum_params.hpp
+ /usr/local/include/boost/preprocessor/enum_params_with_a_default.hpp
  /usr/local/include/boost/preprocessor/enum_shifted_params.hpp
  /usr/local/include/boost/preprocessor/expr_if.hpp
  /usr/local/include/boost/preprocessor/facilities/empty.hpp
@@ -1117,6 +1174,7 @@ Testbed/CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.o
  /usr/local/include/boost/preprocessor/repetition/enum.hpp
  /usr/local/include/boost/preprocessor/repetition/enum_binary_params.hpp
  /usr/local/include/boost/preprocessor/repetition/enum_params.hpp
+ /usr/local/include/boost/preprocessor/repetition/enum_params_with_a_default.hpp
  /usr/local/include/boost/preprocessor/repetition/enum_shifted.hpp
  /usr/local/include/boost/preprocessor/repetition/enum_shifted_params.hpp
  /usr/local/include/boost/preprocessor/repetition/enum_trailing.hpp

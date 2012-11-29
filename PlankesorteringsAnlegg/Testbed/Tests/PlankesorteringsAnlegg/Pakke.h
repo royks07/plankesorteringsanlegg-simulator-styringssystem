@@ -94,13 +94,18 @@ public:
 		filter.maskBits=15;
 		filter.groupIndex=0;
 		m_fd->filter=filter;
-		m_fd->friction=0.1f;
+		m_fd->friction=0.5f;
 		m_fd->restitution=0.0f;
 		b2PolygonShape* shape = new b2PolygonShape;
 		m_bredde=1.73f;
 		m_tykkelse=0.57f;
 		shape->SetAsBox(m_bredde/2,m_tykkelse/2);
 		m_fd->shape=shape;
+
+		// 'P' identifiserer en planke
+		unsigned char* idChar=new unsigned char('P');
+		m_fd->userData=(void*)(idChar);
+
 	}
 	void CreateAt(b2Vec2* pos){
 		m_bd->position=*pos;

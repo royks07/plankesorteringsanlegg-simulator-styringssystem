@@ -45,6 +45,8 @@ set(Testbed_Tests_SRCS
 	Tests/PlankesorteringsAnlegg/Pakke.h
 	Tests/PlankesorteringsAnlegg/SensorFlate.h
 	Tests/PlankesorteringsAnlegg/PlankesorteringsAnlegg.h
+	Tests/PlankesorteringsAnlegg/Bane.h
+	Tests/BaneTest.h
 	Tests/TestEntries.cpp
 	Tests/jsonDemoCars.h
 	Tests/AddPair.h
