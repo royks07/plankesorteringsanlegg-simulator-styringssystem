@@ -31,6 +31,7 @@
 using namespace std;
 
 #include "PlankesorteringsAnlegg/PlankesorteringsAnlegg.h"
+#include "BaneTest.h"
 #include "jsonDemoCars.h"
 #include "AddPair.h"
 #include "ApplyForce.h"
@@ -41,7 +42,7 @@ using namespace std;
 #include "Cantilever.h"
 #include "Car.h"
 #include "ContinuousTest.h"
-#include "Chain.h"
+//#include "Chain.h"
 #include "CharacterCollision.h"
 #include "CollisionFiltering.h"
 #include "CollisionProcessing.h"
@@ -80,6 +81,7 @@ using namespace std;
 
 TestEntry g_testEntries[] =
 {
+	{"BaneTest", BaneTest::Create},
 	{"Planeksorteringsanlegg", PlankesorteringsAnlegg::Create},
 	{"jsonDemoCars", jsonDemoCars::Create},
 	{"Tumbler", Tumbler::Create},
@@ -116,7 +118,7 @@ TestEntry g_testEntries[] =
 	{"PolyCollision", PolyCollision::Create},
 	{"Bridge", Bridge::Create},
 	{"Breakable", Breakable::Create},
-	{"Chain", Chain::Create},
+	//{"Chain", Chain::Create},
 	{"Collision Filtering", CollisionFiltering::Create},
 	{"Collision Processing", CollisionProcessing::Create},
 	{"Compound Shapes", CompoundShapes::Create},
