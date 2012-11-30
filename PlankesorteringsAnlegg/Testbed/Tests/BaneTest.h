@@ -13,6 +13,7 @@
 #include "PlankesorteringsAnlegg/Storages.h"
 #include "PlankesorteringsAnlegg/Actuators.h"
 #include "PlankesorteringsAnlegg/Pakke.h"
+#include "PlankesorteringsAnlegg/Packaging.h"
 
 class BaneTest : public Test
 {
@@ -102,6 +103,8 @@ public:
 		b2Vec2 pakkePos = b2Vec2(3.6f,23.3f);
 		m_pakke = new Pakke(pakkePos,m_world);
 
+		//PACKAGE-INPUT:
+		PackageInput* packageInput=new PackageInput(b2Vec2(10.9f,20.6f),8.6f,1.17f,7.0f,0.37f,m_world);
 
 		SensorField* sensorField = new SensorField();
 		sensorField->add(m_conveyor1->getSensor());
