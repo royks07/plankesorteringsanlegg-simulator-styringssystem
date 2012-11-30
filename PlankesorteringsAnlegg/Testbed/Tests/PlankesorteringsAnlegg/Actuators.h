@@ -67,7 +67,6 @@ public:
 	virtual void run(){
 
 	}
-
 	Conveyor* m_conveyor;
 };
 
@@ -81,7 +80,26 @@ public:
 	}
 };
 
-
+class ConveyorActuatorStep : public ConveyorActuator{
+public:
+	ConveyorActuatorStep(int id,Conveyor* conveyor):ConveyorActuator(id,conveyor){
+	}
+	void set(signed int value){
+		float32 radius=m_conveyor->m_beamThickness/2+m_conveyor->m_beltThickness/2;
+		float32 stepLength=0.1f;
+		float32 stepAngle=stepLength/radius;
+		m_maxRotation=abs(stepLength*value);
+		int f=value/abs(value);
+		m_conveyor->setSpeed(2.0f*f);//conveyor speed 2.0f
+		m_startAngle=m_conveyor->getWheel1()->getBody()->GetAngle();
+	}
+	void run(){
+		float32 currentAngle=m_conveyor->getWheel1()->getBody()->GetAngle();
+		if(abs(currentAngle-m_startAngle)>=m_maxRotation) m_conveyor->setSpeed(0.0f);
+	}
+	float32 m_startAngle;
+	float32 m_maxRotation;
+};
 
 
 class JointActuatorPrismaticBinary : public Actuator{

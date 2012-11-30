@@ -86,7 +86,7 @@ public:
 		b2Vec2 p15(9.2f,9.1f);
 		b2Vec2 p16(16.0f,9.1f);
 		m_conveyor8=new Conveyor(p15,p16,0.7f,0.0625f,56,14,ingen,3,0,2,m_world);
-		m_conveyor8->setSpeed(2.0f);
+		m_conveyor8->setSpeed(0.0f);
 
 
 		//SLIDE1
@@ -121,6 +121,8 @@ public:
 		ConveyorActuatorBinary* conveyor7Actuator = new ConveyorActuatorBinary(7,m_conveyor7);
 		m_actuatorSet->add(conveyor7Actuator);
 
+		ConveyorActuatorStep* conveyor8Actuator = new ConveyorActuatorStep(8,m_conveyor8);
+		m_actuatorSet->add(conveyor8Actuator);
 
 
 
