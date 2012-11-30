@@ -99,7 +99,7 @@ public:
 		float32 stepLength=0.1f;
 		m_maxDisplacement=abs(stepLength*value);
 		int f=value/abs(value);
-		((b2PrismaticJoint*)m_joint)->SetMotorSpeed(f*5);
+		((b2PrismaticJoint*)m_joint)->SetMotorSpeed(f*1);
 		m_startPos=((b2PrismaticJoint*)m_joint)->GetBodyA()->GetPosition();
 
 	}
@@ -122,6 +122,41 @@ public:
 	float32 m_maxDisplacement;
 	signed int m_value;
 };
+
+class JointActuatorRevoluteStep : public Actuator{
+public:
+	JointActuatorRevoluteStep(int id,b2Joint* joint):Actuator(id){
+		m_joint=joint;
+		m_color=b2Color(0.5,0.5,1);
+	}
+	void set(signed int value){
+		m_value+=value;
+		float32 stepAngle=b2_pi/180.0f;
+		m_maxRotation=abs(stepAngle*value);
+		int f=value/abs(value);
+		((b2RevoluteJoint*)m_joint)->SetMotorSpeed(f*0.3f);
+		m_startAngle=((b2RevoluteJoint*)m_joint)->GetBodyA()->GetAngle();
+	}
+	void drawLabel(){
+		m_position=((b2RevoluteJoint*)m_joint)->GetBodyA()->GetPosition();
+		drawStrokeText(m_name ,m_position, m_color);
+	}
+	void run(){
+		m_currentAngle=((b2RevoluteJoint*)m_joint)->GetBodyA()->GetAngle();
+		float32 rotation=abs(m_currentAngle-m_startAngle);
+		if(rotation>=m_maxRotation){
+			((b2RevoluteJoint*)m_joint)->SetMotorSpeed(0);
+			m_value=0;
+		}
+	}
+	b2Joint* m_joint;
+	float32 m_startAngle;
+	float32 m_currentAngle;
+	float32 m_maxRotation;
+	signed int m_value;
+};
+
+
 
 class ActuatorSet{
 public:

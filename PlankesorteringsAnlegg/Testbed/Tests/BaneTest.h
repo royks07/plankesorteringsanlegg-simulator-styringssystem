@@ -90,7 +90,7 @@ public:
 
 
 		//SLIDE1
-		b2Vec2 p17(16.8f,25.0f);
+		b2Vec2 p17(16.7f,25.0f);
 		//b2Vec2 p18(22.3f,19.4f);
 		Beam(p17,p1,2.0f,4,m_world);
 
@@ -100,11 +100,19 @@ public:
 		Beam(p9,p12,2.0f,4,m_world);
 
 		//PACKAGE
-		b2Vec2 pakkePos = b2Vec2(3.6f,23.3f);
+		b2Vec2 pakkePos = b2Vec2(4.6f,22.2f);
 		m_pakke = new Pakke(pakkePos,m_world);
 
 		//PACKAGE-INPUT:
-		PackageInput* packageInput=new PackageInput(b2Vec2(10.9f,20.6f),8.6f,1.17f,7.0f,0.37f,m_world);
+		PackageInput* packageInput=new PackageInput(b2Vec2(11.9f,20.6f),8.6f,1.17f,7.0f,0.37f,m_world);
+
+		JointActuatorPrismaticStep* liftPackageActuator = new JointActuatorPrismaticStep(1,packageInput->getLiftJoint());
+		m_actuatorSet->add(liftPackageActuator);
+
+		JointActuatorRevoluteStep* rotatePackageActuator = new JointActuatorRevoluteStep(2,packageInput->getRotateJoint());
+		m_actuatorSet->add(rotatePackageActuator);
+
+
 
 		SensorField* sensorField = new SensorField();
 		sensorField->add(m_conveyor1->getSensor());

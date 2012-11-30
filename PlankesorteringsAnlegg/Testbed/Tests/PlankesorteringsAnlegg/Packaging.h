@@ -51,8 +51,11 @@ public:
 		pjd.enableLimit=true;
 		pjd.upperTranslation=0;
 		pjd.lowerTranslation=-(heightStandingBeam-1.0f);
+		pjd.enableMotor=true;
+		pjd.maxMotorForce=1000;
 
-		world->CreateJoint(&pjd);
+
+		m_jointLift=(b2PrismaticJoint*)world->CreateJoint(&pjd);
 
 		//AXIS
 		bd.type=b2_staticBody;
@@ -65,14 +68,22 @@ public:
 		rejd.bodyB=bodyAxis;
 		rejd.enableLimit=true;
 		rejd.upperAngle=b2_pi/4;
-		rejd.lowerAngle=0;
+		rejd.lowerAngle=b2_pi/360.0f*4;
+		rejd.enableMotor=true;
+		rejd.maxMotorTorque=100000;
 
-		world->CreateJoint(&rejd);
-
-
-
-
+		m_jointRotate=(b2RevoluteJoint*)world->CreateJoint(&rejd);
 	}
+
+	b2PrismaticJoint* getLiftJoint(){
+		return m_jointLift;
+	}
+	b2RevoluteJoint* getRotateJoint(){
+		return m_jointRotate;
+	}
+
+	b2PrismaticJoint* m_jointLift;
+	b2RevoluteJoint* m_jointRotate;
 };
 
 
