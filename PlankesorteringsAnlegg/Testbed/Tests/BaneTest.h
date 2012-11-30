@@ -112,6 +112,16 @@ public:
 		JointActuatorRevoluteStep* rotatePackageActuator = new JointActuatorRevoluteStep(2,packageInput->getRotateJoint());
 		m_actuatorSet->add(rotatePackageActuator);
 
+		ConveyorActuatorBinary* conveyor5Actuator = new ConveyorActuatorBinary(5,m_conveyor5);
+		m_actuatorSet->add(conveyor5Actuator);
+
+		ConveyorActuatorBinary* conveyor6Actuator = new ConveyorActuatorBinary(6,m_conveyor6);
+		m_actuatorSet->add(conveyor6Actuator);
+
+		ConveyorActuatorBinary* conveyor7Actuator = new ConveyorActuatorBinary(7,m_conveyor7);
+		m_actuatorSet->add(conveyor7Actuator);
+
+
 
 
 		SensorField* sensorField = new SensorField();

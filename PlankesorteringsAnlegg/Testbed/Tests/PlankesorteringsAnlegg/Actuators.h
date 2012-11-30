@@ -9,12 +9,9 @@
 #define ACTUATORS_H_
 
 #include <vector>
-
 #include <string>
 #include <sstream>
-
 #include <boost/lexical_cast.hpp>
-
 #include "Text.h"
 
 using namespace std;
@@ -52,6 +49,39 @@ public:
 	b2Vec2 m_position;
 	string m_name;
 };
+
+class ConveyorActuator : public Actuator{
+public:
+	ConveyorActuator(int id,Conveyor* conveyor):Actuator(id){
+		m_conveyor=conveyor;
+		m_color=b2Color(0.5f,0.5f,1);
+	}
+	virtual void drawLabel(){
+		m_position=m_conveyor->m_p1;
+		drawStrokeText(m_name ,m_position, m_color);
+
+	}
+	virtual void set(signed int value){
+
+	}
+	virtual void run(){
+
+	}
+
+	Conveyor* m_conveyor;
+};
+
+class ConveyorActuatorBinary : public ConveyorActuator{
+public:
+	ConveyorActuatorBinary(int id,Conveyor* conveyor):ConveyorActuator(id,conveyor){
+	}
+	void set(signed int value){
+		if(value==0 && !m_conveyor->isPaused()) m_conveyor->pause();
+		else if(value==1 && m_conveyor->isPaused()) m_conveyor->play();
+	}
+};
+
+
 
 
 class JointActuatorPrismaticBinary : public Actuator{
@@ -156,6 +186,21 @@ public:
 	signed int m_value;
 };
 
+class SourceActuator : Actuator{
+public:
+	SourceActuator(int id):Actuator(id){
+
+	}
+	void drawLabel(){
+		drawStrokeText(m_name ,m_position, m_color);
+	}
+	void set(signed int value){
+
+	}
+	void run(){
+
+	}
+};
 
 
 class ActuatorSet{
