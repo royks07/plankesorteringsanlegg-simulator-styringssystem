@@ -22,6 +22,7 @@ public:
 
 		m_actuatorSet=new ActuatorSet;
 
+		//STORAGE AREA
 		//StorageArea(numberOfStorages,upperLeftCorner,width,height,wallThickness,world){
 		StorageArea* storageArea = new StorageArea(10,b2Vec2(57.3f,24.8f),9,5,0.5f,m_world);
 		for(int i=10;i<=19;i++){
@@ -94,16 +95,19 @@ public:
 		//b2Vec2 p18(22.3f,19.4f);
 		Beam(p17,p1,2.0f,4,m_world);
 
+
 		//SLIDE2
 		/*b2Vec2 p19(9.2f,9.1f);
 		b2Vec2 p20(16.0f,9.1f);*/
 		Beam(p9,p12,2.0f,4,m_world);
 
+
 		//PACKAGE
 		b2Vec2 pakkePos = b2Vec2(4.6f,22.2f);
 		m_pakke = new Pakke(pakkePos,m_world);
 
-		//PACKAGE-INPUT:
+
+		//PACKAGE-INPUT
 		PackageInput* packageInput=new PackageInput(b2Vec2(11.9f,20.6f),8.6f,1.17f,7.0f,0.37f,m_world);
 
 		JointActuatorPrismaticStep* liftPackageActuator = new JointActuatorPrismaticStep(1,packageInput->getLiftJoint());
@@ -112,6 +116,21 @@ public:
 		JointActuatorRevoluteStep* rotatePackageActuator = new JointActuatorRevoluteStep(2,packageInput->getRotateJoint());
 		m_actuatorSet->add(rotatePackageActuator);
 
+
+		//PACKAGE-OUTPUT
+		PackageOutput* packageOutput=new PackageOutput(b2Vec2(8.4f,2.2f),m_world);
+
+		JointActuatorPrismaticStep* liftPackageOutActuator = new JointActuatorPrismaticStep(30,packageOutput->getLiftJoint());
+		m_actuatorSet->add(liftPackageOutActuator);
+
+		JointActuatorPrismaticBinary* forkActuator = new JointActuatorPrismaticBinary(31,packageOutput->getForkJoint());
+		m_actuatorSet->add(forkActuator);
+
+		JointActuatorPrismaticBinary* forkBaseActuator = new JointActuatorPrismaticBinary(32,packageOutput->getForkBaseJoint());
+		m_actuatorSet->add(forkBaseActuator);
+
+
+		//CONVEYORS WITH ACTUATORS
 		ConveyorActuatorBinary* conveyor5Actuator = new ConveyorActuatorBinary(5,m_conveyor5);
 		m_actuatorSet->add(conveyor5Actuator);
 
@@ -123,7 +142,6 @@ public:
 
 		ConveyorActuatorStep* conveyor8Actuator = new ConveyorActuatorStep(8,m_conveyor8);
 		m_actuatorSet->add(conveyor8Actuator);
-
 
 
 		SensorField* sensorField = new SensorField();
@@ -167,7 +185,6 @@ public:
 	void Keyboard(unsigned char key){
 		Test::Keyboard(key);
 		m_commandSequenceInterpreter->interpret(key);
-
 		if(key=='1'){
 			m_conveyor1->play();
 		}else if(key=='q'){

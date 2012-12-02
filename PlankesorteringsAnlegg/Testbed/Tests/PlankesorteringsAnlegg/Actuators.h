@@ -308,10 +308,14 @@ public:
 						m_actuatorSet->writeActuator(id,value);
 						cout<<"Writing "<<value<<" to a"<<id<<endl;
 					}else if(m_commandType==e_readSensor){
+						int id;
+						try {
+						     id = boost::lexical_cast<int>(m_parameter.at(0).c_str());
+						} catch( boost::bad_lexical_cast const& ) {
+						    std::cout << "Error: parameter was not valid" << std::endl;
+						}
 						cout<<"Reading s"<<m_parameter.at(0)<<endl;
 					}
-
-
 				}else{
 					cout<<"reading parameter..."<<endl;
 					m_ss<<key;
