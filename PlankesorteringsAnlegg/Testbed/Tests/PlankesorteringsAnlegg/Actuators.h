@@ -14,6 +14,10 @@
 #include <boost/lexical_cast.hpp>
 #include "Text.h"
 
+//midlertidig:
+#include "Sensors.h"
+
+
 using namespace std;
 
 class Actuator{
@@ -58,7 +62,7 @@ public:
 	}
 	virtual void drawLabel(){
 		m_position=m_conveyor->m_p1;
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 
 	}
 	virtual void set(signed int value){
@@ -108,16 +112,21 @@ public:
 	JointActuatorPrismaticBinary(int id,b2Joint* joint):Actuator(id){
 		m_joint=joint;
 		m_color=b2Color(0.5,0.5,1);
+		m_speed=50.0f;
 	}
 	void set(signed int value){
-		if(value==1)((b2PrismaticJoint*)m_joint)->SetMotorSpeed(50.0f);
-		else if(value==0)((b2PrismaticJoint*)m_joint)->SetMotorSpeed(-50.0f);
+		if(value==1)((b2PrismaticJoint*)m_joint)->SetMotorSpeed(m_speed);
+		else if(value==0)((b2PrismaticJoint*)m_joint)->SetMotorSpeed(-m_speed);
+	}
+	void setSpeed(float32 speed){
+		m_speed=speed;
 	}
 	void drawLabel(){
 		m_position=((b2PrismaticJoint*)m_joint)->GetBodyA()->GetPosition();
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 	}
 	b2Joint* m_joint;
+	float32 m_speed;
 };
 
 class JointActuatorPrismaticRange : public Actuator{
@@ -131,7 +140,7 @@ public:
 	}
 	void drawLabel(){
 		m_position=((b2PrismaticJoint*)m_joint)->GetBodyA()->GetPosition();
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 	}
 	b2Joint* m_joint;
 };
@@ -153,7 +162,7 @@ public:
 	}
 	void drawLabel(){
 		m_position=((b2PrismaticJoint*)m_joint)->GetBodyA()->GetPosition();
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 	}
 	void run(){
 		m_currentPos=((b2PrismaticJoint*)m_joint)->GetBodyA()->GetPosition();
@@ -187,7 +196,7 @@ public:
 	}
 	void drawLabel(){
 		m_position=((b2RevoluteJoint*)m_joint)->GetBodyA()->GetPosition();
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 	}
 	void run(){
 		m_currentAngle=((b2RevoluteJoint*)m_joint)->GetBodyA()->GetAngle();
@@ -210,7 +219,7 @@ public:
 
 	}
 	void drawLabel(){
-		drawStrokeText(m_name ,m_position, m_color);
+		drawStrokeText(m_name ,m_position,1, m_color);
 	}
 	void set(signed int value){
 
@@ -256,8 +265,9 @@ public:
 
 class CommandSequenceInterpreter{
 public:
-	CommandSequenceInterpreter(ActuatorSet* actuatorSet){
+	CommandSequenceInterpreter(ActuatorSet* actuatorSet,SensorSet* sensorSet){
 		m_actuatorSet=actuatorSet;
+		m_sensorSet=sensorSet;
 		m_readState=st_wait_for_new_command;
 	}
 
@@ -314,7 +324,9 @@ public:
 						} catch( boost::bad_lexical_cast const& ) {
 						    std::cout << "Error: parameter was not valid" << std::endl;
 						}
-						cout<<"Reading s"<<m_parameter.at(0)<<endl;
+						signed int value=m_sensorSet->readSensor(id);
+						cout<<"Value of S"<<id<<" is "<<value<<endl;
+
 					}
 				}else{
 					cout<<"reading parameter..."<<endl;
@@ -330,6 +342,7 @@ public:
 	stringstream m_ss;
 	vector<string> m_parameter;
 	ActuatorSet* m_actuatorSet;
+	SensorSet* m_sensorSet;
 };
 
 #endif /* ACTUATORS_H_ */

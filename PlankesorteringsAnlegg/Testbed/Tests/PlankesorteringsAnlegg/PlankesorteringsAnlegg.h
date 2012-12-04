@@ -419,10 +419,6 @@ public:
 		}
 
 
-		//PAKKE:
-		b2Vec2 posisjon = b2Vec2(3.6f,23.3f);
-		m_pakke = new Pakke(posisjon,world);
-
 //		m_sensorFlateTilstand.printBitSekvensAsString();
 
 	}
@@ -482,7 +478,6 @@ public:
 */
 		testRender();
 
-		m_pakke->runStroFjerner();
 		/*m_baneSynkronisatorAB->run();
 		m_baneSynkronisatorBC->run();*/
 		//,
@@ -538,7 +533,7 @@ public:
 	TellendeSensor* m_knottTeller;
 	TellendeSensor* m_krokTeller;
 
-	Pakke* m_pakke;
+
 
 	/*BaneSynkronisator2* m_baneSynkronisatorAB;
 	BaneSynkronisator2* m_baneSynkronisatorBC;*/

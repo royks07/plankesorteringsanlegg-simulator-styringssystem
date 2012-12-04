@@ -8,6 +8,8 @@
 #ifndef PAKKE_H_
 #define PAKKE_H_
 
+#include "UserData.h"
+
 class Stro{
 public:
 	Stro(b2World* world){
@@ -102,9 +104,8 @@ public:
 		shape->SetAsBox(m_bredde/2,m_tykkelse/2);
 		m_fd->shape=shape;
 
-		// 'P' identifiserer en planke
-		unsigned char* idChar=new unsigned char('P');
-		m_fd->userData=(void*)(idChar);
+		PlankUserData* plankUserData = new PlankUserData(3.4f,0.7f);
+		m_fd->userData=plankUserData;
 
 	}
 	void CreateAt(b2Vec2* pos){
