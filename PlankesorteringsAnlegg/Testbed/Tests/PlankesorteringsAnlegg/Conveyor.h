@@ -206,9 +206,8 @@ public:
 				b2CircleShape cShape;
 				b2PolygonShape pShape;
 
-				// 'M' identifiserer en medbringer
-				unsigned char* idChar=new unsigned char('M');
-				fd.userData=(void*)(idChar);
+				MedbringerkUserData* medbringerUserData=new MedbringerkUserData;
+				fd.userData=medbringerUserData;
 
 				fd.density=100.0f;
 
@@ -253,7 +252,7 @@ public:
 				b2Filter filter;
 				filter.categoryBits=cmBits;
 				filter.maskBits=cmBits;
-				m_contactSensor=new ContactSensor("convayorbelt sensor X",vecSensorPos,beltThickness/4,filter,world);
+				m_contactSensorCircular=new ContactSensor_Sync(vecSensorPos,beltThickness/4,filter,world);
 			}
 
 
@@ -343,14 +342,14 @@ public:
 		}
 	}
 	ContactSensor* getSensor(){
-		return m_contactSensor;
+		return m_contactSensorCircular;
 	}
 	b2Vec2 m_p1;
 	b2Vec2 m_p2;
 	vector<b2Body*> link;
 	vector<b2Vec2> linkSpeed;
 	bool m_paused;
-	ContactSensor* m_contactSensor;
+	ContactSensor_Sync* m_contactSensorCircular;
 	t_medbringerType m_medbringerType;
 };
 
