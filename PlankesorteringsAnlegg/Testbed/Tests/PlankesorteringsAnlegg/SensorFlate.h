@@ -311,4 +311,5 @@ private:
 	SensorFlateTilstand* m_sensorFlateTilstand;
 };
 
+
 #endif /* SENSORFLATE_H_ */
