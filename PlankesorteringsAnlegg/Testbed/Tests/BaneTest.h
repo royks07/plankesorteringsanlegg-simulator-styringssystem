@@ -12,18 +12,22 @@
 #include "PlankesorteringsAnlegg/ConveyorSynchronizer.h"
 #include "PlankesorteringsAnlegg/Storages.h"
 #include "PlankesorteringsAnlegg/Actuators.h"
-#include "PlankesorteringsAnlegg/Pakke.h"
+#include "PlankesorteringsAnlegg/Sensors.h"
 #include "PlankesorteringsAnlegg/Packaging.h"
+
 
 class BaneTest : public Test
 {
 public:
 	BaneTest(){
-
+		//ACTUATOR SET
 		m_actuatorSet=new ActuatorSet;
 
+		//SENSOR SET
+		m_sensorSet = new SensorSet;
+
+
 		//STORAGE AREA
-		//StorageArea(numberOfStorages,upperLeftCorner,width,height,wallThickness,world){
 		StorageArea* storageArea = new StorageArea(10,b2Vec2(57.3f,24.8f),9,5,0.5f,m_world);
 		for(int i=10;i<=19;i++){
 			// add stoppers to actuatorset
@@ -36,10 +40,25 @@ public:
 			m_actuatorSet->add(liftActuator);
 		}
 
-		m_commandSequenceInterpreter=new CommandSequenceInterpreter(m_actuatorSet);
+		for(int i=10;i<=19;i++){
+			//add upper sensor to sensorset
+			ContactSensor_FromFixture* upperSensor = new ContactSensor_FromFixture(i,storageArea->getTopSensorFixture(i-10));
+			m_sensorSet->add(upperSensor);
+		}
+		for(int i=20;i<=29;i++){
+			//add middle sensor to sensorset
+			ContactSensor_FromFixture* middleSensor = new ContactSensor_FromFixture(i,storageArea->getMiddleSensorFixture(i-20));
+			m_sensorSet->add(middleSensor);
+		}
+		for(int i=30;i<=39;i++){
+			//add lower sensor to sensorset
+			ContactSensor_FromFixture* lowerSensor = new ContactSensor_FromFixture(i,storageArea->getBottomSensorFixture(i-30));
+			m_sensorSet->add(lowerSensor);
+		}
 
 
-		// Conveyor(p1,p2,thickness,beltThickness,N,M,medbringerType,sensorPos,sensorAdjustment,cmBits,world)
+		m_commandSequenceInterpreter=new CommandSequenceInterpreter(m_actuatorSet,m_sensorSet);
+
 
 		//CONVEYOR1
 		b2Vec2 p1(23.4f,17.8f);
@@ -90,21 +109,39 @@ public:
 		m_conveyor8->setSpeed(0.0f);
 
 
+		//CONVEYOR2-SENSORS
+		ContactSensorBinary* lengthSensor=new ContactSensorBinary(3,p3+b2Vec2(10.0f,1.7f),0.3f,m_world);
+		m_sensorSet->add(lengthSensor);
+
+		ContactSensorBinary* qualitySensor=new ContactSensorBinary(4,p3+b2Vec2(12.0f,1.7f),0.3f,m_world);
+		m_sensorSet->add(qualitySensor);
+
+		ContactSensorBinary* counterSensor=new ContactSensorBinary(5,p4+b2Vec2(-12.0f,-1.7f),0.3f,m_world);
+		m_sensorSet->add(counterSensor);
+
+
+
+		//CONVEYOR5-SENSOR
+		ContactSensorBinary* conveyor5Sensor=new ContactSensorBinary(6,p9+b2Vec2(3.0f,1.7f),0.3f,m_world);
+		m_sensorSet->add(conveyor5Sensor);
+
+
+
 		//SLIDE1
 		b2Vec2 p17(16.7f,25.0f);
 		//b2Vec2 p18(22.3f,19.4f);
 		Beam(p17,p1,2.0f,4,m_world);
 
+		ContactSensorBinary* slide1Sensor=new ContactSensorBinary(2,p1+b2Vec2(0,2.3f),0.3f,m_world);
+		m_sensorSet->add(slide1Sensor);
 
 		//SLIDE2
 		/*b2Vec2 p19(9.2f,9.1f);
 		b2Vec2 p20(16.0f,9.1f);*/
 		Beam(p9,p12,2.0f,4,m_world);
 
-
-		//PACKAGE
-		b2Vec2 pakkePos = b2Vec2(4.6f,22.2f);
-		m_pakke = new Pakke(pakkePos,m_world);
+		ContactSensorBinary* slide2Sensor=new ContactSensorBinary(7,p12+b2Vec2(0.3f,2.2f),0.3f,m_world);
+		m_sensorSet->add(slide2Sensor);
 
 
 		//PACKAGE-INPUT
@@ -117,20 +154,37 @@ public:
 		m_actuatorSet->add(rotatePackageActuator);
 
 
+		ContactSensor_FromFixture* liftSensor = new ContactSensor_FromFixture(1,packageInput->getLiftSensorFixture());
+		m_sensorSet->add(liftSensor);
+
+
 		//PACKAGE-OUTPUT
-		PackageOutput* packageOutput=new PackageOutput(b2Vec2(8.4f,2.2f),m_world);
+		PackageOutput* packageOutput=new PackageOutput(b2Vec2(9.0f,2.2f),m_world);
 
 		JointActuatorPrismaticStep* liftPackageOutActuator = new JointActuatorPrismaticStep(30,packageOutput->getLiftJoint());
 		m_actuatorSet->add(liftPackageOutActuator);
 
-		JointActuatorPrismaticBinary* forkActuator = new JointActuatorPrismaticBinary(31,packageOutput->getForkJoint());
+
+		ContactSensor_FromFixture* cassetteSensor = new ContactSensor_FromFixture(40,packageOutput->getCassetteSensorFixture());
+		m_sensorSet->add(cassetteSensor);
+
+		JointActuatorPrismaticStep* cassetteActuator = new JointActuatorPrismaticStep(31,packageOutput->getCassetteJoint());
+		m_actuatorSet->add(cassetteActuator);
+
+		JointActuatorPrismaticBinary* forkActuator = new JointActuatorPrismaticBinary(32,packageOutput->getForkJoint());
+		forkActuator->setSpeed(1.5f);
 		m_actuatorSet->add(forkActuator);
 
-		JointActuatorPrismaticBinary* forkBaseActuator = new JointActuatorPrismaticBinary(32,packageOutput->getForkBaseJoint());
+		JointActuatorPrismaticBinary* forkBaseActuator = new JointActuatorPrismaticBinary(33,packageOutput->getForkBaseJoint());
+		forkBaseActuator->setSpeed(2.5f);
 		m_actuatorSet->add(forkBaseActuator);
 
+		ContactSensorBinary* arriveSensor=new ContactSensorBinary(6,p13+b2Vec2(-0.7f,0.7f),0.3f,m_world);
+		m_sensorSet->add(arriveSensor);
 
-		//CONVEYORS WITH ACTUATORS
+
+
+		//CONVEYOR-ACTUATORS
 		ConveyorActuatorBinary* conveyor5Actuator = new ConveyorActuatorBinary(5,m_conveyor5);
 		m_actuatorSet->add(conveyor5Actuator);
 
@@ -144,24 +198,20 @@ public:
 		m_actuatorSet->add(conveyor8Actuator);
 
 
-		SensorField* sensorField = new SensorField();
-		sensorField->add(m_conveyor1->getSensor());
-		sensorField->add(m_conveyor2->getSensor());
-		//sensorField->add(m_conveyor3->getSensor());
-		sensorField->add(m_conveyor4->getSensor());
-		//sensorField->add(m_conveyor5->getSensor());
+		//CONVEYOR-SENSORS
+		m_sensorSet->add(m_conveyor1->getSensor());
+		m_sensorSet->add(m_conveyor2->getSensor());
+		m_sensorSet->add(m_conveyor4->getSensor());
 
-		m_world->SetContactListener(sensorField);
+		m_world->SetContactListener(m_sensorSet);
 
+
+		//CONVEYOR SYNCHRONIZER
 		m_conveyorSynchronizer=new ConveyorSynchronizer();
 		m_conveyorSynchronizer->add(m_conveyor1);
 		m_conveyorSynchronizer->add(m_conveyor2);
-		//m_conveyorSynchronizer->add(m_conveyor3);
 		m_conveyorSynchronizer->add(m_conveyor4);
-		//m_conveyorSynchronizer->add(m_conveyor5);
-
 	}
-
 
 	void Step(Settings *settings){
 		Test::Step(settings);
@@ -173,29 +223,20 @@ public:
 		m_conveyor6->run();
 		m_conveyor7->run();
 		m_conveyor8->run();
+
 		m_conveyorSynchronizer->run();
 
 		m_actuatorSet->drawLabels();
 		m_actuatorSet->run();
 
-		m_pakke->runStroFjerner();
+		m_sensorSet->drawLabels();
 
+		//m_pakke->runStroFjerner();
 	}
 
 	void Keyboard(unsigned char key){
 		Test::Keyboard(key);
 		m_commandSequenceInterpreter->interpret(key);
-		if(key=='1'){
-			m_conveyor1->play();
-		}else if(key=='q'){
-			m_conveyor1->pause();
-		}
-
-		if(key=='2'){
-			m_conveyor2->play();
-		}else if(key=='w'){
-			m_conveyor2->pause();
-		}
 	}
 
 	static Test* Create()
@@ -217,7 +258,8 @@ private:
 	ConveyorSynchronizer* m_conveyorSynchronizer;
 	CommandSequenceInterpreter* m_commandSequenceInterpreter;
 	ActuatorSet* m_actuatorSet;
-	Pakke* m_pakke;
+	SensorSet*  m_sensorSet;
+//	Pakke* m_pakke;
 };
 
 #endif /* BANETEST_H_ */
