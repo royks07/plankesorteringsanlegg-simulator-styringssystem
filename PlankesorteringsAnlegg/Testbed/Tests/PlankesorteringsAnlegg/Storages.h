@@ -17,6 +17,9 @@ public:
 		bd.type=b2_staticBody;
 		bd.position=upperLeftCorner;
 		b2FixtureDef fd;
+		fd.filter.categoryBits=8;
+		fd.filter.maskBits=8;
+
 		b2PolygonShape shape;
 		//left wall:
 		shape.SetAsBox(wallThickness/2,height/2,b2Vec2(wallThickness/2,-height/2),0);
@@ -37,6 +40,10 @@ public:
 		fd.restitution=0.0f;
 		shape.SetAsBox(width/2-wallThickness*1.1,wallThickness/2);
 		fd.shape=&shape;
+
+		StorageLiftUserData* liftUserData = new StorageLiftUserData;
+		fd.userData=liftUserData;
+
 		bodyLift->CreateFixture(&fd);
 
 		//lift joint:
@@ -81,22 +88,32 @@ public:
 		m_jointStopper=(b2PrismaticJoint*)world->CreateJoint(&pjd);
 
 		//top-sensor-fixture:
+		bd.type=b2_staticBody;
+		bd.position=upperLeftCorner+b2Vec2(width/2,-wallThickness/16);
+		b2Body* bodyTopSensor=world->CreateBody(&bd);
+
 		fd.isSensor=true;
-		shape.SetAsBox(width/2-wallThickness,wallThickness/16,b2Vec2(width/2,-wallThickness/16),0);
+		shape.SetAsBox(width/2-wallThickness,wallThickness/16);
 		fd.shape=&shape;
-		m_fixtureTopSensor=bodyStorage->CreateFixture(&fd);
+		m_fixtureTopSensor=bodyTopSensor->CreateFixture(&fd);
 
 		//middle-sensor-fixture:
+		bd.position=upperLeftCorner+b2Vec2(width/2,-height+wallThickness/16);
+		b2Body* bodyMiddleSensor=world->CreateBody(&bd);
+
 		fd.isSensor=true;
-		shape.SetAsBox(width/2-wallThickness,wallThickness/16,b2Vec2(width/2,-height+wallThickness/16),0);
+		shape.SetAsBox(width/2-wallThickness,wallThickness/16);
 		fd.shape=&shape;
-		m_fixtureMiddleSensor=bodyStorage->CreateFixture(&fd);
+		m_fixtureMiddleSensor=bodyMiddleSensor->CreateFixture(&fd);
 
 		//bottom-sensor-fixture:
+		bd.position=upperLeftCorner+b2Vec2(width/2,-12.0f-wallThickness);
+		b2Body* bodyBottomSensor=world->CreateBody(&bd);
+
 		fd.isSensor=true;
-		shape.SetAsBox(width/2-wallThickness,wallThickness/16,b2Vec2(width/2,-12.0f-wallThickness),0);
+		shape.SetAsBox(width/2-wallThickness,wallThickness/16);
 		fd.shape=&shape;
-		m_fixtureBottomSensor=bodyStorage->CreateFixture(&fd);
+		m_fixtureBottomSensor=bodyBottomSensor->CreateFixture(&fd);
 	}
 	b2PrismaticJoint* getLiftJoint(){
 		return m_jointLift;
@@ -138,6 +155,16 @@ public:
 	b2PrismaticJoint* getStopperJoint(int i){
 		return m_storage.at(i)->getStopperJoint();
 	}
+	b2Fixture* getTopSensorFixture(int i){
+		return m_storage.at(i)->m_fixtureTopSensor;
+	}
+	b2Fixture* getMiddleSensorFixture(int i){
+		return m_storage.at(i)->m_fixtureMiddleSensor;
+	}
+	b2Fixture* getBottomSensorFixture(int i){
+		return m_storage.at(i)->m_fixtureBottomSensor;
+	}
+
 	vector<Storage*> m_storage;
 };
 
