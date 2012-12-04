@@ -8,16 +8,26 @@
 #ifndef PACKAGING_H_
 #define PACKAGING_H_
 
+#include "Package.h"
+#include "UserData.h"
+
 class PackageInput{
 public:
 	PackageInput(b2Vec2 p,float32 lengthLyingBeam,float32 thicknessLyingBeam,float32 heightStandingBeam,float32 thicknessStandingBeam,b2World* world){
+		float32 liftSensorThickness=0.125f;
+		float32 liftThickness=1.0f;
+
+		//PACKAGE  (NB! Fix horisontal placement of package...)
+		b2Vec2 packagePos = p+b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam),thicknessLyingBeam/2+liftThickness);//b2Vec2(4.6f,22.2f);
+		Package* package = new Package(packagePos,world);
+
+		//LYING BEAM
 		b2BodyDef bd;
 		bd.type=b2_dynamicBody;
 		bd.position=p;
 
 		b2Body* bodyBeams=world->CreateBody(&bd);
 
-		//LYING BEAM
 		b2PolygonShape shape;
 		shape.SetAsBox(lengthLyingBeam/2,thicknessLyingBeam/2,b2Vec2(-lengthLyingBeam/2+thicknessLyingBeam/2,0),0);
 
@@ -27,6 +37,7 @@ public:
 
 		bodyBeams->CreateFixture(&fd);
 
+
 		//STANDING BEAM
 		shape.SetAsBox(thicknessStandingBeam/2,heightStandingBeam/2,b2Vec2(0,heightStandingBeam/2+thicknessLyingBeam/2),0);
 
@@ -34,23 +45,36 @@ public:
 
 		bodyBeams->CreateFixture(&fd);
 
+
 		//LIFT
-		bd.position=p+b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2-thicknessStandingBeam/2,thicknessLyingBeam/2+0.5f);
+		bd.position=p+b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2-thicknessStandingBeam/2,thicknessLyingBeam/2+liftThickness/2);
 		b2Body* bodyLift=world->CreateBody(&bd);
 		shape.SetAsBox((lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2,0.5f);
 		fd.shape=&shape;
 		bodyLift->CreateFixture(&fd);
+
+
+		//LIFT-SENSOR
+		b2Vec2 localSensorPos=b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2-thicknessStandingBeam/2,thicknessLyingBeam/2+heightStandingBeam+liftSensorThickness/2+(package->getPlankThickness()+package->getSprinkleThickness())*1.5f);
+		bd.position=p+localSensorPos;
+		bd.type=b2_dynamicBody;
+		b2Body* bodyLiftSensor=world->CreateBody(&bd);
+		shape.SetAsBox((lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2,liftSensorThickness/2);
+		fd.shape=&shape;
+		fd.isSensor=true;
+		m_fixtureLiftSensor=bodyLiftSensor->CreateFixture(&fd);
+
 
 		//JOIN LIFT and BEAMS(b2PrismaticJoint)
 		b2PrismaticJointDef pjd;
 		pjd.bodyA=bodyLift;
 		pjd.bodyB=bodyBeams;
 		pjd.localAxisA=b2Vec2(0,1);
-		pjd.localAnchorB=b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2-thicknessStandingBeam/2,thicknessLyingBeam/2+0.5f);
+		pjd.localAnchorB=b2Vec2(-(lengthLyingBeam-thicknessLyingBeam/2-thicknessStandingBeam/2)/2-thicknessStandingBeam/2,thicknessLyingBeam/2+liftThickness/2);
 		pjd.collideConnected=true;
 		pjd.enableLimit=true;
 		pjd.upperTranslation=0;
-		pjd.lowerTranslation=-(heightStandingBeam-1.0f);
+		pjd.lowerTranslation=-(heightStandingBeam-liftThickness);
 		pjd.enableMotor=true;
 		pjd.maxMotorForce=1000;
 
@@ -61,6 +85,7 @@ public:
 		bd.type=b2_staticBody;
 		bd.position=p;
 		b2Body* bodyAxis=world->CreateBody(&bd);
+
 
 		//JOIN AXIS and BEAMS(b2RevoluteJoint)
 		b2RevoluteJointDef rejd;
@@ -73,6 +98,20 @@ public:
 		rejd.maxMotorTorque=100000;
 
 		m_jointRotate=(b2RevoluteJoint*)world->CreateJoint(&rejd);
+
+
+		//JOIN LIFTSENSOR and BEAMS
+		pjd.bodyA=bodyLiftSensor;
+		pjd.bodyB=bodyBeams;
+		pjd.localAxisA=b2Vec2(0,1);
+		pjd.localAnchorB=localSensorPos;
+		pjd.enableLimit=true;
+		pjd.upperTranslation=0;
+		pjd.lowerTranslation=0;
+		//pjd.enableMotor=true;
+		//pjd.maxMotorForce=1000;
+
+		world->CreateJoint(&pjd);
 	}
 
 	b2PrismaticJoint* getLiftJoint(){
@@ -81,9 +120,13 @@ public:
 	b2RevoluteJoint* getRotateJoint(){
 		return m_jointRotate;
 	}
+	b2Fixture* getLiftSensorFixture(){
+		return m_fixtureLiftSensor;
+	}
 
 	b2PrismaticJoint* m_jointLift;
 	b2RevoluteJoint* m_jointRotate;
+	b2Fixture* m_fixtureLiftSensor;
 };
 
 class PackageOutput{
@@ -99,6 +142,10 @@ public:
 		float32 forkThickness=0.25f;
 		float32 liftThickness=1.0f;
 		float32 x=(floorWidth-forkBeamThickness)/2;
+		float32 cassetteWidth=x-stopperBeamThickness;
+		float32 cassetteHeight=cassetteWidth*0.4;
+		float32 cassetteDistance=5.0f;
+		float32 cassetteSensorHeight=0.05f;
 
 		//FLOOR-BEAM
 		b2BodyDef bd;
@@ -111,8 +158,8 @@ public:
 
 		b2FixtureDef fd;
 		fd.restitution=0;
-		fd.friction=100;
-		fd.density=100;
+		fd.friction=20;
+		fd.density=10;
 		fd.shape=&shape;
 
 		b2Body* body=world->CreateBody(&bd);
@@ -130,9 +177,12 @@ public:
 		b2Body* bodyLift=world->CreateBody(&bd);
 		shape.SetAsBox((x-stopperBeamThickness)/2,liftThickness/2);
 		fd.shape=&shape;
-		fd.filter.groupIndex=0;
+
+		UserData* liftUserData = new UserData;
+		fd.userData=liftUserData;
 
 		bodyLift->CreateFixture(&fd);
+
 
 		//FORK
 		bd.position=position+b2Vec2(floorWidth/2-forkBeamThickness/2,floorThickness/2+stopperBeamLength-forkThickness-forkBeamLength/2);
@@ -195,6 +245,55 @@ public:
 
 		//pjd.collideConnected=true;
 		m_jointLift=(b2PrismaticJoint*)world->CreateJoint(&pjd);
+
+
+		//CASSETTE
+		bd.position=position+b2Vec2(-floorWidth/2+cassetteWidth/2,floorThickness/2+stopperBeamLength+cassetteHeight/2+cassetteDistance);
+		bd.type=b2_dynamicBody;
+		b2Body* bodyCassette=world->CreateBody(&bd);
+		shape.SetAsBox(cassetteWidth/2,cassetteHeight/2);
+		fd.shape=&shape;
+		fd.filter.groupIndex=0;
+		fd.friction=0;
+		bodyCassette->CreateFixture(&fd);
+
+		//CASSETTE-SENSOR
+		bd.position=position+b2Vec2(-floorWidth/2+cassetteWidth/2,floorThickness/2+stopperBeamLength+cassetteDistance-cassetteSensorHeight/2-0.1f);
+		bd.type=b2_dynamicBody;
+		b2Body* bodyCassetteSensor=world->CreateBody(&bd);
+		shape.SetAsBox(cassetteWidth/2,0.1f);
+		fd.shape=&shape;
+		fd.friction=0;
+		fd.isSensor=true;
+		m_fixtureCassetteSensor=bodyCassetteSensor->CreateFixture(&fd);
+
+
+		//JOINT CASSETTE - "FRAME"
+		pjd.bodyA=bodyCassette;
+		pjd.bodyB=body;
+		pjd.localAxisA=b2Vec2(0,1);
+		pjd.localAnchorB=b2Vec2(-floorWidth/2+cassetteWidth/2,floorThickness/2+stopperBeamLength+cassetteHeight/2+cassetteDistance);
+
+		pjd.upperTranslation=stopperBeamLength+cassetteDistance-liftThickness;
+		pjd.lowerTranslation=0;
+
+		//pjd.collideConnected=true;
+		m_jointCassette=(b2PrismaticJoint*)world->CreateJoint(&pjd);
+
+
+		//JOINT CASSETTE-SENSOR - CASSETTE
+		pjd.bodyA=bodyCassetteSensor;
+		pjd.bodyB=bodyCassette;
+		pjd.localAxisA=b2Vec2(0,1);
+		pjd.localAnchorB=b2Vec2(0,-(cassetteHeight/2+cassetteSensorHeight/2)-0.1f);
+
+
+		pjd.upperTranslation=0;
+		pjd.lowerTranslation=0;
+
+		//pjd.collideConnected=true;
+		m_jointCassetteSensor=(b2PrismaticJoint*)world->CreateJoint(&pjd);
+
 	}
 	b2PrismaticJoint* getForkJoint(){
 		return m_jointFork;
@@ -205,10 +304,19 @@ public:
 	b2PrismaticJoint* getLiftJoint(){
 		return m_jointLift;
 	}
+	b2PrismaticJoint* getCassetteJoint(){
+		return m_jointCassette;
+	}
+	b2Fixture* getCassetteSensorFixture(){
+		return m_fixtureCassetteSensor;
+	}
 
 	b2PrismaticJoint* m_jointForkBase;
 	b2PrismaticJoint* m_jointFork;
 	b2PrismaticJoint* m_jointLift;
+	b2PrismaticJoint* m_jointCassette;
+	b2PrismaticJoint* m_jointCassetteSensor;
+	b2Fixture* m_fixtureCassetteSensor;
 };
 
 #endif /* PACKAGING_H_ */
