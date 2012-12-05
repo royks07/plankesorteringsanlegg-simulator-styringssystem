@@ -313,6 +313,8 @@ PlankesorteringsAnlegg/Sensors.h
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Sensors.h
 PlankesorteringsAnlegg/Packaging.h
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Packaging.h
+PlankesorteringsAnlegg/Kommunikator.h
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Kommunikator.h
 
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/BodyTypes.h
 
@@ -471,6 +473,12 @@ exception
 -
 deque
 -
+stdlib.h
+-
+stdio.h
+-
+stdarg.h
+-
 
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Package.h
 UserData.h
@@ -531,6 +539,8 @@ UserData.h
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/UserData.h
 Text.h
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Text.h
+Kommunikator.h
+/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Kommunikator.h
 
 /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Testbed/Tests/PlankesorteringsAnlegg/Storages.h
 vector

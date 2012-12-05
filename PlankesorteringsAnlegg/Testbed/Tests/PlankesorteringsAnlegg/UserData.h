@@ -26,7 +26,7 @@ public:
 		m_type=e_plank;
 
 	}
-	float32 m_length;
+	float32 m_length; //between 30 and 40;
 	float32 m_quality;//between 0 and 1;
 };
 

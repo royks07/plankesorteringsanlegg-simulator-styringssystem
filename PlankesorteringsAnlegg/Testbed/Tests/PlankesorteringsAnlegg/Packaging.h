@@ -42,6 +42,8 @@ public:
 		shape.SetAsBox(thicknessStandingBeam/2,heightStandingBeam/2,b2Vec2(0,heightStandingBeam/2+thicknessLyingBeam/2),0);
 
 		fd.shape=&shape;
+		UserData* standingBeamUserData = new UserData;
+		fd.userData=standingBeamUserData;
 
 		bodyBeams->CreateFixture(&fd);
 

@@ -14,17 +14,20 @@
 #include "PlankesorteringsAnlegg/Actuators.h"
 #include "PlankesorteringsAnlegg/Sensors.h"
 #include "PlankesorteringsAnlegg/Packaging.h"
-
+#include "PlankesorteringsAnlegg/Kommunikator.h"
 
 class BaneTest : public Test
 {
 public:
 	BaneTest(){
+
+		m_communicator=new Communicator("/dev/pts/7");
+
 		//ACTUATOR SET
 		m_actuatorSet=new ActuatorSet;
 
 		//SENSOR SET
-		m_sensorSet = new SensorSet;
+		m_sensorSet = new SensorSet(m_communicator);
 
 
 		//STORAGE AREA
@@ -110,13 +113,16 @@ public:
 
 
 		//CONVEYOR2-SENSORS
-		ContactSensorBinary* lengthSensor=new ContactSensorBinary(3,p3+b2Vec2(10.0f,1.7f),0.3f,m_world);
+		LengthSensor* lengthSensor=new LengthSensor(3,p3+b2Vec2(10.0f,1.7f),0.3f,m_world);
 		m_sensorSet->add(lengthSensor);
 
-		ContactSensorBinary* qualitySensor=new ContactSensorBinary(4,p3+b2Vec2(12.0f,1.7f),0.3f,m_world);
+		QualitySensor* qualitySensor=new QualitySensor(4,p3+b2Vec2(10.0f,1.7f),0.3f,m_world);
 		m_sensorSet->add(qualitySensor);
 
-		ContactSensorBinary* counterSensor=new ContactSensorBinary(5,p4+b2Vec2(-12.0f,-1.7f),0.3f,m_world);
+		b2Filter filter;//have to sett filter to get sensor to collide with medbringere
+		filter.categoryBits=2;
+		filter.maskBits=2;
+		CounterSensor* counterSensor=new CounterSensor(50,p4+b2Vec2(-12.0f,-1.6f),0.3f,filter,m_world);
 		m_sensorSet->add(counterSensor);
 
 
@@ -131,6 +137,10 @@ public:
 		b2Vec2 p17(16.7f,25.0f);
 		//b2Vec2 p18(22.3f,19.4f);
 		Beam(p17,p1,2.0f,4,m_world);
+
+		ContactSensorBinary* tippedSensor=new ContactSensorBinary(51,p17+b2Vec2(0,0),0.3f,m_world);
+		m_sensorSet->add(tippedSensor);
+
 
 		ContactSensorBinary* slide1Sensor=new ContactSensorBinary(2,p1+b2Vec2(0,2.3f),0.3f,m_world);
 		m_sensorSet->add(slide1Sensor);
@@ -232,6 +242,11 @@ public:
 		m_sensorSet->drawLabels();
 
 		//m_pakke->runStroFjerner();
+		if(m_communicator->dataIsPresent()){
+				unsigned char c = m_communicator->read();
+				//m_communicator.write(c);
+				Keyboard(c);
+			}
 	}
 
 	void Keyboard(unsigned char key){
@@ -260,6 +275,7 @@ private:
 	ActuatorSet* m_actuatorSet;
 	SensorSet*  m_sensorSet;
 //	Pakke* m_pakke;
+	Communicator* m_communicator;
 };
 
 #endif /* BANETEST_H_ */

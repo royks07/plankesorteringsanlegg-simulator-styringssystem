@@ -15,9 +15,14 @@
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 
+
 #include <exception>
 
 #include <deque>
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdarg.h>
 
 using namespace std;
 using namespace boost;
@@ -71,6 +76,24 @@ public:
 
 	void write(const unsigned char c){
 			m_io.post(boost::bind(&Communicator::do_write, this, c));
+	}
+
+	void write(string str){
+		for(string::iterator it=str.begin();it!=str.end();it++)
+			write((*it));
+	}
+
+
+	void print(char *format, ...)
+	{
+		char buffer[256];
+	    va_list args;
+	    va_start(args,format);
+	    vsprintf (buffer,format,args);
+	    stringstream ss;
+	    ss.str("");
+	    ss<<buffer;
+	    write(ss.str());
 	}
 
 	bool dataIsPresent(){

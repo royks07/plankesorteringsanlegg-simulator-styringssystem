@@ -104,9 +104,19 @@ public:
 		shape->SetAsBox(m_width/2,m_thickness/2);
 		m_fd->shape=shape;
 
-		PlankUserData* plankUserData = new PlankUserData(3.4f,0.7f);
+		float32 length=randomFloat(30.0f,40.0f);
+		float32 quality=randomFloat(0.0f,1.0f);
+		cout<<"Length:"<<length<<" Quality:"<<quality<<endl;
+
+		PlankUserData* plankUserData = new PlankUserData(length,quality);
 		m_fd->userData=plankUserData;
 
+	}
+	float randomFloat(float a, float b) {
+	    float random = ((float) rand()) / (float) RAND_MAX;
+	    float diff = b - a;
+	    float r = random * diff;
+	    return a + r;
 	}
 	void CreateAt(b2Vec2* pos){
 		m_bd->position=*pos;
@@ -135,9 +145,6 @@ class Package{
 public:
 	Package(b2Vec2 position, b2World* world){
 
-		Plank plank(world);
-		float32 plankWidth=plank.getWidth();
-		m_plankThickness=plank.getThickness();
 		for(int i=0;i<7;i++){
 			m_sprinkle[i] = new Sprinkle(world);
 		}
@@ -154,11 +161,14 @@ public:
 			}
 
 			for(int c=0;c<4;c++){
-				b2Vec2 posPlanke;
-				posPlanke.SetZero();
-				posPlanke+=position;
-				posPlanke+=b2Vec2(c*plankWidth+plankWidth/2,r*m_plankThickness+m_plankThickness/2+r*m_sprinkleThickness);
-				plank.CreateAt(&posPlanke);
+				Plank* plank = new Plank(world);
+				float32 plankWidth=plank->getWidth();
+				if(c==0 && r==0)m_plankThickness=plank->getThickness();
+				b2Vec2 posPlank;
+				posPlank.SetZero();
+				posPlank+=position;
+				posPlank+=b2Vec2(c*plankWidth+plankWidth/2,r*m_plankThickness+m_plankThickness/2+r*m_sprinkleThickness);
+				plank->CreateAt(&posPlank);
 
 			}
 		}
