@@ -19,7 +19,7 @@
 #ifndef PULLEYS_H
 #define PULLEYS_H
 
-class Pulleys : public Test
+class Pulleys : public SimulatorPage
 {
 public:
 	Pulleys()
@@ -87,7 +87,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		float32 ratio = m_joint1->GetRatio();
 		float32 L = m_joint1->GetLengthA() + ratio * m_joint1->GetLengthB();
@@ -95,7 +95,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Pulleys;
 	}

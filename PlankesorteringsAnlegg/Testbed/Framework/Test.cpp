@@ -32,7 +32,7 @@ void DestructionListener::SayGoodbye(b2Joint* joint)
 	}
 }
 
-Test::Test()
+SimulatorPage::SimulatorPage()
 {
 	b2Vec2 gravity;
 	gravity.Set(0.0f, -10.0f);
@@ -58,14 +58,14 @@ Test::Test()
 	memset(&m_totalProfile, 0, sizeof(b2Profile));
 }
 
-Test::~Test()
+SimulatorPage::~SimulatorPage()
 {
 	// By deleting the world, we delete the bomb, mouse joint, etc.
 	delete m_world;
 	m_world = NULL;
 }
 
-void Test::PreSolve(b2Contact* contact, const b2Manifold* oldManifold)
+void SimulatorPage::PreSolve(b2Contact* contact, const b2Manifold* oldManifold)
 {
 	const b2Manifold* manifold = contact->GetManifold();
 
@@ -95,7 +95,7 @@ void Test::PreSolve(b2Contact* contact, const b2Manifold* oldManifold)
 	}
 }
 
-void Test::DrawTitle(int x, int y, const char *string)
+void SimulatorPage::DrawTitle(int x, int y, const char *string)
 {
     m_debugDraw.DrawString(x, y, string);
 }
@@ -132,7 +132,7 @@ public:
 	b2Fixture* m_fixture;
 };
 
-void Test::MouseDown(const b2Vec2& p)
+void SimulatorPage::MouseDown(const b2Vec2& p)
 {
 	m_mouseWorld = p;
 	
@@ -165,13 +165,13 @@ void Test::MouseDown(const b2Vec2& p)
 	}
 }
 
-void Test::SpawnBomb(const b2Vec2& worldPt)
+void SimulatorPage::SpawnBomb(const b2Vec2& worldPt)
 {
 	m_bombSpawnPoint = worldPt;
 	m_bombSpawning = true;
 }
     
-void Test::CompleteBombSpawn(const b2Vec2& p)
+void SimulatorPage::CompleteBombSpawn(const b2Vec2& p)
 {
 	if (m_bombSpawning == false)
 	{
@@ -185,7 +185,7 @@ void Test::CompleteBombSpawn(const b2Vec2& p)
 	m_bombSpawning = false;
 }
 
-void Test::ShiftMouseDown(const b2Vec2& p)
+void SimulatorPage::ShiftMouseDown(const b2Vec2& p)
 {
 	m_mouseWorld = p;
 	
@@ -197,7 +197,7 @@ void Test::ShiftMouseDown(const b2Vec2& p)
 	SpawnBomb(p);
 }
 
-void Test::MouseUp(const b2Vec2& p)
+void SimulatorPage::MouseUp(const b2Vec2& p)
 {
 	if (m_mouseJoint)
 	{
@@ -211,7 +211,7 @@ void Test::MouseUp(const b2Vec2& p)
 	}
 }
 
-void Test::MouseMove(const b2Vec2& p)
+void SimulatorPage::MouseMove(const b2Vec2& p)
 {
 	m_mouseWorld = p;
 	
@@ -221,14 +221,14 @@ void Test::MouseMove(const b2Vec2& p)
 	}
 }
 
-void Test::LaunchBomb()
+void SimulatorPage::LaunchBomb()
 {
 	b2Vec2 p(RandomFloat(-15.0f, 15.0f), 30.0f);
 	b2Vec2 v = -5.0f * p;
 	LaunchBomb(p, v);
 }
 
-void Test::LaunchBomb(const b2Vec2& position, const b2Vec2& velocity)
+void SimulatorPage::LaunchBomb(const b2Vec2& position, const b2Vec2& velocity)
 {
 	if (m_bomb)
 	{
@@ -261,7 +261,7 @@ void Test::LaunchBomb(const b2Vec2& position, const b2Vec2& velocity)
 	m_bomb->CreateFixture(&fd);
 }
 
-void Test::Step(Settings* settings)
+void SimulatorPage::Step(Settings* settings)
 {
 	float32 timeStep = settings->hz > 0.0f ? 1.0f / settings->hz : float32(0.0f);
 

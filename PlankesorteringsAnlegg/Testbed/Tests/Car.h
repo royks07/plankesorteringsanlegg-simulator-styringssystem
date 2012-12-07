@@ -20,7 +20,7 @@
 #define CAR_H
 
 // This is a fun demo that shows off the wheel joint
-class Car : public Test
+class Car : public SimulatorPage
 {
 public:
 	Car()
@@ -264,10 +264,10 @@ public:
 		m_textLine += 15;
 
 		settings->viewCenter.x = m_car->GetPosition().x;
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Car;
 	}

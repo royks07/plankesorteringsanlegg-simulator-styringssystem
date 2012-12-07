@@ -150,19 +150,6 @@ Box2D/fast:
 .PHONY : Box2D/fast
 
 #=============================================================================
-# Target rules for targets named HelloWorld
-
-# Build rule for target.
-HelloWorld: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HelloWorld
-.PHONY : HelloWorld
-
-# fast build rule for target.
-HelloWorld/fast:
-	$(MAKE) -f HelloWorld/CMakeFiles/HelloWorld.dir/build.make HelloWorld/CMakeFiles/HelloWorld.dir/build
-.PHONY : HelloWorld/fast
-
-#=============================================================================
 # Target rules for targets named freeglut_static
 
 # Build rule for target.
@@ -189,17 +176,17 @@ glui/fast:
 .PHONY : glui/fast
 
 #=============================================================================
-# Target rules for targets named Testbed
+# Target rules for targets named Plankesorteringsanlegg
 
 # Build rule for target.
-Testbed: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Testbed
-.PHONY : Testbed
+Plankesorteringsanlegg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Plankesorteringsanlegg
+.PHONY : Plankesorteringsanlegg
 
 # fast build rule for target.
-Testbed/fast:
-	$(MAKE) -f Testbed/CMakeFiles/Testbed.dir/build.make Testbed/CMakeFiles/Testbed.dir/build
-.PHONY : Testbed/fast
+Plankesorteringsanlegg/fast:
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build
+.PHONY : Plankesorteringsanlegg/fast
 
 # Help Target
 help:
@@ -214,10 +201,9 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... Box2D"
-	@echo "... HelloWorld"
 	@echo "... freeglut_static"
 	@echo "... glui"
-	@echo "... Testbed"
+	@echo "... Plankesorteringsanlegg"
 .PHONY : help
 
 

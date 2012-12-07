@@ -21,7 +21,7 @@
 
 // Note: even with a restitution of 1.0, there is some energy change
 // due to position correction.
-class VaryingRestitution : public Test
+class VaryingRestitution : public SimulatorPage
 {
 public:
 
@@ -60,7 +60,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new VaryingRestitution;
 	}

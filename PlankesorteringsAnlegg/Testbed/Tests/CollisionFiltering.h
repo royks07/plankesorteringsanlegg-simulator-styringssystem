@@ -37,7 +37,7 @@ const uint16 k_triangleMask = 0xFFFF;
 const uint16 k_boxMask = 0xFFFF ^ k_triangleCategory;
 const uint16 k_circleMask = 0xFFFF;
 
-class CollisionFiltering : public Test
+class CollisionFiltering : public SimulatorPage
 {
 public:
 	CollisionFiltering()
@@ -167,7 +167,7 @@ public:
 		b2Body* body6 = m_world->CreateBody(&circleBodyDef);
 		body6->CreateFixture(&circleShapeDef);
 	}
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new CollisionFiltering;
 	}

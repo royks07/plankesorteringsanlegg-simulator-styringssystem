@@ -22,7 +22,7 @@
 #ifndef THEO_JANSEN_H
 #define THEO_JANSEN_H
 
-class TheoJansen : public Test
+class TheoJansen : public SimulatorPage
 {
 public:
 
@@ -215,7 +215,7 @@ public:
 		m_debugDraw.DrawString(5, m_textLine, "Keys: left = a, brake = s, right = d, toggle motor = m");
 		m_textLine += 15;
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 	}
 
 	void Keyboard(unsigned char key)
@@ -240,7 +240,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new TheoJansen;
 	}

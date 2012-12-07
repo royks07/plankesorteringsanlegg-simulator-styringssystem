@@ -21,7 +21,7 @@
 
 // A motor driven slider crank with joint friction.
 
-class SliderCrank : public Test
+class SliderCrank : public SimulatorPage
 {
 public:
 	SliderCrank()
@@ -136,7 +136,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Keys: (f) toggle friction, (m) toggle motor");
 		m_textLine += 15;
 		float32 torque = m_joint1->GetMotorTorque(settings->hz);
@@ -144,7 +144,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new SliderCrank;
 	}

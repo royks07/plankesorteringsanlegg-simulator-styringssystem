@@ -12,8 +12,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeSystem.cmake"
   "../../CMakeLists.txt"
-  "../../HelloWorld/CMakeLists.txt"
-  "../../Testbed/CMakeLists.txt"
+  "../../Plankesorteringsanlegg/CMakeLists.txt"
   "../../freeglut/CMakeLists.txt"
   "../../glui/CMakeLists.txt"
   "/usr/share/cmake-2.8/Modules/CMakeCInformation.cmake"
@@ -51,17 +50,15 @@ SET(CMAKE_MAKEFILE_OUTPUTS
 SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Box2D/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "HelloWorld/CMakeFiles/CMakeDirectoryInformation.cmake"
   "freeglut/CMakeFiles/CMakeDirectoryInformation.cmake"
   "glui/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Testbed/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Plankesorteringsanlegg/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "Box2D/CMakeFiles/Box2D.dir/DependInfo.cmake"
-  "HelloWorld/CMakeFiles/HelloWorld.dir/DependInfo.cmake"
   "freeglut/CMakeFiles/freeglut_static.dir/DependInfo.cmake"
   "glui/CMakeFiles/glui.dir/DependInfo.cmake"
-  "Testbed/CMakeFiles/Testbed.dir/DependInfo.cmake"
+  "Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/DependInfo.cmake"
   )

@@ -19,7 +19,7 @@
 #ifndef BULLET_TEST_H
 #define BULLET_TEST_H
 
-class BulletTest : public Test
+class BulletTest : public SimulatorPage
 {
 public:
 
@@ -93,7 +93,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		extern int32 b2_gjkCalls, b2_gjkIters, b2_gjkMaxIters;
 		extern int32 b2_toiCalls, b2_toiIters;
@@ -123,7 +123,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new BulletTest;
 	}

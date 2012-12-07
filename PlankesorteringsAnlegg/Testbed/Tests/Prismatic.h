@@ -20,7 +20,7 @@
 #define PRISMATIC_H
 
 // The motor in this test gets smoother with higher velocity iterations.
-class Prismatic : public Test
+class Prismatic : public SimulatorPage
 {
 public:
 	Prismatic()
@@ -88,7 +88,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Keys: (l) limits, (m) motors, (s) speed");
 		m_textLine += 15;
 		float32 force = m_joint->GetMotorForce(settings->hz);
@@ -96,7 +96,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Prismatic;
 	}

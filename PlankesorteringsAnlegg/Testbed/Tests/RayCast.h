@@ -142,7 +142,7 @@ public:
 };
 
 
-class RayCast : public Test
+class RayCast : public SimulatorPage
 {
 public:
 
@@ -313,7 +313,7 @@ public:
 	{
 		bool advanceRay = settings->pause == 0 || settings->singleStep;
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Press 1-5 to drop stuff, m to change the mode");
 		m_textLine += 15;
 		m_debugDraw.DrawString(5, m_textLine, "Mode = %d", m_mode);
@@ -421,7 +421,7 @@ public:
 #endif
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new RayCast;
 	}

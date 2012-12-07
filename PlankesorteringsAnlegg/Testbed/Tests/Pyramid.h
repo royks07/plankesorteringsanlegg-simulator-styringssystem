@@ -19,7 +19,7 @@
 #ifndef PYRAMID_H
 #define PYRAMID_H
 
-class Pyramid : public Test
+class Pyramid : public SimulatorPage
 {
 public:
 	enum
@@ -70,7 +70,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		//b2DynamicTree* tree = &m_world->m_contactManager.m_broadPhase.m_tree;
 
@@ -80,7 +80,7 @@ public:
 		//}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Pyramid;
 	}

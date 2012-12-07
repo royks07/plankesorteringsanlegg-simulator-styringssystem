@@ -19,7 +19,7 @@
 #ifndef REVOLUTE_H
 #define REVOLUTE_H
 
-class Revolute : public Test
+class Revolute : public SimulatorPage
 {
 public:
 	Revolute()
@@ -140,7 +140,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Keys: (l) limits, (m) motor");
 		m_textLine += 15;
 
@@ -154,7 +154,7 @@ public:
 		//m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Revolute;
 	}

@@ -19,7 +19,7 @@
 #ifndef CONFINED_H
 #define CONFINED_H
 
-class Confined : public Test
+class Confined : public SimulatorPage
 {
 public:
 
@@ -138,7 +138,7 @@ public:
 		//	CreateCircle();
 		//}
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		for (b2Body* b = m_world->GetBodyList(); b; b = b->GetNext())
 		{
@@ -158,7 +158,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Confined;
 	}

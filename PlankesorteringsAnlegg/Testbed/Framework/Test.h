@@ -24,10 +24,10 @@
 
 #include <cstdlib>
 
-class Test;
+class SimulatorPage;
 struct Settings;
 
-typedef Test* TestCreateFcn();
+typedef SimulatorPage* SimulatorPageCreateFcn();
 
 #define	RAND_LIMIT	32767
 
@@ -97,13 +97,13 @@ struct Settings
 	int32 singleStep;
 };
 
-struct TestEntry
+struct SimulatorPageEntry
 {
 	const char *name;
-	TestCreateFcn *createFcn;
+	SimulatorPageCreateFcn *createFcn;
 };
 
-extern TestEntry g_testEntries[];
+extern SimulatorPageEntry g_testEntries[];
 // This is called when a joint in the world is implicitly destroyed
 // because an attached body is destroyed. This gives us a chance to
 // nullify the mouse joint.
@@ -113,7 +113,7 @@ public:
 	void SayGoodbye(b2Fixture* fixture) { B2_NOT_USED(fixture); }
 	void SayGoodbye(b2Joint* joint);
 
-	Test* test;
+	SimulatorPage* test;
 };
 
 const int32 k_maxContactPoints = 2048;
@@ -127,12 +127,12 @@ struct ContactPoint
 	b2PointState state;
 };
 
-class Test : public b2ContactListener
+class SimulatorPage : public b2ContactListener
 {
 public:
 
-	Test();
-	virtual ~Test();
+	SimulatorPage();
+	virtual ~SimulatorPage();
 
 	void SetTextLine(int32 line) { m_textLine = line; }
     void DrawTitle(int x, int y, const char *string);

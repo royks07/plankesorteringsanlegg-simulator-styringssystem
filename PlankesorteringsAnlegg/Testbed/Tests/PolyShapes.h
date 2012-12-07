@@ -109,7 +109,7 @@ public:
 	int32 m_count;
 };
 
-class PolyShapes : public Test
+class PolyShapes : public SimulatorPage
 {
 public:
 	PolyShapes()
@@ -257,7 +257,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		PolyShapesCallback callback;
 		callback.m_circle.m_radius = 2.0f;
@@ -281,7 +281,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new PolyShapes;
 	}

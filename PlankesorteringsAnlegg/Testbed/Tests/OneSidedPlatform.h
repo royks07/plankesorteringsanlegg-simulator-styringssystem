@@ -19,7 +19,7 @@
 #ifndef ONE_SIDED_PLATFORM_H
 #define ONE_SIDED_PLATFORM_H
 
-class OneSidedPlatform : public Test
+class OneSidedPlatform : public SimulatorPage
 {
 public:
 
@@ -76,7 +76,7 @@ public:
 
 	void PreSolve(b2Contact* contact, const b2Manifold* oldManifold)
 	{
-		Test::PreSolve(contact, oldManifold);
+		SimulatorPage::PreSolve(contact, oldManifold);
 
 		b2Fixture* fixtureA = contact->GetFixtureA();
 		b2Fixture* fixtureB = contact->GetFixtureB();
@@ -101,12 +101,12 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Press: (c) create a shape, (d) destroy a shape.");
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new OneSidedPlatform;
 	}

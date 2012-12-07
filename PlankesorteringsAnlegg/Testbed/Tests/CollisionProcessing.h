@@ -23,7 +23,7 @@
 
 // This test shows collision processing and tests
 // deferred body destruction.
-class CollisionProcessing : public Test
+class CollisionProcessing : public SimulatorPage
 {
 public:
 	CollisionProcessing()
@@ -121,7 +121,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		// We are going to destroy some bodies according to contact
 		// points. We must buffer the bodies that should be destroyed
@@ -179,7 +179,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new CollisionProcessing;
 	}

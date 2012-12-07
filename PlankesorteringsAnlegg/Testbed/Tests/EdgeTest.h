@@ -19,7 +19,7 @@
 #ifndef EDGE_TEST_H
 #define EDGE_TEST_H
 
-class EdgeTest : public Test
+class EdgeTest : public SimulatorPage
 {
 public:
 
@@ -100,7 +100,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new EdgeTest;
 	}

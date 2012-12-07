@@ -19,7 +19,7 @@
 #ifndef CONTINUOUS_TEST_H
 #define CONTINUOUS_TEST_H
 
-class ContinuousTest : public Test
+class ContinuousTest : public SimulatorPage
 {
 public:
 
@@ -94,7 +94,7 @@ public:
 			m_stepCount += 0;
 		}
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		extern int32 b2_gjkCalls, b2_gjkIters, b2_gjkMaxIters;
 
@@ -125,7 +125,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new ContinuousTest;
 	}

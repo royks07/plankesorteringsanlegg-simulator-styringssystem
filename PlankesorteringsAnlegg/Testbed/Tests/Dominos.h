@@ -19,7 +19,7 @@
 #ifndef DOMINOS_H
 #define DOMINOS_H
 
-class Dominos : public Test
+class Dominos : public SimulatorPage
 {
 public:
 
@@ -206,7 +206,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Dominos;
 	}

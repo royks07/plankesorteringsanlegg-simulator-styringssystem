@@ -19,7 +19,7 @@
 #ifndef BODY_TYPES_H
 #define BODY_TYPES_H
 
-class BodyTypes : public Test
+class BodyTypes : public SimulatorPage
 {
 public:
 	BodyTypes()
@@ -141,12 +141,12 @@ public:
 			}
 		}
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Keys: (d) dynamic, (s) static, (k) kinematic");
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new BodyTypes;
 	}

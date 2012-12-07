@@ -16,12 +16,12 @@
 #include "PlankesorteringsAnlegg/Packaging.h"
 #include "PlankesorteringsAnlegg/Kommunikator.h"
 
-class BaneTest : public Test
+class BaneTest : public SimulatorPage
 {
 public:
 	BaneTest(){
 
-		m_communicator=new Communicator("/dev/pts/7");
+		m_communicator=new Communicator("/dev/pts/8");
 
 		//ACTUATOR SET
 		m_actuatorSet=new ActuatorSet;
@@ -163,6 +163,10 @@ public:
 		JointActuatorRevoluteStep* rotatePackageActuator = new JointActuatorRevoluteStep(2,packageInput->getRotateJoint());
 		m_actuatorSet->add(rotatePackageActuator);
 
+		PackageSourceActuator* packageSourceActuator = new PackageSourceActuator(55,packageInput->getPackageSource());
+		m_actuatorSet->add(packageSourceActuator);
+
+
 
 		ContactSensor_FromFixture* liftSensor = new ContactSensor_FromFixture(1,packageInput->getLiftSensorFixture());
 		m_sensorSet->add(liftSensor);
@@ -191,6 +195,9 @@ public:
 
 		ContactSensorBinary* arriveSensor=new ContactSensorBinary(6,p13+b2Vec2(-0.7f,0.7f),0.3f,m_world);
 		m_sensorSet->add(arriveSensor);
+
+		SprinkleSourceActuator* sprinkleSourceActuator = new SprinkleSourceActuator(56,packageOutput->getSprinkleSource());
+		m_actuatorSet->add(sprinkleSourceActuator);
 
 
 
@@ -224,7 +231,7 @@ public:
 	}
 
 	void Step(Settings *settings){
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_conveyor1->run();
 		m_conveyor2->run();
 		m_conveyor3->run();
@@ -250,11 +257,11 @@ public:
 	}
 
 	void Keyboard(unsigned char key){
-		Test::Keyboard(key);
+		SimulatorPage::Keyboard(key);
 		m_commandSequenceInterpreter->interpret(key);
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new BaneTest;
 	}

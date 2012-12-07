@@ -10,7 +10,7 @@
 #include <list>
 
 
-class PlankeSorterer : public Test
+class PlankeSorterer : public SimulatorPage
 {
 public:
 	enum vehicleType {
@@ -279,7 +279,7 @@ public:
 						  b2World *world){
 		b2BodyDef bd;
 		bd.position.Set(posisjon.x,posisjon.y);
-		bd.type=b2_staticBody;//foreløpig
+		bd.type=b2_staticBody;//forelï¿½pig
 		bd.gravityScale=1.0f;
 		
 		
@@ -644,7 +644,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		m_debugDraw.DrawString(5, m_textLine, "Keys: left = a, brake = s, right = d, change vehicle = c");
 		m_textLine += 15;
@@ -680,7 +680,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new PlankeSorterer;
 	}

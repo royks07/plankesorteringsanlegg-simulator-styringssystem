@@ -19,7 +19,7 @@
 #ifndef VERTICAL_STACK_H
 #define VERTICAL_STACK_H
 
-class VerticalStack : public Test
+class VerticalStack : public SimulatorPage
 {
 public:
 
@@ -118,7 +118,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "Press: (,) to launch a bullet.");
 		m_textLine += 15;
 
@@ -152,7 +152,7 @@ public:
 		//}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new VerticalStack;
 	}

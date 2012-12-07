@@ -19,7 +19,7 @@
 #ifndef POLYCOLLISION_H
 #define POLYCOLLISION_H
 
-class PolyCollision : public Test
+class PolyCollision : public SimulatorPage
 {
 public:
 	PolyCollision()
@@ -37,7 +37,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new PolyCollision;
 	}

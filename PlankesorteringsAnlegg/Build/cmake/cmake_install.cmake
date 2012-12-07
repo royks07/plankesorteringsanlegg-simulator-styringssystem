@@ -35,10 +35,9 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Box2D/cmake_install.cmake")
-  INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/HelloWorld/cmake_install.cmake")
   INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/freeglut/cmake_install.cmake")
   INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/glui/cmake_install.cmake")
-  INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Testbed/cmake_install.cmake")
+  INCLUDE("/media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

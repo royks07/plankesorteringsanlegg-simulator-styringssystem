@@ -20,7 +20,7 @@
 #define COMPOUND_SHAPES_H
 
 // TODO_ERIN test joints on compounds.
-class CompoundShapes : public Test
+class CompoundShapes : public SimulatorPage
 {
 public:
 	CompoundShapes()
@@ -134,7 +134,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new CompoundShapes;
 	}

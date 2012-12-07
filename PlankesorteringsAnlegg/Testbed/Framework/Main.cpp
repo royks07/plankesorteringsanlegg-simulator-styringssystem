@@ -21,15 +21,19 @@
 #include "glui/glui.h"
 
 #include <cstdio>
+
+//testing...
+#include <iostream>
+
 using namespace std;
 
 namespace
 {
-	int32 testIndex = 0;
-	int32 testSelection = 0;
-	int32 testCount = 0;
-	TestEntry* entry;
-	Test* test;
+	int32 simulatorPageIndex = 0;
+	int32 simulatorPageSelection = 0;
+	int32 simulatorPageCount = 0;
+	SimulatorPageEntry* entry;
+	SimulatorPage* simulatorPage;
 	Settings settings;
 	int32 width = 640;
 	int32 height = 480;
@@ -41,6 +45,7 @@ namespace
 	int tx, ty, tw, th;
 	bool rMouseDown;
 	b2Vec2 lastp;
+	char serialport[32]="/dev/pts/8";
 }
 
 static void Resize(int32 w, int32 h)
@@ -98,25 +103,25 @@ static void SimulationLoop()
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	test->SetTextLine(30);
+	simulatorPage->SetTextLine(30);
 	b2Vec2 oldCenter = settings.viewCenter;
 	settings.hz = settingsHz;
-	test->Step(&settings);
+	simulatorPage->Step(&settings);
 	if (oldCenter.x != settings.viewCenter.x || oldCenter.y != settings.viewCenter.y)
 	{
 		Resize(width, height);
 	}
 
-	test->DrawTitle(5, 15, entry->name);
+	simulatorPage->DrawTitle(5, 15, entry->name);
 
 	glutSwapBuffers();
 
-	if (testSelection != testIndex)
+	if (simulatorPageSelection != simulatorPageIndex)
 	{
-		testIndex = testSelection;
-		delete test;
-		entry = g_testEntries + testIndex;
-		test = entry->createFcn();
+		simulatorPageIndex = simulatorPageSelection;
+		delete simulatorPage;
+		entry = g_testEntries + simulatorPageIndex;
+		simulatorPage = entry->createFcn();
 		viewZoom = 1.0f;
 		settings.viewCenter.Set(0.0f, 20.0f);
 		Resize(width, height);
@@ -152,15 +157,15 @@ static void Keyboard(unsigned char key, int x, int y)
 
 		// Press 'r' to reset.
 	case 'r':
-		delete test;
-		test = entry->createFcn();
+		delete simulatorPage;
+		simulatorPage = entry->createFcn();
 		break;
 
 		// Press space to launch a bomb.
 	case ' ':
-		if (test)
+		if (simulatorPage)
 		{
-			test->LaunchBomb();
+			simulatorPage->LaunchBomb();
 		}
 		break;
  
@@ -170,28 +175,28 @@ static void Keyboard(unsigned char key, int x, int y)
 
 		// Press [ to prev test.
 	case '[':
-		--testSelection;
-		if (testSelection < 0)
+		--simulatorPageSelection;
+		if (simulatorPageSelection < 0)
 		{
-			testSelection = testCount - 1;
+			simulatorPageSelection = simulatorPageCount - 1;
 		}
 		glui->sync_live();
 		break;
 
 		// Press ] to next test.
 	case ']':
-		++testSelection;
-		if (testSelection == testCount)
+		++simulatorPageSelection;
+		if (simulatorPageSelection == simulatorPageCount)
 		{
-			testSelection = 0;
+			simulatorPageSelection = 0;
 		}
 		glui->sync_live();
 		break;
 		
 	default:
-		if (test)
+		if (simulatorPage)
 		{
-			test->Keyboard(key);
+			simulatorPage->Keyboard(key);
 		}
 	}
 }
@@ -242,9 +247,9 @@ static void KeyboardUp(unsigned char key, int x, int y)
 	B2_NOT_USED(x);
 	B2_NOT_USED(y);
 
-	if (test)
+	if (simulatorPage)
 	{
-		test->KeyboardUp(key);
+		simulatorPage->KeyboardUp(key);
 	}
 }
 
@@ -260,17 +265,17 @@ static void Mouse(int32 button, int32 state, int32 x, int32 y)
 			b2Vec2 p = ConvertScreenToWorld(x, y);
 			if (mod == GLUT_ACTIVE_SHIFT)
 			{
-				test->ShiftMouseDown(p);
+				simulatorPage->ShiftMouseDown(p);
 			}
 			else
 			{
-				test->MouseDown(p);
+				simulatorPage->MouseDown(p);
 			}
 		}
 		
 		if (state == GLUT_UP)
 		{
-			test->MouseUp(p);
+			simulatorPage->MouseUp(p);
 		}
 	}
 	else if (button == GLUT_RIGHT_BUTTON)
@@ -291,7 +296,7 @@ static void Mouse(int32 button, int32 state, int32 x, int32 y)
 static void MouseMotion(int32 x, int32 y)
 {
 	b2Vec2 p = ConvertScreenToWorld(x, y);
-	test->MouseMove(p);
+	simulatorPage->MouseMove(p);
 	
 	if (rMouseDown)
 	{
@@ -321,9 +326,9 @@ static void MouseWheel(int wheel, int direction, int x, int y)
 
 static void Restart(int)
 {
-	delete test;
-	entry = g_testEntries + testIndex;
-	test = entry->createFcn();
+	delete simulatorPage;
+	entry = g_testEntries + simulatorPageIndex;
+	simulatorPage = entry->createFcn();
     Resize(width, height);
 }
 
@@ -347,25 +352,29 @@ static void SingleStep(int)
 	settings.singleStep = 1;
 }
 
+static void SetSerialport(){
+	cout<<serialport<<endl;
+}
+
 int main(int argc, char** argv)
 {
-	testCount = 0;
-	while (g_testEntries[testCount].createFcn != NULL)
+	simulatorPageCount = 0;
+	while (g_testEntries[simulatorPageCount].createFcn != NULL)
 	{
-		++testCount;
+		++simulatorPageCount;
 	}
 
-	testIndex = b2Clamp(testIndex, 0, testCount-1);
-	testSelection = testIndex;
+	simulatorPageIndex = b2Clamp(simulatorPageIndex, 0, simulatorPageCount-1);
+	simulatorPageSelection = simulatorPageIndex;
 
-	entry = g_testEntries + testIndex;
-	test = entry->createFcn();
+	entry = g_testEntries + simulatorPageIndex;
+	simulatorPage = entry->createFcn();
 
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
 	glutInitWindowSize(width, height);
 	char title[32];
-	sprintf(title, "Box2D Version %d.%d.%d", b2_version.major, b2_version.minor, b2_version.revision);
+	sprintf(title, "Simulert plankesorteringsanlegg");
 	mainWindow = glutCreateWindow(title);
 	//glutSetOption (GLUT_ACTION_ON_WINDOW_CLOSE, GLUT_ACTION_GLUTMAINLOOP_RETURNS);
 
@@ -386,7 +395,7 @@ int main(int argc, char** argv)
 
 	glui->add_statictext("Tests");
 	GLUI_Listbox* testList =
-		glui->add_listbox("", &testSelection);
+		glui->add_listbox("", &simulatorPageSelection);
 
 	glui->add_separator();
 
@@ -423,7 +432,7 @@ int main(int argc, char** argv)
 	glui->add_checkbox_to_panel(drawPanel, "Profile", &settings.drawProfile);
 
 	int32 testCount = 0;
-	TestEntry* e = g_testEntries;
+	SimulatorPageEntry* e = g_testEntries;
 	while (e->createFcn)
 	{
 		testList->add_item(testCount, e->name);
@@ -436,7 +445,13 @@ int main(int argc, char** argv)
 	glui->add_button("Restart", 0, Restart);
 
 	glui->add_button("Quit", 0,(GLUI_Update_CB)Exit);
+
+	glui->add_separator();
+	glui->add_edittext( "Serialport:", GLUI_EDITTEXT_TEXT, serialport );
+	glui->add_button("Set serialport", 0, (GLUI_Update_CB)SetSerialport);
+
 	glui->set_main_gfx_window( mainWindow );
+
 
 	// Use a timer to control the frame rate.
 	glutTimerFunc(framePeriod, Timer, 0);

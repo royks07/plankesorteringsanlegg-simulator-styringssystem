@@ -22,7 +22,7 @@
 /// This is a test of typical character collision scenarios. This does not
 /// show how you should implement a character in your application.
 /// Instead this is used to test smooth collision on edge chains.
-class CharacterCollision : public Test
+class CharacterCollision : public SimulatorPage
 {
 public:
 	CharacterCollision()
@@ -233,7 +233,7 @@ public:
 		v.x = -5.0f;
 		m_character->SetLinearVelocity(v);
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "This tests various character collision shapes.");
 		m_textLine += 15;
 		m_debugDraw.DrawString(5, m_textLine, "Limitation: square and hexagon can snag on aligned boxes.");
@@ -242,7 +242,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new CharacterCollision;
 	}

@@ -2,7 +2,7 @@
 #ifndef AddPair_H
 #define AddPair_H
 
-class AddPair : public Test
+class AddPair : public SimulatorPage
 {
 public:
 
@@ -42,7 +42,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new AddPair;
 	}

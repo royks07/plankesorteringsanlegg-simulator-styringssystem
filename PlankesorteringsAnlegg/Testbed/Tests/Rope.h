@@ -20,7 +20,7 @@
 #define ROPE_H
 
 ///
-class Rope : public Test
+class Rope : public SimulatorPage
 {
 public:
 	Rope()
@@ -79,7 +79,7 @@ public:
 
 		m_rope.Step(dt, 1);
 
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		m_rope.Draw(&m_debugDraw);
 
@@ -89,7 +89,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Rope;
 	}

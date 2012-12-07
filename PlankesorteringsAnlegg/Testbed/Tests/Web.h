@@ -20,7 +20,7 @@
 #define WEB_H
 
 // This tests distance joints, body destruction, and joint destruction.
-class Web : public Test
+class Web : public SimulatorPage
 {
 public:
 	Web()
@@ -178,7 +178,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 		m_debugDraw.DrawString(5, m_textLine, "This demonstrates a soft distance joint.");
 		m_textLine += 15;
 		m_debugDraw.DrawString(5, m_textLine, "Press: (b) to delete a body, (j) to delete a joint");
@@ -197,7 +197,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Web;
 	}

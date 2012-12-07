@@ -20,7 +20,7 @@
 
 
 
-class PlankesorteringsAnlegg : public Test
+class PlankesorteringsAnlegg : public SimulatorPage
 {
 public:
 
@@ -452,7 +452,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		//m_sensorFlateTilstand.printBitSekvens();
 
@@ -509,7 +509,7 @@ public:
 
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new PlankesorteringsAnlegg;
 	}

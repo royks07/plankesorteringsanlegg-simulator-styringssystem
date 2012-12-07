@@ -19,7 +19,7 @@
 #ifndef BRIDGE_H
 #define BRIDGE_H
 
-class Bridge : public Test
+class Bridge : public SimulatorPage
 {
 public:
 
@@ -114,7 +114,7 @@ public:
 		}
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Bridge;
 	}

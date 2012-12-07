@@ -19,7 +19,7 @@
 #ifndef GEARS_H
 #define GEARS_H
 
-class Gears : public Test
+class Gears : public SimulatorPage
 {
 public:
 	Gears()
@@ -157,7 +157,7 @@ public:
 
 	void Step(Settings* settings)
 	{
-		Test::Step(settings);
+		SimulatorPage::Step(settings);
 
 		float32 ratio, value;
 		
@@ -172,7 +172,7 @@ public:
 		m_textLine += 15;
 	}
 
-	static Test* Create()
+	static SimulatorPage* Create()
 	{
 		return new Gears;
 	}
