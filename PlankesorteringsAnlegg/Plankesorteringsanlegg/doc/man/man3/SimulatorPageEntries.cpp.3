@@ -1,0 +1,60 @@
+.TH "SimulatorPageEntries.cpp" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimulatorPageEntries.cpp \- 
+.PP
+Assign simulator-page entries to global array g_simulatorPageEntries\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'PlankSortingPlant\&.h'\fP
+.br
+
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBSimulatorPageEntry\fP \fBg_simulatorPageEntries\fP []"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Assign simulator-page entries to global array g_simulatorPageEntries\&. 
+
+To add an entry for ExampleSimulatorPage add a line like this: 
+.PP
+.nf
+SimulatorPageEntry g_simulatorPageEntries[] =
+{
+   {'Plank sorting plant', PlankSortingPlant::Create},
+   {'Example simulator-page', ExampleSimulatorPage::Create},
+   {NULL, NULL}
+};
+
+.fi
+.PP
+ The entry will show up in the Simulator-page list: 
+.PP
+\fBAuthor:\fP
+.RS 4
+Roy Kollen Svendsen
+.RE
+.PP
+This file is based on Erin Cattos Box2D 2\&.2\&.1 Testbed TestEntries\&.cpp 
+.SH "Variable Documentation"
+.PP 
+.SS "\fBSimulatorPageEntry\fP g_simulatorPageEntries[]"
+\fBInitial value:\fP
+.PP
+.nf
+=
+{
+        {'Plank sorting plant', PlankSortingPlant::Create},
+        {NULL, NULL}
+}
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

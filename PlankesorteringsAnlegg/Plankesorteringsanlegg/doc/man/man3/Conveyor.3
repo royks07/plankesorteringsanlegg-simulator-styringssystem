@@ -1,0 +1,155 @@
+.TH "Conveyor" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Conveyor \- 
+.PP
+Assemble the conveyor and expose an interface through which controlling the conveyor is possible\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Conveyor\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyor\fP (b2Vec2 p1, b2Vec2 p2, float32 beamThickness, float32 beltThickness, int N, int M, \fBt_medbringerType\fP medbringerType, int sensorPos, float32 sensorAdjustment, int cmBits, b2World *world)"
+.br
+.ti -1c
+.RI "void \fBsetSpeed\fP (float32 speed)"
+.br
+.RI "\fISet the speed of the conveyorbelt\&. \fP"
+.ti -1c
+.RI "void \fBpause\fP ()"
+.br
+.RI "\fIPause the conveyor\&. \fP"
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.RI "\fIRun the conveyor\&. \fP"
+.ti -1c
+.RI "bool \fBisPaused\fP ()"
+.br
+.RI "\fICheck if conveyor is paused\&. \fP"
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.RI "\fIYou need to call this function iteratively\&. \fP"
+.ti -1c
+.RI "\fBWheel\fP * \fBgetWheel1\fP () const "
+.br
+.ti -1c
+.RI "\fBWheel\fP * \fBgetWheel2\fP () const "
+.br
+.ti -1c
+.RI "\fBContactSensor\fP * \fBgetSensor\fP ()"
+.br
+.RI "\fIReturn the synchronization-sensor\&. \fP"
+.ti -1c
+.RI "bool \fBisSensorActivated\fP ()"
+.br
+.RI "\fICheck state of synchronization-sensor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBWheel\fP * \fBm_wheel1\fP"
+.br
+.ti -1c
+.RI "\fBWheel\fP * \fBm_wheel2\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_p1\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_p2\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_beltThickness\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_beamThickness\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_speed\fP"
+.br
+.ti -1c
+.RI "\fBConveyorBelt\fP * \fBm_conveyorBelt\fP"
+.br
+.ti -1c
+.RI "\fBConveyorBeltShield\fP * \fBm_conveyorBeltShield\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bPaused\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Assemble the conveyor and expose an interface through which controlling the conveyor is possible\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Conveyor::Conveyor (b2Vec2p1, b2Vec2p2, float32beamThickness, float32beltThickness, intN, intM, \fBt_medbringerType\fPmedbringerType, intsensorPos, float32sensorAdjustment, intcmBits, b2World *world)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBContactSensor\fP * Conveyor::getSensor ()"
+
+.PP
+Return the synchronization-sensor\&. 
+.SS "\fBWheel\fP* Conveyor::getWheel1 () const\fC [inline]\fP"
+
+.SS "\fBWheel\fP* Conveyor::getWheel2 () const\fC [inline]\fP"
+
+.SS "bool Conveyor::isPaused ()\fC [inline]\fP"
+
+.PP
+Check if conveyor is paused\&. 
+.SS "bool Conveyor::isSensorActivated ()"
+
+.PP
+Check state of synchronization-sensor\&. 
+.SS "void Conveyor::pause ()"
+
+.PP
+Pause the conveyor\&. 
+.SS "void Conveyor::play ()"
+
+.PP
+Run the conveyor\&. 
+.SS "void Conveyor::run ()"
+
+.PP
+You need to call this function iteratively\&. 
+.SS "void Conveyor::setSpeed (float32speed)"
+
+.PP
+Set the speed of the conveyorbelt\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "float32 Conveyor::m_beamThickness"
+
+.SS "float32 Conveyor::m_beltThickness"
+
+.SS "bool Conveyor::m_bPaused"
+
+.SS "\fBConveyorBelt\fP* Conveyor::m_conveyorBelt"
+
+.SS "\fBConveyorBeltShield\fP* Conveyor::m_conveyorBeltShield"
+
+.SS "b2Vec2 Conveyor::m_p1"
+
+.SS "b2Vec2 Conveyor::m_p2"
+
+.SS "float32 Conveyor::m_speed"
+
+.SS "\fBWheel\fP* Conveyor::m_wheel1"
+
+.SS "\fBWheel\fP* Conveyor::m_wheel2"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

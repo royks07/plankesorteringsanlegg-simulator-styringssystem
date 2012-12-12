@@ -1,0 +1,173 @@
+\hypertarget{classContactSensor}{\section{Contact\-Sensor Class Reference}
+\label{classContactSensor}\index{Contact\-Sensor@{Contact\-Sensor}}
+}
+
+
+Abstract class that other sensors inherit from.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\-h$>$}
+
+Inheritance diagram for Contact\-Sensor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.359551cm]{classContactSensor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContactSensor_adf00bb183bcb37206adb5c036e1ad3c6}{Contact\-Sensor} ()
+\item 
+virtual \hyperlink{classContactSensor_a460963ef5eebd0100d404f64a32149e5}{$\sim$\-Contact\-Sensor} ()
+\item 
+virtual int \hyperlink{classContactSensor_a14992f0e2aef3d04eca7b27bd2b2d10b}{get\-Id} ()
+\item 
+virtual string \hyperlink{classContactSensor_ad3f3a4b786f7d6f23caac69374dff999}{get\-Name} ()
+\item 
+virtual void \hyperlink{classContactSensor_ae08a9a4b2e44ec4ab2a33a482d4d286d}{draw\-Label} ()
+\item 
+virtual signed int \hyperlink{classContactSensor_af616ebea2da4d9fd0dacdf71eb8b32d9}{get} ()
+\item 
+virtual \hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0ba}{t\-\_\-sensor\-Type} \hyperlink{classContactSensor_a3ba841014a5fdaf313b555527f46595e}{get\-Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32 \hyperlink{classContactSensor_a589d2cd988b8d36a339394688d892df7}{m\-\_\-id}
+\item 
+b2\-Color \hyperlink{classContactSensor_aad27d7430ca3e8eed90f2b8b2ad849a0}{m\-\_\-color}
+\item 
+string \hyperlink{classContactSensor_a2cf99d03fe5bbe0773deae4a8edc4069}{m\-\_\-name}
+\item 
+b2\-Vec2 \hyperlink{classContactSensor_a43e68faeea764d1853eadea254ff1243}{m\-\_\-position}
+\item 
+float32 \hyperlink{classContactSensor_a84888f5dcbd630bd540ef314f3a22788}{m\-\_\-radius}
+\item 
+b2\-World $\ast$ \hyperlink{classContactSensor_a9822df2b2841440f6b5df422b017a239}{m\-\_\-world}
+\item 
+b2\-Body $\ast$ \hyperlink{classContactSensor_a654138f53967d7e8032f400d0e338bf5}{m\-\_\-body}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classContactSensor_a03f59d947407b58ebce06fb3a3490633}{m\-\_\-fixture}
+\item 
+bool \hyperlink{classContactSensor_a79763d691af5d562d9039bfef94701b3}{m\-\_\-activated}
+\item 
+b2\-Body\-Def \hyperlink{classContactSensor_add4009daee3f48e71b16f6e66bdb8b32}{m\-\_\-bd}
+\item 
+b2\-Fixture\-Def \hyperlink{classContactSensor_a1bdedd0c81bdea57ab917320dbd9b8f2}{m\-\_\-fd}
+\item 
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0ba}{t\-\_\-sensor\-Type} \hyperlink{classContactSensor_a9249ca2f4872b431a7c78e1fba9ccb4a}{m\-\_\-sensor\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class that other sensors inherit from. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classContactSensor_adf00bb183bcb37206adb5c036e1ad3c6}{\index{Contact\-Sensor@{Contact\-Sensor}!Contact\-Sensor@{Contact\-Sensor}}
+\index{Contact\-Sensor@{Contact\-Sensor}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{Contact\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Contact\-Sensor\-::\-Contact\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classContactSensor_adf00bb183bcb37206adb5c036e1ad3c6}
+\hypertarget{classContactSensor_a460963ef5eebd0100d404f64a32149e5}{\index{Contact\-Sensor@{Contact\-Sensor}!$\sim$\-Contact\-Sensor@{$\sim$\-Contact\-Sensor}}
+\index{$\sim$\-Contact\-Sensor@{$\sim$\-Contact\-Sensor}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{$\sim$\-Contact\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Contact\-Sensor\-::$\sim$\-Contact\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_a460963ef5eebd0100d404f64a32149e5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classContactSensor_ae08a9a4b2e44ec4ab2a33a482d4d286d}{\index{Contact\-Sensor@{Contact\-Sensor}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Contact\-Sensor\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_ae08a9a4b2e44ec4ab2a33a482d4d286d}
+
+
+Reimplemented in \hyperlink{classCounterSensor_a43e99153ba1e398d66bdc1b1f5bc349d}{Counter\-Sensor}, \hyperlink{classContactSensorBinary_af6da2c72cf9ae64a27132bb9c6ba7ff3}{Contact\-Sensor\-Binary}, \hyperlink{classContactSensor__Sync_ae7eed2d2ee0e58940426d4701f695481}{Contact\-Sensor\-\_\-\-Sync}, and \hyperlink{classContactSensor__FromFixture_ab022c55f6ffa92709062d4be3a6c584b}{Contact\-Sensor\-\_\-\-From\-Fixture}.
+
+\hypertarget{classContactSensor_af616ebea2da4d9fd0dacdf71eb8b32d9}{\index{Contact\-Sensor@{Contact\-Sensor}!get@{get}}
+\index{get@{get}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}virtual signed int Contact\-Sensor\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_af616ebea2da4d9fd0dacdf71eb8b32d9}
+
+
+Reimplemented in \hyperlink{classCounterSensor_aec52d1f6a0e52eaa61d356d9f15b665a}{Counter\-Sensor}, \hyperlink{classQualitySensor_ab8740e275a34b860b0b370183eb4d578}{Quality\-Sensor}, \hyperlink{classLengthSensor_a90d9ddfdeb189991d274026af6ab8681}{Length\-Sensor}, \hyperlink{classContactSensorBinary_a68e856e0d580f91f518099874f8c226b}{Contact\-Sensor\-Binary}, and \hyperlink{classContactSensor__FromFixture_a565839762b4c6bff70f3d7d959813580}{Contact\-Sensor\-\_\-\-From\-Fixture}.
+
+\hypertarget{classContactSensor_a14992f0e2aef3d04eca7b27bd2b2d10b}{\index{Contact\-Sensor@{Contact\-Sensor}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Contact\-Sensor\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_a14992f0e2aef3d04eca7b27bd2b2d10b}
+\hypertarget{classContactSensor_ad3f3a4b786f7d6f23caac69374dff999}{\index{Contact\-Sensor@{Contact\-Sensor}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Contact\-Sensor\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_ad3f3a4b786f7d6f23caac69374dff999}
+\hypertarget{classContactSensor_a3ba841014a5fdaf313b555527f46595e}{\index{Contact\-Sensor@{Contact\-Sensor}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf t\-\_\-sensor\-Type} Contact\-Sensor\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classContactSensor_a3ba841014a5fdaf313b555527f46595e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classContactSensor_a79763d691af5d562d9039bfef94701b3}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-activated@{m\-\_\-activated}}
+\index{m\-\_\-activated@{m\-\_\-activated}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}bool Contact\-Sensor\-::m\-\_\-activated}}\label{classContactSensor_a79763d691af5d562d9039bfef94701b3}
+\hypertarget{classContactSensor_add4009daee3f48e71b16f6e66bdb8b32}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-bd@{m\-\_\-bd}}
+\index{m\-\_\-bd@{m\-\_\-bd}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-bd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body\-Def Contact\-Sensor\-::m\-\_\-bd}}\label{classContactSensor_add4009daee3f48e71b16f6e66bdb8b32}
+\hypertarget{classContactSensor_a654138f53967d7e8032f400d0e338bf5}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-body@{m\-\_\-body}}
+\index{m\-\_\-body@{m\-\_\-body}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Contact\-Sensor\-::m\-\_\-body}}\label{classContactSensor_a654138f53967d7e8032f400d0e338bf5}
+\hypertarget{classContactSensor_aad27d7430ca3e8eed90f2b8b2ad849a0}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-color@{m\-\_\-color}}
+\index{m\-\_\-color@{m\-\_\-color}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Color Contact\-Sensor\-::m\-\_\-color}}\label{classContactSensor_aad27d7430ca3e8eed90f2b8b2ad849a0}
+\hypertarget{classContactSensor_a1bdedd0c81bdea57ab917320dbd9b8f2}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-fd@{m\-\_\-fd}}
+\index{m\-\_\-fd@{m\-\_\-fd}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture\-Def Contact\-Sensor\-::m\-\_\-fd}}\label{classContactSensor_a1bdedd0c81bdea57ab917320dbd9b8f2}
+\hypertarget{classContactSensor_a03f59d947407b58ebce06fb3a3490633}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-fixture@{m\-\_\-fixture}}
+\index{m\-\_\-fixture@{m\-\_\-fixture}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Contact\-Sensor\-::m\-\_\-fixture}}\label{classContactSensor_a03f59d947407b58ebce06fb3a3490633}
+\hypertarget{classContactSensor_a589d2cd988b8d36a339394688d892df7}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-id@{m\-\_\-id}}
+\index{m\-\_\-id@{m\-\_\-id}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int32 Contact\-Sensor\-::m\-\_\-id}}\label{classContactSensor_a589d2cd988b8d36a339394688d892df7}
+\hypertarget{classContactSensor_a2cf99d03fe5bbe0773deae4a8edc4069}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-name@{m\-\_\-name}}
+\index{m\-\_\-name@{m\-\_\-name}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string Contact\-Sensor\-::m\-\_\-name}}\label{classContactSensor_a2cf99d03fe5bbe0773deae4a8edc4069}
+\hypertarget{classContactSensor_a43e68faeea764d1853eadea254ff1243}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-position@{m\-\_\-position}}
+\index{m\-\_\-position@{m\-\_\-position}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Contact\-Sensor\-::m\-\_\-position}}\label{classContactSensor_a43e68faeea764d1853eadea254ff1243}
+\hypertarget{classContactSensor_a84888f5dcbd630bd540ef314f3a22788}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-radius@{m\-\_\-radius}}
+\index{m\-\_\-radius@{m\-\_\-radius}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}float32 Contact\-Sensor\-::m\-\_\-radius}}\label{classContactSensor_a84888f5dcbd630bd540ef314f3a22788}
+\hypertarget{classContactSensor_a9249ca2f4872b431a7c78e1fba9ccb4a}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-sensor\-Type@{m\-\_\-sensor\-Type}}
+\index{m\-\_\-sensor\-Type@{m\-\_\-sensor\-Type}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-sensor\-Type} Contact\-Sensor\-::m\-\_\-sensor\-Type}}\label{classContactSensor_a9249ca2f4872b431a7c78e1fba9ccb4a}
+\hypertarget{classContactSensor_a9822df2b2841440f6b5df422b017a239}{\index{Contact\-Sensor@{Contact\-Sensor}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!ContactSensor@{Contact\-Sensor}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Contact\-Sensor\-::m\-\_\-world}}\label{classContactSensor_a9822df2b2841440f6b5df422b017a239}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensors_8h}{Sensors.\-h}\item 
+\hyperlink{Sensors_8cpp}{Sensors.\-cpp}\end{DoxyCompactItemize}

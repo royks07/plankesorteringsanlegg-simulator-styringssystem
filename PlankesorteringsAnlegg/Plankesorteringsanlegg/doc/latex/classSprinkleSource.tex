@@ -1,0 +1,133 @@
+\hypertarget{classSprinkleSource}{\section{Sprinkle\-Source Class Reference}
+\label{classSprinkleSource}\index{Sprinkle\-Source@{Sprinkle\-Source}}
+}
+
+
+Lets you create and destruct sprinkles by id.  
+
+
+
+
+{\ttfamily \#include $<$Package.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSprinkleSource_a824b0a6fdf330e751eb41b4debb3e169}{Sprinkle\-Source} (b2\-Body $\ast$body, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Turn any b2body into an abundant source of fresh sprinkles. \end{DoxyCompactList}\item 
+void \hyperlink{classSprinkleSource_a46a3ee06b8ba7576d4c15a0da597f317}{create} (int id)
+\begin{DoxyCompactList}\small\item\em Force the source to create a new Sprinkle-\/instance \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classSprinkleSource_aca356ad2512a551436f0386c69f1c7cc}{destruct} (int id)
+\begin{DoxyCompactList}\small\item\em Force the source to remove Sprinkle-\/instance \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classSprinkleSource_a57aee0f31a931c0e3a71719539d4d28d}{update\-Position} ()
+\begin{DoxyCompactList}\small\item\em Call continuously to update position of source. \end{DoxyCompactList}\item 
+b2\-Vec2 \hyperlink{classSprinkleSource_a7466f70cd45495df332777e4b179422c}{get\-Position} ()
+\begin{DoxyCompactList}\small\item\em Return current position of source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+multimap$<$ int, \hyperlink{classSprinkle}{Sprinkle} $\ast$ $>$ \hyperlink{classSprinkleSource_a666b3620ce503c263a05a05da02b7f07}{m\-\_\-sprinkle}
+\item 
+b2\-Vec2 \hyperlink{classSprinkleSource_a4fe9f165895202faf9be6c3b0c3c9e1e}{m\-\_\-position}
+\item 
+b2\-Body $\ast$ \hyperlink{classSprinkleSource_a6aabdc2149d75deb8fd91c4204605a6e}{m\-\_\-body}
+\item 
+b2\-World $\ast$ \hyperlink{classSprinkleSource_a364f280e34168ed14147ee7ad9ce8436}{m\-\_\-world}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lets you create and destruct sprinkles by id. 
+
+This source can be controlled by a \hyperlink{classSprinkleSourceActuator}{Sprinkle\-Source\-Actuator}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSprinkleSource_a824b0a6fdf330e751eb41b4debb3e169}{\index{Sprinkle\-Source@{Sprinkle\-Source}!Sprinkle\-Source@{Sprinkle\-Source}}
+\index{Sprinkle\-Source@{Sprinkle\-Source}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{Sprinkle\-Source}]{\setlength{\rightskip}{0pt plus 5cm}Sprinkle\-Source\-::\-Sprinkle\-Source (
+\begin{DoxyParamCaption}
+\item[{b2\-Body $\ast$}]{body, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classSprinkleSource_a824b0a6fdf330e751eb41b4debb3e169}
+
+
+Turn any b2body into an abundant source of fresh sprinkles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & Pointer to a body \\
+\hline
+{\em world} & Pointer to the world in which you want to create the Sprinle\-Source\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]Remove world parameter. Not needed. \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSprinkleSource_a46a3ee06b8ba7576d4c15a0da597f317}{\index{Sprinkle\-Source@{Sprinkle\-Source}!create@{create}}
+\index{create@{create}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Sprinkle\-Source\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classSprinkleSource_a46a3ee06b8ba7576d4c15a0da597f317}
+
+
+Force the source to create a new Sprinkle-\/instance \char`\"{}id\char`\"{}. 
+
+\hypertarget{classSprinkleSource_aca356ad2512a551436f0386c69f1c7cc}{\index{Sprinkle\-Source@{Sprinkle\-Source}!destruct@{destruct}}
+\index{destruct@{destruct}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{destruct}]{\setlength{\rightskip}{0pt plus 5cm}void Sprinkle\-Source\-::destruct (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classSprinkleSource_aca356ad2512a551436f0386c69f1c7cc}
+
+
+Force the source to remove Sprinkle-\/instance \char`\"{}id\char`\"{}. 
+
+\hypertarget{classSprinkleSource_a7466f70cd45495df332777e4b179422c}{\index{Sprinkle\-Source@{Sprinkle\-Source}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Sprinkle\-Source\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSprinkleSource_a7466f70cd45495df332777e4b179422c}
+
+
+Return current position of source. 
+
+\hypertarget{classSprinkleSource_a57aee0f31a931c0e3a71719539d4d28d}{\index{Sprinkle\-Source@{Sprinkle\-Source}!update\-Position@{update\-Position}}
+\index{update\-Position@{update\-Position}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{update\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Sprinkle\-Source\-::update\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSprinkleSource_a57aee0f31a931c0e3a71719539d4d28d}
+
+
+Call continuously to update position of source. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSprinkleSource_a6aabdc2149d75deb8fd91c4204605a6e}{\index{Sprinkle\-Source@{Sprinkle\-Source}!m\-\_\-body@{m\-\_\-body}}
+\index{m\-\_\-body@{m\-\_\-body}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{m\-\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Sprinkle\-Source\-::m\-\_\-body}}\label{classSprinkleSource_a6aabdc2149d75deb8fd91c4204605a6e}
+\hypertarget{classSprinkleSource_a4fe9f165895202faf9be6c3b0c3c9e1e}{\index{Sprinkle\-Source@{Sprinkle\-Source}!m\-\_\-position@{m\-\_\-position}}
+\index{m\-\_\-position@{m\-\_\-position}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Sprinkle\-Source\-::m\-\_\-position}}\label{classSprinkleSource_a4fe9f165895202faf9be6c3b0c3c9e1e}
+\hypertarget{classSprinkleSource_a666b3620ce503c263a05a05da02b7f07}{\index{Sprinkle\-Source@{Sprinkle\-Source}!m\-\_\-sprinkle@{m\-\_\-sprinkle}}
+\index{m\-\_\-sprinkle@{m\-\_\-sprinkle}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{m\-\_\-sprinkle}]{\setlength{\rightskip}{0pt plus 5cm}multimap$<$int,{\bf Sprinkle}$\ast$$>$ Sprinkle\-Source\-::m\-\_\-sprinkle}}\label{classSprinkleSource_a666b3620ce503c263a05a05da02b7f07}
+\hypertarget{classSprinkleSource_a364f280e34168ed14147ee7ad9ce8436}{\index{Sprinkle\-Source@{Sprinkle\-Source}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!SprinkleSource@{Sprinkle\-Source}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Sprinkle\-Source\-::m\-\_\-world}}\label{classSprinkleSource_a364f280e34168ed14147ee7ad9ce8436}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Package_8h}{Package.\-h}\item 
+\hyperlink{Package_8cpp}{Package.\-cpp}\end{DoxyCompactItemize}

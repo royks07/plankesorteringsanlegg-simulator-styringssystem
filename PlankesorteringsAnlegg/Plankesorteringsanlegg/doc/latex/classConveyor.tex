@@ -1,0 +1,214 @@
+\hypertarget{classConveyor}{\section{Conveyor Class Reference}
+\label{classConveyor}\index{Conveyor@{Conveyor}}
+}
+
+
+Assemble the conveyor and expose an interface through which controlling the conveyor is possible.  
+
+
+
+
+{\ttfamily \#include $<$Conveyor.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConveyor_a49aeaaa057ce5bbce9d0dbd8efcd86cf}{Conveyor} (b2\-Vec2 p1, b2\-Vec2 p2, float32 beam\-Thickness, float32 belt\-Thickness, int N, int M, \hyperlink{Conveyor_8h_a98261db3679be2885c0bdad13c27d7b1}{t\-\_\-medbringer\-Type} medbringer\-Type, int sensor\-Pos, float32 sensor\-Adjustment, int cm\-Bits, b2\-World $\ast$world)
+\item 
+void \hyperlink{classConveyor_a2c161757c96058a1af3225192db4add6}{set\-Speed} (float32 speed)
+\begin{DoxyCompactList}\small\item\em Set the speed of the conveyorbelt. \end{DoxyCompactList}\item 
+void \hyperlink{classConveyor_a85ac6c349c3a15e57279c5138da2cfed}{pause} ()
+\begin{DoxyCompactList}\small\item\em Pause the conveyor. \end{DoxyCompactList}\item 
+void \hyperlink{classConveyor_a50cae15e0bb0f744297ce51651ad26f2}{play} ()
+\begin{DoxyCompactList}\small\item\em Run the conveyor. \end{DoxyCompactList}\item 
+bool \hyperlink{classConveyor_a3d97165f61dd8b1f1d27214dce8383df}{is\-Paused} ()
+\begin{DoxyCompactList}\small\item\em Check if conveyor is paused. \end{DoxyCompactList}\item 
+void \hyperlink{classConveyor_a37bd6265284a18cc7dd5247f2367b485}{run} ()
+\begin{DoxyCompactList}\small\item\em You need to call this function iteratively. \end{DoxyCompactList}\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classConveyor_ae742b2ae2f99c1d3f467ba8718b822f2}{get\-Wheel1} () const 
+\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classConveyor_a04fcab5fd72b64c1d05db0a8b1dfc597}{get\-Wheel2} () const 
+\item 
+\hyperlink{classContactSensor}{Contact\-Sensor} $\ast$ \hyperlink{classConveyor_ac9402d02e1d79aa5faebcb229c45620a}{get\-Sensor} ()
+\begin{DoxyCompactList}\small\item\em Return the synchronization-\/sensor. \end{DoxyCompactList}\item 
+bool \hyperlink{classConveyor_a475ce9af7f0d6c108763728228e32b56}{is\-Sensor\-Activated} ()
+\begin{DoxyCompactList}\small\item\em Check state of synchronization-\/sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classConveyor_add4c93f9cde9efd141ec813e429161b3}{m\-\_\-wheel1}
+\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classConveyor_a49272a7a68a6d1072c170fe4080c720b}{m\-\_\-wheel2}
+\item 
+b2\-Vec2 \hyperlink{classConveyor_a113c9d44089b1538f7c35e6888366904}{m\-\_\-p1}
+\item 
+b2\-Vec2 \hyperlink{classConveyor_aa1cd90bad95a21f56a56d8c468b366bf}{m\-\_\-p2}
+\item 
+float32 \hyperlink{classConveyor_a38e79e2c88efd24fd626485bff30f697}{m\-\_\-belt\-Thickness}
+\item 
+float32 \hyperlink{classConveyor_aa16886f74252de25d3d8972779f282b0}{m\-\_\-beam\-Thickness}
+\item 
+float32 \hyperlink{classConveyor_aada37ff91042927da34b025345c9350f}{m\-\_\-speed}
+\item 
+\hyperlink{classConveyorBelt}{Conveyor\-Belt} $\ast$ \hyperlink{classConveyor_aa1640f4a83793107fcb2af5915b3fba1}{m\-\_\-conveyor\-Belt}
+\item 
+\hyperlink{classConveyorBeltShield}{Conveyor\-Belt\-Shield} $\ast$ \hyperlink{classConveyor_acb82b369204df0d42ae4483f9e0c9374}{m\-\_\-conveyor\-Belt\-Shield}
+\item 
+bool \hyperlink{classConveyor_a5cf9db504e884a9542b52037e6e7eb4f}{m\-\_\-b\-Paused}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assemble the conveyor and expose an interface through which controlling the conveyor is possible. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConveyor_a49aeaaa057ce5bbce9d0dbd8efcd86cf}{\index{Conveyor@{Conveyor}!Conveyor@{Conveyor}}
+\index{Conveyor@{Conveyor}!Conveyor@{Conveyor}}
+\subsubsection[{Conveyor}]{\setlength{\rightskip}{0pt plus 5cm}Conveyor\-::\-Conveyor (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{p1, }
+\item[{b2\-Vec2}]{p2, }
+\item[{float32}]{beam\-Thickness, }
+\item[{float32}]{belt\-Thickness, }
+\item[{int}]{N, }
+\item[{int}]{M, }
+\item[{{\bf t\-\_\-medbringer\-Type}}]{medbringer\-Type, }
+\item[{int}]{sensor\-Pos, }
+\item[{float32}]{sensor\-Adjustment, }
+\item[{int}]{cm\-Bits, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a49aeaaa057ce5bbce9d0dbd8efcd86cf}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConveyor_ac9402d02e1d79aa5faebcb229c45620a}{\index{Conveyor@{Conveyor}!get\-Sensor@{get\-Sensor}}
+\index{get\-Sensor@{get\-Sensor}!Conveyor@{Conveyor}}
+\subsubsection[{get\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contact\-Sensor} $\ast$ Conveyor\-::get\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_ac9402d02e1d79aa5faebcb229c45620a}
+
+
+Return the synchronization-\/sensor. 
+
+\hypertarget{classConveyor_ae742b2ae2f99c1d3f467ba8718b822f2}{\index{Conveyor@{Conveyor}!get\-Wheel1@{get\-Wheel1}}
+\index{get\-Wheel1@{get\-Wheel1}!Conveyor@{Conveyor}}
+\subsubsection[{get\-Wheel1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Conveyor\-::get\-Wheel1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConveyor_ae742b2ae2f99c1d3f467ba8718b822f2}
+\hypertarget{classConveyor_a04fcab5fd72b64c1d05db0a8b1dfc597}{\index{Conveyor@{Conveyor}!get\-Wheel2@{get\-Wheel2}}
+\index{get\-Wheel2@{get\-Wheel2}!Conveyor@{Conveyor}}
+\subsubsection[{get\-Wheel2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Conveyor\-::get\-Wheel2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConveyor_a04fcab5fd72b64c1d05db0a8b1dfc597}
+\hypertarget{classConveyor_a3d97165f61dd8b1f1d27214dce8383df}{\index{Conveyor@{Conveyor}!is\-Paused@{is\-Paused}}
+\index{is\-Paused@{is\-Paused}!Conveyor@{Conveyor}}
+\subsubsection[{is\-Paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Conveyor\-::is\-Paused (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConveyor_a3d97165f61dd8b1f1d27214dce8383df}
+
+
+Check if conveyor is paused. 
+
+\hypertarget{classConveyor_a475ce9af7f0d6c108763728228e32b56}{\index{Conveyor@{Conveyor}!is\-Sensor\-Activated@{is\-Sensor\-Activated}}
+\index{is\-Sensor\-Activated@{is\-Sensor\-Activated}!Conveyor@{Conveyor}}
+\subsubsection[{is\-Sensor\-Activated}]{\setlength{\rightskip}{0pt plus 5cm}bool Conveyor\-::is\-Sensor\-Activated (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a475ce9af7f0d6c108763728228e32b56}
+
+
+Check state of synchronization-\/sensor. 
+
+\hypertarget{classConveyor_a85ac6c349c3a15e57279c5138da2cfed}{\index{Conveyor@{Conveyor}!pause@{pause}}
+\index{pause@{pause}!Conveyor@{Conveyor}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-::pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a85ac6c349c3a15e57279c5138da2cfed}
+
+
+Pause the conveyor. 
+
+\hypertarget{classConveyor_a50cae15e0bb0f744297ce51651ad26f2}{\index{Conveyor@{Conveyor}!play@{play}}
+\index{play@{play}!Conveyor@{Conveyor}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a50cae15e0bb0f744297ce51651ad26f2}
+
+
+Run the conveyor. 
+
+\hypertarget{classConveyor_a37bd6265284a18cc7dd5247f2367b485}{\index{Conveyor@{Conveyor}!run@{run}}
+\index{run@{run}!Conveyor@{Conveyor}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a37bd6265284a18cc7dd5247f2367b485}
+
+
+You need to call this function iteratively. 
+
+\hypertarget{classConveyor_a2c161757c96058a1af3225192db4add6}{\index{Conveyor@{Conveyor}!set\-Speed@{set\-Speed}}
+\index{set\-Speed@{set\-Speed}!Conveyor@{Conveyor}}
+\subsubsection[{set\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-::set\-Speed (
+\begin{DoxyParamCaption}
+\item[{float32}]{speed}
+\end{DoxyParamCaption}
+)}}\label{classConveyor_a2c161757c96058a1af3225192db4add6}
+
+
+Set the speed of the conveyorbelt. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classConveyor_aa16886f74252de25d3d8972779f282b0}{\index{Conveyor@{Conveyor}!m\-\_\-beam\-Thickness@{m\-\_\-beam\-Thickness}}
+\index{m\-\_\-beam\-Thickness@{m\-\_\-beam\-Thickness}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-beam\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Conveyor\-::m\-\_\-beam\-Thickness}}\label{classConveyor_aa16886f74252de25d3d8972779f282b0}
+\hypertarget{classConveyor_a38e79e2c88efd24fd626485bff30f697}{\index{Conveyor@{Conveyor}!m\-\_\-belt\-Thickness@{m\-\_\-belt\-Thickness}}
+\index{m\-\_\-belt\-Thickness@{m\-\_\-belt\-Thickness}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-belt\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Conveyor\-::m\-\_\-belt\-Thickness}}\label{classConveyor_a38e79e2c88efd24fd626485bff30f697}
+\hypertarget{classConveyor_a5cf9db504e884a9542b52037e6e7eb4f}{\index{Conveyor@{Conveyor}!m\-\_\-b\-Paused@{m\-\_\-b\-Paused}}
+\index{m\-\_\-b\-Paused@{m\-\_\-b\-Paused}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-b\-Paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Conveyor\-::m\-\_\-b\-Paused}}\label{classConveyor_a5cf9db504e884a9542b52037e6e7eb4f}
+\hypertarget{classConveyor_aa1640f4a83793107fcb2af5915b3fba1}{\index{Conveyor@{Conveyor}!m\-\_\-conveyor\-Belt@{m\-\_\-conveyor\-Belt}}
+\index{m\-\_\-conveyor\-Belt@{m\-\_\-conveyor\-Belt}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-conveyor\-Belt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor\-Belt}$\ast$ Conveyor\-::m\-\_\-conveyor\-Belt}}\label{classConveyor_aa1640f4a83793107fcb2af5915b3fba1}
+\hypertarget{classConveyor_acb82b369204df0d42ae4483f9e0c9374}{\index{Conveyor@{Conveyor}!m\-\_\-conveyor\-Belt\-Shield@{m\-\_\-conveyor\-Belt\-Shield}}
+\index{m\-\_\-conveyor\-Belt\-Shield@{m\-\_\-conveyor\-Belt\-Shield}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-conveyor\-Belt\-Shield}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor\-Belt\-Shield}$\ast$ Conveyor\-::m\-\_\-conveyor\-Belt\-Shield}}\label{classConveyor_acb82b369204df0d42ae4483f9e0c9374}
+\hypertarget{classConveyor_a113c9d44089b1538f7c35e6888366904}{\index{Conveyor@{Conveyor}!m\-\_\-p1@{m\-\_\-p1}}
+\index{m\-\_\-p1@{m\-\_\-p1}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-p1}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Conveyor\-::m\-\_\-p1}}\label{classConveyor_a113c9d44089b1538f7c35e6888366904}
+\hypertarget{classConveyor_aa1cd90bad95a21f56a56d8c468b366bf}{\index{Conveyor@{Conveyor}!m\-\_\-p2@{m\-\_\-p2}}
+\index{m\-\_\-p2@{m\-\_\-p2}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-p2}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Conveyor\-::m\-\_\-p2}}\label{classConveyor_aa1cd90bad95a21f56a56d8c468b366bf}
+\hypertarget{classConveyor_aada37ff91042927da34b025345c9350f}{\index{Conveyor@{Conveyor}!m\-\_\-speed@{m\-\_\-speed}}
+\index{m\-\_\-speed@{m\-\_\-speed}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-speed}]{\setlength{\rightskip}{0pt plus 5cm}float32 Conveyor\-::m\-\_\-speed}}\label{classConveyor_aada37ff91042927da34b025345c9350f}
+\hypertarget{classConveyor_add4c93f9cde9efd141ec813e429161b3}{\index{Conveyor@{Conveyor}!m\-\_\-wheel1@{m\-\_\-wheel1}}
+\index{m\-\_\-wheel1@{m\-\_\-wheel1}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-wheel1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Conveyor\-::m\-\_\-wheel1}}\label{classConveyor_add4c93f9cde9efd141ec813e429161b3}
+\hypertarget{classConveyor_a49272a7a68a6d1072c170fe4080c720b}{\index{Conveyor@{Conveyor}!m\-\_\-wheel2@{m\-\_\-wheel2}}
+\index{m\-\_\-wheel2@{m\-\_\-wheel2}!Conveyor@{Conveyor}}
+\subsubsection[{m\-\_\-wheel2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Conveyor\-::m\-\_\-wheel2}}\label{classConveyor_a49272a7a68a6d1072c170fe4080c720b}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Conveyor_8h}{Conveyor.\-h}\item 
+\hyperlink{Conveyor_8cpp}{Conveyor.\-cpp}\end{DoxyCompactItemize}

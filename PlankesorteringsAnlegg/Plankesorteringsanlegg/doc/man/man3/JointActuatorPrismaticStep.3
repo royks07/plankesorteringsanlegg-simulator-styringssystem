@@ -1,0 +1,87 @@
+.TH "JointActuatorPrismaticStep" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+JointActuatorPrismaticStep \- 
+.PP
+Run a prismatic joint an arbitrary number of steps\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherits \fBActuator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBJointActuatorPrismaticStep\fP (int id, b2Joint *joint)"
+.br
+.ti -1c
+.RI "void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Joint * \fBm_joint\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_startPos\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_currentPos\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_maxDisplacement\fP"
+.br
+.ti -1c
+.RI "signed int \fBm_value\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Run a prismatic joint an arbitrary number of steps\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "JointActuatorPrismaticStep::JointActuatorPrismaticStep (intid, b2Joint *joint)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void JointActuatorPrismaticStep::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void JointActuatorPrismaticStep::run ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void JointActuatorPrismaticStep::set (signed intvalue)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Vec2 JointActuatorPrismaticStep::m_currentPos"
+
+.SS "b2Joint* JointActuatorPrismaticStep::m_joint"
+
+.SS "float32 JointActuatorPrismaticStep::m_maxDisplacement"
+
+.SS "b2Vec2 JointActuatorPrismaticStep::m_startPos"
+
+.SS "signed int JointActuatorPrismaticStep::m_value"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

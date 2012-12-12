@@ -25,17 +25,30 @@ set(Plankesorteringsanlegg_SRCS
 	Render.h
 	SimulatorPage.cpp
 	SimulatorPage.h
-	Plankesorteringsanlegg.h
+	PlankSortingPlant.cpp
+	PlankSortingPlant.h
 	SimulatorPageEntries.cpp
+	Actuators.cpp
 	Actuators.h
+	Communicator.cpp
 	Communicator.h
+	CommandSequenceInterpreter.cpp
+	CommandSequenceInterpreter.h
+    Conveyor.cpp
 	Conveyor.h
+	ConveyorSynchronizer.cpp
 	ConveyorSynchronizer.h
+	Package.cpp
 	Package.h
+	Packaging.cpp
 	Packaging.h
+	Sensors.cpp
 	Sensors.h
+	Storages.cpp
 	Storages.h
 	Text.h
+	Text.cpp
+	UserData.cpp
 	UserData.h
 )
 

@@ -1,0 +1,95 @@
+.TH "Main.cpp" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Main.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'Main\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBResize\fP (int32 w, int32 h)"
+.br
+.ti -1c
+.RI "b2Vec2 \fBConvertScreenToWorld\fP (int32 x, int32 y)"
+.br
+.ti -1c
+.RI "void \fBTimer\fP (int)"
+.br
+.ti -1c
+.RI "void \fBSimulationLoop\fP ()"
+.br
+.ti -1c
+.RI "void \fBKeyboard\fP (unsigned char key, int x, int y)"
+.br
+.ti -1c
+.RI "void \fBKeyboardSpecial\fP (int key, int x, int y)"
+.br
+.ti -1c
+.RI "void \fBKeyboardUp\fP (unsigned char key, int x, int y)"
+.br
+.ti -1c
+.RI "void \fBMouse\fP (int32 button, int32 state, int32 x, int32 y)"
+.br
+.ti -1c
+.RI "void \fBMouseMotion\fP (int32 x, int32 y)"
+.br
+.ti -1c
+.RI "void \fBMouseWheel\fP (int wheel, int direction, int x, int y)"
+.br
+.ti -1c
+.RI "void \fBRestart\fP (int)"
+.br
+.ti -1c
+.RI "void \fBPause\fP (int)"
+.br
+.ti -1c
+.RI "void \fBSingleStep\fP (int)"
+.br
+.ti -1c
+.RI "void \fBSetSerialPort\fP ()"
+.br
+.ti -1c
+.RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "b2Vec2 ConvertScreenToWorld (int32x, int32y)"
+Convert screen coordinates to world coordinates 
+.SS "void Keyboard (unsigned charkey, intx, inty)"
+
+.SS "void KeyboardSpecial (intkey, intx, inty)"
+
+.SS "void KeyboardUp (unsigned charkey, intx, inty)"
+
+.SS "int main (intargc, char **argv)"
+Start program execution 
+.SS "void Mouse (int32button, int32state, int32x, int32y)"
+
+.SS "void MouseMotion (int32x, int32y)"
+
+.SS "void MouseWheel (intwheel, intdirection, intx, inty)"
+
+.SS "void Pause (int)"
+Toggle pause 
+.SS "void Resize (int32w, int32h)"
+Set the dimensions of the view-port around the viewcenter 
+.SS "void Restart (int)"
+Restart \fBSimulatorPage\fP 
+.SS "void SetSerialPort ()"
+Update serialport and restart \fBSimulatorPage\fP 
+.SS "void SimulationLoop ()"
+Run the simulation loop 
+.SS "void SingleStep (int)"
+Run the simulation loop one step at the time 
+.SS "void Timer (int)"
+Control the frame-rate 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

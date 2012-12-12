@@ -1,0 +1,115 @@
+.TH "Plank" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Plank \- 
+.PP
+Represent Plank-objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Package\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlank\fP (b2Vec2 pos, b2World *world)"
+.br
+.ti -1c
+.RI "\fB~Plank\fP ()"
+.br
+.ti -1c
+.RI "float \fBrandomFloat\fP (float a, float b)"
+.br
+.RI "\fIGenerate random number in interval [a,b]\&. \fP"
+.ti -1c
+.RI "float32 \fBgetWidth\fP ()"
+.br
+.ti -1c
+.RI "float32 \fBgetThickness\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2BodyDef * \fBm_bd\fP"
+.br
+.ti -1c
+.RI "b2FixtureDef * \fBm_fd\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_width\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_thickness\fP"
+.br
+.ti -1c
+.RI "b2Body * \fBm_body\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represent Plank-objects\&. 
+
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Plank::Plank (b2Vec2pos, b2World *world)"
+\fBParameters:\fP
+.RS 4
+\fIpos\fP The position at which you want place the center of the plank\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create the plank\&. 
+.RE
+.PP
+
+.SS "Plank::~Plank ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float32 Plank::getThickness ()\fC [inline]\fP"
+
+.SS "float32 Plank::getWidth ()\fC [inline]\fP"
+
+.SS "float Plank::randomFloat (floata, floatb)"
+
+.PP
+Generate random number in interval [a,b]\&. Helper-function used to give planks random length and quality\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP Start of interval 
+.br
+\fIb\fP End of interval 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+a random number from the interval [a,b] 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "b2BodyDef* Plank::m_bd\fC [private]\fP"
+
+.SS "b2Body* Plank::m_body\fC [private]\fP"
+
+.SS "b2FixtureDef* Plank::m_fd\fC [private]\fP"
+
+.SS "float32 Plank::m_thickness\fC [private]\fP"
+
+.SS "float32 Plank::m_width\fC [private]\fP"
+
+.SS "b2World* Plank::m_world\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

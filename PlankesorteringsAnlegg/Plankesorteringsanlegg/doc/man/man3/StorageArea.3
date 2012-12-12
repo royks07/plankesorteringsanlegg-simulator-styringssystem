@@ -1,0 +1,100 @@
+.TH "StorageArea" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+StorageArea \- 
+.PP
+Create an arbitrary number of storages side-by-side to sort planks into\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Storages\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStorageArea\fP (int numberOfStorages, b2Vec2 upperLeftCorner, float32 width, float32 height, float32 wallThickness, b2World *world)"
+.br
+.RI "\fIConstruct an arbitrary number of storages side-by-side\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetLiftJoint\fP (int i)"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetStopperJoint\fP (int i)"
+.br
+.ti -1c
+.RI "b2Fixture * \fBgetTopSensorFixture\fP (int i)"
+.br
+.ti -1c
+.RI "b2Fixture * \fBgetMiddleSensorFixture\fP (int i)"
+.br
+.ti -1c
+.RI "b2Fixture * \fBgetBottomSensorFixture\fP (int i)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBStorage\fP * > \fBm_storage\fP"
+.br
+.RI "\fIVector that contains pointers to the individual storages\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Create an arbitrary number of storages side-by-side to sort planks into\&. 
+
+The Following line of code generates the storage area in the image below\&. 
+.PP
+.nf
+StorageArea* storageArea0 = new StorageArea(3,b2Vec2(-40\&.0f,0\&.0f),9,5,0\&.5f,m_world);
+
+.fi
+.PP
+.PP
+Instance of \fBStorageArea\fP + descriptive text:  
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "StorageArea::StorageArea (intnumberOfStorages, b2Vec2upperLeftCorner, float32width, float32height, float32wallThickness, b2World *world)"
+
+.PP
+Construct an arbitrary number of storages side-by-side\&. \fBParameters:\fP
+.RS 4
+\fInumberOfStorages\fP The number of storages\&. 
+.br
+\fIupperLeftCorner\fP Positioin of the upper left corner of the first storage\&. 
+.br
+\fIwidth\fP The width of an individual storage\&. 
+.br
+\fIheight\fP The height of an individual storage\&. 
+.br
+\fIwallThickness\fP The wall-thickness of an individual storage\&. 
+.br
+\fIworld\fP Pointer to the world you want to create the storage-area in\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "b2Fixture * StorageArea::getBottomSensorFixture (inti)"
+
+.SS "b2PrismaticJoint * StorageArea::getLiftJoint (inti)"
+
+.SS "b2Fixture * StorageArea::getMiddleSensorFixture (inti)"
+
+.SS "b2PrismaticJoint * StorageArea::getStopperJoint (inti)"
+
+.SS "b2Fixture * StorageArea::getTopSensorFixture (inti)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<\fBStorage\fP*> StorageArea::m_storage"
+
+.PP
+Vector that contains pointers to the individual storages\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

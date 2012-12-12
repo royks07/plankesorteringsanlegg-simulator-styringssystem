@@ -1,0 +1,172 @@
+\hypertarget{classPackageOutput}{\section{Package\-Output Class Reference}
+\label{classPackageOutput}\index{Package\-Output@{Package\-Output}}
+}
+
+
+Represent the package output block.  
+
+
+
+
+{\ttfamily \#include $<$Packaging.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPackageOutput_a81bd389107afdc3df10c63f29d971458}{Package\-Output} (b2\-Vec2 position, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Create Package\-Output-\/instance with center of lyingbeam at any position. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a1189dbd68b0da4c9a9d52fe8e826d5c3}{get\-Fork\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Fork\-Joint. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a67d6e0558552cbee8bba8cc360f7eb3c}{get\-Fork\-Base\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Fork\-Base\-Joint. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a1f5bad1afb58f37b8b2e49a4d198a69f}{get\-Lift\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Lift\-Joint. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a250ae49ec134d5b9b853acdbd91707ea}{get\-Cassette\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Cassette\-Joint. \end{DoxyCompactList}\item 
+b2\-Fixture $\ast$ \hyperlink{classPackageOutput_a63503d10e21d6b77683db0d28fa90e2f}{get\-Cassette\-Sensor\-Fixture} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Cassette\-Sensor\-Fixture. \end{DoxyCompactList}\item 
+\hyperlink{classSprinkleSource}{Sprinkle\-Source} $\ast$ \hyperlink{classPackageOutput_a74194c1e25e777b6936f5f6786609aef}{get\-Sprinkle\-Source} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to \hyperlink{classSprinkleSource}{Sprinkle\-Source}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a13c8e517356d405fcc3761dbf5297243}{m\-\_\-joint\-Fork\-Base}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_acf132fdef37105ce91af9fedab94969a}{m\-\_\-joint\-Fork}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_a10725b3931a327ca8cad5527d65dadc5}{m\-\_\-joint\-Lift}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_ac5b706bf7b0394579afaa66fa416bdc8}{m\-\_\-joint\-Cassette}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageOutput_ad7fd83bf723bc703b88a2cb18b3b8258}{m\-\_\-joint\-Cassette\-Sensor}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classPackageOutput_a707dc7e298abe79485a24b7cd5fe3a26}{m\-\_\-fixture\-Cassette\-Sensor}
+\item 
+\hyperlink{classSprinkleSource}{Sprinkle\-Source} $\ast$ \hyperlink{classPackageOutput_a920a0cd21450d4c9e0330e72064970ac}{m\-\_\-sprinkle\-Source}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent the package output block. 
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPackageOutput_a81bd389107afdc3df10c63f29d971458}{\index{Package\-Output@{Package\-Output}!Package\-Output@{Package\-Output}}
+\index{Package\-Output@{Package\-Output}!PackageOutput@{Package\-Output}}
+\subsubsection[{Package\-Output}]{\setlength{\rightskip}{0pt plus 5cm}Package\-Output\-::\-Package\-Output (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{position, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classPackageOutput_a81bd389107afdc3df10c63f29d971458}
+
+
+Create Package\-Output-\/instance with center of lyingbeam at any position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position of Lying\-Beams center. \\
+\hline
+{\em world} & Pointer to the world in which you want to create the \hyperlink{classPackageOutput}{Package\-Output}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPackageOutput_a250ae49ec134d5b9b853acdbd91707ea}{\index{Package\-Output@{Package\-Output}!get\-Cassette\-Joint@{get\-Cassette\-Joint}}
+\index{get\-Cassette\-Joint@{get\-Cassette\-Joint}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Cassette\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::get\-Cassette\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a250ae49ec134d5b9b853acdbd91707ea}
+
+
+Return pointer to Cassette\-Joint. 
+
+\hypertarget{classPackageOutput_a63503d10e21d6b77683db0d28fa90e2f}{\index{Package\-Output@{Package\-Output}!get\-Cassette\-Sensor\-Fixture@{get\-Cassette\-Sensor\-Fixture}}
+\index{get\-Cassette\-Sensor\-Fixture@{get\-Cassette\-Sensor\-Fixture}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Cassette\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Package\-Output\-::get\-Cassette\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a63503d10e21d6b77683db0d28fa90e2f}
+
+
+Return pointer to Cassette\-Sensor\-Fixture. 
+
+\hypertarget{classPackageOutput_a67d6e0558552cbee8bba8cc360f7eb3c}{\index{Package\-Output@{Package\-Output}!get\-Fork\-Base\-Joint@{get\-Fork\-Base\-Joint}}
+\index{get\-Fork\-Base\-Joint@{get\-Fork\-Base\-Joint}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Fork\-Base\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::get\-Fork\-Base\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a67d6e0558552cbee8bba8cc360f7eb3c}
+
+
+Return pointer to Fork\-Base\-Joint. 
+
+\hypertarget{classPackageOutput_a1189dbd68b0da4c9a9d52fe8e826d5c3}{\index{Package\-Output@{Package\-Output}!get\-Fork\-Joint@{get\-Fork\-Joint}}
+\index{get\-Fork\-Joint@{get\-Fork\-Joint}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Fork\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::get\-Fork\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a1189dbd68b0da4c9a9d52fe8e826d5c3}
+
+
+Return pointer to Fork\-Joint. 
+
+\hypertarget{classPackageOutput_a1f5bad1afb58f37b8b2e49a4d198a69f}{\index{Package\-Output@{Package\-Output}!get\-Lift\-Joint@{get\-Lift\-Joint}}
+\index{get\-Lift\-Joint@{get\-Lift\-Joint}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Lift\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::get\-Lift\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a1f5bad1afb58f37b8b2e49a4d198a69f}
+
+
+Return pointer to Lift\-Joint. 
+
+\hypertarget{classPackageOutput_a74194c1e25e777b6936f5f6786609aef}{\index{Package\-Output@{Package\-Output}!get\-Sprinkle\-Source@{get\-Sprinkle\-Source}}
+\index{get\-Sprinkle\-Source@{get\-Sprinkle\-Source}!PackageOutput@{Package\-Output}}
+\subsubsection[{get\-Sprinkle\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sprinkle\-Source}$\ast$ Package\-Output\-::get\-Sprinkle\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageOutput_a74194c1e25e777b6936f5f6786609aef}
+
+
+Return pointer to \hyperlink{classSprinkleSource}{Sprinkle\-Source}. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPackageOutput_a707dc7e298abe79485a24b7cd5fe3a26}{\index{Package\-Output@{Package\-Output}!m\-\_\-fixture\-Cassette\-Sensor@{m\-\_\-fixture\-Cassette\-Sensor}}
+\index{m\-\_\-fixture\-Cassette\-Sensor@{m\-\_\-fixture\-Cassette\-Sensor}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-fixture\-Cassette\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Package\-Output\-::m\-\_\-fixture\-Cassette\-Sensor}}\label{classPackageOutput_a707dc7e298abe79485a24b7cd5fe3a26}
+\hypertarget{classPackageOutput_ac5b706bf7b0394579afaa66fa416bdc8}{\index{Package\-Output@{Package\-Output}!m\-\_\-joint\-Cassette@{m\-\_\-joint\-Cassette}}
+\index{m\-\_\-joint\-Cassette@{m\-\_\-joint\-Cassette}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-joint\-Cassette}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::m\-\_\-joint\-Cassette}}\label{classPackageOutput_ac5b706bf7b0394579afaa66fa416bdc8}
+\hypertarget{classPackageOutput_ad7fd83bf723bc703b88a2cb18b3b8258}{\index{Package\-Output@{Package\-Output}!m\-\_\-joint\-Cassette\-Sensor@{m\-\_\-joint\-Cassette\-Sensor}}
+\index{m\-\_\-joint\-Cassette\-Sensor@{m\-\_\-joint\-Cassette\-Sensor}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-joint\-Cassette\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::m\-\_\-joint\-Cassette\-Sensor}}\label{classPackageOutput_ad7fd83bf723bc703b88a2cb18b3b8258}
+\hypertarget{classPackageOutput_acf132fdef37105ce91af9fedab94969a}{\index{Package\-Output@{Package\-Output}!m\-\_\-joint\-Fork@{m\-\_\-joint\-Fork}}
+\index{m\-\_\-joint\-Fork@{m\-\_\-joint\-Fork}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-joint\-Fork}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::m\-\_\-joint\-Fork}}\label{classPackageOutput_acf132fdef37105ce91af9fedab94969a}
+\hypertarget{classPackageOutput_a13c8e517356d405fcc3761dbf5297243}{\index{Package\-Output@{Package\-Output}!m\-\_\-joint\-Fork\-Base@{m\-\_\-joint\-Fork\-Base}}
+\index{m\-\_\-joint\-Fork\-Base@{m\-\_\-joint\-Fork\-Base}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-joint\-Fork\-Base}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::m\-\_\-joint\-Fork\-Base}}\label{classPackageOutput_a13c8e517356d405fcc3761dbf5297243}
+\hypertarget{classPackageOutput_a10725b3931a327ca8cad5527d65dadc5}{\index{Package\-Output@{Package\-Output}!m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}}
+\index{m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-joint\-Lift}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Output\-::m\-\_\-joint\-Lift}}\label{classPackageOutput_a10725b3931a327ca8cad5527d65dadc5}
+\hypertarget{classPackageOutput_a920a0cd21450d4c9e0330e72064970ac}{\index{Package\-Output@{Package\-Output}!m\-\_\-sprinkle\-Source@{m\-\_\-sprinkle\-Source}}
+\index{m\-\_\-sprinkle\-Source@{m\-\_\-sprinkle\-Source}!PackageOutput@{Package\-Output}}
+\subsubsection[{m\-\_\-sprinkle\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sprinkle\-Source}$\ast$ Package\-Output\-::m\-\_\-sprinkle\-Source}}\label{classPackageOutput_a920a0cd21450d4c9e0330e72064970ac}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Packaging_8h}{Packaging.\-h}\item 
+\hyperlink{Packaging_8cpp}{Packaging.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+.TH "ConveyorActuator" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConveyorActuator \- 
+.PP
+Abstact class from which conveyor-actuators inherit\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherits \fBActuator\fP\&.
+.PP
+Inherited by \fBConveyorActuatorBinary\fP, and \fBConveyorActuatorStep\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyorActuator\fP (int id, \fBConveyor\fP *conveyor)"
+.br
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "virtual void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstact class from which conveyor-actuators inherit\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ConveyorActuator::ConveyorActuator (intid, \fBConveyor\fP *conveyor)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ConveyorActuator::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "virtual void ConveyorActuator::run ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.PP
+Reimplemented in \fBConveyorActuatorStep\fP\&.
+.SS "virtual void ConveyorActuator::set (signed intvalue)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.PP
+Reimplemented in \fBConveyorActuatorStep\fP, and \fBConveyorActuatorBinary\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBConveyor\fP* ConveyorActuator::m_conveyor"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

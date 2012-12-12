@@ -1,0 +1,149 @@
+\hypertarget{classSprinkle}{\section{Sprinkle Class Reference}
+\label{classSprinkle}\index{Sprinkle@{Sprinkle}}
+}
+
+
+Represent \char`\"{}\-Sprinkle\char`\"{}-\/objects(In norwegian\-: strø).  
+
+
+
+
+{\ttfamily \#include $<$Package.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSprinkle_ad8a4a784357965f603134bd4a068d633}{Sprinkle} (b2\-Vec2 pos, b2\-World $\ast$world)
+\item 
+\hyperlink{classSprinkle_a32800ac4fe6b3f41b5f68c39f1dae3ae}{$\sim$\-Sprinkle} ()
+\begin{DoxyCompactList}\small\item\em Deallocate the Sprinkle-\/object and remove its body from the world. \end{DoxyCompactList}\item 
+float32 \hyperlink{classSprinkle_aabea3b25464f33b4535077337aa5be4d}{get\-Width} ()
+\item 
+float32 \hyperlink{classSprinkle_ad3bdbdb77c6bef2f46779788abede0c5}{get\-Thickness} ()
+\item 
+void \hyperlink{classSprinkle_abf969079337b201692236945d5a6abe9}{remove\-When\-Out\-Of\-Bounds} (b2\-Vec2 senter, float32 avstand)
+\begin{DoxyCompactList}\small\item\em Remove Sprinkle-\/instance when center-\/point is outside circular-\/boundary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Body\-Def $\ast$ \hyperlink{classSprinkle_a6b731943cb16ebafcac7317d905d2304}{m\-\_\-bd}
+\item 
+b2\-Fixture\-Def $\ast$ \hyperlink{classSprinkle_ab031f14a73693c0a8a997e03218a7fce}{m\-\_\-fd}
+\item 
+b2\-World $\ast$ \hyperlink{classSprinkle_af727f24bec3c2bba8d04f682858207d4}{m\-\_\-world}
+\item 
+float32 \hyperlink{classSprinkle_a41962d16aa3eae840e9a32ecd0f2027d}{m\-\_\-width}
+\item 
+float32 \hyperlink{classSprinkle_a973d70d3285539af9f7d2345ec29eeab}{m\-\_\-thickness}
+\item 
+b2\-Body $\ast$ \hyperlink{classSprinkle_a338c8d207f21b49d1da9f93cc093d331}{m\-\_\-body}
+\item 
+bool \hyperlink{classSprinkle_ae83f45cf44a02b8cdd3d1093a6649faa}{m\-\_\-b\-Has\-Body}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classSprinkle_a7f750bc32d346c4fde415b4d8722e344}{m\-\_\-fixture}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent \char`\"{}\-Sprinkle\char`\"{}-\/objects(In norwegian\-: strø). 
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSprinkle_ad8a4a784357965f603134bd4a068d633}{\index{Sprinkle@{Sprinkle}!Sprinkle@{Sprinkle}}
+\index{Sprinkle@{Sprinkle}!Sprinkle@{Sprinkle}}
+\subsubsection[{Sprinkle}]{\setlength{\rightskip}{0pt plus 5cm}Sprinkle\-::\-Sprinkle (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{pos, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classSprinkle_ad8a4a784357965f603134bd4a068d633}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position at which you want place the center of the sprinkle. \\
+\hline
+{\em world} & Pointer to the world in which you want to create the sprinkle. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classSprinkle_a32800ac4fe6b3f41b5f68c39f1dae3ae}{\index{Sprinkle@{Sprinkle}!$\sim$\-Sprinkle@{$\sim$\-Sprinkle}}
+\index{$\sim$\-Sprinkle@{$\sim$\-Sprinkle}!Sprinkle@{Sprinkle}}
+\subsubsection[{$\sim$\-Sprinkle}]{\setlength{\rightskip}{0pt plus 5cm}Sprinkle\-::$\sim$\-Sprinkle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSprinkle_a32800ac4fe6b3f41b5f68c39f1dae3ae}
+
+
+Deallocate the Sprinkle-\/object and remove its body from the world. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSprinkle_ad3bdbdb77c6bef2f46779788abede0c5}{\index{Sprinkle@{Sprinkle}!get\-Thickness@{get\-Thickness}}
+\index{get\-Thickness@{get\-Thickness}!Sprinkle@{Sprinkle}}
+\subsubsection[{get\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Sprinkle\-::get\-Thickness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSprinkle_ad3bdbdb77c6bef2f46779788abede0c5}
+\hypertarget{classSprinkle_aabea3b25464f33b4535077337aa5be4d}{\index{Sprinkle@{Sprinkle}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Sprinkle@{Sprinkle}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}float32 Sprinkle\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSprinkle_aabea3b25464f33b4535077337aa5be4d}
+\hypertarget{classSprinkle_abf969079337b201692236945d5a6abe9}{\index{Sprinkle@{Sprinkle}!remove\-When\-Out\-Of\-Bounds@{remove\-When\-Out\-Of\-Bounds}}
+\index{remove\-When\-Out\-Of\-Bounds@{remove\-When\-Out\-Of\-Bounds}!Sprinkle@{Sprinkle}}
+\subsubsection[{remove\-When\-Out\-Of\-Bounds}]{\setlength{\rightskip}{0pt plus 5cm}void Sprinkle\-::remove\-When\-Out\-Of\-Bounds (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{senter, }
+\item[{float32}]{avstand}
+\end{DoxyParamCaption}
+)}}\label{classSprinkle_abf969079337b201692236945d5a6abe9}
+
+
+Remove Sprinkle-\/instance when center-\/point is outside circular-\/boundary. 
+
+You need to call this function repeatedly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em senter} & Center of the circular boundary. \\
+\hline
+{\em avstand} & Remove \hyperlink{classSprinkle}{Sprinkle} from world when distance from senter is grater than this number. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSprinkle_a6b731943cb16ebafcac7317d905d2304}{\index{Sprinkle@{Sprinkle}!m\-\_\-bd@{m\-\_\-bd}}
+\index{m\-\_\-bd@{m\-\_\-bd}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-bd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body\-Def$\ast$ Sprinkle\-::m\-\_\-bd\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_a6b731943cb16ebafcac7317d905d2304}
+\hypertarget{classSprinkle_ae83f45cf44a02b8cdd3d1093a6649faa}{\index{Sprinkle@{Sprinkle}!m\-\_\-b\-Has\-Body@{m\-\_\-b\-Has\-Body}}
+\index{m\-\_\-b\-Has\-Body@{m\-\_\-b\-Has\-Body}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-b\-Has\-Body}]{\setlength{\rightskip}{0pt plus 5cm}bool Sprinkle\-::m\-\_\-b\-Has\-Body\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_ae83f45cf44a02b8cdd3d1093a6649faa}
+\hypertarget{classSprinkle_a338c8d207f21b49d1da9f93cc093d331}{\index{Sprinkle@{Sprinkle}!m\-\_\-body@{m\-\_\-body}}
+\index{m\-\_\-body@{m\-\_\-body}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Sprinkle\-::m\-\_\-body\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_a338c8d207f21b49d1da9f93cc093d331}
+\hypertarget{classSprinkle_ab031f14a73693c0a8a997e03218a7fce}{\index{Sprinkle@{Sprinkle}!m\-\_\-fd@{m\-\_\-fd}}
+\index{m\-\_\-fd@{m\-\_\-fd}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture\-Def$\ast$ Sprinkle\-::m\-\_\-fd\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_ab031f14a73693c0a8a997e03218a7fce}
+\hypertarget{classSprinkle_a7f750bc32d346c4fde415b4d8722e344}{\index{Sprinkle@{Sprinkle}!m\-\_\-fixture@{m\-\_\-fixture}}
+\index{m\-\_\-fixture@{m\-\_\-fixture}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Sprinkle\-::m\-\_\-fixture\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_a7f750bc32d346c4fde415b4d8722e344}
+\hypertarget{classSprinkle_a973d70d3285539af9f7d2345ec29eeab}{\index{Sprinkle@{Sprinkle}!m\-\_\-thickness@{m\-\_\-thickness}}
+\index{m\-\_\-thickness@{m\-\_\-thickness}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Sprinkle\-::m\-\_\-thickness\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_a973d70d3285539af9f7d2345ec29eeab}
+\hypertarget{classSprinkle_a41962d16aa3eae840e9a32ecd0f2027d}{\index{Sprinkle@{Sprinkle}!m\-\_\-width@{m\-\_\-width}}
+\index{m\-\_\-width@{m\-\_\-width}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}float32 Sprinkle\-::m\-\_\-width\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_a41962d16aa3eae840e9a32ecd0f2027d}
+\hypertarget{classSprinkle_af727f24bec3c2bba8d04f682858207d4}{\index{Sprinkle@{Sprinkle}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!Sprinkle@{Sprinkle}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Sprinkle\-::m\-\_\-world\hspace{0.3cm}{\ttfamily [private]}}}\label{classSprinkle_af727f24bec3c2bba8d04f682858207d4}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Package_8h}{Package.\-h}\item 
+\hyperlink{Package_8cpp}{Package.\-cpp}\end{DoxyCompactItemize}

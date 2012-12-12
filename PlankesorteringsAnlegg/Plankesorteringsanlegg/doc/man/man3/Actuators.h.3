@@ -1,0 +1,89 @@
+.TH "Actuators.h" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Actuators.h \- 
+.PP
+Contains actuator-hierarchy and actuator-set\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <vector>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <sstream>\fP
+.br
+\fC#include <boost/lexical_cast\&.hpp>\fP
+.br
+\fC#include 'Text\&.h'\fP
+.br
+\fC#include 'Conveyor\&.h'\fP
+.br
+\fC#include 'Sensors\&.h'\fP
+.br
+\fC#include 'Package\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActuator\fP"
+.br
+.RI "\fIAbstract class from which other actuator-classes inherit\&. \fP"
+.ti -1c
+.RI "class \fBConveyorActuator\fP"
+.br
+.RI "\fIAbstact class from which conveyor-actuators inherit\&. \fP"
+.ti -1c
+.RI "class \fBConveyorActuatorBinary\fP"
+.br
+.RI "\fITurn a conveyor ON or OFF\&. \fP"
+.ti -1c
+.RI "class \fBConveyorActuatorStep\fP"
+.br
+.RI "\fIRun a conveyor an arbitrary number of steps\&. \fP"
+.ti -1c
+.RI "class \fBJointActuatorPrismaticBinary\fP"
+.br
+.RI "\fISwitch a prismatic joint between the two extremal states\&. \fP"
+.ti -1c
+.RI "class \fBJointActuatorPrismaticRange\fP"
+.br
+.RI "\fIRun a prismatic joint at an arbitrary constant speed\&. \fP"
+.ti -1c
+.RI "class \fBJointActuatorPrismaticStep\fP"
+.br
+.RI "\fIRun a prismatic joint an arbitrary number of steps\&. \fP"
+.ti -1c
+.RI "class \fBJointActuatorRevoluteStep\fP"
+.br
+.RI "\fITurn a revolute joint an arbitrary angle\&. \fP"
+.ti -1c
+.RI "class \fBPackageSourceActuator\fP"
+.br
+.RI "\fIProduce packages at a specific position, by controlling a package-source\&. \fP"
+.ti -1c
+.RI "class \fBSprinkleSourceActuator\fP"
+.br
+.RI "\fIProduce 'sprinkles' at a specific position, by controlling a sprinkle-source\&. \fP"
+.ti -1c
+.RI "class \fBActuatorSet\fP"
+.br
+.RI "\fIDraw actuator-labels, run actuators and change the state of actuators by id\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Contains actuator-hierarchy and actuator-set\&. 
+
+\fBAuthor:\fP
+.RS 4
+Roy Kollen Svendsen 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

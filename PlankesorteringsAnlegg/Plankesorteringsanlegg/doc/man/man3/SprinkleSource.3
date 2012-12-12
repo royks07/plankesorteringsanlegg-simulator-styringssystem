@@ -1,0 +1,108 @@
+.TH "SprinkleSource" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SprinkleSource \- 
+.PP
+Lets you create and destruct sprinkles by id\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Package\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSprinkleSource\fP (b2Body *body, b2World *world)"
+.br
+.RI "\fITurn any b2body into an abundant source of fresh sprinkles\&. \fP"
+.ti -1c
+.RI "void \fBcreate\fP (int id)"
+.br
+.RI "\fIForce the source to create a new Sprinkle-instance 'id'\&. \fP"
+.ti -1c
+.RI "void \fBdestruct\fP (int id)"
+.br
+.RI "\fIForce the source to remove Sprinkle-instance 'id'\&. \fP"
+.ti -1c
+.RI "void \fBupdatePosition\fP ()"
+.br
+.RI "\fICall continuously to update position of source\&. \fP"
+.ti -1c
+.RI "b2Vec2 \fBgetPosition\fP ()"
+.br
+.RI "\fIReturn current position of source\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "multimap< int, \fBSprinkle\fP * > \fBm_sprinkle\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_position\fP"
+.br
+.ti -1c
+.RI "b2Body * \fBm_body\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Lets you create and destruct sprinkles by id\&. 
+
+This source can be controlled by a \fBSprinkleSourceActuator\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SprinkleSource::SprinkleSource (b2Body *body, b2World *world)"
+
+.PP
+Turn any b2body into an abundant source of fresh sprinkles\&. \fBParameters:\fP
+.RS 4
+\fIbody\fP Pointer to a body 
+.br
+\fIworld\fP Pointer to the world in which you want to create the SprinleSource
+.RE
+.PP
+\fBTodo\fP
+.RS 4
+Remove world parameter\&. Not needed\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void SprinkleSource::create (intid)"
+
+.PP
+Force the source to create a new Sprinkle-instance 'id'\&. 
+.SS "void SprinkleSource::destruct (intid)"
+
+.PP
+Force the source to remove Sprinkle-instance 'id'\&. 
+.SS "b2Vec2 SprinkleSource::getPosition ()\fC [inline]\fP"
+
+.PP
+Return current position of source\&. 
+.SS "void SprinkleSource::updatePosition ()"
+
+.PP
+Call continuously to update position of source\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Body* SprinkleSource::m_body"
+
+.SS "b2Vec2 SprinkleSource::m_position"
+
+.SS "multimap<int,\fBSprinkle\fP*> SprinkleSource::m_sprinkle"
+
+.SS "b2World* SprinkleSource::m_world"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,35 @@
+\hypertarget{classPlankSortigPlant}{\section{\-Plank\-Sortig\-Plant \-Class \-Reference}
+\label{classPlankSortigPlant}\index{\-Plank\-Sortig\-Plant@{\-Plank\-Sortig\-Plant}}
+}
+
+
+\-Extend the default \hyperlink{classSimulatorPage}{\-Simulator\-Page} to create a simulation of a plank sorting plant.  
+
+
+
+
+{\ttfamily \#include $<$\-Plank\-Sorting\-Plant.\-h$>$}
+
+
+
+\subsection{\-Detailed \-Description}
+\-Extend the default \hyperlink{classSimulatorPage}{\-Simulator\-Page} to create a simulation of a plank sorting plant. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em communicator} & \-This is a pointer to a \hyperlink{classCommunicator}{\-Communicator} instance\\
+\hline
+\end{DoxyParams}
+\-You can add \-Simulator\-Pages in the file \hyperlink{SimulatorPageEntries_8cpp}{\-Simulator\-Page\-Entries.\-cpp} like this\-: 
+\begin{DoxyCode}
+        SimulatorPageEntry g_simulatorPageEntries[] =
+        {
+        {"Plank sorting plant", PlankSortingPlant::Create},
+        {NULL, NULL}
+        }
+\end{DoxyCode}
+ 
+
+\-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PlankSortingPlant_8h}{\-Plank\-Sorting\-Plant.\-h}\end{DoxyCompactItemize}

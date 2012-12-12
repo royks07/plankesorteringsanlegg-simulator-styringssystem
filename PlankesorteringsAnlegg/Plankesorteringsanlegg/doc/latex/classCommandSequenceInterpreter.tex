@@ -1,0 +1,125 @@
+\hypertarget{classCommandSequenceInterpreter}{\section{Command\-Sequence\-Interpreter Class Reference}
+\label{classCommandSequenceInterpreter}\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}
+}
+
+
+Use keyboard-\/ or terminal-\/input to control the actuator-\/ and sensor-\/sets.  
+
+
+
+
+{\ttfamily \#include $<$Command\-Sequence\-Interpreter.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0}{t\-\_\-read\-State} \{ \hyperlink{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a658adac09e435337a98ccbe2f74cdafa}{st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command}, 
+\hyperlink{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a5b0174436df6e847d871f05feddc755a}{st\-\_\-read\-\_\-parameter}
+ \}
+\item 
+enum \hyperlink{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8}{t\-\_\-command\-Type} \{ \hyperlink{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8ab9a8f3bd83268621ea2e2ec5ac19e900}{e\-\_\-write\-Actuator}, 
+\hyperlink{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8a6bc4cdc026336f37ebec76e878ca3718}{e\-\_\-read\-Sensor}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommandSequenceInterpreter_ae14fc280499fea9ae536b6bdfb40f0f9}{Command\-Sequence\-Interpreter} (\hyperlink{classActuatorSet}{Actuator\-Set} $\ast$actuator\-Set, \hyperlink{classSensorSet}{Sensor\-Set} $\ast$sensor\-Set)
+\item 
+void \hyperlink{classCommandSequenceInterpreter_a50bffc4e9f2b6953ed64cc62f6c65b9d}{interpret} (unsigned char key)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8}{t\-\_\-command\-Type} \hyperlink{classCommandSequenceInterpreter_a67f17cd12035c3177dec4ad7199dff09}{m\-\_\-command\-Type}
+\item 
+\hyperlink{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0}{t\-\_\-read\-State} \hyperlink{classCommandSequenceInterpreter_ac230cd37bfd33ff720a04142ba9b13fc}{m\-\_\-read\-State}
+\item 
+stringstream \hyperlink{classCommandSequenceInterpreter_af00adda23c01ffa7092ac6c8304de4fd}{m\-\_\-ss}
+\item 
+vector$<$ string $>$ \hyperlink{classCommandSequenceInterpreter_acd419ae2ac997f8b8c59003b5e2c4a32}{m\-\_\-parameter}
+\item 
+\hyperlink{classActuatorSet}{Actuator\-Set} $\ast$ \hyperlink{classCommandSequenceInterpreter_aab92295e940532f6175327d6a03e7d67}{m\-\_\-actuator\-Set}
+\item 
+\hyperlink{classSensorSet}{Sensor\-Set} $\ast$ \hyperlink{classCommandSequenceInterpreter_ad0c5aa0524c53759ec691efebcca5233}{m\-\_\-sensor\-Set}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Use keyboard-\/ or terminal-\/input to control the actuator-\/ and sensor-\/sets. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!t\-\_\-command\-Type@{t\-\_\-command\-Type}}
+\index{t\-\_\-command\-Type@{t\-\_\-command\-Type}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{t\-\_\-command\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Command\-Sequence\-Interpreter\-::t\-\_\-command\-Type}}}\label{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{e\-\_\-write\-Actuator@{e\-\_\-write\-Actuator}!Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!e\-\_\-write\-Actuator@{e\-\_\-write\-Actuator}}\item[{\em 
+\hypertarget{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8ab9a8f3bd83268621ea2e2ec5ac19e900}{e\-\_\-write\-Actuator}\label{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8ab9a8f3bd83268621ea2e2ec5ac19e900}
+}]\index{e\-\_\-read\-Sensor@{e\-\_\-read\-Sensor}!Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!e\-\_\-read\-Sensor@{e\-\_\-read\-Sensor}}\item[{\em 
+\hypertarget{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8a6bc4cdc026336f37ebec76e878ca3718}{e\-\_\-read\-Sensor}\label{classCommandSequenceInterpreter_a96f5e5d9fa213d5e6a9bb0e3fb7fabd8a6bc4cdc026336f37ebec76e878ca3718}
+}]\end{description}
+\end{Desc}
+
+\hypertarget{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!t\-\_\-read\-State@{t\-\_\-read\-State}}
+\index{t\-\_\-read\-State@{t\-\_\-read\-State}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{t\-\_\-read\-State}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Command\-Sequence\-Interpreter\-::t\-\_\-read\-State}}}\label{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command@{st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command}!Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command@{st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command}}\item[{\em 
+\hypertarget{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a658adac09e435337a98ccbe2f74cdafa}{st\-\_\-wait\-\_\-for\-\_\-new\-\_\-command}\label{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a658adac09e435337a98ccbe2f74cdafa}
+}]\index{st\-\_\-read\-\_\-parameter@{st\-\_\-read\-\_\-parameter}!Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!st\-\_\-read\-\_\-parameter@{st\-\_\-read\-\_\-parameter}}\item[{\em 
+\hypertarget{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a5b0174436df6e847d871f05feddc755a}{st\-\_\-read\-\_\-parameter}\label{classCommandSequenceInterpreter_a651640c84d800a896ccd8291a93128a0a5b0174436df6e847d871f05feddc755a}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCommandSequenceInterpreter_ae14fc280499fea9ae536b6bdfb40f0f9}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}}
+\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{Command\-Sequence\-Interpreter}]{\setlength{\rightskip}{0pt plus 5cm}Command\-Sequence\-Interpreter\-::\-Command\-Sequence\-Interpreter (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator\-Set} $\ast$}]{actuator\-Set, }
+\item[{{\bf Sensor\-Set} $\ast$}]{sensor\-Set}
+\end{DoxyParamCaption}
+)}}\label{classCommandSequenceInterpreter_ae14fc280499fea9ae536b6bdfb40f0f9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCommandSequenceInterpreter_a50bffc4e9f2b6953ed64cc62f6c65b9d}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!interpret@{interpret}}
+\index{interpret@{interpret}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{interpret}]{\setlength{\rightskip}{0pt plus 5cm}void Command\-Sequence\-Interpreter\-::interpret (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)}}\label{classCommandSequenceInterpreter_a50bffc4e9f2b6953ed64cc62f6c65b9d}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCommandSequenceInterpreter_aab92295e940532f6175327d6a03e7d67}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-actuator\-Set@{m\-\_\-actuator\-Set}}
+\index{m\-\_\-actuator\-Set@{m\-\_\-actuator\-Set}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-actuator\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actuator\-Set}$\ast$ Command\-Sequence\-Interpreter\-::m\-\_\-actuator\-Set}}\label{classCommandSequenceInterpreter_aab92295e940532f6175327d6a03e7d67}
+\hypertarget{classCommandSequenceInterpreter_a67f17cd12035c3177dec4ad7199dff09}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-command\-Type@{m\-\_\-command\-Type}}
+\index{m\-\_\-command\-Type@{m\-\_\-command\-Type}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-command\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-command\-Type} Command\-Sequence\-Interpreter\-::m\-\_\-command\-Type}}\label{classCommandSequenceInterpreter_a67f17cd12035c3177dec4ad7199dff09}
+\hypertarget{classCommandSequenceInterpreter_acd419ae2ac997f8b8c59003b5e2c4a32}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-parameter@{m\-\_\-parameter}}
+\index{m\-\_\-parameter@{m\-\_\-parameter}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$string$>$ Command\-Sequence\-Interpreter\-::m\-\_\-parameter}}\label{classCommandSequenceInterpreter_acd419ae2ac997f8b8c59003b5e2c4a32}
+\hypertarget{classCommandSequenceInterpreter_ac230cd37bfd33ff720a04142ba9b13fc}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-read\-State@{m\-\_\-read\-State}}
+\index{m\-\_\-read\-State@{m\-\_\-read\-State}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-read\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-read\-State} Command\-Sequence\-Interpreter\-::m\-\_\-read\-State}}\label{classCommandSequenceInterpreter_ac230cd37bfd33ff720a04142ba9b13fc}
+\hypertarget{classCommandSequenceInterpreter_ad0c5aa0524c53759ec691efebcca5233}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-sensor\-Set@{m\-\_\-sensor\-Set}}
+\index{m\-\_\-sensor\-Set@{m\-\_\-sensor\-Set}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-sensor\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor\-Set}$\ast$ Command\-Sequence\-Interpreter\-::m\-\_\-sensor\-Set}}\label{classCommandSequenceInterpreter_ad0c5aa0524c53759ec691efebcca5233}
+\hypertarget{classCommandSequenceInterpreter_af00adda23c01ffa7092ac6c8304de4fd}{\index{Command\-Sequence\-Interpreter@{Command\-Sequence\-Interpreter}!m\-\_\-ss@{m\-\_\-ss}}
+\index{m\-\_\-ss@{m\-\_\-ss}!CommandSequenceInterpreter@{Command\-Sequence\-Interpreter}}
+\subsubsection[{m\-\_\-ss}]{\setlength{\rightskip}{0pt plus 5cm}stringstream Command\-Sequence\-Interpreter\-::m\-\_\-ss}}\label{classCommandSequenceInterpreter_af00adda23c01ffa7092ac6c8304de4fd}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CommandSequenceInterpreter_8h}{Command\-Sequence\-Interpreter.\-h}\item 
+\hyperlink{CommandSequenceInterpreter_8cpp}{Command\-Sequence\-Interpreter.\-cpp}\end{DoxyCompactItemize}

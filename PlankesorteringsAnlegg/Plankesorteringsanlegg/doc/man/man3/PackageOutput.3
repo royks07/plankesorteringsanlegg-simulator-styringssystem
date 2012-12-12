@@ -1,0 +1,134 @@
+.TH "PackageOutput" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PackageOutput \- 
+.PP
+Represent the package output block\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Packaging\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPackageOutput\fP (b2Vec2 position, b2World *world)"
+.br
+.RI "\fICreate PackageOutput-instance with center of lyingbeam at any position\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetForkJoint\fP ()"
+.br
+.RI "\fIReturn pointer to ForkJoint\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetForkBaseJoint\fP ()"
+.br
+.RI "\fIReturn pointer to ForkBaseJoint\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetLiftJoint\fP ()"
+.br
+.RI "\fIReturn pointer to LiftJoint\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetCassetteJoint\fP ()"
+.br
+.RI "\fIReturn pointer to CassetteJoint\&. \fP"
+.ti -1c
+.RI "b2Fixture * \fBgetCassetteSensorFixture\fP ()"
+.br
+.RI "\fIReturn pointer to CassetteSensorFixture\&. \fP"
+.ti -1c
+.RI "\fBSprinkleSource\fP * \fBgetSprinkleSource\fP ()"
+.br
+.RI "\fIReturn pointer to \fBSprinkleSource\fP\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointForkBase\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointFork\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointLift\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointCassette\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointCassetteSensor\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixtureCassetteSensor\fP"
+.br
+.ti -1c
+.RI "\fBSprinkleSource\fP * \fBm_sprinkleSource\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represent the package output block\&. 
+
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PackageOutput::PackageOutput (b2Vec2position, b2World *world)"
+
+.PP
+Create PackageOutput-instance with center of lyingbeam at any position\&. \fBParameters:\fP
+.RS 4
+\fIposition\fP Position of LyingBeams center\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create the \fBPackageOutput\fP\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "b2PrismaticJoint* PackageOutput::getCassetteJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to CassetteJoint\&. 
+.SS "b2Fixture* PackageOutput::getCassetteSensorFixture ()\fC [inline]\fP"
+
+.PP
+Return pointer to CassetteSensorFixture\&. 
+.SS "b2PrismaticJoint* PackageOutput::getForkBaseJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to ForkBaseJoint\&. 
+.SS "b2PrismaticJoint* PackageOutput::getForkJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to ForkJoint\&. 
+.SS "b2PrismaticJoint* PackageOutput::getLiftJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to LiftJoint\&. 
+.SS "\fBSprinkleSource\fP* PackageOutput::getSprinkleSource ()\fC [inline]\fP"
+
+.PP
+Return pointer to \fBSprinkleSource\fP\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Fixture* PackageOutput::m_fixtureCassetteSensor"
+
+.SS "b2PrismaticJoint* PackageOutput::m_jointCassette"
+
+.SS "b2PrismaticJoint* PackageOutput::m_jointCassetteSensor"
+
+.SS "b2PrismaticJoint* PackageOutput::m_jointFork"
+
+.SS "b2PrismaticJoint* PackageOutput::m_jointForkBase"
+
+.SS "b2PrismaticJoint* PackageOutput::m_jointLift"
+
+.SS "\fBSprinkleSource\fP* PackageOutput::m_sprinkleSource"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

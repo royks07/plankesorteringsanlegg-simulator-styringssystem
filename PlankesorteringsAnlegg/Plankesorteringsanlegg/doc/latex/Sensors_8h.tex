@@ -1,0 +1,75 @@
+\hypertarget{Sensors_8h}{\section{Sensors.\-h File Reference}
+\label{Sensors_8h}\index{Sensors.\-h@{Sensors.\-h}}
+}
+
+
+Contains the sensor class-\/hierarchy and the sensor-\/set.  
+
+
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Text.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}User\-Data.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Communicator.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classContactSensor}{Contact\-Sensor}
+\begin{DoxyCompactList}\small\item\em Abstract class that other sensors inherit from. \end{DoxyCompactList}\item 
+class \hyperlink{classContactSensor__FromFixture}{Contact\-Sensor\-\_\-\-From\-Fixture}
+\begin{DoxyCompactList}\small\item\em Turn arbitrary Box2\-D fixture into binary sensor. \end{DoxyCompactList}\item 
+class \hyperlink{classContactSensor__Sync}{Contact\-Sensor\-\_\-\-Sync}
+\begin{DoxyCompactList}\small\item\em Used by the \hyperlink{classConveyorSynchronizer}{Conveyor\-Synchronizer}. \end{DoxyCompactList}\item 
+class \hyperlink{classContactSensorBinary}{Contact\-Sensor\-Binary}
+\begin{DoxyCompactList}\small\item\em This sensor is circular shaped and has only two states, O\-N and O\-Ff. \end{DoxyCompactList}\item 
+class \hyperlink{classLengthSensor}{Length\-Sensor}
+\begin{DoxyCompactList}\small\item\em Measure length of a colliding Plank-\/instance. \end{DoxyCompactList}\item 
+class \hyperlink{classQualitySensor}{Quality\-Sensor}
+\begin{DoxyCompactList}\small\item\em Measure quality of a colliding Plank-\/instance. \end{DoxyCompactList}\item 
+class \hyperlink{classCounterSensor}{Counter\-Sensor}
+\begin{DoxyCompactList}\small\item\em Count the number of collisions. \end{DoxyCompactList}\item 
+class \hyperlink{classSensorSet}{Sensor\-Set}
+\begin{DoxyCompactList}\small\item\em Listen to sensors and transmit state-\/changes to the communicator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0ba}{t\-\_\-sensor\-Type} \{ \\*
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa952af4b187b99bfae6666de355fd318d}{e\-\_\-unknown\-Sensor}, 
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa426f1c642ffebeeedafced1215d6df9a}{e\-\_\-normal}, 
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baac3eca3275537bf24f497729a1ae6f51d}{e\-\_\-sync}, 
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baad5e2bc4360d915342803df548f6dbdba}{e\-\_\-length\-Sensor}, 
+\\*
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa5b36575a5d3ab38eb8ba31eb9d6eea16}{e\-\_\-quality\-Sensor}, 
+\hyperlink{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baab26d1f1f49527fc31af6e74e9c9d38e8}{e\-\_\-counter\-Sensor}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains the sensor class-\/hierarchy and the sensor-\/set. \begin{DoxyAuthor}{Author}
+Roy Kollen Svendsen 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0ba}{\index{Sensors.\-h@{Sensors.\-h}!t\-\_\-sensor\-Type@{t\-\_\-sensor\-Type}}
+\index{t\-\_\-sensor\-Type@{t\-\_\-sensor\-Type}!Sensors.h@{Sensors.\-h}}
+\subsubsection[{t\-\_\-sensor\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf t\-\_\-sensor\-Type}}}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0ba}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{e\-\_\-unknown\-Sensor@{e\-\_\-unknown\-Sensor}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-unknown\-Sensor@{e\-\_\-unknown\-Sensor}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa952af4b187b99bfae6666de355fd318d}{e\-\_\-unknown\-Sensor}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa952af4b187b99bfae6666de355fd318d}
+}]\index{e\-\_\-normal@{e\-\_\-normal}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-normal@{e\-\_\-normal}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa426f1c642ffebeeedafced1215d6df9a}{e\-\_\-normal}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa426f1c642ffebeeedafced1215d6df9a}
+}]\index{e\-\_\-sync@{e\-\_\-sync}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-sync@{e\-\_\-sync}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baac3eca3275537bf24f497729a1ae6f51d}{e\-\_\-sync}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baac3eca3275537bf24f497729a1ae6f51d}
+}]\index{e\-\_\-length\-Sensor@{e\-\_\-length\-Sensor}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-length\-Sensor@{e\-\_\-length\-Sensor}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baad5e2bc4360d915342803df548f6dbdba}{e\-\_\-length\-Sensor}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baad5e2bc4360d915342803df548f6dbdba}
+}]\index{e\-\_\-quality\-Sensor@{e\-\_\-quality\-Sensor}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-quality\-Sensor@{e\-\_\-quality\-Sensor}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa5b36575a5d3ab38eb8ba31eb9d6eea16}{e\-\_\-quality\-Sensor}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baa5b36575a5d3ab38eb8ba31eb9d6eea16}
+}]\index{e\-\_\-counter\-Sensor@{e\-\_\-counter\-Sensor}!Sensors.\-h@{Sensors.\-h}}\index{Sensors.\-h@{Sensors.\-h}!e\-\_\-counter\-Sensor@{e\-\_\-counter\-Sensor}}\item[{\em 
+\hypertarget{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baab26d1f1f49527fc31af6e74e9c9d38e8}{e\-\_\-counter\-Sensor}\label{Sensors_8h_a4e6d557e949865ee922fadfafd5ed0baab26d1f1f49527fc31af6e74e9c9d38e8}
+}]\end{description}
+\end{Desc}
+

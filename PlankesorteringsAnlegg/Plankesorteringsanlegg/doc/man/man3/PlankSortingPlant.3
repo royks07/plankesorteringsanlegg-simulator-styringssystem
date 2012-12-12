@@ -1,0 +1,150 @@
+.TH "PlankSortingPlant" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PlankSortingPlant \- 
+.PP
+Extend the default \fBSimulatorPage\fP to create a simulation of a plank sorting plant\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <PlankSortingPlant\&.h>\fP
+.PP
+Inherits \fBSimulatorPage\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPlankSortingPlant\fP (\fBCommunicator\fP *communicator)"
+.br
+.ti -1c
+.RI "void \fBStep\fP (\fBSettings\fP *settings)"
+.br
+.ti -1c
+.RI "void \fBKeyboard\fP (unsigned char key)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBSimulatorPage\fP * \fBCreate\fP (\fBCommunicator\fP *communicator)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor1\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor2\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor3\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor4\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor5\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor6\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor7\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor8\fP"
+.br
+.ti -1c
+.RI "\fBWheel\fP * \fBm_wheel1\fP"
+.br
+.ti -1c
+.RI "\fBWheel\fP * \fBm_wheel2\fP"
+.br
+.ti -1c
+.RI "\fBConveyorSynchronizer\fP * \fBm_conveyorSynchronizer\fP"
+.br
+.ti -1c
+.RI "\fBCommandSequenceInterpreter\fP * \fBm_commandSequenceInterpreter\fP"
+.br
+.ti -1c
+.RI "\fBActuatorSet\fP * \fBm_actuatorSet\fP"
+.br
+.ti -1c
+.RI "\fBSensorSet\fP * \fBm_sensorSet\fP"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+Extend the default \fBSimulatorPage\fP to create a simulation of a plank sorting plant\&. 
+
+A snapshot of the plant: 
+.PP
+You are welcome to add your own SimulatorPages in the file \fBSimulatorPageEntries\&.cpp\fP in this maner: 
+.PP
+.nf
+SimulatorPageEntry g_simulatorPageEntries[] =
+{
+    {'Plank sorting plant', PlankSortingPlant::Create},
+    {NULL, NULL}
+}
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PlankSortingPlant::PlankSortingPlant (\fBCommunicator\fP *communicator)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBSimulatorPage\fP * PlankSortingPlant::Create (\fBCommunicator\fP *communicator)\fC [static]\fP"
+
+.SS "void PlankSortingPlant::Keyboard (unsigned charkey)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBSimulatorPage\fP\&.
+.SS "void PlankSortingPlant::Step (\fBSettings\fP *settings)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBSimulatorPage\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActuatorSet\fP* PlankSortingPlant::m_actuatorSet\fC [private]\fP"
+
+.SS "\fBCommandSequenceInterpreter\fP* PlankSortingPlant::m_commandSequenceInterpreter\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor1\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor2\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor3\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor4\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor5\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor6\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor7\fC [private]\fP"
+
+.SS "\fBConveyor\fP* PlankSortingPlant::m_conveyor8\fC [private]\fP"
+
+.SS "\fBConveyorSynchronizer\fP* PlankSortingPlant::m_conveyorSynchronizer\fC [private]\fP"
+
+.SS "\fBSensorSet\fP* PlankSortingPlant::m_sensorSet\fC [private]\fP"
+
+.SS "\fBWheel\fP* PlankSortingPlant::m_wheel1\fC [private]\fP"
+
+.SS "\fBWheel\fP* PlankSortingPlant::m_wheel2\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

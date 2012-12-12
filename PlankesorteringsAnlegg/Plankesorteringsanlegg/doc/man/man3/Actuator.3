@@ -1,0 +1,97 @@
+.TH "Actuator" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Actuator \- 
+.PP
+Abstract class from which other actuator-classes inherit\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherited by \fBConveyorActuator\fP, \fBJointActuatorPrismaticBinary\fP, \fBJointActuatorPrismaticRange\fP, \fBJointActuatorPrismaticStep\fP, \fBJointActuatorRevoluteStep\fP, \fBPackageSourceActuator\fP, and \fBSprinkleSourceActuator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActuator\fP (int id)"
+.br
+.ti -1c
+.RI "virtual \fB~Actuator\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBgetId\fP ()"
+.br
+.ti -1c
+.RI "virtual string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "virtual void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBm_id\fP"
+.br
+.ti -1c
+.RI "b2Color \fBm_color\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_position\fP"
+.br
+.ti -1c
+.RI "string \fBm_name\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstract class from which other actuator-classes inherit\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Actuator::Actuator (intid)"
+
+.SS "virtual Actuator::~Actuator ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void Actuator::drawLabel ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBSprinkleSourceActuator\fP, \fBPackageSourceActuator\fP, \fBJointActuatorRevoluteStep\fP, \fBJointActuatorPrismaticStep\fP, \fBJointActuatorPrismaticRange\fP, \fBJointActuatorPrismaticBinary\fP, and \fBConveyorActuator\fP\&.
+.SS "virtual int Actuator::getId ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual string Actuator::getName ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void Actuator::run ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBSprinkleSourceActuator\fP, \fBPackageSourceActuator\fP, \fBJointActuatorRevoluteStep\fP, \fBJointActuatorPrismaticStep\fP, \fBConveyorActuatorStep\fP, and \fBConveyorActuator\fP\&.
+.SS "virtual void Actuator::set (signed intvalue)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBSprinkleSourceActuator\fP, \fBPackageSourceActuator\fP, \fBJointActuatorRevoluteStep\fP, \fBJointActuatorPrismaticStep\fP, \fBJointActuatorPrismaticRange\fP, \fBJointActuatorPrismaticBinary\fP, \fBConveyorActuatorStep\fP, \fBConveyorActuatorBinary\fP, and \fBConveyorActuator\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Color Actuator::m_color"
+
+.SS "int Actuator::m_id"
+
+.SS "string Actuator::m_name"
+
+.SS "b2Vec2 Actuator::m_position"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,132 @@
+\hypertarget{classStorageArea}{\section{Storage\-Area Class Reference}
+\label{classStorageArea}\index{Storage\-Area@{Storage\-Area}}
+}
+
+
+Create an arbitrary number of storages side-\/by-\/side to sort planks into.  
+
+
+
+
+{\ttfamily \#include $<$Storages.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStorageArea_a4a5f9f5686f968f55810b61ad7842650}{Storage\-Area} (int number\-Of\-Storages, b2\-Vec2 upper\-Left\-Corner, float32 width, float32 height, float32 wall\-Thickness, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Construct an arbitrary number of storages side-\/by-\/side. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorageArea_a0885600a2b998f164acdc93f88d384d0}{get\-Lift\-Joint} (int i)
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorageArea_aea535b0b0abe0235582239ab0851b73e}{get\-Stopper\-Joint} (int i)
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorageArea_a1c797933bfbf9e3aaef52190630277e4}{get\-Top\-Sensor\-Fixture} (int i)
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorageArea_a2ea9264e9f7243ca6f2e66e99e5d13a8}{get\-Middle\-Sensor\-Fixture} (int i)
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorageArea_a3c2ddd3fe7e2f26b9be4ec9564257f5d}{get\-Bottom\-Sensor\-Fixture} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classStorage}{Storage} $\ast$ $>$ \hyperlink{classStorageArea_ab5c3b86896768610f1b558126bf0df71}{m\-\_\-storage}
+\begin{DoxyCompactList}\small\item\em Vector that contains pointers to the individual storages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create an arbitrary number of storages side-\/by-\/side to sort planks into. 
+
+The Following line of code generates the storage area in the image below. 
+\begin{DoxyCode}
+\hyperlink{classStorageArea}{StorageArea}* storageArea0 = \textcolor{keyword}{new} \hyperlink{classStorageArea_a4a5f9f5686f968f55810b61ad7842650}{StorageArea}(3,b2Vec2(-40.
+      0f,0.0f),9,5,0.5f,m\_world);
+\end{DoxyCode}
+
+
+Instance of \hyperlink{classStorageArea}{Storage\-Area} + descriptive text\-:  
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStorageArea_a4a5f9f5686f968f55810b61ad7842650}{\index{Storage\-Area@{Storage\-Area}!Storage\-Area@{Storage\-Area}}
+\index{Storage\-Area@{Storage\-Area}!StorageArea@{Storage\-Area}}
+\subsubsection[{Storage\-Area}]{\setlength{\rightskip}{0pt plus 5cm}Storage\-Area\-::\-Storage\-Area (
+\begin{DoxyParamCaption}
+\item[{int}]{number\-Of\-Storages, }
+\item[{b2\-Vec2}]{upper\-Left\-Corner, }
+\item[{float32}]{width, }
+\item[{float32}]{height, }
+\item[{float32}]{wall\-Thickness, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_a4a5f9f5686f968f55810b61ad7842650}
+
+
+Construct an arbitrary number of storages side-\/by-\/side. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em number\-Of\-Storages} & The number of storages. \\
+\hline
+{\em upper\-Left\-Corner} & Positioin of the upper left corner of the first storage. \\
+\hline
+{\em width} & The width of an individual storage. \\
+\hline
+{\em height} & The height of an individual storage. \\
+\hline
+{\em wall\-Thickness} & The wall-\/thickness of an individual storage. \\
+\hline
+{\em world} & Pointer to the world you want to create the storage-\/area in. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStorageArea_a3c2ddd3fe7e2f26b9be4ec9564257f5d}{\index{Storage\-Area@{Storage\-Area}!get\-Bottom\-Sensor\-Fixture@{get\-Bottom\-Sensor\-Fixture}}
+\index{get\-Bottom\-Sensor\-Fixture@{get\-Bottom\-Sensor\-Fixture}!StorageArea@{Storage\-Area}}
+\subsubsection[{get\-Bottom\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture $\ast$ Storage\-Area\-::get\-Bottom\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_a3c2ddd3fe7e2f26b9be4ec9564257f5d}
+\hypertarget{classStorageArea_a0885600a2b998f164acdc93f88d384d0}{\index{Storage\-Area@{Storage\-Area}!get\-Lift\-Joint@{get\-Lift\-Joint}}
+\index{get\-Lift\-Joint@{get\-Lift\-Joint}!StorageArea@{Storage\-Area}}
+\subsubsection[{get\-Lift\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint $\ast$ Storage\-Area\-::get\-Lift\-Joint (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_a0885600a2b998f164acdc93f88d384d0}
+\hypertarget{classStorageArea_a2ea9264e9f7243ca6f2e66e99e5d13a8}{\index{Storage\-Area@{Storage\-Area}!get\-Middle\-Sensor\-Fixture@{get\-Middle\-Sensor\-Fixture}}
+\index{get\-Middle\-Sensor\-Fixture@{get\-Middle\-Sensor\-Fixture}!StorageArea@{Storage\-Area}}
+\subsubsection[{get\-Middle\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture $\ast$ Storage\-Area\-::get\-Middle\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_a2ea9264e9f7243ca6f2e66e99e5d13a8}
+\hypertarget{classStorageArea_aea535b0b0abe0235582239ab0851b73e}{\index{Storage\-Area@{Storage\-Area}!get\-Stopper\-Joint@{get\-Stopper\-Joint}}
+\index{get\-Stopper\-Joint@{get\-Stopper\-Joint}!StorageArea@{Storage\-Area}}
+\subsubsection[{get\-Stopper\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint $\ast$ Storage\-Area\-::get\-Stopper\-Joint (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_aea535b0b0abe0235582239ab0851b73e}
+\hypertarget{classStorageArea_a1c797933bfbf9e3aaef52190630277e4}{\index{Storage\-Area@{Storage\-Area}!get\-Top\-Sensor\-Fixture@{get\-Top\-Sensor\-Fixture}}
+\index{get\-Top\-Sensor\-Fixture@{get\-Top\-Sensor\-Fixture}!StorageArea@{Storage\-Area}}
+\subsubsection[{get\-Top\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture $\ast$ Storage\-Area\-::get\-Top\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classStorageArea_a1c797933bfbf9e3aaef52190630277e4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classStorageArea_ab5c3b86896768610f1b558126bf0df71}{\index{Storage\-Area@{Storage\-Area}!m\-\_\-storage@{m\-\_\-storage}}
+\index{m\-\_\-storage@{m\-\_\-storage}!StorageArea@{Storage\-Area}}
+\subsubsection[{m\-\_\-storage}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Storage}$\ast$$>$ Storage\-Area\-::m\-\_\-storage}}\label{classStorageArea_ab5c3b86896768610f1b558126bf0df71}
+
+
+Vector that contains pointers to the individual storages. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Storages_8h}{Storages.\-h}\item 
+\hyperlink{Storages_8cpp}{Storages.\-cpp}\end{DoxyCompactItemize}

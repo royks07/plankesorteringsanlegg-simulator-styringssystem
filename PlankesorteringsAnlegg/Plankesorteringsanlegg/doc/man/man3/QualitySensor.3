@@ -1,0 +1,64 @@
+.TH "QualitySensor" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+QualitySensor \- 
+.PP
+Measure quality of a colliding Plank-instance\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits \fBContactSensorBinary\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQualitySensor\fP (int id, b2Vec2 position, float32 radius, b2World *world)"
+.br
+.ti -1c
+.RI "void \fBmeassureQuality\fP (float32 quality)"
+.br
+.ti -1c
+.RI "signed int \fBget\fP ()"
+.br
+.RI "\fIReturn the state of the sensor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "signed int \fBm_meassuredQuality\fP"
+.br
+.RI "\fIStore the last measured plank quality\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Measure quality of a colliding Plank-instance\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "QualitySensor::QualitySensor (intid, b2Vec2position, float32radius, b2World *world)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "signed int QualitySensor::get ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Return the state of the sensor\&. 
+.PP
+Reimplemented from \fBContactSensorBinary\fP\&.
+.SS "void QualitySensor::meassureQuality (float32quality)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "signed int QualitySensor::m_meassuredQuality"
+
+.PP
+Store the last measured plank quality\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,333 @@
+\hypertarget{classSimulatorPage}{\section{Simulator\-Page Class Reference}
+\label{classSimulatorPage}\index{Simulator\-Page@{Simulator\-Page}}
+}
+
+
+{\ttfamily \#include $<$Simulator\-Page.\-h$>$}
+
+Inheritance diagram for Simulator\-Page\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classSimulatorPage}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSimulatorPage_ae4c224aee18df3d96f37b54a0bf36464}{Simulator\-Page} (\hyperlink{classCommunicator}{Communicator} $\ast$communicator)
+\item 
+virtual \hyperlink{classSimulatorPage_af1468b91ff43c04bf51596769553ff5a}{$\sim$\-Simulator\-Page} ()
+\item 
+void \hyperlink{classSimulatorPage_af9089342514e16944fbc9f6202ed1439}{Set\-Text\-Line} (int32 line)
+\item 
+void \hyperlink{classSimulatorPage_a9bb317b7301bb3fddfd0bda065447d80}{Draw\-Title} (int x, int y, const char $\ast$string)
+\item 
+virtual void \hyperlink{classSimulatorPage_ac478dc8792d0f593c6dc6277a4e96719}{Step} (\hyperlink{structSettings}{Settings} $\ast$settings)
+\item 
+virtual void \hyperlink{classSimulatorPage_a295bcbd72dfe0dd651d922b8165e8f9a}{Keyboard} (unsigned char key)
+\item 
+virtual void \hyperlink{classSimulatorPage_af95e71d2e0b7bad8d0cdf7b7e5588440}{Keyboard\-Up} (unsigned char key)
+\item 
+void \hyperlink{classSimulatorPage_aa780589b43ed6c51d5d293b004dfd695}{Shift\-Mouse\-Down} (const b2\-Vec2 \&p)
+\item 
+virtual void \hyperlink{classSimulatorPage_ad6c49283fed786a374af8a3f236b2e29}{Mouse\-Down} (const b2\-Vec2 \&p)
+\item 
+virtual void \hyperlink{classSimulatorPage_afcc118e0e87b65a2c4bf95a76cec2396}{Mouse\-Up} (const b2\-Vec2 \&p)
+\item 
+void \hyperlink{classSimulatorPage_a71ff43bcbced024eaa85b037a9c22006}{Mouse\-Move} (const b2\-Vec2 \&p)
+\item 
+void \hyperlink{classSimulatorPage_a39e3534423f49c6f6f233b81f7f5bc80}{Launch\-Bomb} ()
+\item 
+void \hyperlink{classSimulatorPage_a99976c3f608eb764bee788460b2c0f8d}{Launch\-Bomb} (const b2\-Vec2 \&position, const b2\-Vec2 \&velocity)
+\item 
+void \hyperlink{classSimulatorPage_a177d0ac170bcdd4ec523ce0c99dec40d}{Spawn\-Bomb} (const b2\-Vec2 \&world\-Pt)
+\item 
+void \hyperlink{classSimulatorPage_a25475c39d60beeabfa7c5bf0f9bbaae9}{Complete\-Bomb\-Spawn} (const b2\-Vec2 \&p)
+\item 
+virtual void \hyperlink{classSimulatorPage_a1c6a3e2ebc71dcc01aaebca77fcec421}{Joint\-Destroyed} (b2\-Joint $\ast$joint)
+\item 
+virtual void \hyperlink{classSimulatorPage_a5a6ea36613740fcbb301317ac48816b0}{Begin\-Contact} (b2\-Contact $\ast$contact)
+\item 
+virtual void \hyperlink{classSimulatorPage_a1679b66b418b92aafb7e46a47c737f03}{End\-Contact} (b2\-Contact $\ast$contact)
+\item 
+virtual void \hyperlink{classSimulatorPage_a0bf3450167587c8f2e013df17abecb73}{Pre\-Solve} (b2\-Contact $\ast$contact, const b2\-Manifold $\ast$old\-Manifold)
+\item 
+virtual void \hyperlink{classSimulatorPage_aa86fc16964e2465873d3b352d70a6ae6}{Post\-Solve} (const b2\-Contact $\ast$contact, const b2\-Contact\-Impulse $\ast$impulse)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Body $\ast$ \hyperlink{classSimulatorPage_ab4c6f15c6a33d3884c3e3a55b93971ec}{m\-\_\-ground\-Body}
+\item 
+b2\-A\-A\-B\-B \hyperlink{classSimulatorPage_afe7bd14c770a28ab335a803ebc93d1a5}{m\-\_\-world\-A\-A\-B\-B}
+\item 
+\hyperlink{structContactPoint}{Contact\-Point} \hyperlink{classSimulatorPage_afa967705601096830dc2bb2a0fd3b999}{m\-\_\-points} \mbox{[}\hyperlink{SimulatorPage_8h_ae34d209729703751560149e5bcb5d2f0}{k\-\_\-max\-Contact\-Points}\mbox{]}
+\item 
+int32 \hyperlink{classSimulatorPage_a26946c6050b34954b256c4b0271be534}{m\-\_\-point\-Count}
+\item 
+\hyperlink{classDestructionListener}{Destruction\-Listener} \hyperlink{classSimulatorPage_a3fd7bc3de5a63d35d152f8446f41cd53}{m\-\_\-destruction\-Listener}
+\item 
+\hyperlink{classDebugDraw}{Debug\-Draw} \hyperlink{classSimulatorPage_a9b074b47b00e81c08154cf2975282a6d}{m\-\_\-debug\-Draw}
+\item 
+int32 \hyperlink{classSimulatorPage_aebe43734cac8bf5c8a88fb20e0975b63}{m\-\_\-text\-Line}
+\item 
+b2\-World $\ast$ \hyperlink{classSimulatorPage_af1b8c6fc0d7ede12a5132fe44c0fae5e}{m\-\_\-world}
+\item 
+b2\-Body $\ast$ \hyperlink{classSimulatorPage_a9ecb370ad58655cbc55190869fe43fab}{m\-\_\-bomb}
+\item 
+b2\-Mouse\-Joint $\ast$ \hyperlink{classSimulatorPage_a1dd1eef1ae65277d3bd5e93c44baca03}{m\-\_\-mouse\-Joint}
+\item 
+b2\-Vec2 \hyperlink{classSimulatorPage_a1be96eadc8befadc61960d68e602238a}{m\-\_\-bomb\-Spawn\-Point}
+\item 
+bool \hyperlink{classSimulatorPage_a5140893531a64b6fdf035b0c1ab448eb}{m\-\_\-bomb\-Spawning}
+\item 
+b2\-Vec2 \hyperlink{classSimulatorPage_aba988f418bc061a8d70982589916f662}{m\-\_\-mouse\-World}
+\item 
+int32 \hyperlink{classSimulatorPage_ac9a5a37acf3ec09e34983fe661ec5d3c}{m\-\_\-step\-Count}
+\item 
+b2\-Profile \hyperlink{classSimulatorPage_a715c353347e2e677ac7e4dadfe3b0792}{m\-\_\-max\-Profile}
+\item 
+b2\-Profile \hyperlink{classSimulatorPage_a53d76f9f1cd19e16205223d0277a878d}{m\-\_\-total\-Profile}
+\item 
+\hyperlink{classCommunicator}{Communicator} $\ast$ \hyperlink{classSimulatorPage_a26c6d51e11a440700f8400da277926b1}{m\-\_\-communicator}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classSimulatorPage_a070117113adbe4bd234cc819a8a31d67}{Destruction\-Listener}
+\item 
+class \hyperlink{classSimulatorPage_ace42de2cf55b34c2abc668b911b4fc70}{Boundary\-Listener}
+\item 
+class \hyperlink{classSimulatorPage_aea5531aaede6e9afc2c156b067c847d4}{Contact\-Listener}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSimulatorPage_ae4c224aee18df3d96f37b54a0bf36464}{\index{Simulator\-Page@{Simulator\-Page}!Simulator\-Page@{Simulator\-Page}}
+\index{Simulator\-Page@{Simulator\-Page}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Simulator\-Page}]{\setlength{\rightskip}{0pt plus 5cm}Simulator\-Page\-::\-Simulator\-Page (
+\begin{DoxyParamCaption}
+\item[{{\bf Communicator} $\ast$}]{communicator}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_ae4c224aee18df3d96f37b54a0bf36464}
+\hypertarget{classSimulatorPage_af1468b91ff43c04bf51596769553ff5a}{\index{Simulator\-Page@{Simulator\-Page}!$\sim$\-Simulator\-Page@{$\sim$\-Simulator\-Page}}
+\index{$\sim$\-Simulator\-Page@{$\sim$\-Simulator\-Page}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{$\sim$\-Simulator\-Page}]{\setlength{\rightskip}{0pt plus 5cm}Simulator\-Page\-::$\sim$\-Simulator\-Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulatorPage_af1468b91ff43c04bf51596769553ff5a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSimulatorPage_a5a6ea36613740fcbb301317ac48816b0}{\index{Simulator\-Page@{Simulator\-Page}!Begin\-Contact@{Begin\-Contact}}
+\index{Begin\-Contact@{Begin\-Contact}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Begin\-Contact}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-Begin\-Contact (
+\begin{DoxyParamCaption}
+\item[{b2\-Contact $\ast$}]{contact}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_a5a6ea36613740fcbb301317ac48816b0}
+\hypertarget{classSimulatorPage_a25475c39d60beeabfa7c5bf0f9bbaae9}{\index{Simulator\-Page@{Simulator\-Page}!Complete\-Bomb\-Spawn@{Complete\-Bomb\-Spawn}}
+\index{Complete\-Bomb\-Spawn@{Complete\-Bomb\-Spawn}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Complete\-Bomb\-Spawn}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Complete\-Bomb\-Spawn (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a25475c39d60beeabfa7c5bf0f9bbaae9}
+\hypertarget{classSimulatorPage_a9bb317b7301bb3fddfd0bda065447d80}{\index{Simulator\-Page@{Simulator\-Page}!Draw\-Title@{Draw\-Title}}
+\index{Draw\-Title@{Draw\-Title}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Draw\-Title}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Draw\-Title (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y, }
+\item[{const char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a9bb317b7301bb3fddfd0bda065447d80}
+\hypertarget{classSimulatorPage_a1679b66b418b92aafb7e46a47c737f03}{\index{Simulator\-Page@{Simulator\-Page}!End\-Contact@{End\-Contact}}
+\index{End\-Contact@{End\-Contact}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{End\-Contact}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-End\-Contact (
+\begin{DoxyParamCaption}
+\item[{b2\-Contact $\ast$}]{contact}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_a1679b66b418b92aafb7e46a47c737f03}
+\hypertarget{classSimulatorPage_a1c6a3e2ebc71dcc01aaebca77fcec421}{\index{Simulator\-Page@{Simulator\-Page}!Joint\-Destroyed@{Joint\-Destroyed}}
+\index{Joint\-Destroyed@{Joint\-Destroyed}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Joint\-Destroyed}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-Joint\-Destroyed (
+\begin{DoxyParamCaption}
+\item[{b2\-Joint $\ast$}]{joint}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_a1c6a3e2ebc71dcc01aaebca77fcec421}
+\hypertarget{classSimulatorPage_a295bcbd72dfe0dd651d922b8165e8f9a}{\index{Simulator\-Page@{Simulator\-Page}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-Keyboard (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_a295bcbd72dfe0dd651d922b8165e8f9a}
+
+
+Reimplemented in \hyperlink{classPlankSortingPlant_a131fade1b547a3af4f2b5158bc285e30}{Plank\-Sorting\-Plant}.
+
+\hypertarget{classSimulatorPage_af95e71d2e0b7bad8d0cdf7b7e5588440}{\index{Simulator\-Page@{Simulator\-Page}!Keyboard\-Up@{Keyboard\-Up}}
+\index{Keyboard\-Up@{Keyboard\-Up}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Keyboard\-Up}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-Keyboard\-Up (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_af95e71d2e0b7bad8d0cdf7b7e5588440}
+\hypertarget{classSimulatorPage_a39e3534423f49c6f6f233b81f7f5bc80}{\index{Simulator\-Page@{Simulator\-Page}!Launch\-Bomb@{Launch\-Bomb}}
+\index{Launch\-Bomb@{Launch\-Bomb}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Launch\-Bomb}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Launch\-Bomb (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a39e3534423f49c6f6f233b81f7f5bc80}
+\hypertarget{classSimulatorPage_a99976c3f608eb764bee788460b2c0f8d}{\index{Simulator\-Page@{Simulator\-Page}!Launch\-Bomb@{Launch\-Bomb}}
+\index{Launch\-Bomb@{Launch\-Bomb}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Launch\-Bomb}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Launch\-Bomb (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{position, }
+\item[{const b2\-Vec2 \&}]{velocity}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a99976c3f608eb764bee788460b2c0f8d}
+\hypertarget{classSimulatorPage_ad6c49283fed786a374af8a3f236b2e29}{\index{Simulator\-Page@{Simulator\-Page}!Mouse\-Down@{Mouse\-Down}}
+\index{Mouse\-Down@{Mouse\-Down}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Mouse\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Mouse\-Down (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulatorPage_ad6c49283fed786a374af8a3f236b2e29}
+\hypertarget{classSimulatorPage_a71ff43bcbced024eaa85b037a9c22006}{\index{Simulator\-Page@{Simulator\-Page}!Mouse\-Move@{Mouse\-Move}}
+\index{Mouse\-Move@{Mouse\-Move}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Mouse\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Mouse\-Move (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a71ff43bcbced024eaa85b037a9c22006}
+\hypertarget{classSimulatorPage_afcc118e0e87b65a2c4bf95a76cec2396}{\index{Simulator\-Page@{Simulator\-Page}!Mouse\-Up@{Mouse\-Up}}
+\index{Mouse\-Up@{Mouse\-Up}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Mouse\-Up}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Mouse\-Up (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulatorPage_afcc118e0e87b65a2c4bf95a76cec2396}
+\hypertarget{classSimulatorPage_aa86fc16964e2465873d3b352d70a6ae6}{\index{Simulator\-Page@{Simulator\-Page}!Post\-Solve@{Post\-Solve}}
+\index{Post\-Solve@{Post\-Solve}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Post\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Simulator\-Page\-::\-Post\-Solve (
+\begin{DoxyParamCaption}
+\item[{const b2\-Contact $\ast$}]{contact, }
+\item[{const b2\-Contact\-Impulse $\ast$}]{impulse}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classSimulatorPage_aa86fc16964e2465873d3b352d70a6ae6}
+\hypertarget{classSimulatorPage_a0bf3450167587c8f2e013df17abecb73}{\index{Simulator\-Page@{Simulator\-Page}!Pre\-Solve@{Pre\-Solve}}
+\index{Pre\-Solve@{Pre\-Solve}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Pre\-Solve}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Pre\-Solve (
+\begin{DoxyParamCaption}
+\item[{b2\-Contact $\ast$}]{contact, }
+\item[{const b2\-Manifold $\ast$}]{old\-Manifold}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulatorPage_a0bf3450167587c8f2e013df17abecb73}
+\hypertarget{classSimulatorPage_af9089342514e16944fbc9f6202ed1439}{\index{Simulator\-Page@{Simulator\-Page}!Set\-Text\-Line@{Set\-Text\-Line}}
+\index{Set\-Text\-Line@{Set\-Text\-Line}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Set\-Text\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Set\-Text\-Line (
+\begin{DoxyParamCaption}
+\item[{int32}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classSimulatorPage_af9089342514e16944fbc9f6202ed1439}
+\hypertarget{classSimulatorPage_aa780589b43ed6c51d5d293b004dfd695}{\index{Simulator\-Page@{Simulator\-Page}!Shift\-Mouse\-Down@{Shift\-Mouse\-Down}}
+\index{Shift\-Mouse\-Down@{Shift\-Mouse\-Down}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Shift\-Mouse\-Down}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Shift\-Mouse\-Down (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{p}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_aa780589b43ed6c51d5d293b004dfd695}
+\hypertarget{classSimulatorPage_a177d0ac170bcdd4ec523ce0c99dec40d}{\index{Simulator\-Page@{Simulator\-Page}!Spawn\-Bomb@{Spawn\-Bomb}}
+\index{Spawn\-Bomb@{Spawn\-Bomb}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Spawn\-Bomb}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Spawn\-Bomb (
+\begin{DoxyParamCaption}
+\item[{const b2\-Vec2 \&}]{world\-Pt}
+\end{DoxyParamCaption}
+)}}\label{classSimulatorPage_a177d0ac170bcdd4ec523ce0c99dec40d}
+\hypertarget{classSimulatorPage_ac478dc8792d0f593c6dc6277a4e96719}{\index{Simulator\-Page@{Simulator\-Page}!Step@{Step}}
+\index{Step@{Step}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}void Simulator\-Page\-::\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Settings} $\ast$}]{settings}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimulatorPage_ac478dc8792d0f593c6dc6277a4e96719}
+
+
+Reimplemented in \hyperlink{classPlankSortingPlant_a512555c258c6e6d824356af6ed2e77f2}{Plank\-Sorting\-Plant}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classSimulatorPage_ace42de2cf55b34c2abc668b911b4fc70}{\index{Simulator\-Page@{Simulator\-Page}!Boundary\-Listener@{Boundary\-Listener}}
+\index{Boundary\-Listener@{Boundary\-Listener}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Boundary\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}friend class Boundary\-Listener\hspace{0.3cm}{\ttfamily [friend]}}}\label{classSimulatorPage_ace42de2cf55b34c2abc668b911b4fc70}
+\hypertarget{classSimulatorPage_aea5531aaede6e9afc2c156b067c847d4}{\index{Simulator\-Page@{Simulator\-Page}!Contact\-Listener@{Contact\-Listener}}
+\index{Contact\-Listener@{Contact\-Listener}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Contact\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}friend class Contact\-Listener\hspace{0.3cm}{\ttfamily [friend]}}}\label{classSimulatorPage_aea5531aaede6e9afc2c156b067c847d4}
+\hypertarget{classSimulatorPage_a070117113adbe4bd234cc819a8a31d67}{\index{Simulator\-Page@{Simulator\-Page}!Destruction\-Listener@{Destruction\-Listener}}
+\index{Destruction\-Listener@{Destruction\-Listener}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{Destruction\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Destruction\-Listener}\hspace{0.3cm}{\ttfamily [friend]}}}\label{classSimulatorPage_a070117113adbe4bd234cc819a8a31d67}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSimulatorPage_a9ecb370ad58655cbc55190869fe43fab}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-bomb@{m\-\_\-bomb}}
+\index{m\-\_\-bomb@{m\-\_\-bomb}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-bomb}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Simulator\-Page\-::m\-\_\-bomb\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a9ecb370ad58655cbc55190869fe43fab}
+\hypertarget{classSimulatorPage_a5140893531a64b6fdf035b0c1ab448eb}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-bomb\-Spawning@{m\-\_\-bomb\-Spawning}}
+\index{m\-\_\-bomb\-Spawning@{m\-\_\-bomb\-Spawning}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-bomb\-Spawning}]{\setlength{\rightskip}{0pt plus 5cm}bool Simulator\-Page\-::m\-\_\-bomb\-Spawning\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a5140893531a64b6fdf035b0c1ab448eb}
+\hypertarget{classSimulatorPage_a1be96eadc8befadc61960d68e602238a}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-bomb\-Spawn\-Point@{m\-\_\-bomb\-Spawn\-Point}}
+\index{m\-\_\-bomb\-Spawn\-Point@{m\-\_\-bomb\-Spawn\-Point}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-bomb\-Spawn\-Point}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Simulator\-Page\-::m\-\_\-bomb\-Spawn\-Point\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a1be96eadc8befadc61960d68e602238a}
+\hypertarget{classSimulatorPage_a26c6d51e11a440700f8400da277926b1}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-communicator@{m\-\_\-communicator}}
+\index{m\-\_\-communicator@{m\-\_\-communicator}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-communicator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Communicator}$\ast$ Simulator\-Page\-::m\-\_\-communicator\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a26c6d51e11a440700f8400da277926b1}
+\hypertarget{classSimulatorPage_a9b074b47b00e81c08154cf2975282a6d}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-debug\-Draw@{m\-\_\-debug\-Draw}}
+\index{m\-\_\-debug\-Draw@{m\-\_\-debug\-Draw}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-debug\-Draw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Debug\-Draw} Simulator\-Page\-::m\-\_\-debug\-Draw\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a9b074b47b00e81c08154cf2975282a6d}
+\hypertarget{classSimulatorPage_a3fd7bc3de5a63d35d152f8446f41cd53}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-destruction\-Listener@{m\-\_\-destruction\-Listener}}
+\index{m\-\_\-destruction\-Listener@{m\-\_\-destruction\-Listener}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-destruction\-Listener}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Destruction\-Listener} Simulator\-Page\-::m\-\_\-destruction\-Listener\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a3fd7bc3de5a63d35d152f8446f41cd53}
+\hypertarget{classSimulatorPage_ab4c6f15c6a33d3884c3e3a55b93971ec}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-ground\-Body@{m\-\_\-ground\-Body}}
+\index{m\-\_\-ground\-Body@{m\-\_\-ground\-Body}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-ground\-Body}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Simulator\-Page\-::m\-\_\-ground\-Body\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_ab4c6f15c6a33d3884c3e3a55b93971ec}
+\hypertarget{classSimulatorPage_a715c353347e2e677ac7e4dadfe3b0792}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-max\-Profile@{m\-\_\-max\-Profile}}
+\index{m\-\_\-max\-Profile@{m\-\_\-max\-Profile}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-max\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Profile Simulator\-Page\-::m\-\_\-max\-Profile\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a715c353347e2e677ac7e4dadfe3b0792}
+\hypertarget{classSimulatorPage_a1dd1eef1ae65277d3bd5e93c44baca03}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-mouse\-Joint@{m\-\_\-mouse\-Joint}}
+\index{m\-\_\-mouse\-Joint@{m\-\_\-mouse\-Joint}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-mouse\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Mouse\-Joint$\ast$ Simulator\-Page\-::m\-\_\-mouse\-Joint\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a1dd1eef1ae65277d3bd5e93c44baca03}
+\hypertarget{classSimulatorPage_aba988f418bc061a8d70982589916f662}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-mouse\-World@{m\-\_\-mouse\-World}}
+\index{m\-\_\-mouse\-World@{m\-\_\-mouse\-World}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-mouse\-World}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Simulator\-Page\-::m\-\_\-mouse\-World\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_aba988f418bc061a8d70982589916f662}
+\hypertarget{classSimulatorPage_a26946c6050b34954b256c4b0271be534}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-point\-Count@{m\-\_\-point\-Count}}
+\index{m\-\_\-point\-Count@{m\-\_\-point\-Count}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-point\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int32 Simulator\-Page\-::m\-\_\-point\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a26946c6050b34954b256c4b0271be534}
+\hypertarget{classSimulatorPage_afa967705601096830dc2bb2a0fd3b999}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-points@{m\-\_\-points}}
+\index{m\-\_\-points@{m\-\_\-points}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contact\-Point} Simulator\-Page\-::m\-\_\-points\mbox{[}{\bf k\-\_\-max\-Contact\-Points}\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_afa967705601096830dc2bb2a0fd3b999}
+\hypertarget{classSimulatorPage_ac9a5a37acf3ec09e34983fe661ec5d3c}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-step\-Count@{m\-\_\-step\-Count}}
+\index{m\-\_\-step\-Count@{m\-\_\-step\-Count}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-step\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int32 Simulator\-Page\-::m\-\_\-step\-Count\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_ac9a5a37acf3ec09e34983fe661ec5d3c}
+\hypertarget{classSimulatorPage_aebe43734cac8bf5c8a88fb20e0975b63}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-text\-Line@{m\-\_\-text\-Line}}
+\index{m\-\_\-text\-Line@{m\-\_\-text\-Line}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-text\-Line}]{\setlength{\rightskip}{0pt plus 5cm}int32 Simulator\-Page\-::m\-\_\-text\-Line\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_aebe43734cac8bf5c8a88fb20e0975b63}
+\hypertarget{classSimulatorPage_a53d76f9f1cd19e16205223d0277a878d}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-total\-Profile@{m\-\_\-total\-Profile}}
+\index{m\-\_\-total\-Profile@{m\-\_\-total\-Profile}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-total\-Profile}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Profile Simulator\-Page\-::m\-\_\-total\-Profile\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_a53d76f9f1cd19e16205223d0277a878d}
+\hypertarget{classSimulatorPage_af1b8c6fc0d7ede12a5132fe44c0fae5e}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Simulator\-Page\-::m\-\_\-world\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_af1b8c6fc0d7ede12a5132fe44c0fae5e}
+\hypertarget{classSimulatorPage_afe7bd14c770a28ab335a803ebc93d1a5}{\index{Simulator\-Page@{Simulator\-Page}!m\-\_\-world\-A\-A\-B\-B@{m\-\_\-world\-A\-A\-B\-B}}
+\index{m\-\_\-world\-A\-A\-B\-B@{m\-\_\-world\-A\-A\-B\-B}!SimulatorPage@{Simulator\-Page}}
+\subsubsection[{m\-\_\-world\-A\-A\-B\-B}]{\setlength{\rightskip}{0pt plus 5cm}b2\-A\-A\-B\-B Simulator\-Page\-::m\-\_\-world\-A\-A\-B\-B\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimulatorPage_afe7bd14c770a28ab335a803ebc93d1a5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{SimulatorPage_8h}{Simulator\-Page.\-h}\item 
+\hyperlink{SimulatorPage_8cpp}{Simulator\-Page.\-cpp}\end{DoxyCompactItemize}

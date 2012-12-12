@@ -1,0 +1,113 @@
+\hypertarget{classCounterSensor}{\section{Counter\-Sensor Class Reference}
+\label{classCounterSensor}\index{Counter\-Sensor@{Counter\-Sensor}}
+}
+
+
+Count the number of collisions.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\-h$>$}
+
+Inheritance diagram for Counter\-Sensor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classCounterSensor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCounterSensor_a0a7194fc72b5b35feba9ffe7da90d108}{Counter\-Sensor} (int id, b2\-Vec2 position, float32 radius, b2\-Filter filter, b2\-World $\ast$world)
+\item 
+void \hyperlink{classCounterSensor_a1763f5725f88b507e8c03149d236ad1f}{update\-Counter} ()
+\begin{DoxyCompactList}\small\item\em Increase counter by one unit. \end{DoxyCompactList}\item 
+void \hyperlink{classCounterSensor_a43e99153ba1e398d66bdc1b1f5bc349d}{draw\-Label} ()
+\begin{DoxyCompactList}\small\item\em Draw sensor label. \end{DoxyCompactList}\item 
+signed int \hyperlink{classCounterSensor_aec52d1f6a0e52eaa61d356d9f15b665a}{get} ()
+\begin{DoxyCompactList}\small\item\em Return the state of the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+signed int \hyperlink{classCounterSensor_a813a9db83bb2930730655a4df647746a}{m\-\_\-counter}
+\begin{DoxyCompactList}\small\item\em Stores the number of registered collisions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Count the number of collisions. 
+
+This is used to measure how far a the conveyor-\/belt has traveled.  
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCounterSensor_a0a7194fc72b5b35feba9ffe7da90d108}{\index{Counter\-Sensor@{Counter\-Sensor}!Counter\-Sensor@{Counter\-Sensor}}
+\index{Counter\-Sensor@{Counter\-Sensor}!CounterSensor@{Counter\-Sensor}}
+\subsubsection[{Counter\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}Counter\-Sensor\-::\-Counter\-Sensor (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{b2\-Vec2}]{position, }
+\item[{float32}]{radius, }
+\item[{b2\-Filter}]{filter, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classCounterSensor_a0a7194fc72b5b35feba9ffe7da90d108}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCounterSensor_a43e99153ba1e398d66bdc1b1f5bc349d}{\index{Counter\-Sensor@{Counter\-Sensor}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!CounterSensor@{Counter\-Sensor}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Counter\-Sensor\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classCounterSensor_a43e99153ba1e398d66bdc1b1f5bc349d}
+
+
+Draw sensor label. 
+
+
+
+Reimplemented from \hyperlink{classContactSensor__Sync_ae7eed2d2ee0e58940426d4701f695481}{Contact\-Sensor\-\_\-\-Sync}.
+
+\hypertarget{classCounterSensor_aec52d1f6a0e52eaa61d356d9f15b665a}{\index{Counter\-Sensor@{Counter\-Sensor}!get@{get}}
+\index{get@{get}!CounterSensor@{Counter\-Sensor}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}signed int Counter\-Sensor\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classCounterSensor_aec52d1f6a0e52eaa61d356d9f15b665a}
+
+
+Return the state of the sensor. 
+
+
+
+Reimplemented from \hyperlink{classContactSensor_af616ebea2da4d9fd0dacdf71eb8b32d9}{Contact\-Sensor}.
+
+\hypertarget{classCounterSensor_a1763f5725f88b507e8c03149d236ad1f}{\index{Counter\-Sensor@{Counter\-Sensor}!update\-Counter@{update\-Counter}}
+\index{update\-Counter@{update\-Counter}!CounterSensor@{Counter\-Sensor}}
+\subsubsection[{update\-Counter}]{\setlength{\rightskip}{0pt plus 5cm}void Counter\-Sensor\-::update\-Counter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCounterSensor_a1763f5725f88b507e8c03149d236ad1f}
+
+
+Increase counter by one unit. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCounterSensor_a813a9db83bb2930730655a4df647746a}{\index{Counter\-Sensor@{Counter\-Sensor}!m\-\_\-counter@{m\-\_\-counter}}
+\index{m\-\_\-counter@{m\-\_\-counter}!CounterSensor@{Counter\-Sensor}}
+\subsubsection[{m\-\_\-counter}]{\setlength{\rightskip}{0pt plus 5cm}signed int Counter\-Sensor\-::m\-\_\-counter}}\label{classCounterSensor_a813a9db83bb2930730655a4df647746a}
+
+
+Stores the number of registered collisions. 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensors_8h}{Sensors.\-h}\item 
+\hyperlink{Sensors_8cpp}{Sensors.\-cpp}\end{DoxyCompactItemize}

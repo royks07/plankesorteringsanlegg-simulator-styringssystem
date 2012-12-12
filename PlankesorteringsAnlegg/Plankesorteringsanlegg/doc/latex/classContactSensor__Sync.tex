@@ -1,0 +1,99 @@
+\hypertarget{classContactSensor__Sync}{\section{Contact\-Sensor\-\_\-\-Sync Class Reference}
+\label{classContactSensor__Sync}\index{Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}}
+}
+
+
+Used by the \hyperlink{classConveyorSynchronizer}{Conveyor\-Synchronizer}.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\-h$>$}
+
+Inheritance diagram for Contact\-Sensor\-\_\-\-Sync\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classContactSensor__Sync}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContactSensor__Sync_a3067639c78a7f5e01724f15bdf023026}{Contact\-Sensor\-\_\-\-Sync} (b2\-Vec2 position, float32 radius, b2\-Filter filter, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Constructs a synchronization-\/sensor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classContactSensor__Sync_ae7eed2d2ee0e58940426d4701f695481}{draw\-Label} ()
+\begin{DoxyCompactList}\small\item\em Draw \char`\"{}sync\char`\"{} in red next to the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{classContactSensor__Sync_ad744459b1b2dc3836a5f8a68a8f9ad38}{m\-\_\-radius}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Used by the \hyperlink{classConveyorSynchronizer}{Conveyor\-Synchronizer}. 
+
+Each \hyperlink{classConveyor}{Conveyor} has one of these sensors. If a \hyperlink{classConveyor}{Conveyor} is registered with a \hyperlink{classConveyorSynchronizer}{Conveyor\-Synchronizer} a label with the text {\bfseries sync} will show up next to the sensor\-:
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classContactSensor__Sync_a3067639c78a7f5e01724f15bdf023026}{\index{Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}!Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}}
+\index{Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}!ContactSensor_Sync@{Contact\-Sensor\-\_\-\-Sync}}
+\subsubsection[{Contact\-Sensor\-\_\-\-Sync}]{\setlength{\rightskip}{0pt plus 5cm}Contact\-Sensor\-\_\-\-Sync\-::\-Contact\-Sensor\-\_\-\-Sync (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{position, }
+\item[{float32}]{radius, }
+\item[{b2\-Filter}]{filter, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classContactSensor__Sync_a3067639c78a7f5e01724f15bdf023026}
+
+
+Constructs a synchronization-\/sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the sensors circular shaped fixture. \\
+\hline
+{\em radius} & The radius of the sensors fixture. \\
+\hline
+{\em filter} & The sensors filter is used to control what sensors collide with she sensors fixture. \\
+\hline
+{\em world} & Pointer to the world in which you want to create the sensor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classContactSensor__Sync_ae7eed2d2ee0e58940426d4701f695481}{\index{Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!ContactSensor_Sync@{Contact\-Sensor\-\_\-\-Sync}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Contact\-Sensor\-\_\-\-Sync\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classContactSensor__Sync_ae7eed2d2ee0e58940426d4701f695481}
+
+
+Draw \char`\"{}sync\char`\"{} in red next to the sensor. 
+
+
+
+Reimplemented from \hyperlink{classContactSensor_ae08a9a4b2e44ec4ab2a33a482d4d286d}{Contact\-Sensor}.
+
+
+
+Reimplemented in \hyperlink{classCounterSensor_a43e99153ba1e398d66bdc1b1f5bc349d}{Counter\-Sensor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classContactSensor__Sync_ad744459b1b2dc3836a5f8a68a8f9ad38}{\index{Contact\-Sensor\-\_\-\-Sync@{Contact\-Sensor\-\_\-\-Sync}!m\-\_\-radius@{m\-\_\-radius}}
+\index{m\-\_\-radius@{m\-\_\-radius}!ContactSensor_Sync@{Contact\-Sensor\-\_\-\-Sync}}
+\subsubsection[{m\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}float32 Contact\-Sensor\-\_\-\-Sync\-::m\-\_\-radius}}\label{classContactSensor__Sync_ad744459b1b2dc3836a5f8a68a8f9ad38}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensors_8h}{Sensors.\-h}\item 
+\hyperlink{Sensors_8cpp}{Sensors.\-cpp}\end{DoxyCompactItemize}

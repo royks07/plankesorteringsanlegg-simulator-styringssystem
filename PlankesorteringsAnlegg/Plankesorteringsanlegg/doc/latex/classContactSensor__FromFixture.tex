@@ -1,0 +1,111 @@
+\hypertarget{classContactSensor__FromFixture}{\section{Contact\-Sensor\-\_\-\-From\-Fixture Class Reference}
+\label{classContactSensor__FromFixture}\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+}
+
+
+Turn arbitrary Box2\-D fixture into binary sensor.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\-h$>$}
+
+Inheritance diagram for Contact\-Sensor\-\_\-\-From\-Fixture\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classContactSensor__FromFixture}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classContactSensor__FromFixture_a9989b5549cef639368089acfe5dcdfe6}{Contact\-Sensor\-\_\-\-From\-Fixture} (int id, b2\-Fixture $\ast$fixture)
+\begin{DoxyCompactList}\small\item\em Turn arbitrary b2\-Fixture into binary sensor. \end{DoxyCompactList}\item 
+signed int \hyperlink{classContactSensor__FromFixture_a565839762b4c6bff70f3d7d959813580}{get} ()
+\begin{DoxyCompactList}\small\item\em Return sensors measured value. \end{DoxyCompactList}\item 
+void \hyperlink{classContactSensor__FromFixture_ab022c55f6ffa92709062d4be3a6c584b}{draw\-Label} ()
+\begin{DoxyCompactList}\small\item\em Draw sensor label. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{classContactSensor__FromFixture_a059bda2fabb5680ff425af83274feb22}{m\-\_\-radius}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Turn arbitrary Box2\-D fixture into binary sensor. 
+
+{\bfseries Example\-:}  To create S1 and activate the sensor, by adding it to the sensor-\/set, we write the following lines of code\-: 
+\begin{DoxyCode}
+\hyperlink{classContactSensor__FromFixture}{ContactSensor\_FromFixture}* liftSensor = \textcolor{keyword}{new} 
+      \hyperlink{classContactSensor__FromFixture_a9989b5549cef639368089acfe5dcdfe6}{ContactSensor\_FromFixture}(1,packageInput->
+      getLiftSensorFixture());
+m\_sensorSet->add(liftSensor);
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classContactSensor__FromFixture_a9989b5549cef639368089acfe5dcdfe6}{\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}!Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}!ContactSensor_FromFixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+\subsubsection[{Contact\-Sensor\-\_\-\-From\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}Contact\-Sensor\-\_\-\-From\-Fixture\-::\-Contact\-Sensor\-\_\-\-From\-Fixture (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{b2\-Fixture $\ast$}]{fixture}
+\end{DoxyParamCaption}
+)}}\label{classContactSensor__FromFixture_a9989b5549cef639368089acfe5dcdfe6}
+
+
+Turn arbitrary b2\-Fixture into binary sensor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The id of the sensor. This value will be visible as part of the sensor label. \\
+\hline
+{\em fixture} & Pointer to the b2\-Fixture that you want to turn in to a sensor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classContactSensor__FromFixture_ab022c55f6ffa92709062d4be3a6c584b}{\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!ContactSensor_FromFixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Contact\-Sensor\-\_\-\-From\-Fixture\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classContactSensor__FromFixture_ab022c55f6ffa92709062d4be3a6c584b}
+
+
+Draw sensor label. 
+
+
+
+Reimplemented from \hyperlink{classContactSensor_ae08a9a4b2e44ec4ab2a33a482d4d286d}{Contact\-Sensor}.
+
+\hypertarget{classContactSensor__FromFixture_a565839762b4c6bff70f3d7d959813580}{\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}!get@{get}}
+\index{get@{get}!ContactSensor_FromFixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}signed int Contact\-Sensor\-\_\-\-From\-Fixture\-::get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classContactSensor__FromFixture_a565839762b4c6bff70f3d7d959813580}
+
+
+Return sensors measured value. 
+
+
+
+Reimplemented from \hyperlink{classContactSensor_af616ebea2da4d9fd0dacdf71eb8b32d9}{Contact\-Sensor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classContactSensor__FromFixture_a059bda2fabb5680ff425af83274feb22}{\index{Contact\-Sensor\-\_\-\-From\-Fixture@{Contact\-Sensor\-\_\-\-From\-Fixture}!m\-\_\-radius@{m\-\_\-radius}}
+\index{m\-\_\-radius@{m\-\_\-radius}!ContactSensor_FromFixture@{Contact\-Sensor\-\_\-\-From\-Fixture}}
+\subsubsection[{m\-\_\-radius}]{\setlength{\rightskip}{0pt plus 5cm}float32 Contact\-Sensor\-\_\-\-From\-Fixture\-::m\-\_\-radius}}\label{classContactSensor__FromFixture_a059bda2fabb5680ff425af83274feb22}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensors_8h}{Sensors.\-h}\item 
+\hyperlink{Sensors_8cpp}{Sensors.\-cpp}\end{DoxyCompactItemize}

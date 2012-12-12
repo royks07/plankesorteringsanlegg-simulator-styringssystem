@@ -1,0 +1,85 @@
+.TH "SensorSet" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SensorSet \- 
+.PP
+Listen to sensors and transmit state-changes to the communicator\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits b2ContactListener\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSensorSet\fP (\fBCommunicator\fP *communicator)"
+.br
+.ti -1c
+.RI "void \fBBeginContact\fP (b2Contact *contact)"
+.br
+.ti -1c
+.RI "void \fBEndContact\fP (b2Contact *contact)"
+.br
+.ti -1c
+.RI "void \fBdrawLabels\fP ()"
+.br
+.ti -1c
+.RI "signed int \fBreadSensor\fP (signed int id)"
+.br
+.RI "\fIRead sensor state on demand\&. \fP"
+.ti -1c
+.RI "void \fBadd\fP (\fBContactSensor\fP *contactSensor)"
+.br
+.RI "\fIAdd sensor to sensor-set\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBContactSensor\fP * > \fBm_contactSensorVector\fP"
+.br
+.ti -1c
+.RI "\fBCommunicator\fP * \fBm_communicator\fP"
+.br
+.RI "\fIThe communicator with whom \fBSensorSet\fP speaks\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Listen to sensors and transmit state-changes to the communicator\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SensorSet::SensorSet (\fBCommunicator\fP *communicator)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void SensorSet::add (\fBContactSensor\fP *contactSensor)"
+
+.PP
+Add sensor to sensor-set\&. 
+.SS "void SensorSet::BeginContact (b2Contact *contact)"
+
+.SS "void SensorSet::drawLabels ()"
+Draw all sensor labels 
+.SS "void SensorSet::EndContact (b2Contact *contact)"
+
+.SS "signed int SensorSet::readSensor (signed intid)"
+
+.PP
+Read sensor state on demand\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBCommunicator\fP* SensorSet::m_communicator"
+
+.PP
+The communicator with whom \fBSensorSet\fP speaks\&. 
+.SS "vector<\fBContactSensor\fP*> SensorSet::m_contactSensorVector"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

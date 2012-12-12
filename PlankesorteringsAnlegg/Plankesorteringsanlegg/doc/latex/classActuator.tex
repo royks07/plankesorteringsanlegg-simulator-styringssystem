@@ -1,0 +1,137 @@
+\hypertarget{classActuator}{\section{Actuator Class Reference}
+\label{classActuator}\index{Actuator@{Actuator}}
+}
+
+
+Abstract class from which other actuator-\/classes inherit.  
+
+
+
+
+{\ttfamily \#include $<$Actuators.\-h$>$}
+
+Inheritance diagram for Actuator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.147541cm]{classActuator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classActuator_a2f4022920c434cd6b3f78a749b60fbfe}{Actuator} (int id)
+\item 
+virtual \hyperlink{classActuator_ac9dda5313616de651431d103988f6c1b}{$\sim$\-Actuator} ()
+\item 
+virtual int \hyperlink{classActuator_aa97717414ddb932701fa8c882bc55773}{get\-Id} ()
+\item 
+virtual string \hyperlink{classActuator_a7d57e5b0684179fe527b7724897a0312}{get\-Name} ()
+\item 
+virtual void \hyperlink{classActuator_aaa39a438315ac34dbb1a4237bf70ff99}{draw\-Label} ()
+\item 
+virtual void \hyperlink{classActuator_a6281019cccd4034ab2cf7071defecf70}{set} (signed int value)
+\item 
+virtual void \hyperlink{classActuator_aabe48a4249a91a4cd1b964001fe754fc}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classActuator_aec2f761be4e82de74e986f02e5e77527}{m\-\_\-id}
+\item 
+b2\-Color \hyperlink{classActuator_ad534cbd18d6df7e5ab080b3628f5522d}{m\-\_\-color}
+\item 
+b2\-Vec2 \hyperlink{classActuator_ab7e8376ea5e795af2aad96c924253c77}{m\-\_\-position}
+\item 
+string \hyperlink{classActuator_a1664ca83d9352531527aa66c2f965b7b}{m\-\_\-name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class from which other actuator-\/classes inherit. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classActuator_a2f4022920c434cd6b3f78a749b60fbfe}{\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\index{Actuator@{Actuator}!Actuator@{Actuator}}
+\subsubsection[{Actuator}]{\setlength{\rightskip}{0pt plus 5cm}Actuator\-::\-Actuator (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classActuator_a2f4022920c434cd6b3f78a749b60fbfe}
+\hypertarget{classActuator_ac9dda5313616de651431d103988f6c1b}{\index{Actuator@{Actuator}!$\sim$\-Actuator@{$\sim$\-Actuator}}
+\index{$\sim$\-Actuator@{$\sim$\-Actuator}!Actuator@{Actuator}}
+\subsubsection[{$\sim$\-Actuator}]{\setlength{\rightskip}{0pt plus 5cm}virtual Actuator\-::$\sim$\-Actuator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_ac9dda5313616de651431d103988f6c1b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classActuator_aaa39a438315ac34dbb1a4237bf70ff99}{\index{Actuator@{Actuator}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!Actuator@{Actuator}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actuator\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_aaa39a438315ac34dbb1a4237bf70ff99}
+
+
+Reimplemented in \hyperlink{classSprinkleSourceActuator_ad61ef520615f3ad27964c9388da99825}{Sprinkle\-Source\-Actuator}, \hyperlink{classPackageSourceActuator_ab27c455d40d832ed4558f893f1ed3565}{Package\-Source\-Actuator}, \hyperlink{classJointActuatorRevoluteStep_ab390783e9b495488afa09e8f29aee6d9}{Joint\-Actuator\-Revolute\-Step}, \hyperlink{classJointActuatorPrismaticStep_aecbb187fd46eb1e197a34bcd54aaf4d4}{Joint\-Actuator\-Prismatic\-Step}, \hyperlink{classJointActuatorPrismaticRange_a9daa027177e5bd6c0296b3cf4a76e9ab}{Joint\-Actuator\-Prismatic\-Range}, \hyperlink{classJointActuatorPrismaticBinary_a2c4cd26a0ae47850eca1047ba078a654}{Joint\-Actuator\-Prismatic\-Binary}, and \hyperlink{classConveyorActuator_a92b62d5cb761e808337d3b9de910a543}{Conveyor\-Actuator}.
+
+\hypertarget{classActuator_aa97717414ddb932701fa8c882bc55773}{\index{Actuator@{Actuator}!get\-Id@{get\-Id}}
+\index{get\-Id@{get\-Id}!Actuator@{Actuator}}
+\subsubsection[{get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Actuator\-::get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_aa97717414ddb932701fa8c882bc55773}
+\hypertarget{classActuator_a7d57e5b0684179fe527b7724897a0312}{\index{Actuator@{Actuator}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!Actuator@{Actuator}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}virtual string Actuator\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_a7d57e5b0684179fe527b7724897a0312}
+\hypertarget{classActuator_aabe48a4249a91a4cd1b964001fe754fc}{\index{Actuator@{Actuator}!run@{run}}
+\index{run@{run}!Actuator@{Actuator}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actuator\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_aabe48a4249a91a4cd1b964001fe754fc}
+
+
+Reimplemented in \hyperlink{classSprinkleSourceActuator_a92ea18d960f132ec493d3b0400a0c504}{Sprinkle\-Source\-Actuator}, \hyperlink{classPackageSourceActuator_a058a225a850f0d49a79f90700ada3254}{Package\-Source\-Actuator}, \hyperlink{classJointActuatorRevoluteStep_a6445fceda983f3fd1f0b280bb03a66af}{Joint\-Actuator\-Revolute\-Step}, \hyperlink{classJointActuatorPrismaticStep_a30a61d48a3719b5d0390be85b7445883}{Joint\-Actuator\-Prismatic\-Step}, \hyperlink{classConveyorActuatorStep_a07d92edbe704485cadea21988d263201}{Conveyor\-Actuator\-Step}, and \hyperlink{classConveyorActuator_a0df274add7b944f869e9486fce8240b1}{Conveyor\-Actuator}.
+
+\hypertarget{classActuator_a6281019cccd4034ab2cf7071defecf70}{\index{Actuator@{Actuator}!set@{set}}
+\index{set@{set}!Actuator@{Actuator}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Actuator\-::set (
+\begin{DoxyParamCaption}
+\item[{signed int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classActuator_a6281019cccd4034ab2cf7071defecf70}
+
+
+Reimplemented in \hyperlink{classSprinkleSourceActuator_a273206caefb1bfa72320f7b096a004ed}{Sprinkle\-Source\-Actuator}, \hyperlink{classPackageSourceActuator_a67e19fb7457c9c29288d8409446756f0}{Package\-Source\-Actuator}, \hyperlink{classJointActuatorRevoluteStep_af72ade5873ae6b2816f1f7c89bf95971}{Joint\-Actuator\-Revolute\-Step}, \hyperlink{classJointActuatorPrismaticStep_ace7839e236e16848375f963697ac408a}{Joint\-Actuator\-Prismatic\-Step}, \hyperlink{classJointActuatorPrismaticRange_a6df9efdb8bf3cea3cffefa977a6f4c02}{Joint\-Actuator\-Prismatic\-Range}, \hyperlink{classJointActuatorPrismaticBinary_a78d1185c3762bb4301f31f0619cded7a}{Joint\-Actuator\-Prismatic\-Binary}, \hyperlink{classConveyorActuatorStep_a7aa64b6b41c86fe4efac32f0090f60f9}{Conveyor\-Actuator\-Step}, \hyperlink{classConveyorActuatorBinary_a7b546c90b95e289cc0b618001fc934f8}{Conveyor\-Actuator\-Binary}, and \hyperlink{classConveyorActuator_a4eeadeec24502aed450880cba04e2784}{Conveyor\-Actuator}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classActuator_ad534cbd18d6df7e5ab080b3628f5522d}{\index{Actuator@{Actuator}!m\-\_\-color@{m\-\_\-color}}
+\index{m\-\_\-color@{m\-\_\-color}!Actuator@{Actuator}}
+\subsubsection[{m\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Color Actuator\-::m\-\_\-color}}\label{classActuator_ad534cbd18d6df7e5ab080b3628f5522d}
+\hypertarget{classActuator_aec2f761be4e82de74e986f02e5e77527}{\index{Actuator@{Actuator}!m\-\_\-id@{m\-\_\-id}}
+\index{m\-\_\-id@{m\-\_\-id}!Actuator@{Actuator}}
+\subsubsection[{m\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int Actuator\-::m\-\_\-id}}\label{classActuator_aec2f761be4e82de74e986f02e5e77527}
+\hypertarget{classActuator_a1664ca83d9352531527aa66c2f965b7b}{\index{Actuator@{Actuator}!m\-\_\-name@{m\-\_\-name}}
+\index{m\-\_\-name@{m\-\_\-name}!Actuator@{Actuator}}
+\subsubsection[{m\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string Actuator\-::m\-\_\-name}}\label{classActuator_a1664ca83d9352531527aa66c2f965b7b}
+\hypertarget{classActuator_ab7e8376ea5e795af2aad96c924253c77}{\index{Actuator@{Actuator}!m\-\_\-position@{m\-\_\-position}}
+\index{m\-\_\-position@{m\-\_\-position}!Actuator@{Actuator}}
+\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Actuator\-::m\-\_\-position}}\label{classActuator_ab7e8376ea5e795af2aad96c924253c77}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Actuators_8h}{Actuators.\-h}\item 
+\hyperlink{Actuators_8cpp}{Actuators.\-cpp}\end{DoxyCompactItemize}

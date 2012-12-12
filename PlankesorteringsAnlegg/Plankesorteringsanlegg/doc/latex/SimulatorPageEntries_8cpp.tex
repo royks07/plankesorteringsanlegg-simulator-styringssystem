@@ -1,0 +1,46 @@
+\hypertarget{SimulatorPageEntries_8cpp}{\section{Simulator\-Page\-Entries.\-cpp File Reference}
+\label{SimulatorPageEntries_8cpp}\index{Simulator\-Page\-Entries.\-cpp@{Simulator\-Page\-Entries.\-cpp}}
+}
+
+
+Assign simulator-\/page entries to global array g\-\_\-simulator\-Page\-Entries.  
+
+
+{\ttfamily \#include \char`\"{}Plank\-Sorting\-Plant.\-h\char`\"{}}\\*
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSimulatorPageEntry}{Simulator\-Page\-Entry} \hyperlink{SimulatorPageEntries_8cpp_adea61b799dfbdae7d58becb1e5e6fb87}{g\-\_\-simulator\-Page\-Entries} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Assign simulator-\/page entries to global array g\-\_\-simulator\-Page\-Entries. To add an entry for Example\-Simulator\-Page add a line like this\-: 
+\begin{DoxyCode}
+\hyperlink{structSimulatorPageEntry}{SimulatorPageEntry} g\_simulatorPageEntries[] =
+\{
+   \{\textcolor{stringliteral}{"Plank sorting plant"}, \hyperlink{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}{PlankSortingPlant::Create}\},
+   \{\textcolor{stringliteral}{"Example simulator-page"}, ExampleSimulatorPage::Create\},
+   \{NULL, NULL\}
+\};
+\end{DoxyCode}
+ The entry will show up in the Simulator-\/page list\-: 
+
+\begin{DoxyAuthor}{Author}
+Roy Kollen Svendsen
+\end{DoxyAuthor}
+This file is based on Erin Cattos Box2\-D 2.\-2.\-1 Testbed Test\-Entries.\-cpp 
+
+\subsection{Variable Documentation}
+\hypertarget{SimulatorPageEntries_8cpp_adea61b799dfbdae7d58becb1e5e6fb87}{\index{Simulator\-Page\-Entries.\-cpp@{Simulator\-Page\-Entries.\-cpp}!g\-\_\-simulator\-Page\-Entries@{g\-\_\-simulator\-Page\-Entries}}
+\index{g\-\_\-simulator\-Page\-Entries@{g\-\_\-simulator\-Page\-Entries}!SimulatorPageEntries.cpp@{Simulator\-Page\-Entries.\-cpp}}
+\subsubsection[{g\-\_\-simulator\-Page\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simulator\-Page\-Entry} g\-\_\-simulator\-Page\-Entries\mbox{[}$\,$\mbox{]}}}\label{SimulatorPageEntries_8cpp_adea61b799dfbdae7d58becb1e5e6fb87}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=
+\{
+        \{\textcolor{stringliteral}{"Plank sorting plant"}, \hyperlink{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}{PlankSortingPlant::Create}
+      \},
+        \{NULL, NULL\}
+\}
+\end{DoxyCode}

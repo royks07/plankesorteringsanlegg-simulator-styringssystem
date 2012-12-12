@@ -1,0 +1,86 @@
+.TH "ContactSensor_FromFixture" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContactSensor_FromFixture \- 
+.PP
+Turn arbitrary Box2D fixture into binary sensor\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits \fBContactSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContactSensor_FromFixture\fP (int id, b2Fixture *fixture)"
+.br
+.RI "\fITurn arbitrary b2Fixture into binary sensor\&. \fP"
+.ti -1c
+.RI "signed int \fBget\fP ()"
+.br
+.RI "\fIReturn sensors measured value\&. \fP"
+.ti -1c
+.RI "void \fBdrawLabel\fP ()"
+.br
+.RI "\fIDraw sensor label\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBm_radius\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Turn arbitrary Box2D fixture into binary sensor\&. 
+
+\fBExample:\fP  To create S1 and activate the sensor, by adding it to the sensor-set, we write the following lines of code: 
+.PP
+.nf
+ContactSensor_FromFixture* liftSensor = new ContactSensor_FromFixture(1,packageInput->getLiftSensorFixture());
+m_sensorSet->add(liftSensor);
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ContactSensor_FromFixture::ContactSensor_FromFixture (intid, b2Fixture *fixture)"
+
+.PP
+Turn arbitrary b2Fixture into binary sensor\&. \fBParameters:\fP
+.RS 4
+\fIid\fP The id of the sensor\&. This value will be visible as part of the sensor label\&. 
+.br
+\fIfixture\fP Pointer to the b2Fixture that you want to turn in to a sensor\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ContactSensor_FromFixture::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Draw sensor label\&. 
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.SS "signed int ContactSensor_FromFixture::get ()\fC [virtual]\fP"
+
+.PP
+Return sensors measured value\&. 
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float32 ContactSensor_FromFixture::m_radius"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

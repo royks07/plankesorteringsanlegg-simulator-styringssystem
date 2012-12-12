@@ -1,0 +1,170 @@
+\hypertarget{classStorage}{\section{Storage Class Reference}
+\label{classStorage}\index{Storage@{Storage}}
+}
+
+
+Create an individual storage to sort planks into.  
+
+
+
+
+{\ttfamily \#include $<$Storages.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStorage_a65c2cbe07917448e17db98e7a1661cea}{Storage} (b2\-Vec2 upper\-Left\-Corner, float32 width, float32 height, float32 wall\-Thickness, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Construct a \hyperlink{classStorage}{Storage}. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorage_a1c5c79f11fa271b28e0ac22ea0649c40}{get\-Lift\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return the lift\-Joint. \end{DoxyCompactList}\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorage_a6e36f363dae08cf2f4b308b1e0a1e1bd}{get\-Stopper\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return the stopper\-Joint. \end{DoxyCompactList}\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_a585cdae218715a238dfc4277f875df60}{get\-Top\-Sensor\-Fixture} ()
+\begin{DoxyCompactList}\small\item\em Return the top\-Sensor\-Fixture. \end{DoxyCompactList}\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_ad22d8f7e6c28ba888bf7abd016e9ec38}{get\-Middle\-Sensor\-Fixture} ()
+\begin{DoxyCompactList}\small\item\em Return the middle\-Sensor\-Fixture. \end{DoxyCompactList}\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_a02014b1514942bedd63a7e2456982f39}{get\-Bottom\-Sensor\-Fixture} ()
+\begin{DoxyCompactList}\small\item\em Return the bottom\-Sensor\-Fixture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Body $\ast$ \hyperlink{classStorage_a3bae1d833350258742b94caca470e735}{m\-\_\-body\-Stopper}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorage_a989c2bbe46e9874a4f4fed780a3d5de6}{m\-\_\-joint\-Lift}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classStorage_ae96e6bf24e9d9c9788129bb6d87d10ab}{m\-\_\-joint\-Stopper}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_afa862f61854f0960b41ae24b673b3980}{m\-\_\-fixture\-Top\-Sensor}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_a27bcc4c94a7766c56f98ace7e2c3b662}{m\-\_\-fixture\-Middle\-Sensor}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classStorage_afa76f1b21a27a64ef14d2360cc518bc3}{m\-\_\-fixture\-Bottom\-Sensor}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Create an individual storage to sort planks into. 
+
+The Following line of code generates an instance of the Storage-\/class\-: 
+\begin{DoxyCode}
+\hyperlink{classStorage}{Storage}* storage = \textcolor{keyword}{new} \hyperlink{classStorage_a65c2cbe07917448e17db98e7a1661cea}{Storage}(b2Vec2(-40.0f,0.0f),9,5,0.5f,
+      m\_world);
+\end{DoxyCode}
+
+
+Storage-\/instance + descriptive text\-:  
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStorage_a65c2cbe07917448e17db98e7a1661cea}{\index{Storage@{Storage}!Storage@{Storage}}
+\index{Storage@{Storage}!Storage@{Storage}}
+\subsubsection[{Storage}]{\setlength{\rightskip}{0pt plus 5cm}Storage\-::\-Storage (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{upper\-Left\-Corner, }
+\item[{float32}]{width, }
+\item[{float32}]{height, }
+\item[{float32}]{wall\-Thickness, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classStorage_a65c2cbe07917448e17db98e7a1661cea}
+
+
+Construct a \hyperlink{classStorage}{Storage}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em upper\-Left\-Corner} & The upper left corner of the storage. \\
+\hline
+{\em width} & The width of the storage. \\
+\hline
+{\em height} & The height of the storage. \\
+\hline
+{\em wall\-Thickness} & The thickness of the storages walls. \\
+\hline
+{\em world} & Pointer to world you want to create the storage in. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStorage_a02014b1514942bedd63a7e2456982f39}{\index{Storage@{Storage}!get\-Bottom\-Sensor\-Fixture@{get\-Bottom\-Sensor\-Fixture}}
+\index{get\-Bottom\-Sensor\-Fixture@{get\-Bottom\-Sensor\-Fixture}!Storage@{Storage}}
+\subsubsection[{get\-Bottom\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::get\-Bottom\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStorage_a02014b1514942bedd63a7e2456982f39}
+
+
+Return the bottom\-Sensor\-Fixture. 
+
+\hypertarget{classStorage_a1c5c79f11fa271b28e0ac22ea0649c40}{\index{Storage@{Storage}!get\-Lift\-Joint@{get\-Lift\-Joint}}
+\index{get\-Lift\-Joint@{get\-Lift\-Joint}!Storage@{Storage}}
+\subsubsection[{get\-Lift\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Storage\-::get\-Lift\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStorage_a1c5c79f11fa271b28e0ac22ea0649c40}
+
+
+Return the lift\-Joint. 
+
+\hypertarget{classStorage_ad22d8f7e6c28ba888bf7abd016e9ec38}{\index{Storage@{Storage}!get\-Middle\-Sensor\-Fixture@{get\-Middle\-Sensor\-Fixture}}
+\index{get\-Middle\-Sensor\-Fixture@{get\-Middle\-Sensor\-Fixture}!Storage@{Storage}}
+\subsubsection[{get\-Middle\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::get\-Middle\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStorage_ad22d8f7e6c28ba888bf7abd016e9ec38}
+
+
+Return the middle\-Sensor\-Fixture. 
+
+\hypertarget{classStorage_a6e36f363dae08cf2f4b308b1e0a1e1bd}{\index{Storage@{Storage}!get\-Stopper\-Joint@{get\-Stopper\-Joint}}
+\index{get\-Stopper\-Joint@{get\-Stopper\-Joint}!Storage@{Storage}}
+\subsubsection[{get\-Stopper\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Storage\-::get\-Stopper\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStorage_a6e36f363dae08cf2f4b308b1e0a1e1bd}
+
+
+Return the stopper\-Joint. 
+
+\hypertarget{classStorage_a585cdae218715a238dfc4277f875df60}{\index{Storage@{Storage}!get\-Top\-Sensor\-Fixture@{get\-Top\-Sensor\-Fixture}}
+\index{get\-Top\-Sensor\-Fixture@{get\-Top\-Sensor\-Fixture}!Storage@{Storage}}
+\subsubsection[{get\-Top\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::get\-Top\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStorage_a585cdae218715a238dfc4277f875df60}
+
+
+Return the top\-Sensor\-Fixture. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classStorage_a3bae1d833350258742b94caca470e735}{\index{Storage@{Storage}!m\-\_\-body\-Stopper@{m\-\_\-body\-Stopper}}
+\index{m\-\_\-body\-Stopper@{m\-\_\-body\-Stopper}!Storage@{Storage}}
+\subsubsection[{m\-\_\-body\-Stopper}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Storage\-::m\-\_\-body\-Stopper}}\label{classStorage_a3bae1d833350258742b94caca470e735}
+\hypertarget{classStorage_afa76f1b21a27a64ef14d2360cc518bc3}{\index{Storage@{Storage}!m\-\_\-fixture\-Bottom\-Sensor@{m\-\_\-fixture\-Bottom\-Sensor}}
+\index{m\-\_\-fixture\-Bottom\-Sensor@{m\-\_\-fixture\-Bottom\-Sensor}!Storage@{Storage}}
+\subsubsection[{m\-\_\-fixture\-Bottom\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::m\-\_\-fixture\-Bottom\-Sensor}}\label{classStorage_afa76f1b21a27a64ef14d2360cc518bc3}
+\hypertarget{classStorage_a27bcc4c94a7766c56f98ace7e2c3b662}{\index{Storage@{Storage}!m\-\_\-fixture\-Middle\-Sensor@{m\-\_\-fixture\-Middle\-Sensor}}
+\index{m\-\_\-fixture\-Middle\-Sensor@{m\-\_\-fixture\-Middle\-Sensor}!Storage@{Storage}}
+\subsubsection[{m\-\_\-fixture\-Middle\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::m\-\_\-fixture\-Middle\-Sensor}}\label{classStorage_a27bcc4c94a7766c56f98ace7e2c3b662}
+\hypertarget{classStorage_afa862f61854f0960b41ae24b673b3980}{\index{Storage@{Storage}!m\-\_\-fixture\-Top\-Sensor@{m\-\_\-fixture\-Top\-Sensor}}
+\index{m\-\_\-fixture\-Top\-Sensor@{m\-\_\-fixture\-Top\-Sensor}!Storage@{Storage}}
+\subsubsection[{m\-\_\-fixture\-Top\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Storage\-::m\-\_\-fixture\-Top\-Sensor}}\label{classStorage_afa862f61854f0960b41ae24b673b3980}
+\hypertarget{classStorage_a989c2bbe46e9874a4f4fed780a3d5de6}{\index{Storage@{Storage}!m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}}
+\index{m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}!Storage@{Storage}}
+\subsubsection[{m\-\_\-joint\-Lift}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Storage\-::m\-\_\-joint\-Lift}}\label{classStorage_a989c2bbe46e9874a4f4fed780a3d5de6}
+\hypertarget{classStorage_ae96e6bf24e9d9c9788129bb6d87d10ab}{\index{Storage@{Storage}!m\-\_\-joint\-Stopper@{m\-\_\-joint\-Stopper}}
+\index{m\-\_\-joint\-Stopper@{m\-\_\-joint\-Stopper}!Storage@{Storage}}
+\subsubsection[{m\-\_\-joint\-Stopper}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Storage\-::m\-\_\-joint\-Stopper}}\label{classStorage_ae96e6bf24e9d9c9788129bb6d87d10ab}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Storages_8h}{Storages.\-h}\item 
+\hyperlink{Storages_8cpp}{Storages.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+.TH "JointActuatorPrismaticBinary" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+JointActuatorPrismaticBinary \- 
+.PP
+Switch a prismatic joint between the two extremal states\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherits \fBActuator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBJointActuatorPrismaticBinary\fP (int id, b2Joint *joint)"
+.br
+.ti -1c
+.RI "void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "void \fBsetSpeed\fP (float32 speed)"
+.br
+.ti -1c
+.RI "void \fBdrawLabel\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Joint * \fBm_joint\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_speed\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Switch a prismatic joint between the two extremal states\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "JointActuatorPrismaticBinary::JointActuatorPrismaticBinary (intid, b2Joint *joint)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void JointActuatorPrismaticBinary::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void JointActuatorPrismaticBinary::set (signed intvalue)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void JointActuatorPrismaticBinary::setSpeed (float32speed)\fC [inline]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Joint* JointActuatorPrismaticBinary::m_joint"
+
+.SS "float32 JointActuatorPrismaticBinary::m_speed"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

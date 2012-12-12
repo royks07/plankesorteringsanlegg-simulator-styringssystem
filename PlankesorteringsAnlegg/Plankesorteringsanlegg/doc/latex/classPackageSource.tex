@@ -1,0 +1,122 @@
+\hypertarget{classPackageSource}{\section{Package\-Source Class Reference}
+\label{classPackageSource}\index{Package\-Source@{Package\-Source}}
+}
+
+
+Lets you create and destruct packages by id.  
+
+
+
+
+{\ttfamily \#include $<$Package.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPackageSource_a75d7eb22a706e19fc5b3ea7dff41f355}{Package\-Source} (b2\-Vec2 position, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Place an an abundant source of fresh packages at whatever position you'd like. \end{DoxyCompactList}\item 
+void \hyperlink{classPackageSource_a5ab1ae46769749957c00bc1f321d624b}{create} (int id)
+\begin{DoxyCompactList}\small\item\em Force the source to create a new Package-\/instance \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{classPackageSource_a206fd1922f6bed7d2647d21dffa1fc9b}{destruct} (int id)
+\begin{DoxyCompactList}\small\item\em Force the source to remove Package-\/instance \char`\"{}id\char`\"{}. \end{DoxyCompactList}\item 
+b2\-Vec2 \hyperlink{classPackageSource_a02f12883ffb207ff3e2921fff9abc256}{get\-Position} ()
+\item 
+void \hyperlink{classPackageSource_aa6cb8fe5b1912705b0258f2a40f3791b}{run\-Sprinkle\-Remover} ()
+\begin{DoxyCompactList}\small\item\em Remove sprinkles when outside a predefined circular boundary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+multimap$<$ int, \hyperlink{classPackage}{Package} $\ast$ $>$ \hyperlink{classPackageSource_aa0455215e114d375fd35c97de281554a}{m\-\_\-package}
+\item 
+b2\-Vec2 \hyperlink{classPackageSource_a22e0dbb7f2075fc30620ad227bd8d4b7}{m\-\_\-position}
+\item 
+b2\-World $\ast$ \hyperlink{classPackageSource_a2a5fbbce39f0c58b781edf42d9a46e54}{m\-\_\-world}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Lets you create and destruct packages by id. 
+
+This source can be controlled by a \hyperlink{classPackageSourceActuator}{Package\-Source\-Actuator}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPackageSource_a75d7eb22a706e19fc5b3ea7dff41f355}{\index{Package\-Source@{Package\-Source}!Package\-Source@{Package\-Source}}
+\index{Package\-Source@{Package\-Source}!PackageSource@{Package\-Source}}
+\subsubsection[{Package\-Source}]{\setlength{\rightskip}{0pt plus 5cm}Package\-Source\-::\-Package\-Source (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{position, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classPackageSource_a75d7eb22a706e19fc5b3ea7dff41f355}
+
+
+Place an an abundant source of fresh packages at whatever position you'd like. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Position of package lower left corner. \\
+\hline
+{\em world} & Pointer to the world in which you want to create the \hyperlink{classPackageSource}{Package\-Source} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPackageSource_a5ab1ae46769749957c00bc1f321d624b}{\index{Package\-Source@{Package\-Source}!create@{create}}
+\index{create@{create}!PackageSource@{Package\-Source}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}void Package\-Source\-::create (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classPackageSource_a5ab1ae46769749957c00bc1f321d624b}
+
+
+Force the source to create a new Package-\/instance \char`\"{}id\char`\"{}. 
+
+\hypertarget{classPackageSource_a206fd1922f6bed7d2647d21dffa1fc9b}{\index{Package\-Source@{Package\-Source}!destruct@{destruct}}
+\index{destruct@{destruct}!PackageSource@{Package\-Source}}
+\subsubsection[{destruct}]{\setlength{\rightskip}{0pt plus 5cm}void Package\-Source\-::destruct (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classPackageSource_a206fd1922f6bed7d2647d21dffa1fc9b}
+
+
+Force the source to remove Package-\/instance \char`\"{}id\char`\"{}. 
+
+\hypertarget{classPackageSource_a02f12883ffb207ff3e2921fff9abc256}{\index{Package\-Source@{Package\-Source}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!PackageSource@{Package\-Source}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Package\-Source\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageSource_a02f12883ffb207ff3e2921fff9abc256}
+\hypertarget{classPackageSource_aa6cb8fe5b1912705b0258f2a40f3791b}{\index{Package\-Source@{Package\-Source}!run\-Sprinkle\-Remover@{run\-Sprinkle\-Remover}}
+\index{run\-Sprinkle\-Remover@{run\-Sprinkle\-Remover}!PackageSource@{Package\-Source}}
+\subsubsection[{run\-Sprinkle\-Remover}]{\setlength{\rightskip}{0pt plus 5cm}void Package\-Source\-::run\-Sprinkle\-Remover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPackageSource_aa6cb8fe5b1912705b0258f2a40f3791b}
+
+
+Remove sprinkles when outside a predefined circular boundary. 
+
+Needs to be called continuously. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classPackageSource_aa0455215e114d375fd35c97de281554a}{\index{Package\-Source@{Package\-Source}!m\-\_\-package@{m\-\_\-package}}
+\index{m\-\_\-package@{m\-\_\-package}!PackageSource@{Package\-Source}}
+\subsubsection[{m\-\_\-package}]{\setlength{\rightskip}{0pt plus 5cm}multimap$<$int,{\bf Package}$\ast$$>$ Package\-Source\-::m\-\_\-package}}\label{classPackageSource_aa0455215e114d375fd35c97de281554a}
+\hypertarget{classPackageSource_a22e0dbb7f2075fc30620ad227bd8d4b7}{\index{Package\-Source@{Package\-Source}!m\-\_\-position@{m\-\_\-position}}
+\index{m\-\_\-position@{m\-\_\-position}!PackageSource@{Package\-Source}}
+\subsubsection[{m\-\_\-position}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Package\-Source\-::m\-\_\-position}}\label{classPackageSource_a22e0dbb7f2075fc30620ad227bd8d4b7}
+\hypertarget{classPackageSource_a2a5fbbce39f0c58b781edf42d9a46e54}{\index{Package\-Source@{Package\-Source}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!PackageSource@{Package\-Source}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Package\-Source\-::m\-\_\-world}}\label{classPackageSource_a2a5fbbce39f0c58b781edf42d9a46e54}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Package_8h}{Package.\-h}\item 
+\hyperlink{Package_8cpp}{Package.\-cpp}\end{DoxyCompactItemize}

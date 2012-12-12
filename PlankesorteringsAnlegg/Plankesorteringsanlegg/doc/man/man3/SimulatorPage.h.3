@@ -1,0 +1,100 @@
+.TH "SimulatorPage.h" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimulatorPage.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Box2D/Box2D\&.h>\fP
+.br
+\fC#include 'Render\&.h'\fP
+.br
+\fC#include 'Communicator\&.h'\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBSettings\fP"
+.br
+.RI "\fI\fBSimulatorPage\fP settings\&. Some can be controlled in the GUI\&. \fP"
+.ti -1c
+.RI "struct \fBSimulatorPageEntry\fP"
+.br
+.ti -1c
+.RI "class \fBDestructionListener\fP"
+.br
+.ti -1c
+.RI "struct \fBContactPoint\fP"
+.br
+.ti -1c
+.RI "class \fBSimulatorPage\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBRAND_LIMIT\fP   32767"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBSimulatorPage\fP * \fBSimulatorPageCreateFcn\fP (\fBCommunicator\fP *communicator)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBRandomFloat\fP ()"
+.br
+.RI "\fIRandom number in range [-1,1]\&. \fP"
+.ti -1c
+.RI "float32 \fBRandomFloat\fP (float32 lo, float32 hi)"
+.br
+.RI "\fIRandom floating point number in range [lo, hi]\&. \fP"
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBSimulatorPageEntry\fP \fBg_simulatorPageEntries\fP []"
+.br
+.ti -1c
+.RI "const int32 \fBk_maxContactPoints\fP = 2048"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RAND_LIMIT   32767"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBSimulatorPage\fP* SimulatorPageCreateFcn(\fBCommunicator\fP *communicator)"
+
+.SH "Function Documentation"
+.PP 
+.SS "float32 RandomFloat ()\fC [inline]\fP"
+
+.PP
+Random number in range [-1,1]\&. 
+.SS "float32 RandomFloat (float32lo, float32hi)\fC [inline]\fP"
+
+.PP
+Random floating point number in range [lo, hi]\&. 
+.SH "Variable Documentation"
+.PP 
+.SS "\fBSimulatorPageEntry\fP g_simulatorPageEntries[]"
+
+.SS "const int32 k_maxContactPoints = 2048"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

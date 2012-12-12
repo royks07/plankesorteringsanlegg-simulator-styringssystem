@@ -1,0 +1,138 @@
+\hypertarget{classPlank}{\section{Plank Class Reference}
+\label{classPlank}\index{Plank@{Plank}}
+}
+
+
+Represent Plank-\/objects.  
+
+
+
+
+{\ttfamily \#include $<$Package.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlank_ad76b1cdbf4909225eb58acaa577bcd5d}{Plank} (b2\-Vec2 pos, b2\-World $\ast$world)
+\item 
+\hyperlink{classPlank_a478e9bd1531adca6e8250ae11d0ed07a}{$\sim$\-Plank} ()
+\item 
+float \hyperlink{classPlank_a3f38a8e62a692f49cfcccf6692069ceb}{random\-Float} (float a, float b)
+\begin{DoxyCompactList}\small\item\em Generate random number in interval \mbox{[}a,b\mbox{]}. \end{DoxyCompactList}\item 
+float32 \hyperlink{classPlank_a2f83307bc8a6a95222a343395475dce7}{get\-Width} ()
+\item 
+float32 \hyperlink{classPlank_a5203208bd700934affd95cc0b7bd7234}{get\-Thickness} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Body\-Def $\ast$ \hyperlink{classPlank_a2d0f77c8e5716733d9715bdd641987b4}{m\-\_\-bd}
+\item 
+b2\-Fixture\-Def $\ast$ \hyperlink{classPlank_ad9ee0dbf22fe79689efddda7d7a94347}{m\-\_\-fd}
+\item 
+b2\-World $\ast$ \hyperlink{classPlank_a13c403210d33ed7d7183cfd6dd71b494}{m\-\_\-world}
+\item 
+float32 \hyperlink{classPlank_a188c7ef7af7fdc72d9e4925299248677}{m\-\_\-width}
+\item 
+float32 \hyperlink{classPlank_aba0b2459614c6427abf50c5b16c623c3}{m\-\_\-thickness}
+\item 
+b2\-Body $\ast$ \hyperlink{classPlank_a311d983aad3e0cd5d5059edb37f5e1b6}{m\-\_\-body}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent Plank-\/objects. 
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlank_ad76b1cdbf4909225eb58acaa577bcd5d}{\index{Plank@{Plank}!Plank@{Plank}}
+\index{Plank@{Plank}!Plank@{Plank}}
+\subsubsection[{Plank}]{\setlength{\rightskip}{0pt plus 5cm}Plank\-::\-Plank (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{pos, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classPlank_ad76b1cdbf4909225eb58acaa577bcd5d}
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position at which you want place the center of the plank. \\
+\hline
+{\em world} & Pointer to the world in which you want to create the plank. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPlank_a478e9bd1531adca6e8250ae11d0ed07a}{\index{Plank@{Plank}!$\sim$\-Plank@{$\sim$\-Plank}}
+\index{$\sim$\-Plank@{$\sim$\-Plank}!Plank@{Plank}}
+\subsubsection[{$\sim$\-Plank}]{\setlength{\rightskip}{0pt plus 5cm}Plank\-::$\sim$\-Plank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPlank_a478e9bd1531adca6e8250ae11d0ed07a}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlank_a5203208bd700934affd95cc0b7bd7234}{\index{Plank@{Plank}!get\-Thickness@{get\-Thickness}}
+\index{get\-Thickness@{get\-Thickness}!Plank@{Plank}}
+\subsubsection[{get\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Plank\-::get\-Thickness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPlank_a5203208bd700934affd95cc0b7bd7234}
+\hypertarget{classPlank_a2f83307bc8a6a95222a343395475dce7}{\index{Plank@{Plank}!get\-Width@{get\-Width}}
+\index{get\-Width@{get\-Width}!Plank@{Plank}}
+\subsubsection[{get\-Width}]{\setlength{\rightskip}{0pt plus 5cm}float32 Plank\-::get\-Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPlank_a2f83307bc8a6a95222a343395475dce7}
+\hypertarget{classPlank_a3f38a8e62a692f49cfcccf6692069ceb}{\index{Plank@{Plank}!random\-Float@{random\-Float}}
+\index{random\-Float@{random\-Float}!Plank@{Plank}}
+\subsubsection[{random\-Float}]{\setlength{\rightskip}{0pt plus 5cm}float Plank\-::random\-Float (
+\begin{DoxyParamCaption}
+\item[{float}]{a, }
+\item[{float}]{b}
+\end{DoxyParamCaption}
+)}}\label{classPlank_a3f38a8e62a692f49cfcccf6692069ceb}
+
+
+Generate random number in interval \mbox{[}a,b\mbox{]}. 
+
+Helper-\/function used to give planks random length and quality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Start of interval \\
+\hline
+{\em b} & End of interval \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a random number from the interval \mbox{[}a,b\mbox{]} 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPlank_a2d0f77c8e5716733d9715bdd641987b4}{\index{Plank@{Plank}!m\-\_\-bd@{m\-\_\-bd}}
+\index{m\-\_\-bd@{m\-\_\-bd}!Plank@{Plank}}
+\subsubsection[{m\-\_\-bd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body\-Def$\ast$ Plank\-::m\-\_\-bd\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_a2d0f77c8e5716733d9715bdd641987b4}
+\hypertarget{classPlank_a311d983aad3e0cd5d5059edb37f5e1b6}{\index{Plank@{Plank}!m\-\_\-body@{m\-\_\-body}}
+\index{m\-\_\-body@{m\-\_\-body}!Plank@{Plank}}
+\subsubsection[{m\-\_\-body}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Body$\ast$ Plank\-::m\-\_\-body\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_a311d983aad3e0cd5d5059edb37f5e1b6}
+\hypertarget{classPlank_ad9ee0dbf22fe79689efddda7d7a94347}{\index{Plank@{Plank}!m\-\_\-fd@{m\-\_\-fd}}
+\index{m\-\_\-fd@{m\-\_\-fd}!Plank@{Plank}}
+\subsubsection[{m\-\_\-fd}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture\-Def$\ast$ Plank\-::m\-\_\-fd\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_ad9ee0dbf22fe79689efddda7d7a94347}
+\hypertarget{classPlank_aba0b2459614c6427abf50c5b16c623c3}{\index{Plank@{Plank}!m\-\_\-thickness@{m\-\_\-thickness}}
+\index{m\-\_\-thickness@{m\-\_\-thickness}!Plank@{Plank}}
+\subsubsection[{m\-\_\-thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Plank\-::m\-\_\-thickness\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_aba0b2459614c6427abf50c5b16c623c3}
+\hypertarget{classPlank_a188c7ef7af7fdc72d9e4925299248677}{\index{Plank@{Plank}!m\-\_\-width@{m\-\_\-width}}
+\index{m\-\_\-width@{m\-\_\-width}!Plank@{Plank}}
+\subsubsection[{m\-\_\-width}]{\setlength{\rightskip}{0pt plus 5cm}float32 Plank\-::m\-\_\-width\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_a188c7ef7af7fdc72d9e4925299248677}
+\hypertarget{classPlank_a13c403210d33ed7d7183cfd6dd71b494}{\index{Plank@{Plank}!m\-\_\-world@{m\-\_\-world}}
+\index{m\-\_\-world@{m\-\_\-world}!Plank@{Plank}}
+\subsubsection[{m\-\_\-world}]{\setlength{\rightskip}{0pt plus 5cm}b2\-World$\ast$ Plank\-::m\-\_\-world\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlank_a13c403210d33ed7d7183cfd6dd71b494}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Package_8h}{Package.\-h}\item 
+\hyperlink{Package_8cpp}{Package.\-cpp}\end{DoxyCompactItemize}

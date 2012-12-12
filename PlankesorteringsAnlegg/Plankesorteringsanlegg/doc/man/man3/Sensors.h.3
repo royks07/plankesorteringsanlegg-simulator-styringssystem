@@ -1,0 +1,98 @@
+.TH "Sensors.h" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sensors.h \- 
+.PP
+Contains the sensor class-hierarchy and the sensor-set\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string>\fP
+.br
+\fC#include <vector>\fP
+.br
+\fC#include 'Text\&.h'\fP
+.br
+\fC#include 'UserData\&.h'\fP
+.br
+\fC#include 'Communicator\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBContactSensor\fP"
+.br
+.RI "\fIAbstract class that other sensors inherit from\&. \fP"
+.ti -1c
+.RI "class \fBContactSensor_FromFixture\fP"
+.br
+.RI "\fITurn arbitrary Box2D fixture into binary sensor\&. \fP"
+.ti -1c
+.RI "class \fBContactSensor_Sync\fP"
+.br
+.RI "\fIUsed by the \fBConveyorSynchronizer\fP\&. \fP"
+.ti -1c
+.RI "class \fBContactSensorBinary\fP"
+.br
+.RI "\fIThis sensor is circular shaped and has only two states, ON and OFf\&. \fP"
+.ti -1c
+.RI "class \fBLengthSensor\fP"
+.br
+.RI "\fIMeasure length of a colliding Plank-instance\&. \fP"
+.ti -1c
+.RI "class \fBQualitySensor\fP"
+.br
+.RI "\fIMeasure quality of a colliding Plank-instance\&. \fP"
+.ti -1c
+.RI "class \fBCounterSensor\fP"
+.br
+.RI "\fICount the number of collisions\&. \fP"
+.ti -1c
+.RI "class \fBSensorSet\fP"
+.br
+.RI "\fIListen to sensors and transmit state-changes to the communicator\&. \fP"
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBt_sensorType\fP { \fBe_unknownSensor\fP, \fBe_normal\fP, \fBe_sync\fP, \fBe_lengthSensor\fP, \fBe_qualitySensor\fP, \fBe_counterSensor\fP }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Contains the sensor class-hierarchy and the sensor-set\&. 
+
+\fBAuthor:\fP
+.RS 4
+Roy Kollen Svendsen 
+.RE
+.PP
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBt_sensorType\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIe_unknownSensor \fP\fP
+.TP
+\fB\fIe_normal \fP\fP
+.TP
+\fB\fIe_sync \fP\fP
+.TP
+\fB\fIe_lengthSensor \fP\fP
+.TP
+\fB\fIe_qualitySensor \fP\fP
+.TP
+\fB\fIe_counterSensor \fP\fP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

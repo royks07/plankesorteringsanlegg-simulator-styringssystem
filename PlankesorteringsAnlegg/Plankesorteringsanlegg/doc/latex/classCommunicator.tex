@@ -1,0 +1,261 @@
+\hypertarget{classCommunicator}{\section{Communicator Class Reference}
+\label{classCommunicator}\index{Communicator@{Communicator}}
+}
+
+
+Read frowm and write to an arbitrary serial-\/port.  
+
+
+
+
+{\ttfamily \#include $<$Communicator.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCommunicator_a9376e2a4cfde05f3bcbae03523f47f09}{Communicator} (string serieport)
+\begin{DoxyCompactList}\small\item\em Create a \hyperlink{classCommunicator}{Communicator} instance and place it at a specific serialport. \end{DoxyCompactList}\item 
+void \hyperlink{classCommunicator_a99aabd49f9b816a256035130ed59d1c1}{init} (string serieport)
+\begin{DoxyCompactList}\small\item\em Initialize the serialport. \end{DoxyCompactList}\item 
+void \hyperlink{classCommunicator_a5a4b8c0d0d2a56c1e66b6baaa5dd0d9a}{write} (const unsigned char c)
+\begin{DoxyCompactList}\small\item\em Write a character to the serialport. \end{DoxyCompactList}\item 
+void \hyperlink{classCommunicator_aae6febfbbaadf6b7a53dd6718dc1fc26}{write} (string str)
+\begin{DoxyCompactList}\small\item\em Write a string to the serialport. \end{DoxyCompactList}\item 
+void \hyperlink{classCommunicator_a453c83fb4fcf3b6acf6e26269bbcb743}{print} (char $\ast$format,...)
+\item 
+bool \hyperlink{classCommunicator_ab8208da85e32d5802b6dcae11e5ddf3d}{data\-Is\-Present} ()
+\begin{DoxyCompactList}\small\item\em Check if incoming data exist. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{classCommunicator_a8592dcf1ef7cd278a3619a5735ff2b2b}{read} ()
+\begin{DoxyCompactList}\small\item\em Read a char from incoming fifo-\/buffer. \end{DoxyCompactList}\item 
+void \hyperlink{classCommunicator_a0e202fdfbc9ad191260b4da285d2f071}{close} ()
+\begin{DoxyCompactList}\small\item\em Close serialport. \end{DoxyCompactList}\item 
+bool \hyperlink{classCommunicator_a7aaa04bd32a78e8b5aa0d79b80b87e52}{active} ()
+\begin{DoxyCompactList}\small\item\em Check if port in use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classCommunicator_af2d0f85b4fd75f457283448bec474d0e}{read\-\_\-start} (void)
+\item 
+void \hyperlink{classCommunicator_aacbd7b17b825522c324170422989b0dd}{read\-\_\-complete} (const boost\-::system\-::error\-\_\-code \&error, size\-\_\-t bytes\-\_\-transferred)
+\item 
+void \hyperlink{classCommunicator_af7dd39cc1a386cb9fb1a68715be7ae7a}{do\-\_\-write} (const unsigned char c)
+\item 
+void \hyperlink{classCommunicator_a949b951edc82d1b5174071b5204156eb}{write\-\_\-start} (void)
+\item 
+void \hyperlink{classCommunicator_a179b10517097859b289b9108ea2433b7}{write\-\_\-complete} (const boost\-::system\-::error\-\_\-code \&error)
+\item 
+void \hyperlink{classCommunicator_a39081affb66ee804daed1850faee4cdc}{do\-\_\-close} (const boost\-::system\-::error\-\_\-code \&error)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+io\-\_\-service \hyperlink{classCommunicator_acae03d9f34724b3fcaf98f92c0640e51}{m\-\_\-io}
+\item 
+serial\-\_\-port \hyperlink{classCommunicator_ad78da07df6c7551bdc4caefd508f97d1}{m\-\_\-port}
+\item 
+bool \hyperlink{classCommunicator_acbac815df12652c546240cc172ddaf33}{m\-\_\-data\-Is\-Present}
+\item 
+thread \hyperlink{classCommunicator_a5418b61d132b1e5ff573d7eb7a7e2e0c}{communication\-Thread}
+\item 
+deque$<$ unsigned char $>$ \hyperlink{classCommunicator_a8f027326373947bb29c68c64e27d7b6a}{m\-\_\-fifo\-Write}
+\item 
+deque$<$ unsigned char $>$ \hyperlink{classCommunicator_af3f7e36ef85b0ca55d9720b24c94a3d5}{m\-\_\-fifo\-Read}
+\item 
+unsigned char \hyperlink{classCommunicator_a6d28d139d03917fa04f9b3c9460dcaae}{read\-\_\-msg\-\_\-} \mbox{[}\hyperlink{classCommunicator_a1fa795c1542a7fff4a6b2b66e137b55d}{max\-\_\-read\-\_\-length}\mbox{]}
+\item 
+bool \hyperlink{classCommunicator_a42a770b0ce7f2b683e4bc1d0f887f14c}{m\-\_\-active}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classCommunicator_a1fa795c1542a7fff4a6b2b66e137b55d}{max\-\_\-read\-\_\-length} = 512
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Read frowm and write to an arbitrary serial-\/port. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCommunicator_a9376e2a4cfde05f3bcbae03523f47f09}{\index{Communicator@{Communicator}!Communicator@{Communicator}}
+\index{Communicator@{Communicator}!Communicator@{Communicator}}
+\subsubsection[{Communicator}]{\setlength{\rightskip}{0pt plus 5cm}Communicator\-::\-Communicator (
+\begin{DoxyParamCaption}
+\item[{string}]{serieport}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a9376e2a4cfde05f3bcbae03523f47f09}
+
+
+Create a \hyperlink{classCommunicator}{Communicator} instance and place it at a specific serialport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em serieport} & The serialport in form of a string. E.\-g C\-O\-M1 on windows or /dev/tty\-S0 on linux. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCommunicator_a7aaa04bd32a78e8b5aa0d79b80b87e52}{\index{Communicator@{Communicator}!active@{active}}
+\index{active@{active}!Communicator@{Communicator}}
+\subsubsection[{active}]{\setlength{\rightskip}{0pt plus 5cm}bool Communicator\-::active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classCommunicator_a7aaa04bd32a78e8b5aa0d79b80b87e52}
+
+
+Check if port in use. 
+
+\hypertarget{classCommunicator_a0e202fdfbc9ad191260b4da285d2f071}{\index{Communicator@{Communicator}!close@{close}}
+\index{close@{close}!Communicator@{Communicator}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a0e202fdfbc9ad191260b4da285d2f071}
+
+
+Close serialport. 
+
+\hypertarget{classCommunicator_ab8208da85e32d5802b6dcae11e5ddf3d}{\index{Communicator@{Communicator}!data\-Is\-Present@{data\-Is\-Present}}
+\index{data\-Is\-Present@{data\-Is\-Present}!Communicator@{Communicator}}
+\subsubsection[{data\-Is\-Present}]{\setlength{\rightskip}{0pt plus 5cm}bool Communicator\-::data\-Is\-Present (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_ab8208da85e32d5802b6dcae11e5ddf3d}
+
+
+Check if incoming data exist. 
+
+\hypertarget{classCommunicator_a39081affb66ee804daed1850faee4cdc}{\index{Communicator@{Communicator}!do\-\_\-close@{do\-\_\-close}}
+\index{do\-\_\-close@{do\-\_\-close}!Communicator@{Communicator}}
+\subsubsection[{do\-\_\-close}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::do\-\_\-close (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a39081affb66ee804daed1850faee4cdc}
+\hypertarget{classCommunicator_af7dd39cc1a386cb9fb1a68715be7ae7a}{\index{Communicator@{Communicator}!do\-\_\-write@{do\-\_\-write}}
+\index{do\-\_\-write@{do\-\_\-write}!Communicator@{Communicator}}
+\subsubsection[{do\-\_\-write}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::do\-\_\-write (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_af7dd39cc1a386cb9fb1a68715be7ae7a}
+\hypertarget{classCommunicator_a99aabd49f9b816a256035130ed59d1c1}{\index{Communicator@{Communicator}!init@{init}}
+\index{init@{init}!Communicator@{Communicator}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::init (
+\begin{DoxyParamCaption}
+\item[{string}]{serieport}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a99aabd49f9b816a256035130ed59d1c1}
+
+
+Initialize the serialport. 
+
+\hypertarget{classCommunicator_a453c83fb4fcf3b6acf6e26269bbcb743}{\index{Communicator@{Communicator}!print@{print}}
+\index{print@{print}!Communicator@{Communicator}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{format, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a453c83fb4fcf3b6acf6e26269bbcb743}
+Write a formated string to the serialport \hypertarget{classCommunicator_a8592dcf1ef7cd278a3619a5735ff2b2b}{\index{Communicator@{Communicator}!read@{read}}
+\index{read@{read}!Communicator@{Communicator}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Communicator\-::read (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a8592dcf1ef7cd278a3619a5735ff2b2b}
+
+
+Read a char from incoming fifo-\/buffer. 
+
+\hypertarget{classCommunicator_aacbd7b17b825522c324170422989b0dd}{\index{Communicator@{Communicator}!read\-\_\-complete@{read\-\_\-complete}}
+\index{read\-\_\-complete@{read\-\_\-complete}!Communicator@{Communicator}}
+\subsubsection[{read\-\_\-complete}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::read\-\_\-complete (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{error, }
+\item[{size\-\_\-t}]{bytes\-\_\-transferred}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_aacbd7b17b825522c324170422989b0dd}
+\hypertarget{classCommunicator_af2d0f85b4fd75f457283448bec474d0e}{\index{Communicator@{Communicator}!read\-\_\-start@{read\-\_\-start}}
+\index{read\-\_\-start@{read\-\_\-start}!Communicator@{Communicator}}
+\subsubsection[{read\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::read\-\_\-start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_af2d0f85b4fd75f457283448bec474d0e}
+\hypertarget{classCommunicator_a5a4b8c0d0d2a56c1e66b6baaa5dd0d9a}{\index{Communicator@{Communicator}!write@{write}}
+\index{write@{write}!Communicator@{Communicator}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::write (
+\begin{DoxyParamCaption}
+\item[{const unsigned char}]{c}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_a5a4b8c0d0d2a56c1e66b6baaa5dd0d9a}
+
+
+Write a character to the serialport. 
+
+\hypertarget{classCommunicator_aae6febfbbaadf6b7a53dd6718dc1fc26}{\index{Communicator@{Communicator}!write@{write}}
+\index{write@{write}!Communicator@{Communicator}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::write (
+\begin{DoxyParamCaption}
+\item[{string}]{str}
+\end{DoxyParamCaption}
+)}}\label{classCommunicator_aae6febfbbaadf6b7a53dd6718dc1fc26}
+
+
+Write a string to the serialport. 
+
+\hypertarget{classCommunicator_a179b10517097859b289b9108ea2433b7}{\index{Communicator@{Communicator}!write\-\_\-complete@{write\-\_\-complete}}
+\index{write\-\_\-complete@{write\-\_\-complete}!Communicator@{Communicator}}
+\subsubsection[{write\-\_\-complete}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::write\-\_\-complete (
+\begin{DoxyParamCaption}
+\item[{const boost\-::system\-::error\-\_\-code \&}]{error}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a179b10517097859b289b9108ea2433b7}
+\hypertarget{classCommunicator_a949b951edc82d1b5174071b5204156eb}{\index{Communicator@{Communicator}!write\-\_\-start@{write\-\_\-start}}
+\index{write\-\_\-start@{write\-\_\-start}!Communicator@{Communicator}}
+\subsubsection[{write\-\_\-start}]{\setlength{\rightskip}{0pt plus 5cm}void Communicator\-::write\-\_\-start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a949b951edc82d1b5174071b5204156eb}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classCommunicator_a5418b61d132b1e5ff573d7eb7a7e2e0c}{\index{Communicator@{Communicator}!communication\-Thread@{communication\-Thread}}
+\index{communication\-Thread@{communication\-Thread}!Communicator@{Communicator}}
+\subsubsection[{communication\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}thread Communicator\-::communication\-Thread\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a5418b61d132b1e5ff573d7eb7a7e2e0c}
+\hypertarget{classCommunicator_a42a770b0ce7f2b683e4bc1d0f887f14c}{\index{Communicator@{Communicator}!m\-\_\-active@{m\-\_\-active}}
+\index{m\-\_\-active@{m\-\_\-active}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-active}]{\setlength{\rightskip}{0pt plus 5cm}bool Communicator\-::m\-\_\-active\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a42a770b0ce7f2b683e4bc1d0f887f14c}
+\hypertarget{classCommunicator_acbac815df12652c546240cc172ddaf33}{\index{Communicator@{Communicator}!m\-\_\-data\-Is\-Present@{m\-\_\-data\-Is\-Present}}
+\index{m\-\_\-data\-Is\-Present@{m\-\_\-data\-Is\-Present}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-data\-Is\-Present}]{\setlength{\rightskip}{0pt plus 5cm}bool Communicator\-::m\-\_\-data\-Is\-Present\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_acbac815df12652c546240cc172ddaf33}
+\hypertarget{classCommunicator_af3f7e36ef85b0ca55d9720b24c94a3d5}{\index{Communicator@{Communicator}!m\-\_\-fifo\-Read@{m\-\_\-fifo\-Read}}
+\index{m\-\_\-fifo\-Read@{m\-\_\-fifo\-Read}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-fifo\-Read}]{\setlength{\rightskip}{0pt plus 5cm}deque$<$unsigned char$>$ Communicator\-::m\-\_\-fifo\-Read\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_af3f7e36ef85b0ca55d9720b24c94a3d5}
+\hypertarget{classCommunicator_a8f027326373947bb29c68c64e27d7b6a}{\index{Communicator@{Communicator}!m\-\_\-fifo\-Write@{m\-\_\-fifo\-Write}}
+\index{m\-\_\-fifo\-Write@{m\-\_\-fifo\-Write}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-fifo\-Write}]{\setlength{\rightskip}{0pt plus 5cm}deque$<$unsigned char$>$ Communicator\-::m\-\_\-fifo\-Write\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a8f027326373947bb29c68c64e27d7b6a}
+\hypertarget{classCommunicator_acae03d9f34724b3fcaf98f92c0640e51}{\index{Communicator@{Communicator}!m\-\_\-io@{m\-\_\-io}}
+\index{m\-\_\-io@{m\-\_\-io}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-io}]{\setlength{\rightskip}{0pt plus 5cm}io\-\_\-service Communicator\-::m\-\_\-io\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_acae03d9f34724b3fcaf98f92c0640e51}
+\hypertarget{classCommunicator_ad78da07df6c7551bdc4caefd508f97d1}{\index{Communicator@{Communicator}!m\-\_\-port@{m\-\_\-port}}
+\index{m\-\_\-port@{m\-\_\-port}!Communicator@{Communicator}}
+\subsubsection[{m\-\_\-port}]{\setlength{\rightskip}{0pt plus 5cm}serial\-\_\-port Communicator\-::m\-\_\-port\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_ad78da07df6c7551bdc4caefd508f97d1}
+\hypertarget{classCommunicator_a1fa795c1542a7fff4a6b2b66e137b55d}{\index{Communicator@{Communicator}!max\-\_\-read\-\_\-length@{max\-\_\-read\-\_\-length}}
+\index{max\-\_\-read\-\_\-length@{max\-\_\-read\-\_\-length}!Communicator@{Communicator}}
+\subsubsection[{max\-\_\-read\-\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}const int Communicator\-::max\-\_\-read\-\_\-length = 512\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classCommunicator_a1fa795c1542a7fff4a6b2b66e137b55d}
+\hypertarget{classCommunicator_a6d28d139d03917fa04f9b3c9460dcaae}{\index{Communicator@{Communicator}!read\-\_\-msg\-\_\-@{read\-\_\-msg\-\_\-}}
+\index{read\-\_\-msg\-\_\-@{read\-\_\-msg\-\_\-}!Communicator@{Communicator}}
+\subsubsection[{read\-\_\-msg\-\_\-}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char Communicator\-::read\-\_\-msg\-\_\-\mbox{[}{\bf max\-\_\-read\-\_\-length}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}}\label{classCommunicator_a6d28d139d03917fa04f9b3c9460dcaae}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Communicator_8h}{Communicator.\-h}\item 
+\hyperlink{Communicator_8cpp}{Communicator.\-cpp}\end{DoxyCompactItemize}

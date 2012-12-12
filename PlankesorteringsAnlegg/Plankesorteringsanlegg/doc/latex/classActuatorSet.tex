@@ -1,0 +1,103 @@
+\hypertarget{classActuatorSet}{\section{Actuator\-Set Class Reference}
+\label{classActuatorSet}\index{Actuator\-Set@{Actuator\-Set}}
+}
+
+
+Draw actuator-\/labels, run actuators and change the state of actuators by id.  
+
+
+
+
+{\ttfamily \#include $<$Actuators.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classActuatorSet_ab755839440f598cbb8e0ac5a24b74c7d}{Actuator\-Set} ()
+\item 
+void \hyperlink{classActuatorSet_a5c2f8ee29cc0ab8ea165f24b0592ef65}{add} (\hyperlink{classActuator}{Actuator} $\ast$actuator)
+\begin{DoxyCompactList}\small\item\em Add any actuator to the actuator-\/set. \end{DoxyCompactList}\item 
+void \hyperlink{classActuatorSet_a55a037ecf2905802d6f89941fd73a61c}{draw\-Labels} ()
+\begin{DoxyCompactList}\small\item\em Draw labels of all registered actuators. \end{DoxyCompactList}\item 
+void \hyperlink{classActuatorSet_a61e2b64780d67b971cecd0f220e77af6}{write\-Actuator} (signed int id, signed int value)
+\begin{DoxyCompactList}\small\item\em Change state of actuator by actuator-\/id. \end{DoxyCompactList}\item 
+void \hyperlink{classActuatorSet_ab7f5bb6756d4a5f57dbb94e4f8abcf53}{run} ()
+\begin{DoxyCompactList}\small\item\em Run all registered actuators. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classActuator}{Actuator} $\ast$ $>$ \hyperlink{classActuatorSet_a2696ae7e9eeee0b062e85d68387d6d92}{m\-\_\-actuator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Draw actuator-\/labels, run actuators and change the state of actuators by id. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classActuatorSet_ab755839440f598cbb8e0ac5a24b74c7d}{\index{Actuator\-Set@{Actuator\-Set}!Actuator\-Set@{Actuator\-Set}}
+\index{Actuator\-Set@{Actuator\-Set}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{Actuator\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Actuator\-Set\-::\-Actuator\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classActuatorSet_ab755839440f598cbb8e0ac5a24b74c7d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classActuatorSet_a5c2f8ee29cc0ab8ea165f24b0592ef65}{\index{Actuator\-Set@{Actuator\-Set}!add@{add}}
+\index{add@{add}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Actuator\-Set\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Actuator} $\ast$}]{actuator}
+\end{DoxyParamCaption}
+)}}\label{classActuatorSet_a5c2f8ee29cc0ab8ea165f24b0592ef65}
+
+
+Add any actuator to the actuator-\/set. 
+
+\hypertarget{classActuatorSet_a55a037ecf2905802d6f89941fd73a61c}{\index{Actuator\-Set@{Actuator\-Set}!draw\-Labels@{draw\-Labels}}
+\index{draw\-Labels@{draw\-Labels}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{draw\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Actuator\-Set\-::draw\-Labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActuatorSet_a55a037ecf2905802d6f89941fd73a61c}
+
+
+Draw labels of all registered actuators. 
+
+\hypertarget{classActuatorSet_ab7f5bb6756d4a5f57dbb94e4f8abcf53}{\index{Actuator\-Set@{Actuator\-Set}!run@{run}}
+\index{run@{run}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Actuator\-Set\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActuatorSet_ab7f5bb6756d4a5f57dbb94e4f8abcf53}
+
+
+Run all registered actuators. 
+
+\hypertarget{classActuatorSet_a61e2b64780d67b971cecd0f220e77af6}{\index{Actuator\-Set@{Actuator\-Set}!write\-Actuator@{write\-Actuator}}
+\index{write\-Actuator@{write\-Actuator}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{write\-Actuator}]{\setlength{\rightskip}{0pt plus 5cm}void Actuator\-Set\-::write\-Actuator (
+\begin{DoxyParamCaption}
+\item[{signed int}]{id, }
+\item[{signed int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classActuatorSet_a61e2b64780d67b971cecd0f220e77af6}
+
+
+Change state of actuator by actuator-\/id. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classActuatorSet_a2696ae7e9eeee0b062e85d68387d6d92}{\index{Actuator\-Set@{Actuator\-Set}!m\-\_\-actuator@{m\-\_\-actuator}}
+\index{m\-\_\-actuator@{m\-\_\-actuator}!ActuatorSet@{Actuator\-Set}}
+\subsubsection[{m\-\_\-actuator}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Actuator}$\ast$$>$ Actuator\-Set\-::m\-\_\-actuator}}\label{classActuatorSet_a2696ae7e9eeee0b062e85d68387d6d92}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Actuators_8h}{Actuators.\-h}\item 
+\hyperlink{Actuators_8cpp}{Actuators.\-cpp}\end{DoxyCompactItemize}

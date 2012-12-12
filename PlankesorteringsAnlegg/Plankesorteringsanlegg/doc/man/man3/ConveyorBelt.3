@@ -1,0 +1,122 @@
+.TH "ConveyorBelt" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConveyorBelt \- 
+.PP
+The conveyorbelt\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Conveyor\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyorBelt\fP (b2Vec2 p1, b2Vec2 p2, float32 beamThickness, float32 beltThickness, int N, int M, \fBt_medbringerType\fP medbringerType, int sensorPos, float32 sensorAdjustment, int cmBits, b2World *world)"
+.br
+.RI "\fICreate the conveyorbelt\&. \fP"
+.ti -1c
+.RI "float32 \fBgetAngleAt\fP (b2Vec2 p)"
+.br
+.ti -1c
+.RI "void \fBpause\fP ()"
+.br
+.ti -1c
+.RI "void \fBplay\fP ()"
+.br
+.ti -1c
+.RI "\fBContactSensor\fP * \fBgetSensor\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Vec2 \fBm_p1\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_p2\fP"
+.br
+.ti -1c
+.RI "vector< b2Body * > \fBlink\fP"
+.br
+.ti -1c
+.RI "vector< b2Vec2 > \fBlinkSpeed\fP"
+.br
+.ti -1c
+.RI "bool \fBm_paused\fP"
+.br
+.ti -1c
+.RI "\fBContactSensor_Sync\fP * \fBm_contactSensorCircular\fP"
+.br
+.ti -1c
+.RI "\fBt_medbringerType\fP \fBm_medbringerType\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The conveyorbelt\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ConveyorBelt::ConveyorBelt (b2Vec2p1, b2Vec2p2, float32beamThickness, float32beltThickness, intN, intM, \fBt_medbringerType\fPmedbringerType, intsensorPos, float32sensorAdjustment, intcmBits, b2World *world)"
+
+.PP
+Create the conveyorbelt\&. \fBParameters:\fP
+.RS 4
+\fIp1\fP Center position of first wheel\&. 
+.br
+\fIp2\fP Center position of second wheel\&. 
+.br
+\fIbeamThickness\fP Thickness of the beam\&. 
+.br
+\fIbeltThickness\fP Thickness of the belt\&. 
+.br
+\fIN\fP Number of links\&. 
+.br
+\fIM\fP Number of links between every 'medbringer' 
+.br
+\fImedbringerType\fP The type of 'medbringers' which are connected to the belt\&. 
+.br
+\fIsensorPos\fP The number of the link which the sensor is placed at\&. 
+.br
+\fIsensorAdjustment\fP 
+.br
+\fIcmBits\fP Category- and mask-bits\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create a conveyorbelt\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float32 ConveyorBelt::getAngleAt (b2Vec2p)"
+Get the angle of the nearest belt-tangent 
+.SS "\fBContactSensor\fP* ConveyorBelt::getSensor ()\fC [inline]\fP"
+Return the synchronization sensor 
+.SS "void ConveyorBelt::pause ()"
+Pause the belt 
+.SS "void ConveyorBelt::play ()"
+Restart the belt in the same state as when paused\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<b2Body*> ConveyorBelt::link"
+
+.SS "vector<b2Vec2> ConveyorBelt::linkSpeed"
+List of all the links velocity- vectors 
+.SS "\fBContactSensor_Sync\fP* ConveyorBelt::m_contactSensorCircular"
+
+.SS "\fBt_medbringerType\fP ConveyorBelt::m_medbringerType"
+
+.SS "b2Vec2 ConveyorBelt::m_p1"
+
+.SS "b2Vec2 ConveyorBelt::m_p2"
+
+.SS "bool ConveyorBelt::m_paused"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

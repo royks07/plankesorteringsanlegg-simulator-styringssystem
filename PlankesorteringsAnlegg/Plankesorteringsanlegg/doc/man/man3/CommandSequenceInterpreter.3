@@ -1,0 +1,106 @@
+.TH "CommandSequenceInterpreter" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CommandSequenceInterpreter \- 
+.PP
+Use keyboard- or terminal-input to control the actuator- and sensor-sets\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <CommandSequenceInterpreter\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBt_readState\fP { \fBst_wait_for_new_command\fP, \fBst_read_parameter\fP }"
+.br
+.ti -1c
+.RI "enum \fBt_commandType\fP { \fBe_writeActuator\fP, \fBe_readSensor\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCommandSequenceInterpreter\fP (\fBActuatorSet\fP *actuatorSet, \fBSensorSet\fP *sensorSet)"
+.br
+.ti -1c
+.RI "void \fBinterpret\fP (unsigned char key)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBt_commandType\fP \fBm_commandType\fP"
+.br
+.ti -1c
+.RI "\fBt_readState\fP \fBm_readState\fP"
+.br
+.ti -1c
+.RI "stringstream \fBm_ss\fP"
+.br
+.ti -1c
+.RI "vector< string > \fBm_parameter\fP"
+.br
+.ti -1c
+.RI "\fBActuatorSet\fP * \fBm_actuatorSet\fP"
+.br
+.ti -1c
+.RI "\fBSensorSet\fP * \fBm_sensorSet\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Use keyboard- or terminal-input to control the actuator- and sensor-sets\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBCommandSequenceInterpreter::t_commandType\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIe_writeActuator \fP\fP
+.TP
+\fB\fIe_readSensor \fP\fP
+
+.SS "enum \fBCommandSequenceInterpreter::t_readState\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIst_wait_for_new_command \fP\fP
+.TP
+\fB\fIst_read_parameter \fP\fP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CommandSequenceInterpreter::CommandSequenceInterpreter (\fBActuatorSet\fP *actuatorSet, \fBSensorSet\fP *sensorSet)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CommandSequenceInterpreter::interpret (unsigned charkey)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBActuatorSet\fP* CommandSequenceInterpreter::m_actuatorSet"
+
+.SS "\fBt_commandType\fP CommandSequenceInterpreter::m_commandType"
+
+.SS "vector<string> CommandSequenceInterpreter::m_parameter"
+
+.SS "\fBt_readState\fP CommandSequenceInterpreter::m_readState"
+
+.SS "\fBSensorSet\fP* CommandSequenceInterpreter::m_sensorSet"
+
+.SS "stringstream CommandSequenceInterpreter::m_ss"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

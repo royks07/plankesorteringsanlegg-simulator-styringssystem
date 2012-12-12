@@ -150,6 +150,126 @@ Plankesorteringsanlegg/fast:
 	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build
 .PHONY : Plankesorteringsanlegg/fast
 
+Actuators.o: Actuators.cpp.o
+.PHONY : Actuators.o
+
+# target to build an object file
+Actuators.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o
+.PHONY : Actuators.cpp.o
+
+Actuators.i: Actuators.cpp.i
+.PHONY : Actuators.i
+
+# target to preprocess a source file
+Actuators.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.i
+.PHONY : Actuators.cpp.i
+
+Actuators.s: Actuators.cpp.s
+.PHONY : Actuators.s
+
+# target to generate assembly for a file
+Actuators.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.s
+.PHONY : Actuators.cpp.s
+
+CommandSequenceInterpreter.o: CommandSequenceInterpreter.cpp.o
+.PHONY : CommandSequenceInterpreter.o
+
+# target to build an object file
+CommandSequenceInterpreter.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o
+.PHONY : CommandSequenceInterpreter.cpp.o
+
+CommandSequenceInterpreter.i: CommandSequenceInterpreter.cpp.i
+.PHONY : CommandSequenceInterpreter.i
+
+# target to preprocess a source file
+CommandSequenceInterpreter.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.i
+.PHONY : CommandSequenceInterpreter.cpp.i
+
+CommandSequenceInterpreter.s: CommandSequenceInterpreter.cpp.s
+.PHONY : CommandSequenceInterpreter.s
+
+# target to generate assembly for a file
+CommandSequenceInterpreter.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.s
+.PHONY : CommandSequenceInterpreter.cpp.s
+
+Communicator.o: Communicator.cpp.o
+.PHONY : Communicator.o
+
+# target to build an object file
+Communicator.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o
+.PHONY : Communicator.cpp.o
+
+Communicator.i: Communicator.cpp.i
+.PHONY : Communicator.i
+
+# target to preprocess a source file
+Communicator.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.i
+.PHONY : Communicator.cpp.i
+
+Communicator.s: Communicator.cpp.s
+.PHONY : Communicator.s
+
+# target to generate assembly for a file
+Communicator.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.s
+.PHONY : Communicator.cpp.s
+
+Conveyor.o: Conveyor.cpp.o
+.PHONY : Conveyor.o
+
+# target to build an object file
+Conveyor.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o
+.PHONY : Conveyor.cpp.o
+
+Conveyor.i: Conveyor.cpp.i
+.PHONY : Conveyor.i
+
+# target to preprocess a source file
+Conveyor.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.i
+.PHONY : Conveyor.cpp.i
+
+Conveyor.s: Conveyor.cpp.s
+.PHONY : Conveyor.s
+
+# target to generate assembly for a file
+Conveyor.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.s
+.PHONY : Conveyor.cpp.s
+
+ConveyorSynchronizer.o: ConveyorSynchronizer.cpp.o
+.PHONY : ConveyorSynchronizer.o
+
+# target to build an object file
+ConveyorSynchronizer.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o
+.PHONY : ConveyorSynchronizer.cpp.o
+
+ConveyorSynchronizer.i: ConveyorSynchronizer.cpp.i
+.PHONY : ConveyorSynchronizer.i
+
+# target to preprocess a source file
+ConveyorSynchronizer.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.i
+.PHONY : ConveyorSynchronizer.cpp.i
+
+ConveyorSynchronizer.s: ConveyorSynchronizer.cpp.s
+.PHONY : ConveyorSynchronizer.s
+
+# target to generate assembly for a file
+ConveyorSynchronizer.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.s
+.PHONY : ConveyorSynchronizer.cpp.s
+
 Main.o: Main.cpp.o
 .PHONY : Main.o
 
@@ -174,6 +294,78 @@ Main.cpp.s:
 	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
+Package.o: Package.cpp.o
+.PHONY : Package.o
+
+# target to build an object file
+Package.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o
+.PHONY : Package.cpp.o
+
+Package.i: Package.cpp.i
+.PHONY : Package.i
+
+# target to preprocess a source file
+Package.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.i
+.PHONY : Package.cpp.i
+
+Package.s: Package.cpp.s
+.PHONY : Package.s
+
+# target to generate assembly for a file
+Package.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.s
+.PHONY : Package.cpp.s
+
+Packaging.o: Packaging.cpp.o
+.PHONY : Packaging.o
+
+# target to build an object file
+Packaging.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o
+.PHONY : Packaging.cpp.o
+
+Packaging.i: Packaging.cpp.i
+.PHONY : Packaging.i
+
+# target to preprocess a source file
+Packaging.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.i
+.PHONY : Packaging.cpp.i
+
+Packaging.s: Packaging.cpp.s
+.PHONY : Packaging.s
+
+# target to generate assembly for a file
+Packaging.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.s
+.PHONY : Packaging.cpp.s
+
+PlankSortingPlant.o: PlankSortingPlant.cpp.o
+.PHONY : PlankSortingPlant.o
+
+# target to build an object file
+PlankSortingPlant.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o
+.PHONY : PlankSortingPlant.cpp.o
+
+PlankSortingPlant.i: PlankSortingPlant.cpp.i
+.PHONY : PlankSortingPlant.i
+
+# target to preprocess a source file
+PlankSortingPlant.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.i
+.PHONY : PlankSortingPlant.cpp.i
+
+PlankSortingPlant.s: PlankSortingPlant.cpp.s
+.PHONY : PlankSortingPlant.s
+
+# target to generate assembly for a file
+PlankSortingPlant.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.s
+.PHONY : PlankSortingPlant.cpp.s
+
 Render.o: Render.cpp.o
 .PHONY : Render.o
 
@@ -197,6 +389,30 @@ Render.s: Render.cpp.s
 Render.cpp.s:
 	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Render.cpp.s
 .PHONY : Render.cpp.s
+
+Sensors.o: Sensors.cpp.o
+.PHONY : Sensors.o
+
+# target to build an object file
+Sensors.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o
+.PHONY : Sensors.cpp.o
+
+Sensors.i: Sensors.cpp.i
+.PHONY : Sensors.i
+
+# target to preprocess a source file
+Sensors.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.i
+.PHONY : Sensors.cpp.i
+
+Sensors.s: Sensors.cpp.s
+.PHONY : Sensors.s
+
+# target to generate assembly for a file
+Sensors.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.s
+.PHONY : Sensors.cpp.s
 
 SimulatorPage.o: SimulatorPage.cpp.o
 .PHONY : SimulatorPage.o
@@ -246,6 +462,78 @@ SimulatorPageEntries.cpp.s:
 	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.s
 .PHONY : SimulatorPageEntries.cpp.s
 
+Storages.o: Storages.cpp.o
+.PHONY : Storages.o
+
+# target to build an object file
+Storages.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o
+.PHONY : Storages.cpp.o
+
+Storages.i: Storages.cpp.i
+.PHONY : Storages.i
+
+# target to preprocess a source file
+Storages.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.i
+.PHONY : Storages.cpp.i
+
+Storages.s: Storages.cpp.s
+.PHONY : Storages.s
+
+# target to generate assembly for a file
+Storages.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.s
+.PHONY : Storages.cpp.s
+
+Text.o: Text.cpp.o
+.PHONY : Text.o
+
+# target to build an object file
+Text.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o
+.PHONY : Text.cpp.o
+
+Text.i: Text.cpp.i
+.PHONY : Text.i
+
+# target to preprocess a source file
+Text.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.i
+.PHONY : Text.cpp.i
+
+Text.s: Text.cpp.s
+.PHONY : Text.s
+
+# target to generate assembly for a file
+Text.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.s
+.PHONY : Text.cpp.s
+
+UserData.o: UserData.cpp.o
+.PHONY : UserData.o
+
+# target to build an object file
+UserData.cpp.o:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o
+.PHONY : UserData.cpp.o
+
+UserData.i: UserData.cpp.i
+.PHONY : UserData.i
+
+# target to preprocess a source file
+UserData.cpp.i:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.i
+.PHONY : UserData.cpp.i
+
+UserData.s: UserData.cpp.s
+.PHONY : UserData.s
+
+# target to generate assembly for a file
+UserData.cpp.s:
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake && $(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.s
+.PHONY : UserData.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,18 +547,54 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... Actuators.o"
+	@echo "... Actuators.i"
+	@echo "... Actuators.s"
+	@echo "... CommandSequenceInterpreter.o"
+	@echo "... CommandSequenceInterpreter.i"
+	@echo "... CommandSequenceInterpreter.s"
+	@echo "... Communicator.o"
+	@echo "... Communicator.i"
+	@echo "... Communicator.s"
+	@echo "... Conveyor.o"
+	@echo "... Conveyor.i"
+	@echo "... Conveyor.s"
+	@echo "... ConveyorSynchronizer.o"
+	@echo "... ConveyorSynchronizer.i"
+	@echo "... ConveyorSynchronizer.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Package.o"
+	@echo "... Package.i"
+	@echo "... Package.s"
+	@echo "... Packaging.o"
+	@echo "... Packaging.i"
+	@echo "... Packaging.s"
+	@echo "... PlankSortingPlant.o"
+	@echo "... PlankSortingPlant.i"
+	@echo "... PlankSortingPlant.s"
 	@echo "... Render.o"
 	@echo "... Render.i"
 	@echo "... Render.s"
+	@echo "... Sensors.o"
+	@echo "... Sensors.i"
+	@echo "... Sensors.s"
 	@echo "... SimulatorPage.o"
 	@echo "... SimulatorPage.i"
 	@echo "... SimulatorPage.s"
 	@echo "... SimulatorPageEntries.o"
 	@echo "... SimulatorPageEntries.i"
 	@echo "... SimulatorPageEntries.s"
+	@echo "... Storages.o"
+	@echo "... Storages.i"
+	@echo "... Storages.s"
+	@echo "... Text.o"
+	@echo "... Text.i"
+	@echo "... Text.s"
+	@echo "... UserData.o"
+	@echo "... UserData.i"
+	@echo "... UserData.s"
 .PHONY : help
 
 

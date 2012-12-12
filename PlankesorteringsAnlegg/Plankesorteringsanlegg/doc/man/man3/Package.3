@@ -1,0 +1,93 @@
+.TH "Package" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Package \- 
+.PP
+Represent Package-objects\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Package\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPackage\fP (b2Vec2 position, b2World *world)"
+.br
+.ti -1c
+.RI "\fB~Package\fP ()"
+.br
+.ti -1c
+.RI "float32 \fBgetPlankThickness\fP ()"
+.br
+.ti -1c
+.RI "float32 \fBgetSprinkleThickness\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunSprinkleRemover\fP ()"
+.br
+.RI "\fIRemove sprinkles when outside a predefined circular boundary\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBm_plankThickness\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_sprinkleThickness\fP"
+.br
+.ti -1c
+.RI "\fBSprinkle\fP * \fBm_sprinkle\fP [7]"
+.br
+.ti -1c
+.RI "\fBPlank\fP * \fBm_plank\fP [32]"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represent Package-objects\&. 
+
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Package::Package (b2Vec2position, b2World *world)"
+Create a package wherever you want\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP Lower left corner of package\&. 
+.br
+\fIworld\fP The world in which you want to create the package\&. 
+.RE
+.PP
+
+.SS "Package::~Package ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "float32 Package::getPlankThickness ()\fC [inline]\fP"
+
+.SS "float32 Package::getSprinkleThickness ()\fC [inline]\fP"
+
+.SS "void Package::runSprinkleRemover ()"
+
+.PP
+Remove sprinkles when outside a predefined circular boundary\&. Needs to be called continuously\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBPlank\fP* Package::m_plank[32]"
+
+.SS "float32 Package::m_plankThickness"
+
+.SS "\fBSprinkle\fP* Package::m_sprinkle[7]"
+
+.SS "float32 Package::m_sprinkleThickness"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

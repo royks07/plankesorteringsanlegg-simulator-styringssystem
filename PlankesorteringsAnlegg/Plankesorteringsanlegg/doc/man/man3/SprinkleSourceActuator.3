@@ -1,0 +1,67 @@
+.TH "SprinkleSourceActuator" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SprinkleSourceActuator \- 
+.PP
+Produce 'sprinkles' at a specific position, by controlling a sprinkle-source\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherits \fBActuator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSprinkleSourceActuator\fP (int id, \fBSprinkleSource\fP *sprinkleSource)"
+.br
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBSprinkleSource\fP * \fBm_sprinkleSource\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Produce 'sprinkles' at a specific position, by controlling a sprinkle-source\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SprinkleSourceActuator::SprinkleSourceActuator (intid, \fBSprinkleSource\fP *sprinkleSource)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void SprinkleSourceActuator::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void SprinkleSourceActuator::run ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SS "void SprinkleSourceActuator::set (signed intvalue)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBActuator\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBSprinkleSource\fP* SprinkleSourceActuator::m_sprinkleSource"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,70 @@
+.TH "UserData.h" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+UserData.h \- 
+.PP
+Contains the \fBUserData\fP class-hierarchy\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <Box2D/Box2D\&.h>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBUserData\fP"
+.br
+.RI "\fIThe archtypical userdata-class which other userdata-classes inherit from\&. \fP"
+.ti -1c
+.RI "class \fBPlankUserData\fP"
+.br
+.RI "\fICarry information about planks\&. \fP"
+.ti -1c
+.RI "class \fBMedbringerkUserData\fP"
+.br
+.RI "\fIIdentify a b2Fixture as a 'medbringer'\&. \fP"
+.ti -1c
+.RI "class \fBStorageLiftUserData\fP"
+.br
+.RI "\fIIdentify a b2Fixture as a storage-lift\&. \fP"
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBt_userDataType\fP { \fBe_unknown\fP, \fBe_plank\fP, \fBe_medbringer\fP, \fBe_storageLift\fP }"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Contains the \fBUserData\fP class-hierarchy\&. 
+
+\fBAuthor:\fP
+.RS 4
+Roy Kollen Svendsen 
+.RE
+.PP
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBt_userDataType\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIe_unknown \fP\fP
+.TP
+\fB\fIe_plank \fP\fP
+.TP
+\fB\fIe_medbringer \fP\fP
+.TP
+\fB\fIe_storageLift \fP\fP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

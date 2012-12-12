@@ -1,0 +1,123 @@
+.TH "Sprinkle" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Sprinkle \- 
+.PP
+Represent 'Sprinkle'-objects(In norwegian: strø)\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Package\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSprinkle\fP (b2Vec2 pos, b2World *world)"
+.br
+.ti -1c
+.RI "\fB~Sprinkle\fP ()"
+.br
+.RI "\fIDeallocate the Sprinkle-object and remove its body from the world\&. \fP"
+.ti -1c
+.RI "float32 \fBgetWidth\fP ()"
+.br
+.ti -1c
+.RI "float32 \fBgetThickness\fP ()"
+.br
+.ti -1c
+.RI "void \fBremoveWhenOutOfBounds\fP (b2Vec2 senter, float32 avstand)"
+.br
+.RI "\fIRemove Sprinkle-instance when center-point is outside circular-boundary\&. \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2BodyDef * \fBm_bd\fP"
+.br
+.ti -1c
+.RI "b2FixtureDef * \fBm_fd\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_width\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_thickness\fP"
+.br
+.ti -1c
+.RI "b2Body * \fBm_body\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bHasBody\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixture\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represent 'Sprinkle'-objects(In norwegian: strø)\&. 
+
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Sprinkle::Sprinkle (b2Vec2pos, b2World *world)"
+\fBParameters:\fP
+.RS 4
+\fIpos\fP The position at which you want place the center of the sprinkle\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create the sprinkle\&. 
+.RE
+.PP
+
+.SS "Sprinkle::~Sprinkle ()"
+
+.PP
+Deallocate the Sprinkle-object and remove its body from the world\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "float32 Sprinkle::getThickness ()\fC [inline]\fP"
+
+.SS "float32 Sprinkle::getWidth ()\fC [inline]\fP"
+
+.SS "void Sprinkle::removeWhenOutOfBounds (b2Vec2senter, float32avstand)"
+
+.PP
+Remove Sprinkle-instance when center-point is outside circular-boundary\&. You need to call this function repeatedly\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIsenter\fP Center of the circular boundary\&. 
+.br
+\fIavstand\fP Remove \fBSprinkle\fP from world when distance from senter is grater than this number\&. 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "b2BodyDef* Sprinkle::m_bd\fC [private]\fP"
+
+.SS "bool Sprinkle::m_bHasBody\fC [private]\fP"
+
+.SS "b2Body* Sprinkle::m_body\fC [private]\fP"
+
+.SS "b2FixtureDef* Sprinkle::m_fd\fC [private]\fP"
+
+.SS "b2Fixture* Sprinkle::m_fixture\fC [private]\fP"
+
+.SS "float32 Sprinkle::m_thickness\fC [private]\fP"
+
+.SS "float32 Sprinkle::m_width\fC [private]\fP"
+
+.SS "b2World* Sprinkle::m_world\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

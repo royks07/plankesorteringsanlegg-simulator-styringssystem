@@ -1,0 +1,79 @@
+.TH "CounterSensor" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CounterSensor \- 
+.PP
+Count the number of collisions\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits \fBContactSensor_Sync\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCounterSensor\fP (int id, b2Vec2 position, float32 radius, b2Filter filter, b2World *world)"
+.br
+.ti -1c
+.RI "void \fBupdateCounter\fP ()"
+.br
+.RI "\fIIncrease counter by one unit\&. \fP"
+.ti -1c
+.RI "void \fBdrawLabel\fP ()"
+.br
+.RI "\fIDraw sensor label\&. \fP"
+.ti -1c
+.RI "signed int \fBget\fP ()"
+.br
+.RI "\fIReturn the state of the sensor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "signed int \fBm_counter\fP"
+.br
+.RI "\fIStores the number of registered collisions\&. \fP"
+.in -1c
+.SH "Detailed Description"
+.PP 
+Count the number of collisions\&. 
+
+This is used to measure how far a the conveyor-belt has traveled\&.  
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CounterSensor::CounterSensor (intid, b2Vec2position, float32radius, b2Filterfilter, b2World *world)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CounterSensor::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Draw sensor label\&. 
+.PP
+Reimplemented from \fBContactSensor_Sync\fP\&.
+.SS "signed int CounterSensor::get ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Return the state of the sensor\&. 
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.SS "void CounterSensor::updateCounter ()"
+
+.PP
+Increase counter by one unit\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "signed int CounterSensor::m_counter"
+
+.PP
+Stores the number of registered collisions\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

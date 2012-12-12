@@ -1,0 +1,116 @@
+\hypertarget{classJointActuatorPrismaticStep}{\section{Joint\-Actuator\-Prismatic\-Step Class Reference}
+\label{classJointActuatorPrismaticStep}\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}}
+}
+
+
+Run a prismatic joint an arbitrary number of steps.  
+
+
+
+
+{\ttfamily \#include $<$Actuators.\-h$>$}
+
+Inheritance diagram for Joint\-Actuator\-Prismatic\-Step\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classJointActuatorPrismaticStep}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classJointActuatorPrismaticStep_a15f20c8424d7bc4e226ea428a3d316fa}{Joint\-Actuator\-Prismatic\-Step} (int id, b2\-Joint $\ast$joint)
+\item 
+void \hyperlink{classJointActuatorPrismaticStep_ace7839e236e16848375f963697ac408a}{set} (signed int value)
+\item 
+void \hyperlink{classJointActuatorPrismaticStep_aecbb187fd46eb1e197a34bcd54aaf4d4}{draw\-Label} ()
+\item 
+void \hyperlink{classJointActuatorPrismaticStep_a30a61d48a3719b5d0390be85b7445883}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Joint $\ast$ \hyperlink{classJointActuatorPrismaticStep_a0b0796c249dd6cecd0c0616a80885ab9}{m\-\_\-joint}
+\item 
+b2\-Vec2 \hyperlink{classJointActuatorPrismaticStep_a48a004131133ef920d4bed5912519ffc}{m\-\_\-start\-Pos}
+\item 
+b2\-Vec2 \hyperlink{classJointActuatorPrismaticStep_a13ea9ddc095eaf6e30d0dee871025b29}{m\-\_\-current\-Pos}
+\item 
+float32 \hyperlink{classJointActuatorPrismaticStep_aa3c0a7f6384201a79b14b681d0b9f274}{m\-\_\-max\-Displacement}
+\item 
+signed int \hyperlink{classJointActuatorPrismaticStep_a92c61c564dbfc17830ec4109be54f008}{m\-\_\-value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Run a prismatic joint an arbitrary number of steps. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classJointActuatorPrismaticStep_a15f20c8424d7bc4e226ea428a3d316fa}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}}
+\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{Joint\-Actuator\-Prismatic\-Step}]{\setlength{\rightskip}{0pt plus 5cm}Joint\-Actuator\-Prismatic\-Step\-::\-Joint\-Actuator\-Prismatic\-Step (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{b2\-Joint $\ast$}]{joint}
+\end{DoxyParamCaption}
+)}}\label{classJointActuatorPrismaticStep_a15f20c8424d7bc4e226ea428a3d316fa}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classJointActuatorPrismaticStep_aecbb187fd46eb1e197a34bcd54aaf4d4}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!draw\-Label@{draw\-Label}}
+\index{draw\-Label@{draw\-Label}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{draw\-Label}]{\setlength{\rightskip}{0pt plus 5cm}void Joint\-Actuator\-Prismatic\-Step\-::draw\-Label (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classJointActuatorPrismaticStep_aecbb187fd46eb1e197a34bcd54aaf4d4}
+
+
+Reimplemented from \hyperlink{classActuator_aaa39a438315ac34dbb1a4237bf70ff99}{Actuator}.
+
+\hypertarget{classJointActuatorPrismaticStep_a30a61d48a3719b5d0390be85b7445883}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!run@{run}}
+\index{run@{run}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Joint\-Actuator\-Prismatic\-Step\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classJointActuatorPrismaticStep_a30a61d48a3719b5d0390be85b7445883}
+
+
+Reimplemented from \hyperlink{classActuator_aabe48a4249a91a4cd1b964001fe754fc}{Actuator}.
+
+\hypertarget{classJointActuatorPrismaticStep_ace7839e236e16848375f963697ac408a}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!set@{set}}
+\index{set@{set}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Joint\-Actuator\-Prismatic\-Step\-::set (
+\begin{DoxyParamCaption}
+\item[{signed int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classJointActuatorPrismaticStep_ace7839e236e16848375f963697ac408a}
+
+
+Reimplemented from \hyperlink{classActuator_a6281019cccd4034ab2cf7071defecf70}{Actuator}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classJointActuatorPrismaticStep_a13ea9ddc095eaf6e30d0dee871025b29}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!m\-\_\-current\-Pos@{m\-\_\-current\-Pos}}
+\index{m\-\_\-current\-Pos@{m\-\_\-current\-Pos}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{m\-\_\-current\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Joint\-Actuator\-Prismatic\-Step\-::m\-\_\-current\-Pos}}\label{classJointActuatorPrismaticStep_a13ea9ddc095eaf6e30d0dee871025b29}
+\hypertarget{classJointActuatorPrismaticStep_a0b0796c249dd6cecd0c0616a80885ab9}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!m\-\_\-joint@{m\-\_\-joint}}
+\index{m\-\_\-joint@{m\-\_\-joint}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{m\-\_\-joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Joint$\ast$ Joint\-Actuator\-Prismatic\-Step\-::m\-\_\-joint}}\label{classJointActuatorPrismaticStep_a0b0796c249dd6cecd0c0616a80885ab9}
+\hypertarget{classJointActuatorPrismaticStep_aa3c0a7f6384201a79b14b681d0b9f274}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!m\-\_\-max\-Displacement@{m\-\_\-max\-Displacement}}
+\index{m\-\_\-max\-Displacement@{m\-\_\-max\-Displacement}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{m\-\_\-max\-Displacement}]{\setlength{\rightskip}{0pt plus 5cm}float32 Joint\-Actuator\-Prismatic\-Step\-::m\-\_\-max\-Displacement}}\label{classJointActuatorPrismaticStep_aa3c0a7f6384201a79b14b681d0b9f274}
+\hypertarget{classJointActuatorPrismaticStep_a48a004131133ef920d4bed5912519ffc}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!m\-\_\-start\-Pos@{m\-\_\-start\-Pos}}
+\index{m\-\_\-start\-Pos@{m\-\_\-start\-Pos}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{m\-\_\-start\-Pos}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Joint\-Actuator\-Prismatic\-Step\-::m\-\_\-start\-Pos}}\label{classJointActuatorPrismaticStep_a48a004131133ef920d4bed5912519ffc}
+\hypertarget{classJointActuatorPrismaticStep_a92c61c564dbfc17830ec4109be54f008}{\index{Joint\-Actuator\-Prismatic\-Step@{Joint\-Actuator\-Prismatic\-Step}!m\-\_\-value@{m\-\_\-value}}
+\index{m\-\_\-value@{m\-\_\-value}!JointActuatorPrismaticStep@{Joint\-Actuator\-Prismatic\-Step}}
+\subsubsection[{m\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}signed int Joint\-Actuator\-Prismatic\-Step\-::m\-\_\-value}}\label{classJointActuatorPrismaticStep_a92c61c564dbfc17830ec4109be54f008}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Actuators_8h}{Actuators.\-h}\item 
+\hyperlink{Actuators_8cpp}{Actuators.\-cpp}\end{DoxyCompactItemize}

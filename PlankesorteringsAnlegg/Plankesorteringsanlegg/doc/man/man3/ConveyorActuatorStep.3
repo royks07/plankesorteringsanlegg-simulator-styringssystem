@@ -1,0 +1,65 @@
+.TH "ConveyorActuatorStep" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConveyorActuatorStep \- 
+.PP
+Run a conveyor an arbitrary number of steps\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.PP
+Inherits \fBConveyorActuator\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyorActuatorStep\fP (int id, \fBConveyor\fP *conveyor)"
+.br
+.ti -1c
+.RI "void \fBset\fP (signed int value)"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBm_startAngle\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_maxRotation\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Run a conveyor an arbitrary number of steps\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ConveyorActuatorStep::ConveyorActuatorStep (intid, \fBConveyor\fP *conveyor)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ConveyorActuatorStep::run ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBConveyorActuator\fP\&.
+.SS "void ConveyorActuatorStep::set (signed intvalue)\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBConveyorActuator\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float32 ConveyorActuatorStep::m_maxRotation"
+
+.SS "float32 ConveyorActuatorStep::m_startAngle"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,155 @@
+\hypertarget{classConveyorBelt}{\section{Conveyor\-Belt Class Reference}
+\label{classConveyorBelt}\index{Conveyor\-Belt@{Conveyor\-Belt}}
+}
+
+
+The conveyorbelt.  
+
+
+
+
+{\ttfamily \#include $<$Conveyor.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConveyorBelt_a054992c219cd54cffd1b31aa819c25f0}{Conveyor\-Belt} (b2\-Vec2 p1, b2\-Vec2 p2, float32 beam\-Thickness, float32 belt\-Thickness, int N, int M, \hyperlink{Conveyor_8h_a98261db3679be2885c0bdad13c27d7b1}{t\-\_\-medbringer\-Type} medbringer\-Type, int sensor\-Pos, float32 sensor\-Adjustment, int cm\-Bits, b2\-World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Create the conveyorbelt. \end{DoxyCompactList}\item 
+float32 \hyperlink{classConveyorBelt_acf80525e6c5e618ffac5c8e8d0eed38c}{get\-Angle\-At} (b2\-Vec2 p)
+\item 
+void \hyperlink{classConveyorBelt_accae6e53d7d8e37e86aa9d4649c64481}{pause} ()
+\item 
+void \hyperlink{classConveyorBelt_af862468684b4bf0f1b05141ea8ee7943}{play} ()
+\item 
+\hyperlink{classContactSensor}{Contact\-Sensor} $\ast$ \hyperlink{classConveyorBelt_ada62b4755b222ef7a07233d5478c67a2}{get\-Sensor} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Vec2 \hyperlink{classConveyorBelt_ad22553d91da070067703878c4059ecf5}{m\-\_\-p1}
+\item 
+b2\-Vec2 \hyperlink{classConveyorBelt_a061584c0f9fe736cd06d5b81472016dd}{m\-\_\-p2}
+\item 
+vector$<$ b2\-Body $\ast$ $>$ \hyperlink{classConveyorBelt_a21237fddbc2791faf8e26fd346ac8434}{link}
+\item 
+vector$<$ b2\-Vec2 $>$ \hyperlink{classConveyorBelt_a1dbc93fa0310c47d89f234602fc8610e}{link\-Speed}
+\item 
+bool \hyperlink{classConveyorBelt_a2325f44e6279a81a6927020e97f725a3}{m\-\_\-paused}
+\item 
+\hyperlink{classContactSensor__Sync}{Contact\-Sensor\-\_\-\-Sync} $\ast$ \hyperlink{classConveyorBelt_a35e3eacb4d9a46fd58505dba22a020c5}{m\-\_\-contact\-Sensor\-Circular}
+\item 
+\hyperlink{Conveyor_8h_a98261db3679be2885c0bdad13c27d7b1}{t\-\_\-medbringer\-Type} \hyperlink{classConveyorBelt_a92464da95aad2012ab4fcb0c1a998f42}{m\-\_\-medbringer\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The conveyorbelt. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConveyorBelt_a054992c219cd54cffd1b31aa819c25f0}{\index{Conveyor\-Belt@{Conveyor\-Belt}!Conveyor\-Belt@{Conveyor\-Belt}}
+\index{Conveyor\-Belt@{Conveyor\-Belt}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{Conveyor\-Belt}]{\setlength{\rightskip}{0pt plus 5cm}Conveyor\-Belt\-::\-Conveyor\-Belt (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{p1, }
+\item[{b2\-Vec2}]{p2, }
+\item[{float32}]{beam\-Thickness, }
+\item[{float32}]{belt\-Thickness, }
+\item[{int}]{N, }
+\item[{int}]{M, }
+\item[{{\bf t\-\_\-medbringer\-Type}}]{medbringer\-Type, }
+\item[{int}]{sensor\-Pos, }
+\item[{float32}]{sensor\-Adjustment, }
+\item[{int}]{cm\-Bits, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classConveyorBelt_a054992c219cd54cffd1b31aa819c25f0}
+
+
+Create the conveyorbelt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & Center position of first wheel. \\
+\hline
+{\em p2} & Center position of second wheel. \\
+\hline
+{\em beam\-Thickness} & Thickness of the beam. \\
+\hline
+{\em belt\-Thickness} & Thickness of the belt. \\
+\hline
+{\em N} & Number of links. \\
+\hline
+{\em M} & Number of links between every \char`\"{}medbringer\char`\"{} \\
+\hline
+{\em medbringer\-Type} & The type of \char`\"{}medbringers\char`\"{} which are connected to the belt. \\
+\hline
+{\em sensor\-Pos} & The number of the link which the sensor is placed at. \\
+\hline
+{\em sensor\-Adjustment} & \\
+\hline
+{\em cm\-Bits} & Category-\/ and mask-\/bits. \\
+\hline
+{\em world} & Pointer to the world in which you want to create a conveyorbelt. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConveyorBelt_acf80525e6c5e618ffac5c8e8d0eed38c}{\index{Conveyor\-Belt@{Conveyor\-Belt}!get\-Angle\-At@{get\-Angle\-At}}
+\index{get\-Angle\-At@{get\-Angle\-At}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{get\-Angle\-At}]{\setlength{\rightskip}{0pt plus 5cm}float32 Conveyor\-Belt\-::get\-Angle\-At (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{p}
+\end{DoxyParamCaption}
+)}}\label{classConveyorBelt_acf80525e6c5e618ffac5c8e8d0eed38c}
+Get the angle of the nearest belt-\/tangent \hypertarget{classConveyorBelt_ada62b4755b222ef7a07233d5478c67a2}{\index{Conveyor\-Belt@{Conveyor\-Belt}!get\-Sensor@{get\-Sensor}}
+\index{get\-Sensor@{get\-Sensor}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{get\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contact\-Sensor}$\ast$ Conveyor\-Belt\-::get\-Sensor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classConveyorBelt_ada62b4755b222ef7a07233d5478c67a2}
+Return the synchronization sensor \hypertarget{classConveyorBelt_accae6e53d7d8e37e86aa9d4649c64481}{\index{Conveyor\-Belt@{Conveyor\-Belt}!pause@{pause}}
+\index{pause@{pause}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{pause}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-Belt\-::pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyorBelt_accae6e53d7d8e37e86aa9d4649c64481}
+Pause the belt \hypertarget{classConveyorBelt_af862468684b4bf0f1b05141ea8ee7943}{\index{Conveyor\-Belt@{Conveyor\-Belt}!play@{play}}
+\index{play@{play}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-Belt\-::play (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyorBelt_af862468684b4bf0f1b05141ea8ee7943}
+Restart the belt in the same state as when paused. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classConveyorBelt_a21237fddbc2791faf8e26fd346ac8434}{\index{Conveyor\-Belt@{Conveyor\-Belt}!link@{link}}
+\index{link@{link}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{link}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$b2\-Body$\ast$$>$ Conveyor\-Belt\-::link}}\label{classConveyorBelt_a21237fddbc2791faf8e26fd346ac8434}
+\hypertarget{classConveyorBelt_a1dbc93fa0310c47d89f234602fc8610e}{\index{Conveyor\-Belt@{Conveyor\-Belt}!link\-Speed@{link\-Speed}}
+\index{link\-Speed@{link\-Speed}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{link\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$b2\-Vec2$>$ Conveyor\-Belt\-::link\-Speed}}\label{classConveyorBelt_a1dbc93fa0310c47d89f234602fc8610e}
+List of all the links velocity-\/ vectors \hypertarget{classConveyorBelt_a35e3eacb4d9a46fd58505dba22a020c5}{\index{Conveyor\-Belt@{Conveyor\-Belt}!m\-\_\-contact\-Sensor\-Circular@{m\-\_\-contact\-Sensor\-Circular}}
+\index{m\-\_\-contact\-Sensor\-Circular@{m\-\_\-contact\-Sensor\-Circular}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{m\-\_\-contact\-Sensor\-Circular}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Contact\-Sensor\-\_\-\-Sync}$\ast$ Conveyor\-Belt\-::m\-\_\-contact\-Sensor\-Circular}}\label{classConveyorBelt_a35e3eacb4d9a46fd58505dba22a020c5}
+\hypertarget{classConveyorBelt_a92464da95aad2012ab4fcb0c1a998f42}{\index{Conveyor\-Belt@{Conveyor\-Belt}!m\-\_\-medbringer\-Type@{m\-\_\-medbringer\-Type}}
+\index{m\-\_\-medbringer\-Type@{m\-\_\-medbringer\-Type}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{m\-\_\-medbringer\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-medbringer\-Type} Conveyor\-Belt\-::m\-\_\-medbringer\-Type}}\label{classConveyorBelt_a92464da95aad2012ab4fcb0c1a998f42}
+\hypertarget{classConveyorBelt_ad22553d91da070067703878c4059ecf5}{\index{Conveyor\-Belt@{Conveyor\-Belt}!m\-\_\-p1@{m\-\_\-p1}}
+\index{m\-\_\-p1@{m\-\_\-p1}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{m\-\_\-p1}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Conveyor\-Belt\-::m\-\_\-p1}}\label{classConveyorBelt_ad22553d91da070067703878c4059ecf5}
+\hypertarget{classConveyorBelt_a061584c0f9fe736cd06d5b81472016dd}{\index{Conveyor\-Belt@{Conveyor\-Belt}!m\-\_\-p2@{m\-\_\-p2}}
+\index{m\-\_\-p2@{m\-\_\-p2}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{m\-\_\-p2}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Vec2 Conveyor\-Belt\-::m\-\_\-p2}}\label{classConveyorBelt_a061584c0f9fe736cd06d5b81472016dd}
+\hypertarget{classConveyorBelt_a2325f44e6279a81a6927020e97f725a3}{\index{Conveyor\-Belt@{Conveyor\-Belt}!m\-\_\-paused@{m\-\_\-paused}}
+\index{m\-\_\-paused@{m\-\_\-paused}!ConveyorBelt@{Conveyor\-Belt}}
+\subsubsection[{m\-\_\-paused}]{\setlength{\rightskip}{0pt plus 5cm}bool Conveyor\-Belt\-::m\-\_\-paused}}\label{classConveyorBelt_a2325f44e6279a81a6927020e97f725a3}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Conveyor_8h}{Conveyor.\-h}\item 
+\hyperlink{Conveyor_8cpp}{Conveyor.\-cpp}\end{DoxyCompactItemize}

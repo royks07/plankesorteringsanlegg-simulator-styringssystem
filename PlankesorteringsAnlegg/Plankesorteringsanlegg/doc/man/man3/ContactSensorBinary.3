@@ -1,0 +1,67 @@
+.TH "ContactSensorBinary" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContactSensorBinary \- 
+.PP
+This sensor is circular shaped and has only two states, ON and OFf\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits \fBContactSensor\fP\&.
+.PP
+Inherited by \fBLengthSensor\fP, and \fBQualitySensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContactSensorBinary\fP (int id, b2Vec2 position, float32 radius, b2World *world)"
+.br
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "virtual signed int \fBget\fP ()"
+.br
+.RI "\fIReturn the state of the sensor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBm_radius\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This sensor is circular shaped and has only two states, ON and OFf\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ContactSensorBinary::ContactSensorBinary (intid, b2Vec2position, float32radius, b2World *world)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ContactSensorBinary::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.SS "signed int ContactSensorBinary::get ()\fC [virtual]\fP"
+
+.PP
+Return the state of the sensor\&. 
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.PP
+Reimplemented in \fBQualitySensor\fP, and \fBLengthSensor\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float32 ContactSensorBinary::m_radius"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

@@ -1,0 +1,76 @@
+.TH "ActuatorSet" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ActuatorSet \- 
+.PP
+Draw actuator-labels, run actuators and change the state of actuators by id\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Actuators\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBActuatorSet\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd\fP (\fBActuator\fP *actuator)"
+.br
+.RI "\fIAdd any actuator to the actuator-set\&. \fP"
+.ti -1c
+.RI "void \fBdrawLabels\fP ()"
+.br
+.RI "\fIDraw labels of all registered actuators\&. \fP"
+.ti -1c
+.RI "void \fBwriteActuator\fP (signed int id, signed int value)"
+.br
+.RI "\fIChange state of actuator by actuator-id\&. \fP"
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.RI "\fIRun all registered actuators\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "vector< \fBActuator\fP * > \fBm_actuator\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Draw actuator-labels, run actuators and change the state of actuators by id\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ActuatorSet::ActuatorSet ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ActuatorSet::add (\fBActuator\fP *actuator)"
+
+.PP
+Add any actuator to the actuator-set\&. 
+.SS "void ActuatorSet::drawLabels ()"
+
+.PP
+Draw labels of all registered actuators\&. 
+.SS "void ActuatorSet::run ()"
+
+.PP
+Run all registered actuators\&. 
+.SS "void ActuatorSet::writeActuator (signed intid, signed intvalue)"
+
+.PP
+Change state of actuator by actuator-id\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "vector<\fBActuator\fP*> ActuatorSet::m_actuator"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

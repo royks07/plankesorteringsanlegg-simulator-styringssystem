@@ -1,0 +1,124 @@
+\hypertarget{classConveyorSynchronizer}{\section{Conveyor\-Synchronizer Class Reference}
+\label{classConveyorSynchronizer}\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}}
+}
+
+
+Synchronize Conveyors.  
+
+
+
+
+{\ttfamily \#include $<$Conveyor\-Synchronizer.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5}{states\-\_\-type} \{ \hyperlink{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5ae6a6f6526745c204c0b2be970d0522a2}{st1}, 
+\hyperlink{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5a6c75db9fef7dbca83dc368a261065f1a}{st2}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConveyorSynchronizer_ae197fb7a2b8b53ec8425e736ed26d508}{Conveyor\-Synchronizer} ()
+\item 
+void \hyperlink{classConveyorSynchronizer_ae640bf1ee6bbf1f61f2a9430df93fe06}{add} (\hyperlink{classConveyor}{Conveyor} $\ast$conveyor)
+\begin{DoxyCompactList}\small\item\em Add as many conveyers as you'd like. \end{DoxyCompactList}\item 
+void \hyperlink{classConveyorSynchronizer_ae30b7c917a6522f4ae17d747b9f88ee0}{run} ()
+\begin{DoxyCompactList}\small\item\em Place this function in a loop to run the synchronization. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classConveyorSynchronizer_a0b3932b4b2eb980377a01913ac7e31f7}{m\-\_\-conveyor1}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classConveyorSynchronizer_a6d409ca27bf95110c977946158da2fed}{m\-\_\-conveyor2}
+\item 
+\hyperlink{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5}{states\-\_\-type} \hyperlink{classConveyorSynchronizer_a74ead75da9c1863838b34cd288cae02f}{m\-\_\-state}
+\item 
+bool \hyperlink{classConveyorSynchronizer_aff3ac2926f3771d47d4954cc384e21f3}{initialized}
+\item 
+vector$<$ \hyperlink{classConveyor}{Conveyor} $\ast$ $>$ \hyperlink{classConveyorSynchronizer_a2df84a539b1399075936bafcb23a874d}{m\-\_\-conveyor}
+\item 
+int \hyperlink{classConveyorSynchronizer_a9e4513793155c94c434ab6403c937085}{m\-\_\-number\-Of\-Conveyors}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Synchronize Conveyors. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!states\-\_\-type@{states\-\_\-type}}
+\index{states\-\_\-type@{states\-\_\-type}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{states\-\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Conveyor\-Synchronizer\-::states\-\_\-type}}}\label{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5}
+\begin{Desc}
+\item[Enumerator\-: ]\par
+\begin{description}
+\index{st1@{st1}!Conveyor\-Synchronizer@{Conveyor\-Synchronizer}}\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!st1@{st1}}\item[{\em 
+\hypertarget{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5ae6a6f6526745c204c0b2be970d0522a2}{st1}\label{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5ae6a6f6526745c204c0b2be970d0522a2}
+}]\index{st2@{st2}!Conveyor\-Synchronizer@{Conveyor\-Synchronizer}}\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!st2@{st2}}\item[{\em 
+\hypertarget{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5a6c75db9fef7dbca83dc368a261065f1a}{st2}\label{classConveyorSynchronizer_ad503ce87e58a6567d30daf11bf9b97b5a6c75db9fef7dbca83dc368a261065f1a}
+}]\end{description}
+\end{Desc}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConveyorSynchronizer_ae197fb7a2b8b53ec8425e736ed26d508}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!Conveyor\-Synchronizer@{Conveyor\-Synchronizer}}
+\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{Conveyor\-Synchronizer}]{\setlength{\rightskip}{0pt plus 5cm}Conveyor\-Synchronizer\-::\-Conveyor\-Synchronizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyorSynchronizer_ae197fb7a2b8b53ec8425e736ed26d508}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConveyorSynchronizer_ae640bf1ee6bbf1f61f2a9430df93fe06}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!add@{add}}
+\index{add@{add}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-Synchronizer\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Conveyor} $\ast$}]{conveyor}
+\end{DoxyParamCaption}
+)}}\label{classConveyorSynchronizer_ae640bf1ee6bbf1f61f2a9430df93fe06}
+
+
+Add as many conveyers as you'd like. 
+
+\hypertarget{classConveyorSynchronizer_ae30b7c917a6522f4ae17d747b9f88ee0}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!run@{run}}
+\index{run@{run}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void Conveyor\-Synchronizer\-::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConveyorSynchronizer_ae30b7c917a6522f4ae17d747b9f88ee0}
+
+
+Place this function in a loop to run the synchronization. 
+
+(E.\-g in the \hyperlink{classSimulatorPage}{Simulator\-Page} Step(...)-\/block) 
+
+\subsection{Member Data Documentation}
+\hypertarget{classConveyorSynchronizer_aff3ac2926f3771d47d4954cc384e21f3}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!initialized@{initialized}}
+\index{initialized@{initialized}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{initialized}]{\setlength{\rightskip}{0pt plus 5cm}bool Conveyor\-Synchronizer\-::initialized}}\label{classConveyorSynchronizer_aff3ac2926f3771d47d4954cc384e21f3}
+\hypertarget{classConveyorSynchronizer_a2df84a539b1399075936bafcb23a874d}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!m\-\_\-conveyor@{m\-\_\-conveyor}}
+\index{m\-\_\-conveyor@{m\-\_\-conveyor}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{m\-\_\-conveyor}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Conveyor}$\ast$$>$ Conveyor\-Synchronizer\-::m\-\_\-conveyor}}\label{classConveyorSynchronizer_a2df84a539b1399075936bafcb23a874d}
+\hypertarget{classConveyorSynchronizer_a0b3932b4b2eb980377a01913ac7e31f7}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!m\-\_\-conveyor1@{m\-\_\-conveyor1}}
+\index{m\-\_\-conveyor1@{m\-\_\-conveyor1}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{m\-\_\-conveyor1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Conveyor\-Synchronizer\-::m\-\_\-conveyor1}}\label{classConveyorSynchronizer_a0b3932b4b2eb980377a01913ac7e31f7}
+\hypertarget{classConveyorSynchronizer_a6d409ca27bf95110c977946158da2fed}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!m\-\_\-conveyor2@{m\-\_\-conveyor2}}
+\index{m\-\_\-conveyor2@{m\-\_\-conveyor2}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{m\-\_\-conveyor2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Conveyor\-Synchronizer\-::m\-\_\-conveyor2}}\label{classConveyorSynchronizer_a6d409ca27bf95110c977946158da2fed}
+\hypertarget{classConveyorSynchronizer_a9e4513793155c94c434ab6403c937085}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!m\-\_\-number\-Of\-Conveyors@{m\-\_\-number\-Of\-Conveyors}}
+\index{m\-\_\-number\-Of\-Conveyors@{m\-\_\-number\-Of\-Conveyors}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{m\-\_\-number\-Of\-Conveyors}]{\setlength{\rightskip}{0pt plus 5cm}int Conveyor\-Synchronizer\-::m\-\_\-number\-Of\-Conveyors}}\label{classConveyorSynchronizer_a9e4513793155c94c434ab6403c937085}
+\hypertarget{classConveyorSynchronizer_a74ead75da9c1863838b34cd288cae02f}{\index{Conveyor\-Synchronizer@{Conveyor\-Synchronizer}!m\-\_\-state@{m\-\_\-state}}
+\index{m\-\_\-state@{m\-\_\-state}!ConveyorSynchronizer@{Conveyor\-Synchronizer}}
+\subsubsection[{m\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf states\-\_\-type} Conveyor\-Synchronizer\-::m\-\_\-state}}\label{classConveyorSynchronizer_a74ead75da9c1863838b34cd288cae02f}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ConveyorSynchronizer_8h}{Conveyor\-Synchronizer.\-h}\item 
+\hyperlink{ConveyorSynchronizer_8cpp}{Conveyor\-Synchronizer.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{Actuators_8h}{\section{Actuators.\-h File Reference}
+\label{Actuators_8h}\index{Actuators.\-h@{Actuators.\-h}}
+}
+
+
+Contains actuator-\/hierarchy and actuator-\/set.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$boost/lexical\-\_\-cast.\-hpp$>$}\\*
+{\ttfamily \#include \char`\"{}Text.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Conveyor.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sensors.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Package.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classActuator}{Actuator}
+\begin{DoxyCompactList}\small\item\em Abstract class from which other actuator-\/classes inherit. \end{DoxyCompactList}\item 
+class \hyperlink{classConveyorActuator}{Conveyor\-Actuator}
+\begin{DoxyCompactList}\small\item\em Abstact class from which conveyor-\/actuators inherit. \end{DoxyCompactList}\item 
+class \hyperlink{classConveyorActuatorBinary}{Conveyor\-Actuator\-Binary}
+\begin{DoxyCompactList}\small\item\em Turn a conveyor O\-N or O\-F\-F. \end{DoxyCompactList}\item 
+class \hyperlink{classConveyorActuatorStep}{Conveyor\-Actuator\-Step}
+\begin{DoxyCompactList}\small\item\em Run a conveyor an arbitrary number of steps. \end{DoxyCompactList}\item 
+class \hyperlink{classJointActuatorPrismaticBinary}{Joint\-Actuator\-Prismatic\-Binary}
+\begin{DoxyCompactList}\small\item\em Switch a prismatic joint between the two extremal states. \end{DoxyCompactList}\item 
+class \hyperlink{classJointActuatorPrismaticRange}{Joint\-Actuator\-Prismatic\-Range}
+\begin{DoxyCompactList}\small\item\em Run a prismatic joint at an arbitrary constant speed. \end{DoxyCompactList}\item 
+class \hyperlink{classJointActuatorPrismaticStep}{Joint\-Actuator\-Prismatic\-Step}
+\begin{DoxyCompactList}\small\item\em Run a prismatic joint an arbitrary number of steps. \end{DoxyCompactList}\item 
+class \hyperlink{classJointActuatorRevoluteStep}{Joint\-Actuator\-Revolute\-Step}
+\begin{DoxyCompactList}\small\item\em Turn a revolute joint an arbitrary angle. \end{DoxyCompactList}\item 
+class \hyperlink{classPackageSourceActuator}{Package\-Source\-Actuator}
+\begin{DoxyCompactList}\small\item\em Produce packages at a specific position, by controlling a package-\/source. \end{DoxyCompactList}\item 
+class \hyperlink{classSprinkleSourceActuator}{Sprinkle\-Source\-Actuator}
+\begin{DoxyCompactList}\small\item\em Produce \char`\"{}sprinkles\char`\"{} at a specific position, by controlling a sprinkle-\/source. \end{DoxyCompactList}\item 
+class \hyperlink{classActuatorSet}{Actuator\-Set}
+\begin{DoxyCompactList}\small\item\em Draw actuator-\/labels, run actuators and change the state of actuators by id. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains actuator-\/hierarchy and actuator-\/set. \begin{DoxyAuthor}{Author}
+Roy Kollen Svendsen 
+\end{DoxyAuthor}

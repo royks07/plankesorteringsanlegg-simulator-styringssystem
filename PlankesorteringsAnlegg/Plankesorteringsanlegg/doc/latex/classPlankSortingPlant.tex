@@ -1,0 +1,173 @@
+\hypertarget{classPlankSortingPlant}{\section{Plank\-Sorting\-Plant Class Reference}
+\label{classPlankSortingPlant}\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}}
+}
+
+
+Extend the default \hyperlink{classSimulatorPage}{Simulator\-Page} to create a simulation of a plank sorting plant.  
+
+
+
+
+{\ttfamily \#include $<$Plank\-Sorting\-Plant.\-h$>$}
+
+Inheritance diagram for Plank\-Sorting\-Plant\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classPlankSortingPlant}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPlankSortingPlant_a1cb45c8ff425d982f421b8226d0ce578}{Plank\-Sorting\-Plant} (\hyperlink{classCommunicator}{Communicator} $\ast$communicator)
+\item 
+void \hyperlink{classPlankSortingPlant_a512555c258c6e6d824356af6ed2e77f2}{Step} (\hyperlink{structSettings}{Settings} $\ast$settings)
+\item 
+void \hyperlink{classPlankSortingPlant_a131fade1b547a3af4f2b5158bc285e30}{Keyboard} (unsigned char key)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classSimulatorPage}{Simulator\-Page} $\ast$ \hyperlink{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}{Create} (\hyperlink{classCommunicator}{Communicator} $\ast$communicator)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_ad5ba935847d141b8dc9842e369b8fa75}{m\-\_\-conveyor1}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_a97274155c82f74a78cf12b85bb21ef1a}{m\-\_\-conveyor2}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_a371d083cde882e616fa2662ba8c54697}{m\-\_\-conveyor3}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_a3bc33fc093ed704b987e2ae109aa5272}{m\-\_\-conveyor4}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_ac4b0efb2fee3b1b0b15637577de11533}{m\-\_\-conveyor5}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_a2996b20c8f489aa477f9f795b15f1763}{m\-\_\-conveyor6}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_a34e6abc7cc90688e30ed11496c535d7f}{m\-\_\-conveyor7}
+\item 
+\hyperlink{classConveyor}{Conveyor} $\ast$ \hyperlink{classPlankSortingPlant_aa0f88ed0f453772b867ad77adfeb2c16}{m\-\_\-conveyor8}
+\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classPlankSortingPlant_a755d0e2c79ee575d469f2db9011cf4f1}{m\-\_\-wheel1}
+\item 
+\hyperlink{classWheel}{Wheel} $\ast$ \hyperlink{classPlankSortingPlant_a60a0596b799edbeef6d8a61a1e6bd9fc}{m\-\_\-wheel2}
+\item 
+\hyperlink{classConveyorSynchronizer}{Conveyor\-Synchronizer} $\ast$ \hyperlink{classPlankSortingPlant_a944ee04de6f8ba2afa71474061fac329}{m\-\_\-conveyor\-Synchronizer}
+\item 
+\hyperlink{classCommandSequenceInterpreter}{Command\-Sequence\-Interpreter} $\ast$ \hyperlink{classPlankSortingPlant_ab4428fbbce9a7023848de19be0525156}{m\-\_\-command\-Sequence\-Interpreter}
+\item 
+\hyperlink{classActuatorSet}{Actuator\-Set} $\ast$ \hyperlink{classPlankSortingPlant_ab6c83de131a92e26c4b007a64d84dcfe}{m\-\_\-actuator\-Set}
+\item 
+\hyperlink{classSensorSet}{Sensor\-Set} $\ast$ \hyperlink{classPlankSortingPlant_a4946e0e57ac1049bb7602708f884579b}{m\-\_\-sensor\-Set}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Extend the default \hyperlink{classSimulatorPage}{Simulator\-Page} to create a simulation of a plank sorting plant. 
+
+A snapshot of the plant\-: 
+
+You are welcome to add your own Simulator\-Pages in the file \hyperlink{SimulatorPageEntries_8cpp}{Simulator\-Page\-Entries.\-cpp} in this maner\-: 
+\begin{DoxyCode}
+\hyperlink{structSimulatorPageEntry}{SimulatorPageEntry} g\_simulatorPageEntries[] =
+\{
+    \{\textcolor{stringliteral}{"Plank sorting plant"}, \hyperlink{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}{PlankSortingPlant::Create}\}
+      ,
+    \{NULL, NULL\}
+\}
+\end{DoxyCode}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPlankSortingPlant_a1cb45c8ff425d982f421b8226d0ce578}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}}
+\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{Plank\-Sorting\-Plant}]{\setlength{\rightskip}{0pt plus 5cm}Plank\-Sorting\-Plant\-::\-Plank\-Sorting\-Plant (
+\begin{DoxyParamCaption}
+\item[{{\bf Communicator} $\ast$}]{communicator}
+\end{DoxyParamCaption}
+)}}\label{classPlankSortingPlant_a1cb45c8ff425d982f421b8226d0ce578}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!Create@{Create}}
+\index{Create@{Create}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{Create}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simulator\-Page} $\ast$ Plank\-Sorting\-Plant\-::\-Create (
+\begin{DoxyParamCaption}
+\item[{{\bf Communicator} $\ast$}]{communicator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classPlankSortingPlant_ad576fadff9a31216c061cabce2071cf8}
+\hypertarget{classPlankSortingPlant_a131fade1b547a3af4f2b5158bc285e30}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!Keyboard@{Keyboard}}
+\index{Keyboard@{Keyboard}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{Keyboard}]{\setlength{\rightskip}{0pt plus 5cm}void Plank\-Sorting\-Plant\-::\-Keyboard (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlankSortingPlant_a131fade1b547a3af4f2b5158bc285e30}
+
+
+Reimplemented from \hyperlink{classSimulatorPage_a295bcbd72dfe0dd651d922b8165e8f9a}{Simulator\-Page}.
+
+\hypertarget{classPlankSortingPlant_a512555c258c6e6d824356af6ed2e77f2}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!Step@{Step}}
+\index{Step@{Step}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{Step}]{\setlength{\rightskip}{0pt plus 5cm}void Plank\-Sorting\-Plant\-::\-Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Settings} $\ast$}]{settings}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPlankSortingPlant_a512555c258c6e6d824356af6ed2e77f2}
+
+
+Reimplemented from \hyperlink{classSimulatorPage_ac478dc8792d0f593c6dc6277a4e96719}{Simulator\-Page}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPlankSortingPlant_ab6c83de131a92e26c4b007a64d84dcfe}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-actuator\-Set@{m\-\_\-actuator\-Set}}
+\index{m\-\_\-actuator\-Set@{m\-\_\-actuator\-Set}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-actuator\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Actuator\-Set}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-actuator\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_ab6c83de131a92e26c4b007a64d84dcfe}
+\hypertarget{classPlankSortingPlant_ab4428fbbce9a7023848de19be0525156}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-command\-Sequence\-Interpreter@{m\-\_\-command\-Sequence\-Interpreter}}
+\index{m\-\_\-command\-Sequence\-Interpreter@{m\-\_\-command\-Sequence\-Interpreter}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-command\-Sequence\-Interpreter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Command\-Sequence\-Interpreter}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-command\-Sequence\-Interpreter\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_ab4428fbbce9a7023848de19be0525156}
+\hypertarget{classPlankSortingPlant_ad5ba935847d141b8dc9842e369b8fa75}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor1@{m\-\_\-conveyor1}}
+\index{m\-\_\-conveyor1@{m\-\_\-conveyor1}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor1\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_ad5ba935847d141b8dc9842e369b8fa75}
+\hypertarget{classPlankSortingPlant_a97274155c82f74a78cf12b85bb21ef1a}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor2@{m\-\_\-conveyor2}}
+\index{m\-\_\-conveyor2@{m\-\_\-conveyor2}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor2\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a97274155c82f74a78cf12b85bb21ef1a}
+\hypertarget{classPlankSortingPlant_a371d083cde882e616fa2662ba8c54697}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor3@{m\-\_\-conveyor3}}
+\index{m\-\_\-conveyor3@{m\-\_\-conveyor3}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor3}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor3\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a371d083cde882e616fa2662ba8c54697}
+\hypertarget{classPlankSortingPlant_a3bc33fc093ed704b987e2ae109aa5272}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor4@{m\-\_\-conveyor4}}
+\index{m\-\_\-conveyor4@{m\-\_\-conveyor4}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor4}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor4\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a3bc33fc093ed704b987e2ae109aa5272}
+\hypertarget{classPlankSortingPlant_ac4b0efb2fee3b1b0b15637577de11533}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor5@{m\-\_\-conveyor5}}
+\index{m\-\_\-conveyor5@{m\-\_\-conveyor5}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor5}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor5\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_ac4b0efb2fee3b1b0b15637577de11533}
+\hypertarget{classPlankSortingPlant_a2996b20c8f489aa477f9f795b15f1763}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor6@{m\-\_\-conveyor6}}
+\index{m\-\_\-conveyor6@{m\-\_\-conveyor6}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor6}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor6\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a2996b20c8f489aa477f9f795b15f1763}
+\hypertarget{classPlankSortingPlant_a34e6abc7cc90688e30ed11496c535d7f}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor7@{m\-\_\-conveyor7}}
+\index{m\-\_\-conveyor7@{m\-\_\-conveyor7}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor7}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor7\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a34e6abc7cc90688e30ed11496c535d7f}
+\hypertarget{classPlankSortingPlant_aa0f88ed0f453772b867ad77adfeb2c16}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor8@{m\-\_\-conveyor8}}
+\index{m\-\_\-conveyor8@{m\-\_\-conveyor8}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor8}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor8\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_aa0f88ed0f453772b867ad77adfeb2c16}
+\hypertarget{classPlankSortingPlant_a944ee04de6f8ba2afa71474061fac329}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-conveyor\-Synchronizer@{m\-\_\-conveyor\-Synchronizer}}
+\index{m\-\_\-conveyor\-Synchronizer@{m\-\_\-conveyor\-Synchronizer}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-conveyor\-Synchronizer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Conveyor\-Synchronizer}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-conveyor\-Synchronizer\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a944ee04de6f8ba2afa71474061fac329}
+\hypertarget{classPlankSortingPlant_a4946e0e57ac1049bb7602708f884579b}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-sensor\-Set@{m\-\_\-sensor\-Set}}
+\index{m\-\_\-sensor\-Set@{m\-\_\-sensor\-Set}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-sensor\-Set}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sensor\-Set}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-sensor\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a4946e0e57ac1049bb7602708f884579b}
+\hypertarget{classPlankSortingPlant_a755d0e2c79ee575d469f2db9011cf4f1}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-wheel1@{m\-\_\-wheel1}}
+\index{m\-\_\-wheel1@{m\-\_\-wheel1}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-wheel1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-wheel1\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a755d0e2c79ee575d469f2db9011cf4f1}
+\hypertarget{classPlankSortingPlant_a60a0596b799edbeef6d8a61a1e6bd9fc}{\index{Plank\-Sorting\-Plant@{Plank\-Sorting\-Plant}!m\-\_\-wheel2@{m\-\_\-wheel2}}
+\index{m\-\_\-wheel2@{m\-\_\-wheel2}!PlankSortingPlant@{Plank\-Sorting\-Plant}}
+\subsubsection[{m\-\_\-wheel2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wheel}$\ast$ Plank\-Sorting\-Plant\-::m\-\_\-wheel2\hspace{0.3cm}{\ttfamily [private]}}}\label{classPlankSortingPlant_a60a0596b799edbeef6d8a61a1e6bd9fc}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PlankSortingPlant_8h}{Plank\-Sorting\-Plant.\-h}\item 
+\hyperlink{PlankSortingPlant_8cpp}{Plank\-Sorting\-Plant.\-cpp}\end{DoxyCompactItemize}

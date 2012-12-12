@@ -1,0 +1,135 @@
+.TH "ContactSensor" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContactSensor \- 
+.PP
+Abstract class that other sensors inherit from\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherited by \fBContactSensor_FromFixture\fP, \fBContactSensor_Sync\fP, and \fBContactSensorBinary\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContactSensor\fP ()"
+.br
+.ti -1c
+.RI "virtual \fB~ContactSensor\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBgetId\fP ()"
+.br
+.ti -1c
+.RI "virtual string \fBgetName\fP ()"
+.br
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.ti -1c
+.RI "virtual signed int \fBget\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBt_sensorType\fP \fBgetType\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int32 \fBm_id\fP"
+.br
+.ti -1c
+.RI "b2Color \fBm_color\fP"
+.br
+.ti -1c
+.RI "string \fBm_name\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_position\fP"
+.br
+.ti -1c
+.RI "float32 \fBm_radius\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.ti -1c
+.RI "b2Body * \fBm_body\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixture\fP"
+.br
+.ti -1c
+.RI "bool \fBm_activated\fP"
+.br
+.ti -1c
+.RI "b2BodyDef \fBm_bd\fP"
+.br
+.ti -1c
+.RI "b2FixtureDef \fBm_fd\fP"
+.br
+.ti -1c
+.RI "\fBt_sensorType\fP \fBm_sensorType\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Abstract class that other sensors inherit from\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ContactSensor::ContactSensor ()"
+
+.SS "virtual ContactSensor::~ContactSensor ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void ContactSensor::drawLabel ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCounterSensor\fP, \fBContactSensorBinary\fP, \fBContactSensor_Sync\fP, and \fBContactSensor_FromFixture\fP\&.
+.SS "virtual signed int ContactSensor::get ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBCounterSensor\fP, \fBQualitySensor\fP, \fBLengthSensor\fP, \fBContactSensorBinary\fP, and \fBContactSensor_FromFixture\fP\&.
+.SS "virtual int ContactSensor::getId ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual string ContactSensor::getName ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual \fBt_sensorType\fP ContactSensor::getType ()\fC [inline]\fP, \fC [virtual]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "bool ContactSensor::m_activated"
+
+.SS "b2BodyDef ContactSensor::m_bd"
+
+.SS "b2Body* ContactSensor::m_body"
+
+.SS "b2Color ContactSensor::m_color"
+
+.SS "b2FixtureDef ContactSensor::m_fd"
+
+.SS "b2Fixture* ContactSensor::m_fixture"
+
+.SS "int32 ContactSensor::m_id"
+
+.SS "string ContactSensor::m_name"
+
+.SS "b2Vec2 ContactSensor::m_position"
+
+.SS "float32 ContactSensor::m_radius"
+
+.SS "\fBt_sensorType\fP ContactSensor::m_sensorType"
+
+.SS "b2World* ContactSensor::m_world"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

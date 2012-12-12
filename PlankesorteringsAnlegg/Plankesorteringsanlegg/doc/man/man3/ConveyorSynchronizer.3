@@ -1,0 +1,104 @@
+.TH "ConveyorSynchronizer" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ConveyorSynchronizer \- 
+.PP
+Synchronize Conveyors\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <ConveyorSynchronizer\&.h>\fP
+.SS "Public Types"
+
+.in +1c
+.ti -1c
+.RI "enum \fBstates_type\fP { \fBst1\fP, \fBst2\fP }"
+.br
+.in -1c
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyorSynchronizer\fP ()"
+.br
+.ti -1c
+.RI "void \fBadd\fP (\fBConveyor\fP *conveyor)"
+.br
+.RI "\fIAdd as many conveyers as you'd like\&. \fP"
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.RI "\fIPlace this function in a loop to run the synchronization\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor1\fP"
+.br
+.ti -1c
+.RI "\fBConveyor\fP * \fBm_conveyor2\fP"
+.br
+.ti -1c
+.RI "\fBstates_type\fP \fBm_state\fP"
+.br
+.ti -1c
+.RI "bool \fBinitialized\fP"
+.br
+.ti -1c
+.RI "vector< \fBConveyor\fP * > \fBm_conveyor\fP"
+.br
+.ti -1c
+.RI "int \fBm_numberOfConveyors\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Synchronize Conveyors\&. 
+.SH "Member Enumeration Documentation"
+.PP 
+.SS "enum \fBConveyorSynchronizer::states_type\fP"
+
+.PP
+\fBEnumerator: \fP
+.in +1c
+.TP
+\fB\fIst1 \fP\fP
+.TP
+\fB\fIst2 \fP\fP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ConveyorSynchronizer::ConveyorSynchronizer ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ConveyorSynchronizer::add (\fBConveyor\fP *conveyor)"
+
+.PP
+Add as many conveyers as you'd like\&. 
+.SS "void ConveyorSynchronizer::run ()"
+
+.PP
+Place this function in a loop to run the synchronization\&. (E\&.g in the \fBSimulatorPage\fP Step(\&.\&.\&.)-block) 
+.SH "Member Data Documentation"
+.PP 
+.SS "bool ConveyorSynchronizer::initialized"
+
+.SS "vector<\fBConveyor\fP*> ConveyorSynchronizer::m_conveyor"
+
+.SS "\fBConveyor\fP* ConveyorSynchronizer::m_conveyor1"
+
+.SS "\fBConveyor\fP* ConveyorSynchronizer::m_conveyor2"
+
+.SS "int ConveyorSynchronizer::m_numberOfConveyors"
+
+.SS "\fBstates_type\fP ConveyorSynchronizer::m_state"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

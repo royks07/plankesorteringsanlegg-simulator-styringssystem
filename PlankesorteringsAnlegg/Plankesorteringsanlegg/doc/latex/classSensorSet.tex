@@ -1,0 +1,118 @@
+\hypertarget{classSensorSet}{\section{Sensor\-Set Class Reference}
+\label{classSensorSet}\index{Sensor\-Set@{Sensor\-Set}}
+}
+
+
+Listen to sensors and transmit state-\/changes to the communicator.  
+
+
+
+
+{\ttfamily \#include $<$Sensors.\-h$>$}
+
+Inheritance diagram for Sensor\-Set\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSensorSet}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSensorSet_a2ebeeee6217e89c28ae767afb8cbc43e}{Sensor\-Set} (\hyperlink{classCommunicator}{Communicator} $\ast$communicator)
+\item 
+void \hyperlink{classSensorSet_aed0ec0b0d635de5ffa1f3a459ebf1a18}{Begin\-Contact} (b2\-Contact $\ast$contact)
+\item 
+void \hyperlink{classSensorSet_aaf34d48652893b393abe3e2c3e28e191}{End\-Contact} (b2\-Contact $\ast$contact)
+\item 
+void \hyperlink{classSensorSet_a35829e201b615e086bdb328b22f22ca5}{draw\-Labels} ()
+\item 
+signed int \hyperlink{classSensorSet_aaa08836d3cad9bbe5bca2f85bac25d9e}{read\-Sensor} (signed int id)
+\begin{DoxyCompactList}\small\item\em Read sensor state on demand. \end{DoxyCompactList}\item 
+void \hyperlink{classSensorSet_a638d99d8fb36d066c074b05f1dba016d}{add} (\hyperlink{classContactSensor}{Contact\-Sensor} $\ast$contact\-Sensor)
+\begin{DoxyCompactList}\small\item\em Add sensor to sensor-\/set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classContactSensor}{Contact\-Sensor} $\ast$ $>$ \hyperlink{classSensorSet_a2747d586c016d0fe34645f9ca07a08c6}{m\-\_\-contact\-Sensor\-Vector}
+\item 
+\hyperlink{classCommunicator}{Communicator} $\ast$ \hyperlink{classSensorSet_a9045b86488810de30e8a5b25fdb1128a}{m\-\_\-communicator}
+\begin{DoxyCompactList}\small\item\em The communicator with whom \hyperlink{classSensorSet}{Sensor\-Set} speaks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Listen to sensors and transmit state-\/changes to the communicator. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classSensorSet_a2ebeeee6217e89c28ae767afb8cbc43e}{\index{Sensor\-Set@{Sensor\-Set}!Sensor\-Set@{Sensor\-Set}}
+\index{Sensor\-Set@{Sensor\-Set}!SensorSet@{Sensor\-Set}}
+\subsubsection[{Sensor\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Sensor\-Set\-::\-Sensor\-Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Communicator} $\ast$}]{communicator}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_a2ebeeee6217e89c28ae767afb8cbc43e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classSensorSet_a638d99d8fb36d066c074b05f1dba016d}{\index{Sensor\-Set@{Sensor\-Set}!add@{add}}
+\index{add@{add}!SensorSet@{Sensor\-Set}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-Set\-::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Contact\-Sensor} $\ast$}]{contact\-Sensor}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_a638d99d8fb36d066c074b05f1dba016d}
+
+
+Add sensor to sensor-\/set. 
+
+\hypertarget{classSensorSet_aed0ec0b0d635de5ffa1f3a459ebf1a18}{\index{Sensor\-Set@{Sensor\-Set}!Begin\-Contact@{Begin\-Contact}}
+\index{Begin\-Contact@{Begin\-Contact}!SensorSet@{Sensor\-Set}}
+\subsubsection[{Begin\-Contact}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-Set\-::\-Begin\-Contact (
+\begin{DoxyParamCaption}
+\item[{b2\-Contact $\ast$}]{contact}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_aed0ec0b0d635de5ffa1f3a459ebf1a18}
+\hypertarget{classSensorSet_a35829e201b615e086bdb328b22f22ca5}{\index{Sensor\-Set@{Sensor\-Set}!draw\-Labels@{draw\-Labels}}
+\index{draw\-Labels@{draw\-Labels}!SensorSet@{Sensor\-Set}}
+\subsubsection[{draw\-Labels}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-Set\-::draw\-Labels (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_a35829e201b615e086bdb328b22f22ca5}
+Draw all sensor labels \hypertarget{classSensorSet_aaf34d48652893b393abe3e2c3e28e191}{\index{Sensor\-Set@{Sensor\-Set}!End\-Contact@{End\-Contact}}
+\index{End\-Contact@{End\-Contact}!SensorSet@{Sensor\-Set}}
+\subsubsection[{End\-Contact}]{\setlength{\rightskip}{0pt plus 5cm}void Sensor\-Set\-::\-End\-Contact (
+\begin{DoxyParamCaption}
+\item[{b2\-Contact $\ast$}]{contact}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_aaf34d48652893b393abe3e2c3e28e191}
+\hypertarget{classSensorSet_aaa08836d3cad9bbe5bca2f85bac25d9e}{\index{Sensor\-Set@{Sensor\-Set}!read\-Sensor@{read\-Sensor}}
+\index{read\-Sensor@{read\-Sensor}!SensorSet@{Sensor\-Set}}
+\subsubsection[{read\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}signed int Sensor\-Set\-::read\-Sensor (
+\begin{DoxyParamCaption}
+\item[{signed int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classSensorSet_aaa08836d3cad9bbe5bca2f85bac25d9e}
+
+
+Read sensor state on demand. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classSensorSet_a9045b86488810de30e8a5b25fdb1128a}{\index{Sensor\-Set@{Sensor\-Set}!m\-\_\-communicator@{m\-\_\-communicator}}
+\index{m\-\_\-communicator@{m\-\_\-communicator}!SensorSet@{Sensor\-Set}}
+\subsubsection[{m\-\_\-communicator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Communicator}$\ast$ Sensor\-Set\-::m\-\_\-communicator}}\label{classSensorSet_a9045b86488810de30e8a5b25fdb1128a}
+
+
+The communicator with whom \hyperlink{classSensorSet}{Sensor\-Set} speaks. 
+
+\hypertarget{classSensorSet_a2747d586c016d0fe34645f9ca07a08c6}{\index{Sensor\-Set@{Sensor\-Set}!m\-\_\-contact\-Sensor\-Vector@{m\-\_\-contact\-Sensor\-Vector}}
+\index{m\-\_\-contact\-Sensor\-Vector@{m\-\_\-contact\-Sensor\-Vector}!SensorSet@{Sensor\-Set}}
+\subsubsection[{m\-\_\-contact\-Sensor\-Vector}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Contact\-Sensor}$\ast$$>$ Sensor\-Set\-::m\-\_\-contact\-Sensor\-Vector}}\label{classSensorSet_a2747d586c016d0fe34645f9ca07a08c6}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sensors_8h}{Sensors.\-h}\item 
+\hyperlink{Sensors_8cpp}{Sensors.\-cpp}\end{DoxyCompactItemize}

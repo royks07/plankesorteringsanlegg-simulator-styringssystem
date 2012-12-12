@@ -1,0 +1,191 @@
+.TH "Communicator" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Communicator \- 
+.PP
+Read frowm and write to an arbitrary serial-port\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Communicator\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCommunicator\fP (string serieport)"
+.br
+.RI "\fICreate a \fBCommunicator\fP instance and place it at a specific serialport\&. \fP"
+.ti -1c
+.RI "void \fBinit\fP (string serieport)"
+.br
+.RI "\fIInitialize the serialport\&. \fP"
+.ti -1c
+.RI "void \fBwrite\fP (const unsigned char c)"
+.br
+.RI "\fIWrite a character to the serialport\&. \fP"
+.ti -1c
+.RI "void \fBwrite\fP (string str)"
+.br
+.RI "\fIWrite a string to the serialport\&. \fP"
+.ti -1c
+.RI "void \fBprint\fP (char *format,\&.\&.\&.)"
+.br
+.ti -1c
+.RI "bool \fBdataIsPresent\fP ()"
+.br
+.RI "\fICheck if incoming data exist\&. \fP"
+.ti -1c
+.RI "unsigned char \fBread\fP ()"
+.br
+.RI "\fIRead a char from incoming fifo-buffer\&. \fP"
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.RI "\fIClose serialport\&. \fP"
+.ti -1c
+.RI "bool \fBactive\fP ()"
+.br
+.RI "\fICheck if port in use\&. \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBread_start\fP (void)"
+.br
+.ti -1c
+.RI "void \fBread_complete\fP (const boost::system::error_code &error, size_t bytes_transferred)"
+.br
+.ti -1c
+.RI "void \fBdo_write\fP (const unsigned char c)"
+.br
+.ti -1c
+.RI "void \fBwrite_start\fP (void)"
+.br
+.ti -1c
+.RI "void \fBwrite_complete\fP (const boost::system::error_code &error)"
+.br
+.ti -1c
+.RI "void \fBdo_close\fP (const boost::system::error_code &error)"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "io_service \fBm_io\fP"
+.br
+.ti -1c
+.RI "serial_port \fBm_port\fP"
+.br
+.ti -1c
+.RI "bool \fBm_dataIsPresent\fP"
+.br
+.ti -1c
+.RI "thread \fBcommunicationThread\fP"
+.br
+.ti -1c
+.RI "deque< unsigned char > \fBm_fifoWrite\fP"
+.br
+.ti -1c
+.RI "deque< unsigned char > \fBm_fifoRead\fP"
+.br
+.ti -1c
+.RI "unsigned char \fBread_msg_\fP [\fBmax_read_length\fP]"
+.br
+.ti -1c
+.RI "bool \fBm_active\fP"
+.br
+.in -1c
+.SS "Static Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "static const int \fBmax_read_length\fP = 512"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Read frowm and write to an arbitrary serial-port\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Communicator::Communicator (stringserieport)"
+
+.PP
+Create a \fBCommunicator\fP instance and place it at a specific serialport\&. \fBParameters:\fP
+.RS 4
+\fIserieport\fP The serialport in form of a string\&. E\&.g COM1 on windows or /dev/ttyS0 on linux\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool Communicator::active ()\fC [inline]\fP"
+
+.PP
+Check if port in use\&. 
+.SS "void Communicator::close ()"
+
+.PP
+Close serialport\&. 
+.SS "bool Communicator::dataIsPresent ()"
+
+.PP
+Check if incoming data exist\&. 
+.SS "void Communicator::do_close (const boost::system::error_code &error)\fC [private]\fP"
+
+.SS "void Communicator::do_write (const unsigned charc)\fC [private]\fP"
+
+.SS "void Communicator::init (stringserieport)"
+
+.PP
+Initialize the serialport\&. 
+.SS "void Communicator::print (char *format, \&.\&.\&.)"
+Write a formated string to the serialport 
+.SS "unsigned char Communicator::read ()"
+
+.PP
+Read a char from incoming fifo-buffer\&. 
+.SS "void Communicator::read_complete (const boost::system::error_code &error, size_tbytes_transferred)\fC [private]\fP"
+
+.SS "void Communicator::read_start (void)\fC [private]\fP"
+
+.SS "void Communicator::write (const unsigned charc)"
+
+.PP
+Write a character to the serialport\&. 
+.SS "void Communicator::write (stringstr)"
+
+.PP
+Write a string to the serialport\&. 
+.SS "void Communicator::write_complete (const boost::system::error_code &error)\fC [private]\fP"
+
+.SS "void Communicator::write_start (void)\fC [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "thread Communicator::communicationThread\fC [private]\fP"
+
+.SS "bool Communicator::m_active\fC [private]\fP"
+
+.SS "bool Communicator::m_dataIsPresent\fC [private]\fP"
+
+.SS "deque<unsigned char> Communicator::m_fifoRead\fC [private]\fP"
+
+.SS "deque<unsigned char> Communicator::m_fifoWrite\fC [private]\fP"
+
+.SS "io_service Communicator::m_io\fC [private]\fP"
+
+.SS "serial_port Communicator::m_port\fC [private]\fP"
+
+.SS "const int Communicator::max_read_length = 512\fC [static]\fP, \fC [private]\fP"
+
+.SS "unsigned char Communicator::read_msg_[\fBmax_read_length\fP]\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

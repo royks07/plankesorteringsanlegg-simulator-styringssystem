@@ -1,0 +1,91 @@
+\hypertarget{SimulatorPage_8h}{\section{Simulator\-Page.\-h File Reference}
+\label{SimulatorPage_8h}\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}}
+}
+{\ttfamily \#include $<$Box2\-D/\-Box2\-D.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}Render.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Communicator.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSettings}{Settings}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classSimulatorPage}{Simulator\-Page} settings. Some can be controlled in the G\-U\-I. \end{DoxyCompactList}\item 
+struct \hyperlink{structSimulatorPageEntry}{Simulator\-Page\-Entry}
+\item 
+class \hyperlink{classDestructionListener}{Destruction\-Listener}
+\item 
+struct \hyperlink{structContactPoint}{Contact\-Point}
+\item 
+class \hyperlink{classSimulatorPage}{Simulator\-Page}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{SimulatorPage_8h_a68016e14b85f4c39ce08c8b20fe9e269}{R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T}~32767
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{classSimulatorPage}{Simulator\-Page} $\ast$ \hyperlink{SimulatorPage_8h_af4a572735f936f8e0960d22951246d22}{Simulator\-Page\-Create\-Fcn} (\hyperlink{classCommunicator}{Communicator} $\ast$communicator)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{SimulatorPage_8h_a32449498ff55355a3686ce56d61ff352}{Random\-Float} ()
+\begin{DoxyCompactList}\small\item\em Random number in range \mbox{[}-\/1,1\mbox{]}. \end{DoxyCompactList}\item 
+float32 \hyperlink{SimulatorPage_8h_abcea3123472a09286a928aa31dec7dc5}{Random\-Float} (float32 lo, float32 hi)
+\begin{DoxyCompactList}\small\item\em Random floating point number in range \mbox{[}lo, hi\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSimulatorPageEntry}{Simulator\-Page\-Entry} \hyperlink{SimulatorPage_8h_adea61b799dfbdae7d58becb1e5e6fb87}{g\-\_\-simulator\-Page\-Entries} \mbox{[}$\,$\mbox{]}
+\item 
+const int32 \hyperlink{SimulatorPage_8h_ae34d209729703751560149e5bcb5d2f0}{k\-\_\-max\-Contact\-Points} = 2048
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{SimulatorPage_8h_a68016e14b85f4c39ce08c8b20fe9e269}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T@{R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T}}
+\index{R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T@{R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-A\-N\-D\-\_\-\-L\-I\-M\-I\-T~32767}}\label{SimulatorPage_8h_a68016e14b85f4c39ce08c8b20fe9e269}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{SimulatorPage_8h_af4a572735f936f8e0960d22951246d22}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!Simulator\-Page\-Create\-Fcn@{Simulator\-Page\-Create\-Fcn}}
+\index{Simulator\-Page\-Create\-Fcn@{Simulator\-Page\-Create\-Fcn}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{Simulator\-Page\-Create\-Fcn}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Simulator\-Page}$\ast$ Simulator\-Page\-Create\-Fcn({\bf Communicator} $\ast$communicator)}}\label{SimulatorPage_8h_af4a572735f936f8e0960d22951246d22}
+
+
+\subsection{Function Documentation}
+\hypertarget{SimulatorPage_8h_a32449498ff55355a3686ce56d61ff352}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!Random\-Float@{Random\-Float}}
+\index{Random\-Float@{Random\-Float}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{Random\-Float}]{\setlength{\rightskip}{0pt plus 5cm}float32 Random\-Float (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{SimulatorPage_8h_a32449498ff55355a3686ce56d61ff352}
+
+
+Random number in range \mbox{[}-\/1,1\mbox{]}. 
+
+\hypertarget{SimulatorPage_8h_abcea3123472a09286a928aa31dec7dc5}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!Random\-Float@{Random\-Float}}
+\index{Random\-Float@{Random\-Float}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{Random\-Float}]{\setlength{\rightskip}{0pt plus 5cm}float32 Random\-Float (
+\begin{DoxyParamCaption}
+\item[{float32}]{lo, }
+\item[{float32}]{hi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{SimulatorPage_8h_abcea3123472a09286a928aa31dec7dc5}
+
+
+Random floating point number in range \mbox{[}lo, hi\mbox{]}. 
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{SimulatorPage_8h_adea61b799dfbdae7d58becb1e5e6fb87}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!g\-\_\-simulator\-Page\-Entries@{g\-\_\-simulator\-Page\-Entries}}
+\index{g\-\_\-simulator\-Page\-Entries@{g\-\_\-simulator\-Page\-Entries}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{g\-\_\-simulator\-Page\-Entries}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Simulator\-Page\-Entry} g\-\_\-simulator\-Page\-Entries\mbox{[}$\,$\mbox{]}}}\label{SimulatorPage_8h_adea61b799dfbdae7d58becb1e5e6fb87}
+\hypertarget{SimulatorPage_8h_ae34d209729703751560149e5bcb5d2f0}{\index{Simulator\-Page.\-h@{Simulator\-Page.\-h}!k\-\_\-max\-Contact\-Points@{k\-\_\-max\-Contact\-Points}}
+\index{k\-\_\-max\-Contact\-Points@{k\-\_\-max\-Contact\-Points}!SimulatorPage.h@{Simulator\-Page.\-h}}
+\subsubsection[{k\-\_\-max\-Contact\-Points}]{\setlength{\rightskip}{0pt plus 5cm}const int32 k\-\_\-max\-Contact\-Points = 2048}}\label{SimulatorPage_8h_ae34d209729703751560149e5bcb5d2f0}

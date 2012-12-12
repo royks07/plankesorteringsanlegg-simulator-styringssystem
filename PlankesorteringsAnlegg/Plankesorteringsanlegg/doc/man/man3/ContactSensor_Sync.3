@@ -1,0 +1,78 @@
+.TH "ContactSensor_Sync" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ContactSensor_Sync \- 
+.PP
+Used by the \fBConveyorSynchronizer\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Sensors\&.h>\fP
+.PP
+Inherits \fBContactSensor\fP\&.
+.PP
+Inherited by \fBCounterSensor\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBContactSensor_Sync\fP (b2Vec2 position, float32 radius, b2Filter filter, b2World *world)"
+.br
+.RI "\fIConstructs a synchronization-sensor\&. \fP"
+.ti -1c
+.RI "virtual void \fBdrawLabel\fP ()"
+.br
+.RI "\fIDraw 'sync' in red next to the sensor\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "float32 \fBm_radius\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Used by the \fBConveyorSynchronizer\fP\&. 
+
+Each \fBConveyor\fP has one of these sensors\&. If a \fBConveyor\fP is registered with a \fBConveyorSynchronizer\fP a label with the text \fBsync\fP will show up next to the sensor:
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ContactSensor_Sync::ContactSensor_Sync (b2Vec2position, float32radius, b2Filterfilter, b2World *world)"
+
+.PP
+Constructs a synchronization-sensor\&. \fBParameters:\fP
+.RS 4
+\fIposition\fP The position of the sensors circular shaped fixture\&. 
+.br
+\fIradius\fP The radius of the sensors fixture\&. 
+.br
+\fIfilter\fP The sensors filter is used to control what sensors collide with she sensors fixture\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create the sensor\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void ContactSensor_Sync::drawLabel ()\fC [virtual]\fP"
+
+.PP
+Draw 'sync' in red next to the sensor\&. 
+.PP
+Reimplemented from \fBContactSensor\fP\&.
+.PP
+Reimplemented in \fBCounterSensor\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "float32 ContactSensor_Sync::m_radius"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

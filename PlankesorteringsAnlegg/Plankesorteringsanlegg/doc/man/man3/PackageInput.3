@@ -1,0 +1,110 @@
+.TH "PackageInput" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PackageInput \- 
+.PP
+Represent the package input block\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Packaging\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPackageInput\fP (b2Vec2 p, float32 lengthLyingBeam, float32 thicknessLyingBeam, float32 heightStandingBeam, float32 thicknessStandingBeam, b2World *world)"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetLiftJoint\fP ()"
+.br
+.RI "\fIReturn pointer to the LiftJoint\&. \fP"
+.ti -1c
+.RI "b2RevoluteJoint * \fBgetRotateJoint\fP ()"
+.br
+.RI "\fIReturn pointer to RotateJoint\&. \fP"
+.ti -1c
+.RI "b2Fixture * \fBgetLiftSensorFixture\fP ()"
+.br
+.RI "\fIReturn pointer to the Lift-sensor Fixture\&. \fP"
+.ti -1c
+.RI "\fBPackageSource\fP * \fBgetPackageSource\fP ()"
+.br
+.RI "\fIReturn a pointer to the integrated \fBPackageSource\fP\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointLift\fP"
+.br
+.ti -1c
+.RI "b2RevoluteJoint * \fBm_jointRotate\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixtureLiftSensor\fP"
+.br
+.ti -1c
+.RI "\fBPackageSource\fP * \fBm_packageSource\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Represent the package input block\&. 
+
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PackageInput::PackageInput (b2Vec2p, float32lengthLyingBeam, float32thicknessLyingBeam, float32heightStandingBeam, float32thicknessStandingBeam, b2World *world)"
+Construct a PackageInput-instance at any position\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIp\fP Pivot-point of \fBPackageInput\fP\&. 
+.br
+\fIlengthLyingBeam\fP Length of the lying beam\&. 
+.br
+\fIthicknessLyingBeam\fP Thickness of the lying beam 
+.br
+\fIheightStandingBeam\fP Height of the standing beam\&. 
+.br
+\fIthicknessStandingBeam\fP Thickness of the standing beam\&. 
+.br
+\fIworld\fP Pointer to the world i which you want to create the PackageInput-instance\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "b2PrismaticJoint* PackageInput::getLiftJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to the LiftJoint\&. 
+.SS "b2Fixture* PackageInput::getLiftSensorFixture ()\fC [inline]\fP"
+
+.PP
+Return pointer to the Lift-sensor Fixture\&. 
+.SS "\fBPackageSource\fP* PackageInput::getPackageSource ()\fC [inline]\fP"
+
+.PP
+Return a pointer to the integrated \fBPackageSource\fP\&. 
+.SS "b2RevoluteJoint* PackageInput::getRotateJoint ()\fC [inline]\fP"
+
+.PP
+Return pointer to RotateJoint\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Fixture* PackageInput::m_fixtureLiftSensor"
+
+.SS "b2PrismaticJoint* PackageInput::m_jointLift"
+
+.SS "b2RevoluteJoint* PackageInput::m_jointRotate"
+
+.SS "\fBPackageSource\fP* PackageInput::m_packageSource"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

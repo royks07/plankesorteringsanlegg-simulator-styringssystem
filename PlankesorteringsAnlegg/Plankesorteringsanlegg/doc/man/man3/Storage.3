@@ -1,0 +1,135 @@
+.TH "Storage" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Storage \- 
+.PP
+Create an individual storage to sort planks into\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Storages\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBStorage\fP (b2Vec2 upperLeftCorner, float32 width, float32 height, float32 wallThickness, b2World *world)"
+.br
+.RI "\fIConstruct a \fBStorage\fP\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetLiftJoint\fP ()"
+.br
+.RI "\fIReturn the liftJoint\&. \fP"
+.ti -1c
+.RI "b2PrismaticJoint * \fBgetStopperJoint\fP ()"
+.br
+.RI "\fIReturn the stopperJoint\&. \fP"
+.ti -1c
+.RI "b2Fixture * \fBgetTopSensorFixture\fP ()"
+.br
+.RI "\fIReturn the topSensorFixture\&. \fP"
+.ti -1c
+.RI "b2Fixture * \fBgetMiddleSensorFixture\fP ()"
+.br
+.RI "\fIReturn the middleSensorFixture\&. \fP"
+.ti -1c
+.RI "b2Fixture * \fBgetBottomSensorFixture\fP ()"
+.br
+.RI "\fIReturn the bottomSensorFixture\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Body * \fBm_bodyStopper\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointLift\fP"
+.br
+.ti -1c
+.RI "b2PrismaticJoint * \fBm_jointStopper\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixtureTopSensor\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixtureMiddleSensor\fP"
+.br
+.ti -1c
+.RI "b2Fixture * \fBm_fixtureBottomSensor\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Create an individual storage to sort planks into\&. 
+
+The Following line of code generates an instance of the Storage-class: 
+.PP
+.nf
+Storage* storage = new Storage(b2Vec2(-40\&.0f,0\&.0f),9,5,0\&.5f,m_world);
+
+.fi
+.PP
+.PP
+Storage-instance + descriptive text:  
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Storage::Storage (b2Vec2upperLeftCorner, float32width, float32height, float32wallThickness, b2World *world)"
+
+.PP
+Construct a \fBStorage\fP\&. \fBParameters:\fP
+.RS 4
+\fIupperLeftCorner\fP The upper left corner of the storage\&. 
+.br
+\fIwidth\fP The width of the storage\&. 
+.br
+\fIheight\fP The height of the storage\&. 
+.br
+\fIwallThickness\fP The thickness of the storages walls\&. 
+.br
+\fIworld\fP Pointer to world you want to create the storage in\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "b2Fixture* Storage::getBottomSensorFixture ()\fC [inline]\fP"
+
+.PP
+Return the bottomSensorFixture\&. 
+.SS "b2PrismaticJoint* Storage::getLiftJoint ()\fC [inline]\fP"
+
+.PP
+Return the liftJoint\&. 
+.SS "b2Fixture* Storage::getMiddleSensorFixture ()\fC [inline]\fP"
+
+.PP
+Return the middleSensorFixture\&. 
+.SS "b2PrismaticJoint* Storage::getStopperJoint ()\fC [inline]\fP"
+
+.PP
+Return the stopperJoint\&. 
+.SS "b2Fixture* Storage::getTopSensorFixture ()\fC [inline]\fP"
+
+.PP
+Return the topSensorFixture\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Body* Storage::m_bodyStopper"
+
+.SS "b2Fixture* Storage::m_fixtureBottomSensor"
+
+.SS "b2Fixture* Storage::m_fixtureMiddleSensor"
+
+.SS "b2Fixture* Storage::m_fixtureTopSensor"
+
+.SS "b2PrismaticJoint* Storage::m_jointLift"
+
+.SS "b2PrismaticJoint* Storage::m_jointStopper"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

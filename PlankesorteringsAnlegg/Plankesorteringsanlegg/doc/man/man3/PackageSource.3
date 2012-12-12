@@ -1,0 +1,95 @@
+.TH "PackageSource" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+PackageSource \- 
+.PP
+Lets you create and destruct packages by id\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Package\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBPackageSource\fP (b2Vec2 position, b2World *world)"
+.br
+.RI "\fIPlace an an abundant source of fresh packages at whatever position you'd like\&. \fP"
+.ti -1c
+.RI "void \fBcreate\fP (int id)"
+.br
+.RI "\fIForce the source to create a new Package-instance 'id'\&. \fP"
+.ti -1c
+.RI "void \fBdestruct\fP (int id)"
+.br
+.RI "\fIForce the source to remove Package-instance 'id'\&. \fP"
+.ti -1c
+.RI "b2Vec2 \fBgetPosition\fP ()"
+.br
+.ti -1c
+.RI "void \fBrunSprinkleRemover\fP ()"
+.br
+.RI "\fIRemove sprinkles when outside a predefined circular boundary\&. \fP"
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "multimap< int, \fBPackage\fP * > \fBm_package\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_position\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Lets you create and destruct packages by id\&. 
+
+This source can be controlled by a \fBPackageSourceActuator\fP\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "PackageSource::PackageSource (b2Vec2position, b2World *world)"
+
+.PP
+Place an an abundant source of fresh packages at whatever position you'd like\&. \fBParameters:\fP
+.RS 4
+\fIposition\fP Position of package lower left corner\&. 
+.br
+\fIworld\fP Pointer to the world in which you want to create the \fBPackageSource\fP 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void PackageSource::create (intid)"
+
+.PP
+Force the source to create a new Package-instance 'id'\&. 
+.SS "void PackageSource::destruct (intid)"
+
+.PP
+Force the source to remove Package-instance 'id'\&. 
+.SS "b2Vec2 PackageSource::getPosition ()\fC [inline]\fP"
+
+.SS "void PackageSource::runSprinkleRemover ()"
+
+.PP
+Remove sprinkles when outside a predefined circular boundary\&. Needs to be called continuously\&. 
+.SH "Member Data Documentation"
+.PP 
+.SS "multimap<int,\fBPackage\fP*> PackageSource::m_package"
+
+.SS "b2Vec2 PackageSource::m_position"
+
+.SS "b2World* PackageSource::m_world"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.

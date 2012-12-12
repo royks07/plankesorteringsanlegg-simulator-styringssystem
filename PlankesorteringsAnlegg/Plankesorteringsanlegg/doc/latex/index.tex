@@ -1,0 +1,93 @@
+This software, the \char`\"{}\-Educational simulator for control-\/system development\char`\"{} is written as part of a programming-\/project in the course D\-A\-T220 at the University of Agder (Ui\-A), Norway.
+
+The aim of the project is to create simulation-\/environments that can be used in educating students in control-\/ system development.
+
+\subsubsection*{The project contains 3 main logical components\-:}
+
+
+\begin{DoxyItemize}
+\item A simulator
+\item A communicator
+\item An \char`\"{}\-Arduino Mega 2560\char`\"{}-\/based A\-P\-I
+\end{DoxyItemize}
+
+\paragraph*{Simulator}
+
+For the time being the simulator contains only one \hyperlink{classSimulatorPage}{Simulator\-Page}. This \hyperlink{classSimulatorPage}{Simulator\-Page} contains a simulated \hyperlink{classPlankSortingPlant}{Plank\-Sorting\-Plant}.
+
+The simulator component is built on top of Erin Cattos Box2\-D 2.\-2.\-1.
+
+\paragraph*{\hyperlink{classCommunicator}{Communicator}}
+
+The communicator is a class that is able to read and write simulated sensor and actuator data over a serial-\/ port.
+
+The communicator component is built on top of the Boost.\-Asio-\/library.
+
+\paragraph*{A\-P\-I}
+
+The simulator-\/\-A\-P\-I lets students write {\bfseries control-\/systems} for simulated environments.
+
+Tha A\-P\-I is based on Paul Bjørn Andersens(\-Ui\-A) R\-T\-O\-S-\/kernel, T\-S\-S, and his usart-\/library.
+
+\subsection*{File manifest}
+
+
+\begin{DoxyItemize}
+\item doc/ -\/ This folder contains the project documentation.
+\item \hyperlink{Main_8cpp}{Main.\-cpp} -\/ Create the G\-U\-I
+\item \hyperlink{Render_8cpp}{Render.\-cpp}
+\item \hyperlink{Render_8h}{Render.\-h}
+\item \hyperlink{SimulatorPage_8cpp}{Simulator\-Page.\-cpp}
+\item \hyperlink{SimulatorPage_8h}{Simulator\-Page.\-h}
+\item \hyperlink{PlankSortingPlant_8cpp}{Plank\-Sorting\-Plant.\-cpp}
+\item \hyperlink{PlankSortingPlant_8h}{Plank\-Sorting\-Plant.\-h}
+\item \hyperlink{SimulatorPageEntries_8cpp}{Simulator\-Page\-Entries.\-cpp}
+\item \hyperlink{Actuators_8cpp}{Actuators.\-cpp}
+\item \hyperlink{Actuators_8h}{Actuators.\-h}
+\item \hyperlink{Communicator_8cpp}{Communicator.\-cpp}
+\item \hyperlink{Communicator_8h}{Communicator.\-h}
+\item \hyperlink{CommandSequenceInterpreter_8cpp}{Command\-Sequence\-Interpreter.\-cpp}
+\item \hyperlink{CommandSequenceInterpreter_8h}{Command\-Sequence\-Interpreter.\-h}
+\item \hyperlink{Conveyor_8cpp}{Conveyor.\-cpp}
+\item \hyperlink{Conveyor_8h}{Conveyor.\-h}
+\item \hyperlink{ConveyorSynchronizer_8cpp}{Conveyor\-Synchronizer.\-cpp}
+\item \hyperlink{ConveyorSynchronizer_8h}{Conveyor\-Synchronizer.\-h}
+\item \hyperlink{Package_8cpp}{Package.\-cpp}
+\item \hyperlink{Package_8h}{Package.\-h}
+\item \hyperlink{Packaging_8cpp}{Packaging.\-cpp}
+\item \hyperlink{Packaging_8h}{Packaging.\-h}
+\item \hyperlink{Sensors_8cpp}{Sensors.\-cpp}
+\item \hyperlink{Sensors_8h}{Sensors.\-h}
+\item \hyperlink{Storages_8cpp}{Storages.\-cpp}
+\item \hyperlink{Storages_8h}{Storages.\-h}
+\item \hyperlink{Text_8h}{Text.\-h}
+\item \hyperlink{Text_8cpp}{Text.\-cpp}
+\item \hyperlink{UserData_8cpp}{User\-Data.\-cpp}
+\item \hyperlink{UserData_8h}{User\-Data.\-h}
+\end{DoxyItemize}
+
+\subsection*{Configuration instructions}
+
+\subsection*{Installation instructions}
+
+\subsection*{Operating instructions}
+
+\subsubsection*{Example\-:}
+
+\subsection*{Copyright and licensing information}
+
+\subsection*{Contact information for the distributor or programmer}
+
+\subsection*{Known bugs\mbox{[}1\mbox{]}}
+
+\subsection*{Troubleshooting\mbox{[}1\mbox{]}}
+
+\subsection*{Credits and acknowledgments}
+
+\subsection*{Changelog}
+
+...
+
+\subsection*{News}
+
+... 

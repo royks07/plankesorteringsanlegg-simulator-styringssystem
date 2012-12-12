@@ -1,0 +1,117 @@
+\hypertarget{classPackage}{\section{Package Class Reference}
+\label{classPackage}\index{Package@{Package}}
+}
+
+
+Represent Package-\/objects.  
+
+
+
+
+{\ttfamily \#include $<$Package.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPackage_a22b244832bfd2023aeefb40b9b53636e}{Package} (b2\-Vec2 position, b2\-World $\ast$world)
+\item 
+\hyperlink{classPackage_af9b48c577bb6045c2cbc97d09f76e973}{$\sim$\-Package} ()
+\item 
+float32 \hyperlink{classPackage_a0721952ecd3c3b61d5e12d2d32bb00f0}{get\-Plank\-Thickness} ()
+\item 
+float32 \hyperlink{classPackage_a9d32935ea281de4dc12986707a8db71f}{get\-Sprinkle\-Thickness} ()
+\item 
+void \hyperlink{classPackage_aa4e520d69f6a7d910bc917a8b2a4e2e2}{run\-Sprinkle\-Remover} ()
+\begin{DoxyCompactList}\small\item\em Remove sprinkles when outside a predefined circular boundary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float32 \hyperlink{classPackage_a9dd0955c53dc70f64c0dda77c82022bf}{m\-\_\-plank\-Thickness}
+\item 
+float32 \hyperlink{classPackage_a6c553d1b7c40cc277a141443789d1dcb}{m\-\_\-sprinkle\-Thickness}
+\item 
+\hyperlink{classSprinkle}{Sprinkle} $\ast$ \hyperlink{classPackage_a49c8135c0f0f1926e046c0fcd1904e68}{m\-\_\-sprinkle} \mbox{[}7\mbox{]}
+\item 
+\hyperlink{classPlank}{Plank} $\ast$ \hyperlink{classPackage_a3b902b5536530fd4f66e4cbb2a59fa6f}{m\-\_\-plank} \mbox{[}32\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent Package-\/objects. 
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPackage_a22b244832bfd2023aeefb40b9b53636e}{\index{Package@{Package}!Package@{Package}}
+\index{Package@{Package}!Package@{Package}}
+\subsubsection[{Package}]{\setlength{\rightskip}{0pt plus 5cm}Package\-::\-Package (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{position, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classPackage_a22b244832bfd2023aeefb40b9b53636e}
+Create a package wherever you want.
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Lower left corner of package. \\
+\hline
+{\em world} & The world in which you want to create the package. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPackage_af9b48c577bb6045c2cbc97d09f76e973}{\index{Package@{Package}!$\sim$\-Package@{$\sim$\-Package}}
+\index{$\sim$\-Package@{$\sim$\-Package}!Package@{Package}}
+\subsubsection[{$\sim$\-Package}]{\setlength{\rightskip}{0pt plus 5cm}Package\-::$\sim$\-Package (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPackage_af9b48c577bb6045c2cbc97d09f76e973}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPackage_a0721952ecd3c3b61d5e12d2d32bb00f0}{\index{Package@{Package}!get\-Plank\-Thickness@{get\-Plank\-Thickness}}
+\index{get\-Plank\-Thickness@{get\-Plank\-Thickness}!Package@{Package}}
+\subsubsection[{get\-Plank\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Package\-::get\-Plank\-Thickness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackage_a0721952ecd3c3b61d5e12d2d32bb00f0}
+\hypertarget{classPackage_a9d32935ea281de4dc12986707a8db71f}{\index{Package@{Package}!get\-Sprinkle\-Thickness@{get\-Sprinkle\-Thickness}}
+\index{get\-Sprinkle\-Thickness@{get\-Sprinkle\-Thickness}!Package@{Package}}
+\subsubsection[{get\-Sprinkle\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Package\-::get\-Sprinkle\-Thickness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackage_a9d32935ea281de4dc12986707a8db71f}
+\hypertarget{classPackage_aa4e520d69f6a7d910bc917a8b2a4e2e2}{\index{Package@{Package}!run\-Sprinkle\-Remover@{run\-Sprinkle\-Remover}}
+\index{run\-Sprinkle\-Remover@{run\-Sprinkle\-Remover}!Package@{Package}}
+\subsubsection[{run\-Sprinkle\-Remover}]{\setlength{\rightskip}{0pt plus 5cm}void Package\-::run\-Sprinkle\-Remover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPackage_aa4e520d69f6a7d910bc917a8b2a4e2e2}
+
+
+Remove sprinkles when outside a predefined circular boundary. 
+
+Needs to be called continuously. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classPackage_a3b902b5536530fd4f66e4cbb2a59fa6f}{\index{Package@{Package}!m\-\_\-plank@{m\-\_\-plank}}
+\index{m\-\_\-plank@{m\-\_\-plank}!Package@{Package}}
+\subsubsection[{m\-\_\-plank}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plank}$\ast$ Package\-::m\-\_\-plank\mbox{[}32\mbox{]}}}\label{classPackage_a3b902b5536530fd4f66e4cbb2a59fa6f}
+\hypertarget{classPackage_a9dd0955c53dc70f64c0dda77c82022bf}{\index{Package@{Package}!m\-\_\-plank\-Thickness@{m\-\_\-plank\-Thickness}}
+\index{m\-\_\-plank\-Thickness@{m\-\_\-plank\-Thickness}!Package@{Package}}
+\subsubsection[{m\-\_\-plank\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Package\-::m\-\_\-plank\-Thickness}}\label{classPackage_a9dd0955c53dc70f64c0dda77c82022bf}
+\hypertarget{classPackage_a49c8135c0f0f1926e046c0fcd1904e68}{\index{Package@{Package}!m\-\_\-sprinkle@{m\-\_\-sprinkle}}
+\index{m\-\_\-sprinkle@{m\-\_\-sprinkle}!Package@{Package}}
+\subsubsection[{m\-\_\-sprinkle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sprinkle}$\ast$ Package\-::m\-\_\-sprinkle\mbox{[}7\mbox{]}}}\label{classPackage_a49c8135c0f0f1926e046c0fcd1904e68}
+\hypertarget{classPackage_a6c553d1b7c40cc277a141443789d1dcb}{\index{Package@{Package}!m\-\_\-sprinkle\-Thickness@{m\-\_\-sprinkle\-Thickness}}
+\index{m\-\_\-sprinkle\-Thickness@{m\-\_\-sprinkle\-Thickness}!Package@{Package}}
+\subsubsection[{m\-\_\-sprinkle\-Thickness}]{\setlength{\rightskip}{0pt plus 5cm}float32 Package\-::m\-\_\-sprinkle\-Thickness}}\label{classPackage_a6c553d1b7c40cc277a141443789d1dcb}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Package_8h}{Package.\-h}\item 
+\hyperlink{Package_8cpp}{Package.\-cpp}\end{DoxyCompactItemize}

@@ -1,12 +1,14 @@
-/*
- * Text.h
+/** \file Text.h
+ * \brief Contains a function to draw text on SimulatorPage.
  *
- *  Created on: 28. nov. 2012
- *      Author: roy
+ * \author Roy Kollen Svendsen
  */
 
 #ifndef TEXT_H_
 #define TEXT_H_
+
+#include <Box2D/Box2D.h>
+#include <string>
 
 #ifdef __APPLE__
 	#include <GLUT/glut.h>
@@ -14,21 +16,15 @@
 	#include "freeglut/freeglut.h"
 #endif
 
-void drawStrokeText(string str,b2Vec2 position,float32 size,b2Color color)
-	{
-		glPushMatrix();
-		glTranslatef(position.x,position.y,0);
-		glScalef(0.01f*size,0.01f*size,0);
-		glLineWidth(3);
-		glColor3f(color.r,color.g,color.b);
+using namespace std;
 
-		string::iterator it;
-		for(it=str.begin();it!=str.end();it++){
-			glutStrokeCharacter(GLUT_STROKE_ROMAN , (*it));
-		}
-
-		glPopMatrix();
-		glLineWidth(1);
-	}
+/** \brief Draw string on current SimulatorPage.
+ *
+ * @param str The string you want to display.
+ * @param position The lower left corner of the string.
+ * @param size A factor that changes the dimensions of the string.
+ * @param color The text-color.
+ */
+void drawStrokeText(string str,b2Vec2 position,float32 size,b2Color color);
 
 #endif /* TEXT_H_ */

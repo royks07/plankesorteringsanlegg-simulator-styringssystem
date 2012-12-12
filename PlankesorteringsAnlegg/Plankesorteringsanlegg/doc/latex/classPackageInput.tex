@@ -1,0 +1,141 @@
+\hypertarget{classPackageInput}{\section{Package\-Input Class Reference}
+\label{classPackageInput}\index{Package\-Input@{Package\-Input}}
+}
+
+
+Represent the package input block.  
+
+
+
+
+{\ttfamily \#include $<$Packaging.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPackageInput_a2e389eca02f5080d568100127111ebb2}{Package\-Input} (b2\-Vec2 p, float32 length\-Lying\-Beam, float32 thickness\-Lying\-Beam, float32 height\-Standing\-Beam, float32 thickness\-Standing\-Beam, b2\-World $\ast$world)
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageInput_a00aaf542b9486a48271c844f3b1094c4}{get\-Lift\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to the Lift\-Joint. \end{DoxyCompactList}\item 
+b2\-Revolute\-Joint $\ast$ \hyperlink{classPackageInput_a0f3e4bc745c2a7589db8b9fd085616b7}{get\-Rotate\-Joint} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to Rotate\-Joint. \end{DoxyCompactList}\item 
+b2\-Fixture $\ast$ \hyperlink{classPackageInput_aa09daf2e760c70438acc2a34b7ad4cc6}{get\-Lift\-Sensor\-Fixture} ()
+\begin{DoxyCompactList}\small\item\em Return pointer to the Lift-\/sensor Fixture. \end{DoxyCompactList}\item 
+\hyperlink{classPackageSource}{Package\-Source} $\ast$ \hyperlink{classPackageInput_a1084874e9c444dbefb167ad3c6e09a53}{get\-Package\-Source} ()
+\begin{DoxyCompactList}\small\item\em Return a pointer to the integrated \hyperlink{classPackageSource}{Package\-Source}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+b2\-Prismatic\-Joint $\ast$ \hyperlink{classPackageInput_a3a7aa8124e8800eb96018a358f5fb50c}{m\-\_\-joint\-Lift}
+\item 
+b2\-Revolute\-Joint $\ast$ \hyperlink{classPackageInput_ad902718752425e44f187926dcbaa69dd}{m\-\_\-joint\-Rotate}
+\item 
+b2\-Fixture $\ast$ \hyperlink{classPackageInput_a399f8a43d5e938af2dfbcb2c7362af11}{m\-\_\-fixture\-Lift\-Sensor}
+\item 
+\hyperlink{classPackageSource}{Package\-Source} $\ast$ \hyperlink{classPackageInput_a6d6fb6ba9ae2f514a418be6f136907d0}{m\-\_\-package\-Source}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represent the package input block. 
+
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPackageInput_a2e389eca02f5080d568100127111ebb2}{\index{Package\-Input@{Package\-Input}!Package\-Input@{Package\-Input}}
+\index{Package\-Input@{Package\-Input}!PackageInput@{Package\-Input}}
+\subsubsection[{Package\-Input}]{\setlength{\rightskip}{0pt plus 5cm}Package\-Input\-::\-Package\-Input (
+\begin{DoxyParamCaption}
+\item[{b2\-Vec2}]{p, }
+\item[{float32}]{length\-Lying\-Beam, }
+\item[{float32}]{thickness\-Lying\-Beam, }
+\item[{float32}]{height\-Standing\-Beam, }
+\item[{float32}]{thickness\-Standing\-Beam, }
+\item[{b2\-World $\ast$}]{world}
+\end{DoxyParamCaption}
+)}}\label{classPackageInput_a2e389eca02f5080d568100127111ebb2}
+Construct a Package\-Input-\/instance at any position.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pivot-\/point of \hyperlink{classPackageInput}{Package\-Input}. \\
+\hline
+{\em length\-Lying\-Beam} & Length of the lying beam. \\
+\hline
+{\em thickness\-Lying\-Beam} & Thickness of the lying beam \\
+\hline
+{\em height\-Standing\-Beam} & Height of the standing beam. \\
+\hline
+{\em thickness\-Standing\-Beam} & Thickness of the standing beam. \\
+\hline
+{\em world} & Pointer to the world i which you want to create the Package\-Input-\/instance. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPackageInput_a00aaf542b9486a48271c844f3b1094c4}{\index{Package\-Input@{Package\-Input}!get\-Lift\-Joint@{get\-Lift\-Joint}}
+\index{get\-Lift\-Joint@{get\-Lift\-Joint}!PackageInput@{Package\-Input}}
+\subsubsection[{get\-Lift\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Input\-::get\-Lift\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageInput_a00aaf542b9486a48271c844f3b1094c4}
+
+
+Return pointer to the Lift\-Joint. 
+
+\hypertarget{classPackageInput_aa09daf2e760c70438acc2a34b7ad4cc6}{\index{Package\-Input@{Package\-Input}!get\-Lift\-Sensor\-Fixture@{get\-Lift\-Sensor\-Fixture}}
+\index{get\-Lift\-Sensor\-Fixture@{get\-Lift\-Sensor\-Fixture}!PackageInput@{Package\-Input}}
+\subsubsection[{get\-Lift\-Sensor\-Fixture}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Package\-Input\-::get\-Lift\-Sensor\-Fixture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageInput_aa09daf2e760c70438acc2a34b7ad4cc6}
+
+
+Return pointer to the Lift-\/sensor Fixture. 
+
+\hypertarget{classPackageInput_a1084874e9c444dbefb167ad3c6e09a53}{\index{Package\-Input@{Package\-Input}!get\-Package\-Source@{get\-Package\-Source}}
+\index{get\-Package\-Source@{get\-Package\-Source}!PackageInput@{Package\-Input}}
+\subsubsection[{get\-Package\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Package\-Source}$\ast$ Package\-Input\-::get\-Package\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageInput_a1084874e9c444dbefb167ad3c6e09a53}
+
+
+Return a pointer to the integrated \hyperlink{classPackageSource}{Package\-Source}. 
+
+\hypertarget{classPackageInput_a0f3e4bc745c2a7589db8b9fd085616b7}{\index{Package\-Input@{Package\-Input}!get\-Rotate\-Joint@{get\-Rotate\-Joint}}
+\index{get\-Rotate\-Joint@{get\-Rotate\-Joint}!PackageInput@{Package\-Input}}
+\subsubsection[{get\-Rotate\-Joint}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Revolute\-Joint$\ast$ Package\-Input\-::get\-Rotate\-Joint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPackageInput_a0f3e4bc745c2a7589db8b9fd085616b7}
+
+
+Return pointer to Rotate\-Joint. 
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classPackageInput_a399f8a43d5e938af2dfbcb2c7362af11}{\index{Package\-Input@{Package\-Input}!m\-\_\-fixture\-Lift\-Sensor@{m\-\_\-fixture\-Lift\-Sensor}}
+\index{m\-\_\-fixture\-Lift\-Sensor@{m\-\_\-fixture\-Lift\-Sensor}!PackageInput@{Package\-Input}}
+\subsubsection[{m\-\_\-fixture\-Lift\-Sensor}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Fixture$\ast$ Package\-Input\-::m\-\_\-fixture\-Lift\-Sensor}}\label{classPackageInput_a399f8a43d5e938af2dfbcb2c7362af11}
+\hypertarget{classPackageInput_a3a7aa8124e8800eb96018a358f5fb50c}{\index{Package\-Input@{Package\-Input}!m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}}
+\index{m\-\_\-joint\-Lift@{m\-\_\-joint\-Lift}!PackageInput@{Package\-Input}}
+\subsubsection[{m\-\_\-joint\-Lift}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Prismatic\-Joint$\ast$ Package\-Input\-::m\-\_\-joint\-Lift}}\label{classPackageInput_a3a7aa8124e8800eb96018a358f5fb50c}
+\hypertarget{classPackageInput_ad902718752425e44f187926dcbaa69dd}{\index{Package\-Input@{Package\-Input}!m\-\_\-joint\-Rotate@{m\-\_\-joint\-Rotate}}
+\index{m\-\_\-joint\-Rotate@{m\-\_\-joint\-Rotate}!PackageInput@{Package\-Input}}
+\subsubsection[{m\-\_\-joint\-Rotate}]{\setlength{\rightskip}{0pt plus 5cm}b2\-Revolute\-Joint$\ast$ Package\-Input\-::m\-\_\-joint\-Rotate}}\label{classPackageInput_ad902718752425e44f187926dcbaa69dd}
+\hypertarget{classPackageInput_a6d6fb6ba9ae2f514a418be6f136907d0}{\index{Package\-Input@{Package\-Input}!m\-\_\-package\-Source@{m\-\_\-package\-Source}}
+\index{m\-\_\-package\-Source@{m\-\_\-package\-Source}!PackageInput@{Package\-Input}}
+\subsubsection[{m\-\_\-package\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Package\-Source}$\ast$ Package\-Input\-::m\-\_\-package\-Source}}\label{classPackageInput_a6d6fb6ba9ae2f514a418be6f136907d0}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Packaging_8h}{Packaging.\-h}\item 
+\hyperlink{Packaging_8cpp}{Packaging.\-cpp}\end{DoxyCompactItemize}

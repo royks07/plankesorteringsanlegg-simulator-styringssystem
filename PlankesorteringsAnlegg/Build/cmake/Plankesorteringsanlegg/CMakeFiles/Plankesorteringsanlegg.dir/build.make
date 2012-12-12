@@ -115,9 +115,32 @@ Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o
 
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o
 
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o: ../../Plankesorteringsanlegg/PlankSortingPlant.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/PlankSortingPlant.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/PlankSortingPlant.cpp > CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/PlankSortingPlant.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o
+
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o: ../../Plankesorteringsanlegg/SimulatorPageEntries.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o"
 	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/SimulatorPageEntries.cpp
 
@@ -138,12 +161,277 @@ Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntrie
 
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o
 
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o: ../../Plankesorteringsanlegg/Actuators.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Actuators.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Actuators.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Actuators.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o: ../../Plankesorteringsanlegg/Communicator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_7)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Communicator.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Communicator.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Communicator.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o: ../../Plankesorteringsanlegg/CommandSequenceInterpreter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/CommandSequenceInterpreter.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/CommandSequenceInterpreter.cpp > CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/CommandSequenceInterpreter.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o: ../../Plankesorteringsanlegg/Conveyor.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Conveyor.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Conveyor.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Conveyor.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o: ../../Plankesorteringsanlegg/ConveyorSynchronizer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/ConveyorSynchronizer.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/ConveyorSynchronizer.cpp > CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/ConveyorSynchronizer.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o: ../../Plankesorteringsanlegg/Package.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Package.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Package.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Package.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o: ../../Plankesorteringsanlegg/Packaging.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Packaging.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Packaging.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Packaging.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o: ../../Plankesorteringsanlegg/Sensors.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Sensors.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Sensors.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Sensors.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o: ../../Plankesorteringsanlegg/Storages.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Storages.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Storages.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Storages.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o: ../../Plankesorteringsanlegg/Text.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Text.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Text.cpp > CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/Text.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/flags.make
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o: ../../Plankesorteringsanlegg/UserData.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o -c /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/UserData.cpp
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.i"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/UserData.cpp > CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.i
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.s"
+	cd /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Build/cmake/Plankesorteringsanlegg && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /media/307f03b4-ce4e-4a4e-b6ee-0d92f8e90a07/git/uia.dat220.kollen.git.test1/PlankesorteringsAnlegg/Plankesorteringsanlegg/UserData.cpp -o CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.s
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.requires:
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.requires
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.provides: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.requires
+	$(MAKE) -f Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build.make Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.provides.build
+.PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.provides
+
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.provides.build: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o
+
 # Object files for target Plankesorteringsanlegg
 Plankesorteringsanlegg_OBJECTS = \
 "CMakeFiles/Plankesorteringsanlegg.dir/Main.cpp.o" \
 "CMakeFiles/Plankesorteringsanlegg.dir/Render.cpp.o" \
 "CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o" \
-"CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o"
+"CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o" \
+"CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o"
 
 # External object files for target Plankesorteringsanlegg
 Plankesorteringsanlegg_EXTERNAL_OBJECTS =
@@ -151,7 +439,19 @@ Plankesorteringsanlegg_EXTERNAL_OBJECTS =
 Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Main.cpp.o
 Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Render.cpp.o
 Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o
 Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o
+Plankesorteringsanlegg/Plankesorteringsanlegg: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o
 Plankesorteringsanlegg/Plankesorteringsanlegg: Box2D/libBox2D.a
 Plankesorteringsanlegg/Plankesorteringsanlegg: freeglut/libfreeglut_static.a
 Plankesorteringsanlegg/Plankesorteringsanlegg: glui/libglui.a
@@ -176,7 +476,19 @@ Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/build: Plankesorter
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Main.cpp.o.requires
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Render.cpp.o.requires
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPage.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/PlankSortingPlant.cpp.o.requires
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/SimulatorPageEntries.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Actuators.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Communicator.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/CommandSequenceInterpreter.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Conveyor.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/ConveyorSynchronizer.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Package.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Packaging.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Sensors.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Storages.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/Text.cpp.o.requires
+Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires: Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/UserData.cpp.o.requires
 .PHONY : Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/requires
 
 Plankesorteringsanlegg/CMakeFiles/Plankesorteringsanlegg.dir/clean:

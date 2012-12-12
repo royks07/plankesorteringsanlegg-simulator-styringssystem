@@ -1,0 +1,242 @@
+.TH "SimulatorPage" 3 "Wed Dec 12 2012" "Version 1.0" "Educational simulator for control-system development" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimulatorPage \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <SimulatorPage\&.h>\fP
+.PP
+Inherits b2ContactListener\&.
+.PP
+Inherited by \fBPlankSortingPlant\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSimulatorPage\fP (\fBCommunicator\fP *communicator)"
+.br
+.ti -1c
+.RI "virtual \fB~SimulatorPage\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetTextLine\fP (int32 line)"
+.br
+.ti -1c
+.RI "void \fBDrawTitle\fP (int x, int y, const char *string)"
+.br
+.ti -1c
+.RI "virtual void \fBStep\fP (\fBSettings\fP *settings)"
+.br
+.ti -1c
+.RI "virtual void \fBKeyboard\fP (unsigned char key)"
+.br
+.ti -1c
+.RI "virtual void \fBKeyboardUp\fP (unsigned char key)"
+.br
+.ti -1c
+.RI "void \fBShiftMouseDown\fP (const b2Vec2 &p)"
+.br
+.ti -1c
+.RI "virtual void \fBMouseDown\fP (const b2Vec2 &p)"
+.br
+.ti -1c
+.RI "virtual void \fBMouseUp\fP (const b2Vec2 &p)"
+.br
+.ti -1c
+.RI "void \fBMouseMove\fP (const b2Vec2 &p)"
+.br
+.ti -1c
+.RI "void \fBLaunchBomb\fP ()"
+.br
+.ti -1c
+.RI "void \fBLaunchBomb\fP (const b2Vec2 &position, const b2Vec2 &velocity)"
+.br
+.ti -1c
+.RI "void \fBSpawnBomb\fP (const b2Vec2 &worldPt)"
+.br
+.ti -1c
+.RI "void \fBCompleteBombSpawn\fP (const b2Vec2 &p)"
+.br
+.ti -1c
+.RI "virtual void \fBJointDestroyed\fP (b2Joint *joint)"
+.br
+.ti -1c
+.RI "virtual void \fBBeginContact\fP (b2Contact *contact)"
+.br
+.ti -1c
+.RI "virtual void \fBEndContact\fP (b2Contact *contact)"
+.br
+.ti -1c
+.RI "virtual void \fBPreSolve\fP (b2Contact *contact, const b2Manifold *oldManifold)"
+.br
+.ti -1c
+.RI "virtual void \fBPostSolve\fP (const b2Contact *contact, const b2ContactImpulse *impulse)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "b2Body * \fBm_groundBody\fP"
+.br
+.ti -1c
+.RI "b2AABB \fBm_worldAABB\fP"
+.br
+.ti -1c
+.RI "\fBContactPoint\fP \fBm_points\fP [\fBk_maxContactPoints\fP]"
+.br
+.ti -1c
+.RI "int32 \fBm_pointCount\fP"
+.br
+.ti -1c
+.RI "\fBDestructionListener\fP \fBm_destructionListener\fP"
+.br
+.ti -1c
+.RI "\fBDebugDraw\fP \fBm_debugDraw\fP"
+.br
+.ti -1c
+.RI "int32 \fBm_textLine\fP"
+.br
+.ti -1c
+.RI "b2World * \fBm_world\fP"
+.br
+.ti -1c
+.RI "b2Body * \fBm_bomb\fP"
+.br
+.ti -1c
+.RI "b2MouseJoint * \fBm_mouseJoint\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_bombSpawnPoint\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bombSpawning\fP"
+.br
+.ti -1c
+.RI "b2Vec2 \fBm_mouseWorld\fP"
+.br
+.ti -1c
+.RI "int32 \fBm_stepCount\fP"
+.br
+.ti -1c
+.RI "b2Profile \fBm_maxProfile\fP"
+.br
+.ti -1c
+.RI "b2Profile \fBm_totalProfile\fP"
+.br
+.ti -1c
+.RI "\fBCommunicator\fP * \fBm_communicator\fP"
+.br
+.in -1c
+.SS "Friends"
+
+.in +1c
+.ti -1c
+.RI "class \fBDestructionListener\fP"
+.br
+.ti -1c
+.RI "class \fBBoundaryListener\fP"
+.br
+.ti -1c
+.RI "class \fBContactListener\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SimulatorPage::SimulatorPage (\fBCommunicator\fP *communicator)"
+
+.SS "SimulatorPage::~SimulatorPage ()\fC [virtual]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual void SimulatorPage::BeginContact (b2Contact *contact)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "void SimulatorPage::CompleteBombSpawn (const b2Vec2 &p)"
+
+.SS "void SimulatorPage::DrawTitle (intx, inty, const char *string)"
+
+.SS "virtual void SimulatorPage::EndContact (b2Contact *contact)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void SimulatorPage::JointDestroyed (b2Joint *joint)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "virtual void SimulatorPage::Keyboard (unsigned charkey)\fC [inline]\fP, \fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBPlankSortingPlant\fP\&.
+.SS "virtual void SimulatorPage::KeyboardUp (unsigned charkey)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "void SimulatorPage::LaunchBomb ()"
+
+.SS "void SimulatorPage::LaunchBomb (const b2Vec2 &position, const b2Vec2 &velocity)"
+
+.SS "void SimulatorPage::MouseDown (const b2Vec2 &p)\fC [virtual]\fP"
+
+.SS "void SimulatorPage::MouseMove (const b2Vec2 &p)"
+
+.SS "void SimulatorPage::MouseUp (const b2Vec2 &p)\fC [virtual]\fP"
+
+.SS "virtual void SimulatorPage::PostSolve (const b2Contact *contact, const b2ContactImpulse *impulse)\fC [inline]\fP, \fC [virtual]\fP"
+
+.SS "void SimulatorPage::PreSolve (b2Contact *contact, const b2Manifold *oldManifold)\fC [virtual]\fP"
+
+.SS "void SimulatorPage::SetTextLine (int32line)\fC [inline]\fP"
+
+.SS "void SimulatorPage::ShiftMouseDown (const b2Vec2 &p)"
+
+.SS "void SimulatorPage::SpawnBomb (const b2Vec2 &worldPt)"
+
+.SS "void SimulatorPage::Step (\fBSettings\fP *settings)\fC [virtual]\fP"
+
+.PP
+Reimplemented in \fBPlankSortingPlant\fP\&.
+.SH "Friends And Related Function Documentation"
+.PP 
+.SS "friend class BoundaryListener\fC [friend]\fP"
+
+.SS "friend class ContactListener\fC [friend]\fP"
+
+.SS "friend class \fBDestructionListener\fP\fC [friend]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "b2Body* SimulatorPage::m_bomb\fC [protected]\fP"
+
+.SS "bool SimulatorPage::m_bombSpawning\fC [protected]\fP"
+
+.SS "b2Vec2 SimulatorPage::m_bombSpawnPoint\fC [protected]\fP"
+
+.SS "\fBCommunicator\fP* SimulatorPage::m_communicator\fC [protected]\fP"
+
+.SS "\fBDebugDraw\fP SimulatorPage::m_debugDraw\fC [protected]\fP"
+
+.SS "\fBDestructionListener\fP SimulatorPage::m_destructionListener\fC [protected]\fP"
+
+.SS "b2Body* SimulatorPage::m_groundBody\fC [protected]\fP"
+
+.SS "b2Profile SimulatorPage::m_maxProfile\fC [protected]\fP"
+
+.SS "b2MouseJoint* SimulatorPage::m_mouseJoint\fC [protected]\fP"
+
+.SS "b2Vec2 SimulatorPage::m_mouseWorld\fC [protected]\fP"
+
+.SS "int32 SimulatorPage::m_pointCount\fC [protected]\fP"
+
+.SS "\fBContactPoint\fP SimulatorPage::m_points[\fBk_maxContactPoints\fP]\fC [protected]\fP"
+
+.SS "int32 SimulatorPage::m_stepCount\fC [protected]\fP"
+
+.SS "int32 SimulatorPage::m_textLine\fC [protected]\fP"
+
+.SS "b2Profile SimulatorPage::m_totalProfile\fC [protected]\fP"
+
+.SS "b2World* SimulatorPage::m_world\fC [protected]\fP"
+
+.SS "b2AABB SimulatorPage::m_worldAABB\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Educational simulator for control-system development from the source code\&.
