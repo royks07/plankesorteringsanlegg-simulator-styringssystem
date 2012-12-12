@@ -33,45 +33,46 @@ The communicator component is built on top of the Boost.Asio-library.
 
 ####API
 
-The simulator-API lets students write <b>control-systems</b> for simulated environments.
+The simulator-API lets students write control-systems for simulated environments.
 
 Tha API is based on Paul Bjørn Andersens(UiA) RTOS-kernel, TSS, and his usart-library. 
 
 
 File manifest
 -------------
-*	doc/							-	This folder contains the project documentation.
-*	Main.cpp						-	Create the GUI
-*	Render.cpp
-*	Render.h
-*	SimulatorPage.cpp
-*	SimulatorPage.h
-*	PlankSortingPlant.cpp
-*	PlankSortingPlant.h
-*	SimulatorPageEntries.cpp
-*	Actuators.cpp
-*	Actuators.h
-*	Communicator.cpp
-*	Communicator.h
-*	CommandSequenceInterpreter.cpp
-*	CommandSequenceInterpreter.h
-*	Conveyor.cpp
-*	Conveyor.h
-*	ConveyorSynchronizer.cpp
-*	ConveyorSynchronizer.h
-*	Package.cpp
-*	Package.h
-*	Packaging.cpp
-*	Packaging.h
-*	Sensors.cpp
-*	Sensors.h
-*	Storages.cpp
-*	Storages.h
-*	Text.h
-*	Text.cpp
-*	UserData.cpp
-*	UserData.h
 
+* doc/ - This folder contains the project documentation.
+* Actuators.cpp	
+* Actuators.h - Contains actuator-hierarchy and actuator-set
+* CommandSequenceInterpreter.cpp	
+* CommandSequenceInterpreter.h - Contains the CommandSequanceInterpreter-class
+* Communicator.cpp	
+* Communicator.h - Contains the Communicator-class
+* Conveyor.cpp	
+* Conveyor.h - Contains the Conveyor-class and the classes needed to build it
+* ConveyorSynchronizer.cpp	
+* ConveyorSynchronizer.h - Contains the class which synchronize conveyors
+* Main.cpp	
+* Main.h - Main.h and Main.cpp contains the main-function, and code to create user-interface and run the simulation-loop
+* Package.cpp	
+* Package.h - Contains the classes related to planks, "sprinkles" and packages
+* Packaging.cpp	
+* Packaging.h - Contains the PackageInput- and PackageOutput-class
+* PlankSortingPlant.cpp	
+* PlankSortingPlant.h - Contains the SimulationPage to create a "plank sorting plant"
+* Render.cpp	
+* Render.h	
+* Sensors.cpp	
+* Sensors.h - Contains the sensor class-hierarchy and the sensor-set
+* SimulatorPage.cpp	
+* SimulatorPage.h	
+* SimulatorPageEntries.cpp - Assign simulator-page entries to global array g_simulatorPageEntries
+* Storages.cpp	
+* Storages.h - Define classes to create individual storages and storage area
+* Text.cpp	
+* Text.h - Contains a function to draw text on SimulatorPage
+* UserData.cpp	
+* UserData.h - Contains the UserData class-hierarchy
 
 Configuration instructions
 --------------------------

@@ -1,0 +1,27 @@
+var classCommunicator =
+[
+    [ "Communicator", "classCommunicator.html#a9376e2a4cfde05f3bcbae03523f47f09", null ],
+    [ "active", "classCommunicator.html#a7aaa04bd32a78e8b5aa0d79b80b87e52", null ],
+    [ "close", "classCommunicator.html#a0e202fdfbc9ad191260b4da285d2f071", null ],
+    [ "dataIsPresent", "classCommunicator.html#ab8208da85e32d5802b6dcae11e5ddf3d", null ],
+    [ "do_close", "classCommunicator.html#a39081affb66ee804daed1850faee4cdc", null ],
+    [ "do_write", "classCommunicator.html#af7dd39cc1a386cb9fb1a68715be7ae7a", null ],
+    [ "init", "classCommunicator.html#a99aabd49f9b816a256035130ed59d1c1", null ],
+    [ "print", "classCommunicator.html#a453c83fb4fcf3b6acf6e26269bbcb743", null ],
+    [ "read", "classCommunicator.html#a8592dcf1ef7cd278a3619a5735ff2b2b", null ],
+    [ "read_complete", "classCommunicator.html#aacbd7b17b825522c324170422989b0dd", null ],
+    [ "read_start", "classCommunicator.html#af2d0f85b4fd75f457283448bec474d0e", null ],
+    [ "write", "classCommunicator.html#a5a4b8c0d0d2a56c1e66b6baaa5dd0d9a", null ],
+    [ "write", "classCommunicator.html#aae6febfbbaadf6b7a53dd6718dc1fc26", null ],
+    [ "write_complete", "classCommunicator.html#a179b10517097859b289b9108ea2433b7", null ],
+    [ "write_start", "classCommunicator.html#a949b951edc82d1b5174071b5204156eb", null ],
+    [ "communicationThread", "classCommunicator.html#a5418b61d132b1e5ff573d7eb7a7e2e0c", null ],
+    [ "m_active", "classCommunicator.html#a42a770b0ce7f2b683e4bc1d0f887f14c", null ],
+    [ "m_dataIsPresent", "classCommunicator.html#acbac815df12652c546240cc172ddaf33", null ],
+    [ "m_fifoRead", "classCommunicator.html#af3f7e36ef85b0ca55d9720b24c94a3d5", null ],
+    [ "m_fifoWrite", "classCommunicator.html#a8f027326373947bb29c68c64e27d7b6a", null ],
+    [ "m_io", "classCommunicator.html#acae03d9f34724b3fcaf98f92c0640e51", null ],
+    [ "m_port", "classCommunicator.html#ad78da07df6c7551bdc4caefd508f97d1", null ],
+    [ "max_read_length", "classCommunicator.html#a1fa795c1542a7fff4a6b2b66e137b55d", null ],
+    [ "read_msg_", "classCommunicator.html#a6d28d139d03917fa04f9b3c9460dcaae", null ]
+];

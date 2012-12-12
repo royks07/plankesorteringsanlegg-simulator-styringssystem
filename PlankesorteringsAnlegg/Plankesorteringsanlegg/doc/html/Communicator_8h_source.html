@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Educational simulator for control-system development
    &#160;<span id="projectnumber">1.0</span>
@@ -85,60 +86,60 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="Communicator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef COMMUNICATOR_H_</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COMMUNICATOR_H_</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;boost/system/error_code.hpp&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;boost/asio.hpp&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;boost/thread.hpp&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">using namespace </span>boost;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span>boost::asio;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="classCommunicator.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCommunicator.html" title="Read frowm and write to an arbitrary serial-port.">Communicator</a>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <a class="code" href="classCommunicator.html" title="Read frowm and write to an arbitrary serial-port.">Communicator</a>(<span class="keywordtype">string</span> serieport);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> init(<span class="keywordtype">string</span> serieport);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">void</span> write(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> write(<span class="keywordtype">string</span> str);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> print(<span class="keywordtype">char</span> *format, ...);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">bool</span> dataIsPresent();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> read();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">void</span> close();</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classCommunicator.html#a7aaa04bd32a78e8b5aa0d79b80b87e52">   40</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#a7aaa04bd32a78e8b5aa0d79b80b87e52" title="Check if port in use.">active</a>(){   <span class="keywordflow">return</span> m_active;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classCommunicator.html#a1fa795c1542a7fff4a6b2b66e137b55d">   42</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> max_read_length = 512;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> read_start(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> read_complete(<span class="keyword">const</span> boost::system::error_code&amp; error, <span class="keywordtype">size_t</span> bytes_transferred);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> do_write(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> write_start(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> write_complete(<span class="keyword">const</span> boost::system::error_code&amp; error);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> do_close(<span class="keyword">const</span> boost::system::error_code&amp; error);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classCommunicator.html#acae03d9f34724b3fcaf98f92c0640e51">   50</a></span>&#160;        io_service <a class="code" href="classCommunicator.html#acae03d9f34724b3fcaf98f92c0640e51">m_io</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classCommunicator.html#ad78da07df6c7551bdc4caefd508f97d1">   51</a></span>&#160;        serial_port <a class="code" href="classCommunicator.html#ad78da07df6c7551bdc4caefd508f97d1">m_port</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classCommunicator.html#acbac815df12652c546240cc172ddaf33">   52</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#acbac815df12652c546240cc172ddaf33">m_dataIsPresent</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classCommunicator.html#a5418b61d132b1e5ff573d7eb7a7e2e0c">   53</a></span>&#160;        thread <a class="code" href="classCommunicator.html#a5418b61d132b1e5ff573d7eb7a7e2e0c">communicationThread</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classCommunicator.html#a8f027326373947bb29c68c64e27d7b6a">   54</a></span>&#160;        deque&lt;unsigned char&gt; <a class="code" href="classCommunicator.html#a8f027326373947bb29c68c64e27d7b6a">m_fifoWrite</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classCommunicator.html#af3f7e36ef85b0ca55d9720b24c94a3d5">   55</a></span>&#160;        deque&lt;unsigned char&gt; <a class="code" href="classCommunicator.html#af3f7e36ef85b0ca55d9720b24c94a3d5">m_fifoRead</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classCommunicator.html#a6d28d139d03917fa04f9b3c9460dcaae">   56</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> read_msg_[max_read_length];</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classCommunicator.html#a42a770b0ce7f2b683e4bc1d0f887f14c">   57</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#a42a770b0ce7f2b683e4bc1d0f887f14c">m_active</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMUNICATOR_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef COMMUNICATOR_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define COMMUNICATOR_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;boost/system/error_code.hpp&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;boost/asio.hpp&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;boost/thread.hpp&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;stdarg.h&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">using namespace </span>boost;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">using namespace </span>boost::asio;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="classCommunicator.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCommunicator.html" title="Read frowm and write to an arbitrary serial-port.">Communicator</a>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classCommunicator.html" title="Read frowm and write to an arbitrary serial-port.">Communicator</a>(<span class="keywordtype">string</span> serieport);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> init(<span class="keywordtype">string</span> serieport);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> write(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> write(<span class="keywordtype">string</span> str);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> print(<span class="keywordtype">char</span> *format, ...);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordtype">bool</span> dataIsPresent();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> read();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> close();</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classCommunicator.html#a7aaa04bd32a78e8b5aa0d79b80b87e52">   42</a></span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#a7aaa04bd32a78e8b5aa0d79b80b87e52" title="Check if port in use.">active</a>(){   <span class="keywordflow">return</span> m_active;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classCommunicator.html#a1fa795c1542a7fff4a6b2b66e137b55d">   44</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> max_read_length = 512;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> read_start(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">void</span> read_complete(<span class="keyword">const</span> boost::system::error_code&amp; error, <span class="keywordtype">size_t</span> bytes_transferred);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> do_write(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> write_start(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> write_complete(<span class="keyword">const</span> boost::system::error_code&amp; error);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> do_close(<span class="keyword">const</span> boost::system::error_code&amp; error);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classCommunicator.html#acae03d9f34724b3fcaf98f92c0640e51">   52</a></span>&#160;        io_service <a class="code" href="classCommunicator.html#acae03d9f34724b3fcaf98f92c0640e51">m_io</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classCommunicator.html#ad78da07df6c7551bdc4caefd508f97d1">   53</a></span>&#160;        serial_port <a class="code" href="classCommunicator.html#ad78da07df6c7551bdc4caefd508f97d1">m_port</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="classCommunicator.html#acbac815df12652c546240cc172ddaf33">   54</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#acbac815df12652c546240cc172ddaf33">m_dataIsPresent</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classCommunicator.html#a5418b61d132b1e5ff573d7eb7a7e2e0c">   55</a></span>&#160;        thread <a class="code" href="classCommunicator.html#a5418b61d132b1e5ff573d7eb7a7e2e0c">communicationThread</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="classCommunicator.html#a8f027326373947bb29c68c64e27d7b6a">   56</a></span>&#160;        deque&lt;unsigned char&gt; <a class="code" href="classCommunicator.html#a8f027326373947bb29c68c64e27d7b6a">m_fifoWrite</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="classCommunicator.html#af3f7e36ef85b0ca55d9720b24c94a3d5">   57</a></span>&#160;        deque&lt;unsigned char&gt; <a class="code" href="classCommunicator.html#af3f7e36ef85b0ca55d9720b24c94a3d5">m_fifoRead</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classCommunicator.html#a6d28d139d03917fa04f9b3c9460dcaae">   58</a></span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> read_msg_[max_read_length];</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="classCommunicator.html#a42a770b0ce7f2b683e4bc1d0f887f14c">   59</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classCommunicator.html#a42a770b0ce7f2b683e4bc1d0f887f14c">m_active</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* COMMUNICATOR_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 12 2012 14:02:22 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 12 2012 14:46:51 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

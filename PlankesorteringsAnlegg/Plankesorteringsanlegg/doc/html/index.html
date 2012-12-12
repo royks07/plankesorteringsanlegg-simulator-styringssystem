@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Educational simulator for control-system development
    &#160;<span id="projectnumber">1.0</span>
@@ -93,41 +94,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>The communicator is a class that is able to read and write simulated sensor and actuator data over a serial- port.</p>
 <p>The communicator component is built on top of the Boost.Asio-library.</p>
 <h4>API</h4>
-<p>The simulator-API lets students write <b>control-systems</b> for simulated environments.</p>
+<p>The simulator-API lets students write control-systems for simulated environments.</p>
 <p>Tha API is based on Paul Bjørn Andersens(UiA) RTOS-kernel, TSS, and his usart-library.</p>
 <h2>File manifest</h2>
 <ul>
 <li>doc/ - This folder contains the project documentation.</li>
-<li><a class="el" href="Main_8cpp.html">Main.cpp</a> - Create the GUI</li>
+<li><a class="el" href="Actuators_8cpp.html">Actuators.cpp</a></li>
+<li><a class="el" href="Actuators_8h.html" title="Contains actuator-hierarchy and actuator-set.">Actuators.h</a> - Contains actuator-hierarchy and actuator-set</li>
+<li><a class="el" href="CommandSequenceInterpreter_8cpp.html">CommandSequenceInterpreter.cpp</a></li>
+<li><a class="el" href="CommandSequenceInterpreter_8h.html" title="Contains the CommandSequanceInterpreter-class.">CommandSequenceInterpreter.h</a> - Contains the CommandSequanceInterpreter-class</li>
+<li><a class="el" href="Communicator_8cpp.html">Communicator.cpp</a></li>
+<li><a class="el" href="Communicator_8h.html" title="Contains the Communicator-class.">Communicator.h</a> - Contains the Communicator-class</li>
+<li><a class="el" href="Conveyor_8cpp.html">Conveyor.cpp</a></li>
+<li><a class="el" href="Conveyor_8h.html" title="Contains the Conveyor-class and the classes needed to build it.">Conveyor.h</a> - Contains the Conveyor-class and the classes needed to build it</li>
+<li><a class="el" href="ConveyorSynchronizer_8cpp.html">ConveyorSynchronizer.cpp</a></li>
+<li><a class="el" href="ConveyorSynchronizer_8h.html" title="Contains the class which synchronize conveyors.">ConveyorSynchronizer.h</a> - Contains the class which synchronize conveyors</li>
+<li><a class="el" href="Main_8cpp.html">Main.cpp</a></li>
+<li><a class="el" href="Main_8h.html" title="Main.h and Main.cpp contains the main-function, and code to create user-interface and run the simulat...">Main.h</a> - <a class="el" href="Main_8h.html" title="Main.h and Main.cpp contains the main-function, and code to create user-interface and run the simulat...">Main.h</a> and <a class="el" href="Main_8cpp.html">Main.cpp</a> contains the main-function, and code to create user-interface and run the simulation-loop</li>
+<li><a class="el" href="Package_8cpp.html">Package.cpp</a></li>
+<li><a class="el" href="Package_8h.html" title="Contains the classes related to planks, &quot;sprinkles&quot; and packages.">Package.h</a> - Contains the classes related to planks, "sprinkles" and packages</li>
+<li><a class="el" href="Packaging_8cpp.html">Packaging.cpp</a></li>
+<li><a class="el" href="Packaging_8h.html" title="Contains the PackageInput- and PackageOutput-class.">Packaging.h</a> - Contains the PackageInput- and PackageOutput-class</li>
+<li><a class="el" href="PlankSortingPlant_8cpp.html">PlankSortingPlant.cpp</a></li>
+<li><a class="el" href="PlankSortingPlant_8h.html" title="Contains the SimulationPage to create a &quot;plank sorting plant&quot;.">PlankSortingPlant.h</a> - Contains the SimulationPage to create a "plank sorting plant"</li>
 <li><a class="el" href="Render_8cpp.html">Render.cpp</a></li>
 <li><a class="el" href="Render_8h.html">Render.h</a></li>
+<li><a class="el" href="Sensors_8cpp.html">Sensors.cpp</a></li>
+<li><a class="el" href="Sensors_8h.html" title="Contains the sensor class-hierarchy and the sensor-set.">Sensors.h</a> - Contains the sensor class-hierarchy and the sensor-set</li>
 <li><a class="el" href="SimulatorPage_8cpp.html">SimulatorPage.cpp</a></li>
 <li><a class="el" href="SimulatorPage_8h.html">SimulatorPage.h</a></li>
-<li><a class="el" href="PlankSortingPlant_8cpp.html">PlankSortingPlant.cpp</a></li>
-<li><a class="el" href="PlankSortingPlant_8h.html" title="Contains the SimulationPage to create a &quot;plank sorting plant&quot;.">PlankSortingPlant.h</a></li>
-<li><a class="el" href="SimulatorPageEntries_8cpp.html" title="Assign simulator-page entries to global array g_simulatorPageEntries.">SimulatorPageEntries.cpp</a></li>
-<li><a class="el" href="Actuators_8cpp.html">Actuators.cpp</a></li>
-<li><a class="el" href="Actuators_8h.html" title="Contains actuator-hierarchy and actuator-set.">Actuators.h</a></li>
-<li><a class="el" href="Communicator_8cpp.html">Communicator.cpp</a></li>
-<li><a class="el" href="Communicator_8h.html" title="Contains the Communicator-class.">Communicator.h</a></li>
-<li><a class="el" href="CommandSequenceInterpreter_8cpp.html">CommandSequenceInterpreter.cpp</a></li>
-<li><a class="el" href="CommandSequenceInterpreter_8h.html" title="Contains the CommandSequanceInterpreter-class.">CommandSequenceInterpreter.h</a></li>
-<li><a class="el" href="Conveyor_8cpp.html">Conveyor.cpp</a></li>
-<li><a class="el" href="Conveyor_8h.html" title="Contains the Conveyor-class and the classes needed to build it.">Conveyor.h</a></li>
-<li><a class="el" href="ConveyorSynchronizer_8cpp.html">ConveyorSynchronizer.cpp</a></li>
-<li><a class="el" href="ConveyorSynchronizer_8h.html" title="Contains the class which synchronize conveyors.">ConveyorSynchronizer.h</a></li>
-<li><a class="el" href="Package_8cpp.html">Package.cpp</a></li>
-<li><a class="el" href="Package_8h.html" title="Contains the classes related to planks, &quot;sprinkles&quot; and packages.">Package.h</a></li>
-<li><a class="el" href="Packaging_8cpp.html">Packaging.cpp</a></li>
-<li><a class="el" href="Packaging_8h.html" title="Contains the PackageInput- and PackageOutput-class.">Packaging.h</a></li>
-<li><a class="el" href="Sensors_8cpp.html">Sensors.cpp</a></li>
-<li><a class="el" href="Sensors_8h.html" title="Contains the sensor class-hierarchy and the sensor-set.">Sensors.h</a></li>
+<li><a class="el" href="SimulatorPageEntries_8cpp.html" title="Assign simulator-page entries to global array g_simulatorPageEntries.">SimulatorPageEntries.cpp</a> - Assign simulator-page entries to global array g_simulatorPageEntries</li>
 <li><a class="el" href="Storages_8cpp.html">Storages.cpp</a></li>
-<li><a class="el" href="Storages_8h.html" title="Define classes to create individual storages and storage area.">Storages.h</a></li>
-<li><a class="el" href="Text_8h.html" title="Contains a function to draw text on SimulatorPage.">Text.h</a></li>
+<li><a class="el" href="Storages_8h.html" title="Define classes to create individual storages and storage area.">Storages.h</a> - Define classes to create individual storages and storage area</li>
 <li><a class="el" href="Text_8cpp.html">Text.cpp</a></li>
+<li><a class="el" href="Text_8h.html" title="Contains a function to draw text on SimulatorPage.">Text.h</a> - Contains a function to draw text on <a class="el" href="classSimulatorPage.html">SimulatorPage</a></li>
 <li><a class="el" href="UserData_8cpp.html">UserData.cpp</a></li>
-<li><a class="el" href="UserData_8h.html" title="Contains the UserData class-hierarchy.">UserData.h</a></li>
+<li><a class="el" href="UserData_8h.html" title="Contains the UserData class-hierarchy.">UserData.h</a> - Contains the <a class="el" href="classUserData.html" title="The archtypical userdata-class which other userdata-classes inherit from.">UserData</a> class-hierarchy</li>
 </ul>
 <h2>Configuration instructions</h2>
 <h2>Installation instructions</h2>
@@ -145,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 12 2012 14:02:27 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 12 2012 14:46:56 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

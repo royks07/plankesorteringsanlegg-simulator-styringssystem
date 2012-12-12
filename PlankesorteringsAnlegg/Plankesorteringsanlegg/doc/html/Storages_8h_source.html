@@ -20,6 +20,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Educational simulator for control-system development
    &#160;<span id="projectnumber">1.0</span>
@@ -85,48 +86,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <a href="Storages_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef STORAGES_H_</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STORAGES_H_</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;Box2D/Box2D.h&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="UserData_8h.html" title="Contains the UserData class-hierarchy.">UserData.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="code" href="classStorage.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStorage.html" title="Create an individual storage to sort planks into.">Storage</a>{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classStorage.html" title="Create an individual storage to sort planks into.">Storage</a>(b2Vec2 upperLeftCorner,float32 width,float32 height, float32 wallThickness,b2World* world);</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="classStorage.html#a1c5c79f11fa271b28e0ac22ea0649c40">   36</a></span>&#160;        <span class="keyword">inline</span> b2PrismaticJoint* <a class="code" href="classStorage.html#a1c5c79f11fa271b28e0ac22ea0649c40" title="Return the liftJoint.">getLiftJoint</a>(){<span class="keywordflow">return</span> m_jointLift;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classStorage.html#a6e36f363dae08cf2f4b308b1e0a1e1bd">   37</a></span>&#160;        <span class="keyword">inline</span> b2PrismaticJoint* <a class="code" href="classStorage.html#a6e36f363dae08cf2f4b308b1e0a1e1bd" title="Return the stopperJoint.">getStopperJoint</a>(){<span class="keywordflow">return</span> m_jointStopper;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classStorage.html#a585cdae218715a238dfc4277f875df60">   38</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#a585cdae218715a238dfc4277f875df60" title="Return the topSensorFixture.">getTopSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureTopSensor;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classStorage.html#ad22d8f7e6c28ba888bf7abd016e9ec38">   39</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#ad22d8f7e6c28ba888bf7abd016e9ec38" title="Return the middleSensorFixture.">getMiddleSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureMiddleSensor;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classStorage.html#a02014b1514942bedd63a7e2456982f39">   40</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#a02014b1514942bedd63a7e2456982f39" title="Return the bottomSensorFixture.">getBottomSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureBottomSensor;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="classStorage.html#a3bae1d833350258742b94caca470e735">   42</a></span>&#160;        b2Body* <a class="code" href="classStorage.html#a3bae1d833350258742b94caca470e735">m_bodyStopper</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classStorage.html#a989c2bbe46e9874a4f4fed780a3d5de6">   43</a></span>&#160;        b2PrismaticJoint* <a class="code" href="classStorage.html#a989c2bbe46e9874a4f4fed780a3d5de6">m_jointLift</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classStorage.html#ae96e6bf24e9d9c9788129bb6d87d10ab">   44</a></span>&#160;        b2PrismaticJoint* <a class="code" href="classStorage.html#ae96e6bf24e9d9c9788129bb6d87d10ab">m_jointStopper</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classStorage.html#afa862f61854f0960b41ae24b673b3980">   45</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#afa862f61854f0960b41ae24b673b3980">m_fixtureTopSensor</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classStorage.html#a27bcc4c94a7766c56f98ace7e2c3b662">   46</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#a27bcc4c94a7766c56f98ace7e2c3b662">m_fixtureMiddleSensor</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classStorage.html#afa76f1b21a27a64ef14d2360cc518bc3">   47</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#afa76f1b21a27a64ef14d2360cc518bc3">m_fixtureBottomSensor</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="classStorageArea.html">   60</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStorageArea.html" title="Create an arbitrary number of storages side-by-side to sort planks into.">StorageArea</a>{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="classStorageArea.html" title="Create an arbitrary number of storages side-by-side to sort planks into.">StorageArea</a>(<span class="keywordtype">int</span> numberOfStorages,b2Vec2 upperLeftCorner,float32 width,float32 height, float32 wallThickness,b2World* world);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        b2PrismaticJoint* getLiftJoint(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        b2PrismaticJoint* getStopperJoint(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        b2Fixture* getTopSensorFixture(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        b2Fixture* getMiddleSensorFixture(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        b2Fixture* getBottomSensorFixture(<span class="keywordtype">int</span> i);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classStorageArea.html#ab5c3b86896768610f1b558126bf0df71">   78</a></span>&#160;        vector&lt;Storage*&gt; <a class="code" href="classStorageArea.html#ab5c3b86896768610f1b558126bf0df71" title="Vector that contains pointers to the individual storages.">m_storage</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STORAGES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef STORAGES_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define STORAGES_H_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;Box2D/Box2D.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="UserData_8h.html" title="Contains the UserData class-hierarchy.">UserData.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="classStorage.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStorage.html" title="Create an individual storage to sort planks into.">Storage</a>{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classStorage.html" title="Create an individual storage to sort planks into.">Storage</a>(b2Vec2 upperLeftCorner,float32 width,float32 height, float32 wallThickness,b2World* world);</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="classStorage.html#a1c5c79f11fa271b28e0ac22ea0649c40">   37</a></span>&#160;        <span class="keyword">inline</span> b2PrismaticJoint* <a class="code" href="classStorage.html#a1c5c79f11fa271b28e0ac22ea0649c40" title="Return the liftJoint.">getLiftJoint</a>(){<span class="keywordflow">return</span> m_jointLift;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="classStorage.html#a6e36f363dae08cf2f4b308b1e0a1e1bd">   38</a></span>&#160;        <span class="keyword">inline</span> b2PrismaticJoint* <a class="code" href="classStorage.html#a6e36f363dae08cf2f4b308b1e0a1e1bd" title="Return the stopperJoint.">getStopperJoint</a>(){<span class="keywordflow">return</span> m_jointStopper;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="classStorage.html#a585cdae218715a238dfc4277f875df60">   39</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#a585cdae218715a238dfc4277f875df60" title="Return the topSensorFixture.">getTopSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureTopSensor;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="classStorage.html#ad22d8f7e6c28ba888bf7abd016e9ec38">   40</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#ad22d8f7e6c28ba888bf7abd016e9ec38" title="Return the middleSensorFixture.">getMiddleSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureMiddleSensor;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="classStorage.html#a02014b1514942bedd63a7e2456982f39">   41</a></span>&#160;        <span class="keyword">inline</span> b2Fixture* <a class="code" href="classStorage.html#a02014b1514942bedd63a7e2456982f39" title="Return the bottomSensorFixture.">getBottomSensorFixture</a>(){<span class="keywordflow">return</span> m_fixtureBottomSensor;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="classStorage.html#a3bae1d833350258742b94caca470e735">   43</a></span>&#160;        b2Body* <a class="code" href="classStorage.html#a3bae1d833350258742b94caca470e735">m_bodyStopper</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classStorage.html#a989c2bbe46e9874a4f4fed780a3d5de6">   44</a></span>&#160;        b2PrismaticJoint* <a class="code" href="classStorage.html#a989c2bbe46e9874a4f4fed780a3d5de6">m_jointLift</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="classStorage.html#ae96e6bf24e9d9c9788129bb6d87d10ab">   45</a></span>&#160;        b2PrismaticJoint* <a class="code" href="classStorage.html#ae96e6bf24e9d9c9788129bb6d87d10ab">m_jointStopper</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="classStorage.html#afa862f61854f0960b41ae24b673b3980">   46</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#afa862f61854f0960b41ae24b673b3980">m_fixtureTopSensor</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classStorage.html#a27bcc4c94a7766c56f98ace7e2c3b662">   47</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#a27bcc4c94a7766c56f98ace7e2c3b662">m_fixtureMiddleSensor</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classStorage.html#afa76f1b21a27a64ef14d2360cc518bc3">   48</a></span>&#160;        b2Fixture* <a class="code" href="classStorage.html#afa76f1b21a27a64ef14d2360cc518bc3">m_fixtureBottomSensor</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="classStorageArea.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStorageArea.html" title="Create an arbitrary number of storages side-by-side to sort planks into.">StorageArea</a>{</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="classStorageArea.html" title="Create an arbitrary number of storages side-by-side to sort planks into.">StorageArea</a>(<span class="keywordtype">int</span> numberOfStorages,b2Vec2 upperLeftCorner,float32 width,float32 height, float32 wallThickness,b2World* world);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        b2PrismaticJoint* getLiftJoint(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        b2PrismaticJoint* getStopperJoint(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        b2Fixture* getTopSensorFixture(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        b2Fixture* getMiddleSensorFixture(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        b2Fixture* getBottomSensorFixture(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classStorageArea.html#ab5c3b86896768610f1b558126bf0df71">   79</a></span>&#160;        vector&lt;Storage*&gt; <a class="code" href="classStorageArea.html#ab5c3b86896768610f1b558126bf0df71" title="Vector that contains pointers to the individual storages.">m_storage</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* STORAGES_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 12 2012 14:02:22 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 12 2012 14:46:51 for Educational simulator for control-system development by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
